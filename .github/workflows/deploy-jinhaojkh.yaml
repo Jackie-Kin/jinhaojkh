@@ -1,0 +1,55 @@
+name: Deploy to Salesforce
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'force-app/**'
+
+jobs:
+  deploy_to_salesforce:
+    runs-on: ubuntu-latest  # Change to windows-latest if needed
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Salesforce CLI
+        run: npm install --global @salesforce/cli
+
+      - name: Debug JWT Key
+        run: |
+          echo "${{ secrets.JWT_SERVER_KEY }}"
+        shell: bash
+
+      - name: Decode JWT Key (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          echo "${{ secrets.JWT_SERVER_KEY }}" | tr -d '\n' | base64 -d > server.key
+        shell: bash
+
+      - name: Decode JWT Key (Windows)
+        if: runner.os == 'Windows'
+        run: |
+          echo ${{ secrets.JWT_SERVER_KEY }} | powershell -Command "$input = Get-Content -Raw; $input = $input -replace '\r\n', ''; [IO.File]::WriteAllText('server.key', [Convert]::FromBase64String($input))"
+        shell: cmd
+
+      - name: Authenticate with Salesforce
+        run: |
+          sf org login jwt --username ${{ secrets.SF_USERNAME }} \
+            --jwt-key-file server.key \
+            --client-id ${{ secrets.SF_CONSUMER_KEY }} \
+            --instance-url ${{ vars.SF_INSTANCE_URL }} \
+            --set-default \
+            --alias deployment-org
+        shell: bash
+
+      - name: Deploy to Salesforce
+        run: |
+          sf project deploy start --source-dir force-app --target-org deployment-org --wait 10
+        shell: bash
