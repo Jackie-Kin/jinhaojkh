@@ -1,0 +1,519 @@
+﻿
+body {
+   margin:0px; padding:0px; background-color:black;
+   min-width:1024px;
+   min-height:760px;
+   max-height:99.75%;
+   height:99.73%;
+
+}
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+.fakeContainer { 
+	margin: 0 0 0;
+	border: 1px;
+	width: 100%; 
+	height: 95%; 
+	overflow: hidden; 
+   
+}
+
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.sortText {
+
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 50%;
+    top:10px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.jokenText {
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 50%;
+    top:25px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.headerBar{
+	background: linear-gradient(to bottom,#f0f1f4,#adb1bd);
+	position:relative;
+
+
+}
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.th_staff {
+    border:1px #376092 solid;
+    width:9.2%;
+    background-color:darkblue !important;
+    height:65px;
+    font-family:'ＭＳ Ｐゴシック';
+}
+
+.th_samtip {
+    border:1px #376092 solid;
+    width:9.2%;
+    background-color:darkblue !important;
+    height:65px;
+    font-family:'ＭＳ Ｐゴシック';
+}
+
+.th_month {
+    border:1px #376092 solid;
+    width:90.8%;
+    background-color:darkblue !important;
+    height:35px;
+    font-family:'ＭＳ Ｐゴシック';   
+}
+
+.th_month.underline.td {
+    text-align:center;
+}
+
+.td_staff {
+    background-color:black;
+    border:1px #376092 solid;
+    min-height:100px;
+}
+
+.td_samtip {
+    background-color:black;
+    border:1px #376092 solid;
+    min-height:100px;
+}
+
+.td_month {
+    background-color:black;
+    border:1px #376092 solid;
+    min-height:100px;
+}
+
+
+
+
+section{
+	width:100%;
+	min-width:1020px;
+	height:100%;
+	min-height:700px;
+
+}
+
+/*table{
+	border-collapse:collapse;
+	border:1px rgb(55,96,146) solid;
+	width:100%;
+	min-width:1020px;
+	height:100%;
+}*/
+
+.trh1{ height:3.6%;		}
+.trh2{ height:6.6%;		}
+.tra2{ height:40.0%;	}
+.tra1{ height:20.0%;	}
+.tra3{ height:15.0%;	}
+
+/*th{	
+	height:20px;
+	font-weight:normal;
+	font-size:11pt;
+	border:1px rgb(55,96,146) solid;
+	padding:2px;
+}
+
+td{
+	min-width:72px;
+	border:1px rgb(55,96,146) solid;
+	background-color:black;
+}*/
+
+.stname{
+	width:7%;
+	min-width:72px;
+	text-align:center;
+	font-size:13pt;
+	line-height:16pt;
+	font-family:HGP創英角ｺﾞｼｯｸUB;
+	letter-spacing:1px;
+}
+
+.ttltip{
+	width:9%;
+	min-width:96px;
+	vertical-align:middle;
+    background-color:black;
+    border:1px #376092 solid;   
+}
+
+.monbox{
+	width:12%;
+	min-width:121px;
+    background-color:black;
+    border:1px #376092 solid;  
+}
+
+.tipwrap{
+	height:100%;
+}
+
+.sam{
+	margin-left:3px;
+	margin-top:3px;
+	padding:2px;
+}
+
+.tra2 .tip,.tra3 .tip,.tra4 .tip{
+	width:30%;
+	height:23px;
+	margin-left:1.5%;
+	margin-bottom:2%;
+	float:left;
+	line-height:23px;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.tip{
+	width:30%;
+    min-width:30px;
+    font-size:13pt;
+	height:23px;
+	margin-left:1.5%;
+	margin-bottom:2%;
+	float:left;
+	line-height:23px;
+	vertical-align:middle;
+	text-align:center;
+    position:relative;
+}
+
+.tip p{
+	height:100%;
+	width:100%;
+	min-height:22px;
+	color:white;
+	font-size:14pt;
+	line-height:24px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.tip4{
+	width:5%;
+    min-width:30px;
+    font-size:13pt;
+	height:23px;
+	margin-left:0.5%;
+	margin-bottom:0.5%;
+	float:left;
+	line-height:23px;
+	vertical-align:middle;
+	text-align:center;
+    position:relative;
+}
+
+.tip4 p{
+	height:100%;
+	width:100%;
+	min-height:22px;
+	color:white;
+	font-size:12pt;
+	line-height:24px;
+	text-align:center;
+	vertical-align:middle;
+    font-weight:600;
+}
+
+.moji {
+    position:absolute;
+    z-index:200;
+    top:0px;
+    left:0px;
+    color:white;
+}
+
+
+.samtip{
+	width:78%;
+   
+	height:20px;
+	min-height:18px;
+	margin:5% 0 5px 12%;
+	
+	font-family:'ＭＳ Ｐゴシック';
+	font-size:15pt;	
+	letter-spacing:-1px;
+	text-align:center;
+	line-height:10pt;
+	
+	display:block;
+	text-align:center;
+	left:0%;
+
+	position:relative;
+
+    
+}
+
+.samtip:before{
+	content:"";
+	width:2%;
+	height:100%;
+	left:0;
+	display:block;
+	position:absolute;
+	background: linear-gradient(to bottom, rgb(10,94,125) 0%, rgb(14,139,184) 100%);
+}
+.samtip:after{
+	content:"";
+	width:98%;
+	height:5%;
+	min-height:2px;
+	top:84%;
+	left:0%;
+	display:block;
+	position:absolute;
+	background: linear-gradient(to bottom, rgb(10,94,0) 0%, rgb(14,139,184) 100%);
+	border:1px white solid;
+}
+
+.ttltip .white:before{
+	background:linear-gradient(to top,rgb(255,255,255) 0%,rgb(125,125,125) 50%,rgb(0,0,0) 100%);
+}
+.ttltip .white:after{
+	background: linear-gradient(to bottom left,rgb(255,255,255) 0%,rgb(125,125,125) 50%,rgb(0,0,0) 100%);
+	border-color:rgb(255,255,255);
+}
+
+.ttltip .red:before{
+	background:linear-gradient(to top,rgb(255,15,0) 0%,rgb(125,0,0) 50%,rgb(0,0,0) 100%);
+}
+.ttltip .red:after{
+	background: linear-gradient(to bottom left,rgb(255,0,0) 0%,rgb(125,0,0) 50%,rgb(0,0,0) 100%);
+	border-color:rgb(255,0,0);
+}
+
+.ttltip .blue:before{
+	background: linear-gradient(to top,rgb(80,140,255) 0%,rgb(40,70,125) 50%,rgb(0,0,0) 100%);
+}
+.ttltip .blue:after{
+	background: linear-gradient(to bottom,rgb(80,140,255) 0%,rgb(40,70,125) 50%,rgb(0,0,0) 100%);
+	border-color:rgb(80,140,255);
+}
+
+.ttltip .yellow:before{
+	background:linear-gradient(to top,rgb(255,255,255) 0%,rgb(125,125,125) 63%,rgb(0,0,0) 100%);
+}
+.ttltip .yellow:after{
+	background: linear-gradient(to bottom left,rgb(255,255,255) 0%,rgb(125,125,125) 63%,rgb(0,0,0) 100%);
+	border-color:rgb(255,255,255);
+}
+
+.ttltip .black:before{
+	background: linear-gradient(to top,rgb(64,64,64) 0%,rgb(38,38,38) 50%,rgb(0,0,0) 100%);
+}
+.ttltip .black:after{
+	background: linear-gradient(to bottom,rgb(64,64,64) 0%,rgb(38,38,38) 50%,rgb(0,0,0) 100%);
+	border-color:rgb(127,127,127);
+}
+
+.monbox{
+	width:130px;
+	padding-top:2px;
+	vertical-align:top;
+}
+
+
+
+
+
+
+
+.tipwrap .orange{
+	background:linear-gradient(to right bottom,rgb(130,86,0) 0%,rgb(134,54,0) 50%,rgb(85,34,0) 100%);
+	border:1px rgb(189,89,9) solid;
+}
+
+.tipwrap .white{
+	background:linear-gradient(to right bottom,rgb(255,255,255) 0%,rgb(219,219,219) 50%,rgb(144,144,144) 100%);
+	border:2px rgb(255,255,255) solid;
+	border-radius:1px;
+}
+
+.tipwrap .white_red{
+	background:linear-gradient(to right bottom,rgb(255,255,255) 0%,rgb(219,219,219) 50%,rgb(144,144,144) 100%);
+	border:2px rgb(255,0,0) solid;
+	border-radius:1px;
+}
+
+.tipwrap .blue{
+	background:linear-gradient(to right bottom,rgb(115,116,255) 0%,rgb(80,96,255) 50%,rgb(12,2,226) 100%);
+	border:2px rgb(160,163,206) solid;
+	border-radius:1px;
+}
+
+.tipwrap .gray{
+	background:linear-gradient(to right bottom,rgb(168,168,168) 0%,rgb(136,136,136) 50%,rgb(66,66,66) 100%);
+	border:2px rgb(185,185,185) solid;
+	border-radius:1px;
+}
+
+.tipwrap .black{
+	background:linear-gradient(to right bottom,rgb(37,37,37) 0%,rgb(27,27,27) 63%,rgb(0,0,0) 100%);
+	border:2px rgb(79,79,79) solid;
+	border-radius:1px;
+}
+
+
+.tipwrap .white{
+	background:linear-gradient(to right bottom,rgb(255,255,255) 0%,rgb(219,219,219) 50%,rgb(144,144,144) 100%);
+	border:2px rgb(220,220,220) solid;
+	border-radius:1px;
+}
+
+.featOn	{
+	background-image:url('../../IMG/feather_on.png');
+	background-repeat:no-repeat;
+	background-size:24px;
+	background-position:center;
+}
+
+.featOff	{
+	vertical-align:middle;
+	background-image:url('../../IMG/feather_off.png');
+	background-repeat:no-repeat;
+	background-size:24px;
+	background-position:center;	
+}
+
+.flag1	{
+	background-image:url('../../IMG/flag1.png');
+	background-repeat:no-repeat;
+	background-size:23px;
+	background-position:center;
+}
+.flag2	{
+	background-image:url('../../IMG/flag2.png');
+	background-repeat:no-repeat;
+	background-size:23px;
+	background-position:center;
+}
+.flag3	{
+	background-image:url('../../IMG/flag_icon03.png');
+	background-repeat:no-repeat;
+	background-size:23px;
+	background-position:center;
+}
+.flagMemoKanri	{
+	background-image:url('../../IMG/flagMemoKanri.png');
+	background-repeat:no-repeat;
+	background-size:22px;
+	background-position:center;
+}
+.flagMemoStaff	{
+	background-image:url('../../IMG/flagMemoStaff.png');
+	background-repeat:no-repeat;
+	background-size:22px;
+	background-position:center;
+}
+.flagMemo	{
+	background-image:url('../../IMG/flagMemo.png');
+	background-repeat:no-repeat;
+	background-size:22px;
+	background-position:center;
+}
+
+.clr	{ clear:both; }
+
+.box	{ display:table; }
+.boxcell{ display:table-cell;}
+/*span	{ margin-left:5px; }*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.underline{
+    text-decoration:underline;
+}
+
+/* 2016/07/14 add start C#47 ツールチップの表示対応 */
+.memoLabel {
+    width:250px;
+    height:23px;
+
+	line-height:15px;
+    font-size: 11pt;
+    font-family: ＭＳ ゴシック;
+    color:black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.upperBox {
+    margin-top:-5px;
+    border-bottom: dashed black 1pt;
+}
+
+.lowerBox {
+    margin-top:4px;
+}
+
+/* 省略文字の表示 */
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+div.ui-tooltip{
+    width:  255px;
+    height: 85px;
+    background:linear-gradient(to bottom,rgb(255,255,255) 0%,rgb(200,200,200) 70%,rgb(150,150,150) 100%);
+}
+/* 2016/07/14 add end   C#47 ツールチップの表示対応 */

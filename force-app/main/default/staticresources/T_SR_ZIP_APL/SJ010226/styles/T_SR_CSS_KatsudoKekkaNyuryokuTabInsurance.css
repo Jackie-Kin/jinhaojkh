@@ -1,0 +1,218 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　保険
+ * ファイル名 : T_SR_CSS_KatsudoKekkaNyuryokuTabInsurance.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/20  HISOL清水    新規作成
+ */
+.S10101-right-body {
+  padding-left: 3%;
+}
+
+.spm-content-header {
+  background-color: #193a66;
+  /* 融合版対応2019/06/19 height: 26px; */
+  height: 22px;
+  border-radius:3px 3px 0 0;
+}
+
+.spm-content-header.wide {
+  width: 100%;
+  /*width: 984px;*/
+}
+
+.spm-content-list {
+  margin-top:5px;
+  margin-left: 20px;
+  height: 76px;
+}
+
+/* リストのヘッダー */
+.list-header {
+  width: 100%;
+  height: 23px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: #375884;
+  display: flex;
+}
+
+.list-header > div {
+  float: left;
+  padding-left: 9px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+  line-height: 24px;
+  text-align: left;
+}
+
+/* リストのデータ部 */
+.list-deta {
+  height: 42px;
+}
+
+.list-deta-detail {
+  background-color: rgba(92, 151, 230, 0.08);
+  height: 25px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+}
+
+.list-deta-detail > div {
+  float: left;
+  padding-left: 10px;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.spm-content-header-char {
+  font-family: Meiryo;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  line-height: 26px;
+  text-align: left;
+  text-shadow: 0px 2px 3px rgba(102, 102, 102, 0.3);
+
+  margin-left:20px;
+}
+
+.spm3 {
+  height: 218px;
+}
+
+.spm-insuredpersoninfo {
+  border-radius: 0 0 3px 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+  height: 63px;
+}
+
+.spm-insuredpersoninfo-row {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-left: 19px;
+  margin-right: 19px;
+
+  height: 21px;
+  line-height: 21px;
+}
+
+.spm-insuredpersoninfo-column {
+  display: flex;
+  width:25%;
+}
+
+.spm-insuredpersoninfo-column.left {
+  width:31%;
+}
+
+.spm-insuredpersoninfo-column.right {
+  width:44%;
+}
+
+.spm-insuredpersoninfo-title {
+  color: #193a66;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  width: 40%;
+}
+
+.spm-insuredpersoninfo-title.left {
+  width: 30%;
+}
+.spm-insuredpersoninfo-column.right .spm-insuredpersoninfo-title{
+  width: 30%;
+}
+
+.spm-insuredpersoninfo-value {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+
+  width: 60%;
+}
+
+.spm-insuredpersoninfo-value.left {
+  width: 70%;
+}
+
+.spm-insuredpersoninfo-column.right .spm-insuredpersoninfo-value{
+  width: 70%;
+}
+
+.spm4 {
+  height: 134px;
+  margin-top: 5px;
+}
+
+.spm-insuranceinfo {
+  border-radius: 0 0 3px 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px rgba(102,102,102,0.3);
+  height: 112px;
+  display: flex;
+}
+
+
+.insurance {
+    width:96%;
+}
+
+.insurance .list-deta-detail {
+    height: 40px;
+}
+.insurance .list-deta-detail > div {
+  line-height:19px;
+  word-wrap:break-word;
+}
+
+.insurance-title {
+  width:6%;
+}
+.insurance-bangou {
+  width:12%;
+}
+.insurance-kaisya {
+  width:8%;
+}
+.insurance-toukyuu {
+  width:7%;
+}
+.insurance-jiseki {
+  width:6%;
+}
+.insurance-siki {
+  width:6%;
+}
+.insurance-manki {
+  width:7%;
+}
+.insurance-kinkaku {
+  width:10%;
+}
+.insurance-touroku {
+  width:17%;
+}
+.insurance-keisiki {
+  width:6%;
+}
+.insurance-nennei {
+  width:8%;
+}
+.insurance-hani {
+  width:8%;
+}

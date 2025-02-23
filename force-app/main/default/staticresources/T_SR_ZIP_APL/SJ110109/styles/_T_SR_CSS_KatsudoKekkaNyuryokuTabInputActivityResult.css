@@ -1,0 +1,257 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　活動結果入力（S1）
+ * ファイル名 : _T_SR_CSS_KatsudoKekkaNyuryokuTabInputActivityResult.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/15  HISOL張     新規作成
+ */
+#S10101-iar-scroll {
+  overflow-y:auto;
+  height:530px;
+}
+
+.S10101-iar-content {
+  padding-right:10px;
+}
+
+#S10101-iar-contact-person {
+  margin-top: 5px;
+}
+
+.S10101-iar-input-title {
+  color: #54698d;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.S10101-iar-btn-entry {
+  border-radius: 3px;
+  background-color: #193a66;
+  box-shadow: 0px 1px 1px 0px rgba(17, 65, 128, 0.3);
+  width: 130px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 40px;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.S10101-iar-btn-entry.no-select {
+  background-color: #999999;
+  cursor: default;
+}
+
+.S10101-iar-btn-entry:hover {
+  background-color: #2f578e;
+}
+
+.S10101-iar-btn-entry.no-select:hover {
+  background-color: #999999;
+}
+
+.S10101-iar-chk-btn-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.S10101-iar-chk-btn {
+  display: none;
+}
+
+.S10101-iar-chk-btn + label {
+  display: inline-block;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #999999;
+  width: 47.2%;
+  height: 30px;
+  color: #4a4a56;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.S10101-iar-chk-btn.small + label {
+  width: 30%;
+}
+
+.S10101-iar-chk-btn:hover + label {
+  border-color: #2f578e;
+  border-width: 2px;
+  color: #2f578e;
+  text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+}
+
+.S10101-iar-chk-btn:checked + label {
+  background-color: #3e659a;
+  color: #ffffff;
+  text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+}
+
+.S10101-iar-chk-btn:checked:hover + label {
+  border-color: #999999;
+  border-width: 1px;
+  color: #ffffff;
+  text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+}
+
+.S10101-iar-chk-btn:disabled + label {
+  background-color: #ffffff;
+  color: #c0c0c0;
+  border-style: none;
+  border-width: 0px;
+  text-shadow: none;
+  cursor: default;
+
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22100%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20rx%3D%2250%22%20ry%3D%2250%22%20width%3D%22300%22%20height%3D%22100%22%20fill%3D%22transparent%22%20stroke%3D%22%23c0c0c0%22%20stroke-width%3D%225%22%20stroke-dasharray%3D%228%205%22%20%2F%3E%3C%2Fsvg%3E');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.S10101-iar-chk-btn:disabled:hover + label {
+  background-color: #ffffff;
+  color: #c0c0c0;
+  border-style: none;
+  border-width: 0px;
+  text-shadow: none;
+  cursor: default;
+
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22100%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20rx%3D%2250%22%20ry%3D%2250%22%20width%3D%22300%22%20height%3D%22100%22%20fill%3D%22transparent%22%20stroke%3D%22%23c0c0c0%22%20stroke-width%3D%225%22%20stroke-dasharray%3D%228%205%22%20%2F%3E%3C%2Fsvg%3E');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.S10101-iar-chk-btn:disabled:checked + label {
+  background-color: #3e659a;
+  color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+
+  background-image: none;
+}
+
+.S10101-iar-chk-btn:disabled:checked:hover + label {
+  border-color: #3e659a;
+  border-width: 1px;
+  border-style: solid;
+  color: #ffffff;
+  text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+
+  background-image: none;
+}
+
+
+.S10101-iar-non-chk-btn {
+  display: inline-block;
+  width: 115px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.S10101-iar-area-time {
+  display: flex;
+}
+
+.S10101-iar-time {
+  display: flex;
+}
+
+.S10101-iar-require {
+  color: #eb5858;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.S10101-iar-time-center {
+  padding: 0 8px;
+  width: 30px;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.S10101-iar-dropdown-time {
+  width: 45px;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-align: left;
+  padding-left: 1px;
+}
+
+.S10101-iar-dropdown-time:disabled {
+  background-color: #f6f6f6;
+}
+
+.S10101-iar-time-colon {
+  width: 8px;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* 日付入力共通部品変更 */
+#S10101-iar-activity-plan-date {
+  display: inline-block;
+}
+
+#S10101-iar-activity-plan-date > .spm-date-era {
+  height: 30px;
+}
+
+#S10101-iar-activity-plan-date > .spm-date-year,
+#S10101-iar-activity-plan-date > .spm-date-month,
+#S10101-iar-activity-plan-date > .spm-date-day {
+  height: 30px;
+  width: 28px;
+}
+
+#S10101-iar-satei {
+    display:none;
+}
+
+#S10101-iar-satei .title {
+    float:left;
+    width: 100%;
+    padding-left:15px;
+}
+
+#S10101-iar-satei input {
+  width: 80%;
+  height: 28px;
+  border-radius: 0.25rem;
+  border: 1px solid #d8dde6;
+  font-family: Meiryo;
+  color: #16325c;
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 10px;
+  margin-bottom:7px;
+}

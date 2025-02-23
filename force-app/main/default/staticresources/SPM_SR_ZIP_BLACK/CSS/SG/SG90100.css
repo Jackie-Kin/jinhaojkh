@@ -1,0 +1,680 @@
+﻿@charset "UTF-8"; 
+
+/*グレーアウトのスタイル定義*/
+#gray{
+ background:#000;
+ opacity:0.5;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:0px;
+ left:0;
+ display:none;
+
+}
+
+/*ポップアップ部分のスタイル定義*/
+#square{
+ display:block;
+ background-color:#fff;
+ overflow:hidden;
+}
+
+#popup{
+ display:block;
+ overflow:hidden;
+ border:none;
+}
+
+.gray_panel{
+ background:#000;
+ opacity:0.5;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:0px;
+ left:0;
+ display:none;
+ z-index:1000;
+}
+
+.checkTable{
+	
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#555555;
+}
+
+.trimTable{
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+
+}
+
+.cellFont{
+	
+	font-size:11pt;
+	font-family:"ＭＳ Ｐゴシック";
+	text-align:right;
+}
+
+.dataFont{
+	text-align:left;
+	padding-left:12px;
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#666666;
+
+}
+
+.dataFont_head{
+	text-align:left;
+	padding-left:12px;
+	font-size:12.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:#666666;
+
+}
+
+.naviFont{
+	font-family:"HG丸ｺﾞｼｯｸM-PRO";
+	font-size:8.5pt;
+	text-align:left;
+	color:rgb(99,148,212);
+	margin-bottom:3px;
+}
+
+.naviFont_red{
+	font-family:"HG丸ｺﾞｼｯｸM-PRO";
+	font-size:8.5pt;
+	text-align:left;
+	color:red;
+	margin-bottom:3px;
+}
+
+.tabledataFont{
+	font-size:10pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:#666666;
+    user-select:none;
+    -ms-user-select: none;
+}
+
+.dataFont_Select{
+	font-size:12pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:#376092;
+
+}
+
+.txtdataFont{
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#1f497d;
+
+}
+
+.tableData_Kamoku{
+	width:50px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+	
+}
+
+.tableData_Syokai{
+	width:71px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+	
+}
+
+.tableData_suggest_Lt_Table{
+	padding:0px;
+	border-collapse:collapse;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+	
+}
+
+.tableData_suggest_Lt{
+	width:54px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+	
+}
+
+.tableData_suggest_Lt_Days{
+	width:41px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+	
+}
+
+.tableData_suggest_Lt_Date{
+	width:50px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+	
+}
+
+.tableData_Plan_Lt{
+	width:32px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+	
+}
+
+.tableData_Plan_Date{
+	width:50px;
+	border: 1px solid #CCCCCC;  
+	text-align:center;
+	
+}
+
+.tableData_Plan_Kijun{
+	width:62px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+	
+}
+
+.tableData_Jisseki_Lt{
+	width:41px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+	
+}
+
+.tableData_Jisseki_Date{
+	width:71px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+	
+}
+
+.tableData_Jisseki_Plan{
+	width:62px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+	
+}
+
+.titleFont{
+	font-size:11pt;
+    font-family:"ＭＳ Ｐゴシック";
+}
+
+.titleFont2{
+	font-size:11pt;
+    font-family:"ＭＳ Ｐゴシック";
+    padding-left:20px;
+}
+
+.historyTable{
+	padding:0px;
+	border-collapse:collapse;
+	font-size:11pt;
+	text-align:center;
+	border:1px solid rgb(85,142,213);
+	
+}
+
+.tableData_Header {
+	border: 1px solid #CCCCCC;
+  text-align: center;
+}
+
+.dataRowHeight{
+	height:32px;
+}
+
+.totalRowHeight{
+	height:50px;
+	border-top:3px solid #CCCCCC;
+}
+
+/* テーブル表２-納期変更 */
+.tableData_NoukiHenkou_Cnt{
+/* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+	/* width:35px; */
+	width:40px;
+/* 2017/6/15 mod end 納期CS改修要望Ver3_No2-5対応 */
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+.tableData_NoukiHenkou_Before{
+/* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+	/* width:68px; */
+	width:46px;
+/* 2017/6/15 mod end 納期CS改修要望Ver3_No2-5対応 */
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+.tableData_NoukiHenkou_After{
+/* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+	/* width:68px; */
+	width:46px;
+/* 2017/6/15 mod end 納期CS改修要望Ver3_No2-5対応 */
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+/* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+.tableData_NoukiHenkou_Updday{
+	width:46px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+/* 2017/6/15 mod end 納期CS改修要望Ver3_No2-5対応 */
+
+.tableData_NoukiHenkou_Reason{
+	width:125px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+/* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+.tableData_NoukiHenkou_Reason_NOUKIHENKOU{
+	width:111px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+/* 2017/6/15 mod end 納期CS改修要望Ver3_No2-5対応 */
+
+/* テーブル表２-納期変更 */
+.tableData_NoukiHenkou_Cnt_data{
+    /* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+	/* width:35px; */
+    width:40px;
+    /* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+.tableData_NoukiHenkou_Before_data{
+    /* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+	/* width:68px; */
+	width:46px;
+    /* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+.tableData_NoukiHenkou_After_data{
+    /* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+	/* width:68px; */
+	width:46px;
+    /* min-width:68px;
+    max-width:68px; */
+    /* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+/* 2017/6/15 add start 納期CS改修要望Ver3_No2-5対応 */
+.tableData_NoukiHenkou_Updday_data{
+	width:46px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+/* 2017/6/15 add end 納期CS改修要望Ver3_No2-5対応 */
+
+.tableData_NoukiHenkou_Reason_data{
+    /* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+	/* width:125px; */
+	width:111px;
+    /* min-width:125px;
+    max-width:125px; */
+    /* 2017/6/15 mod start 納期CS改修要望Ver3_No2-5対応 */
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:10pt;
+	text-align:center;
+	
+}
+
+
+.tableData_NoukkCS_Before{
+	width:68px;
+    min-width:68px;
+    max-width:68px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+.tableData_NoukiCS_After{
+	width:68px;
+    min-width:68px;
+    max-width:68px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+.tableData_NoukiCS_Reason{
+	width:125px;
+    min-width:125px;
+    max-width:125px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+.tableData_NoukiHenkou_Memo{
+	width:38px;
+    min-width:38px;
+    max-width:38px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-size:11pt;
+    position:relative;
+	
+}
+
+.tableData_NoukiHenkou_Memo_data{
+	width:38px;
+    min-width:38px;
+    max-width:38px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-size:11pt;
+    position:relative;
+	
+}
+
+.tableData_NoukkCS_Before_data{
+	width:85px;
+    min-width:85px;
+    max-width:85px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+.tableData_NoukiCS_After_data{
+	width:85px;
+    min-width:85px;
+    max-width:85px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+.tableData_NoukiCS_Reason_data{
+	width:125px;
+    min-width:125px;
+    max-width:125px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:10pt;
+	text-align:center;
+	
+}
+
+.tableData_NoukiCS_Memo_data{
+	width:38px;
+    min-width:38px;
+    max-width:38px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-size:11pt;
+    position:relative;
+	
+}
+
+.tableData_NoukiKakutei_Prev{
+	width:85px;
+    min-width:85px;
+    max-width:85px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+.tableData_NoukiKakutei_Next{
+	width:85px;
+    min-width:85px;
+    max-width:85px;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+    font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:center;
+	
+}
+
+.imgMemo {
+
+position:absolute;
+top:3px;
+left:5px;
+}
+
+.dataRowHeight_NoukiHenkou{
+}
+
+.memoFont{
+	font-size:10pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:100;
+	color:#666666;
+}
+
+.tabledataFont_Underbar{
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:rgb(85,142,227);
+	border-bottom:3px solid #CCCCCC;
+
+}
+
+.tabledataFont_Youbi_Keikaku{
+	font-size:9pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:100;
+	color:#1f497d;
+	vertical-align:bottom;
+
+}
+
+.tabledataFont_Youbi{
+	font-size:8pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:100;
+	color:#666666;
+	vertical-align:bottom;
+
+}
+
+.td_Day{
+	width:70%;
+	text-align:right;
+    position:relative;
+}
+
+.td_Time{
+	width:70%;
+	text-align:right;
+    position:relative;
+}
+
+.td_Youbi{
+	width:25%;
+	text-align:left;
+	
+}
+
+/* "日"の表示 */
+.listPart2{
+	font-size: 9pt;
+	color:gray;
+}
+
+/* "計画日（日付）"の背景色 */
+.backColor_Cream{
+	background-color:rgb(255,255,204);
+	box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.4) inset;
+}
+
+.backColor_Cream_Red{
+	background-color:#FFC0CB ;
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.4) inset;
+    /*border: 2px solid #FF0000 !important;*/
+}
+
+.backColor_Cream_gray{
+	background-color:#a6a6a6;
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.4) inset;
+    border: 2px solid #a6a6a6 !important;
+}
+
+
+.backColor_Wine{
+	background-color:rgb(192,0,0);
+	box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.4) inset;
+	
+}
+
+#backColor_gray{
+	background-color:rgb(166,166,166);
+}
+
+.symbolFont{
+	font-size:9pt;
+	font-family:"ＭＳ Ｐゴシック";
+	font-weight:bold;
+	color:#666666;
+	
+}
+
+.listData_Select{
+
+	background: #900000;
+	border-color:red;
+	border:red solid 2px;
+    color:white;
+	
+	
+}
+
+.cellAri {
+    position:absolute;
+    top:5px;
+    left:8px;
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#376092;
+    font-size:11pt;
+}
+
+.title_mojiStyle{
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:10.5pt;
+
+}
+
+.lblMi {
+    z-index:700;
+    position:absolute;
+    top:9px;
+    left:57%;
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+}
+
+.lblMi5 {
+    z-index:700;
+    position:absolute;
+    top:9px;
+    left:25%;
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+}
+
+/*2016/07/19  add start　C#49 納期CSメモ入力可能条件変更*/
+.txtMemo {
+    background-color:rgb(255,255,204);
+    border:0px none;
+    font-size:12pt;
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+}
+
+.memo{
+	text-align:left;
+	font-size:12pt;
+	border:0px none;
+	background-color:rgb(255,255,204);
+	box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.4) inset;
+	vertical-align:top;
+    padding:10px;
+}
+/*2016/07/19  add end  　C#49 納期CSメモ入力可能条件変更*/
+

@@ -1,0 +1,74 @@
+﻿@charset "UTF-8"; 
+
+body {
+     margin:0px; padding:0px; background-color:white;
+}
+
+.title{
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    font-size:11pt;
+    box-shadow: 4px 4px 0px 0px rgb(210,210,210);
+}
+
+.header_title_mojiStyle{
+	
+	color:white;
+	font-size:12pt;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	
+}
+
+hr {
+    position:absolute;
+    background-color: #D3EDFB;
+    height: 1px;
+    border-collapse: collapse;
+    border: none;
+}
+
+.verticalLine {
+    position:absolute; 
+    background-color: #D3EDFB;
+    width: 1px;
+    border-collapse: collapse;
+}
+
+.mapTable {
+    background-color: black;
+}
+
+.mapTable tr {
+    height:51px;
+}
+
+.linkLabel {
+	text-align: left;
+	font-family:HGP創英角ｺﾞｼｯｸUB;
+	font-size:13pt;
+    color: gray;
+    padding-left: 20px;
+}
+
+.linkLabel2 {
+	text-align: left;
+	font-family:HGP創英角ｺﾞｼｯｸUB;
+	font-size:13pt;
+    color: gray;
+    padding-left: 0px;
+}
+
+.linkLabel3 {
+	text-align: left;
+	font-family:HGP創英角ｺﾞｼｯｸUB;
+	font-size:13pt;
+    color: gray;
+    padding-left: 10px;
+}
+
+.blancColumn {
+    background-color: white;
+    width:12px;
+}

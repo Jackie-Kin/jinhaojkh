@@ -1,0 +1,15 @@
+<apex:page docType="html-5.0" controller="Sample_T_JINController"
+    showHeader="false" standardStylesheets="false" sidebar="false"
+    applyHtmlTag="false" applyBodyTag="false" cache="false" expires="0">
+        <!--<apex:composition template="Sample_M_JIN">
+            <apex:define name="header">
+                
+            </apex:define>
+            <apex:define name="main">
+            
+    
+                
+            </apex:define>          
+        </apex:composition>
+        -->
+</apex:page>

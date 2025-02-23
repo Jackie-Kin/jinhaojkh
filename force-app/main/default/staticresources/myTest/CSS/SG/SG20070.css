@@ -1,0 +1,734 @@
+﻿@charset "UTF-8"; 
+
+body {
+   margin:0px; padding:0px;
+   background-color:black;
+   min-width:1024px;
+   min-height:760px;
+	height:99.73%;
+	max-height:99.75%;
+}
+html {
+	height:99.73%;
+	max-height:99.75%;
+	min-width:1024px;
+	min-height:760px;
+
+}
+
+.form1{
+	    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+		background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+/* 表ヘッダー部*/
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+.fakeContainer { 
+	margin: 0 0 20px;
+	border: 1px;
+	width: 100%; 
+	height: 95%; 
+	overflow: hidden; 
+}
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.sortText {
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 50%;
+    top:10px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.jokenText {
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 32%;
+    top:30px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.kensuText {
+     font-size: 13pt !important;
+}
+
+.kenText {
+    font-size: 11pt;
+    vertical-align: top;
+}
+
+.tdKoumoku1_main
+{ 
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: left;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+    
+}
+
+.headerBar{
+	background: linear-gradient(to bottom,#f0f1f4,#adb1bd);
+	position:relative;
+
+
+}
+
+
+.tdKoumoku1 
+{ 
+    height:30px;
+    width:100%;
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size:16pt;
+    color:white;
+}
+
+.listTable{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+
+}
+
+.listTable_sub{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+	border-style:none;
+	width:100%;
+	height:100%;
+
+}
+
+.fteerBar{
+	background: linear-gradient(to bottom,#323230 0%,#181818 59%,#000000 60%,#000000);
+	border-color:#CCCCCC;
+	/*border-style:solid;*/
+	border-width:1px;
+
+}
+
+.listHeader{
+	text-align:center;
+	font-size:10pt;
+	background:#00007c;
+	border-color:#376092;
+	border-style:solid;
+	border-width:1px;	
+}
+
+
+
+.td_Staff{
+	width:6.64%;
+	/*min-width:30px;*/
+	max-width:6.64%;
+	font-size:14px;
+	border:1px solid #376092;
+    text-decoration:underline;
+}
+
+.td_Okyaku{
+	width:12.99%;
+	/*min-width:90px;*/
+	max-width:12.99%;
+	border:1px solid #376092;
+    text-decoration:underline;
+}
+
+.td_Hoyuusya{
+	width:8.40%;
+	/*min-width:86px;*/
+	max-width:8.40%;
+	border:1px solid #376092;
+    text-decoration:underline;
+}
+
+.td_Mankibi{
+	width:7.81%;
+	/*min-width:80px;*/
+	max-width:7.81%;
+	border:1px solid #376092;
+}
+
+.td_KibouSya{
+	width:8.40%;
+	/*min-width:86px;*/
+	max-width:8.40%;
+	border:1px solid #376092;
+}
+
+.td_NyuKoKai{
+	width:5.00%;
+	/*min-width:57px;*/
+	max-width:5.00%;
+	border:1px solid #376092;
+}
+
+.td_Kaisu{
+	width:5.00%;
+	/*min-width:57px;*/
+	max-width:5.00%;
+	border:1px solid #376092;
+}
+
+.td_Mikomido{
+	width:5.00%;
+	/*min-width:57px;*/
+	max-width:5.00%;
+	border:1px solid #376092;
+    text-decoration:underline;
+}
+
+.td_SyokaiSeshoku{
+	width:5.60%;
+	/*min-width:57px;*/
+	max-width:5.60%;
+	border:1px solid #376092;
+}
+
+.td_newSatei{
+	width:5.60%;
+	/*min-width:57px;*/
+	max-width:5.60%;
+	border:1px solid #376092;
+}
+
+.td_newSijyou{
+	width:5.60%;
+	/*min-width:57px;*/
+	max-width:5.60%;
+	border:1px solid #376092;
+}
+
+.td_newMitumori{
+	width:5.60%;
+	/*min-width:70px;*/
+	max-width:5.60%;
+	border:1px solid #376092;
+}
+
+.td_newSeshoku{
+	width:5.60%;
+	/*min-width:57px;*/
+	max-width:5.60%;
+	border:1px solid #376092;
+}
+
+.td_jikaiYoteibi{
+	width:5.60%;
+	/*min-width:70px;*/
+	max-width:5.60%;
+	border:1px solid #376092;
+}
+
+.td_Midoku{
+	width:4.34%;
+	/*min-width:45px;*/
+	max-width:4.34%;
+	border:1px solid #376092;
+    text-decoration:underline;
+}
+
+.td_Katudo{
+	height:25px;
+    color:white;
+	border:1px solid #376092;
+}
+
+.data_Staff{
+    height:56px;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:16px;
+	letter-spacing:1px;
+	border:1px solid #376092;
+    word-wrap: break-word;
+     word-break:break-all
+}
+
+.data_Okyaku{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:16px;
+	letter-spacing:1px;
+	border:1px solid #376092;
+    word-wrap: break-word;
+     word-break:break-all
+}
+
+.data_Hoyuusya{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:16px;
+	border:1px solid #376092;
+
+}
+
+.data_Mankibi{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	padding:0px;
+	border-collapse:collapse;
+	line-height:15px;
+	border:1px solid #376092;
+}
+
+.data_Kibousya{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:16px;
+	border:1px solid #376092;
+
+}
+
+.data_Nyukokai{
+    padding-left:10px;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	/*font-size:14px;*/
+	line-height:17px;
+	border:1px solid #376092;
+    border-right-style:none;
+}
+.data_Kaisu{
+    width:10px;
+    max-width:9px;
+    /*min-width:10px;*/
+    padding-top:3px;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:10px;
+
+	line-height:17px;
+	border:1px solid #376092;
+    border-left-style:none;
+}
+
+.data_Mikomido{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:14px;
+	border:1px solid #376092;
+
+}
+
+.data_syokaiSeshoku{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+    color:gray;
+	/*font-size:14px;*/
+	border:1px solid #376092;
+
+}
+
+.data_newSateibi{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+    color:gray;
+	/*font-size:14px;*/
+	border:1px solid #376092;
+
+}
+
+.data_newShijyo{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+    color:gray;
+	/*font-size:14px;*/
+	border:1px solid #376092;
+
+}
+
+.data_newMitumori{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+    color:gray;
+	/*font-size:14px;*/
+	border:1px solid #376092;
+
+}
+
+.data_newSeshokubi{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+    color:gray;
+	/*font-size:14px;*/
+	border:1px solid #376092;
+
+}
+
+.data_newJikaiKatudo{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+    color:gray;
+	/*font-size:14px;*/
+	border:1px solid #376092;
+
+}
+
+.data_newJikaiKatudo_Red{
+    color:#900000;
+}
+
+.data_newJikaiKatudo_White{
+    color:#a6a6a6;
+}
+
+.data_Midoku{
+	border:1px solid #376092;
+	border-color:#376092;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:14px;
+
+}
+
+
+.data_Waku_None {
+    border-style:none;
+}
+
+.data_Waku_Red {
+    height:95%;
+    width:97%;
+    margin:0px;
+    padding:0px;
+    border:2px solid #900000;
+}
+
+.span_Year {
+    font-size:12px
+}
+
+.data_Year{
+	font-size:8pt;
+	height:10%;
+	vertical-align:middle;
+	color:#a6a6a6;
+}
+
+.data_Month{
+	font-size:14pt;
+	height:90%;
+	vertical-align:middle;
+	color:#a6a6a6;
+}
+
+.data_Year_w{
+	font-size:8pt;
+	height:10%;
+	vertical-align:middle;
+	color:white;
+}
+
+.data_Month_w{
+	font-size:14pt;
+	height:90%;
+	vertical-align:middle;
+	color:white;
+}
+
+.tdKoumoku1 
+{ 
+    height:30px;
+    width:100%;
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,#,darkblue);
+    text-align: left;
+    font-size:16pt;
+    color:white;
+}
+
+.chip_Orange{
+	background: linear-gradient(to right bottom,#cd9100,#863100);
+	width:20px;
+	height:18px;
+    padding-top:2px;
+	border-color:#ff9942;
+	border-width:1px;
+	border-style:solid;
+}
+
+.chip_Yellow{
+	background: linear-gradient(to right bottom,#a9a300,#724500);
+	width:20px;
+	height:18px;
+    padding-top:2px;
+	border-color:#c7c100;
+	border-width:1px;
+	border-style:solid;
+}
+
+.chip_Blue{
+	background: linear-gradient(to right bottom,#00367c,#0b182a);
+	width:20px;
+	height:18px;
+    padding-top:2px;
+	border-color:#0074a2;
+	border-width:1px;
+	border-style:solid;
+}
+
+.chip_Gray{
+	background: linear-gradient(to right bottom,#989898,#555555);
+	width:20px;
+	height:18px;
+    padding-top:2px;
+	border-color:#BFBFBF;
+	border-width:1px;
+	border-style:solid;
+}
+
+.chip_Black{
+	background: linear-gradient(to right bottom,#3E3E3E,#101010);
+	width:20px;
+	height:18px;
+    padding-top:2px;
+	border-color:#7F7F7F;
+	border-width:1px;
+	border-style:solid;
+}
+
+.chip_White{
+	background: linear-gradient(to right bottom,#999999 0%,#EEEEEE 63%,#FFFFFF 100%);
+	width:20px;
+	height:18px;
+    padding-top:2px;
+	border-color:#7F7F7F;
+	border-width:1px;
+	border-style:solid;
+}
+
+.td_line{
+	border-color:#376092;
+	border-width:1px;
+	border-style:solid;
+}
+
+
+.listPart1{
+	font-size: 16pt;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+}
+
+.listPart2{
+	font-size: 8pt;
+	color:gray;
+	padding-top:3px;
+	vertical-align:top;
+}
+
+
+.listData_Select{
+	background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+	border-color:#376092;
+	border:#376092 solid 1px;
+}
+
+.listData{
+	background:#000000;
+	border-color:#376092;
+	border-style:solid;
+	border-width:1px;
+	padding:0px;
+	font-size:18px;
+	text-align:center;
+	min-height:43px;
+}
+
+.listTani{
+	text-align:right;
+	vertical-align:top;
+	width:25%;
+		font-family:'ＭＳ Ｐゴシック';
+	border-style:none;
+	padding-right:4px;
+	padding-bottom:17px;
+}
+
+.listTani_kaisu{
+	text-align:right;
+	vertical-align:top;
+	width:25%;
+	line-height:200%;
+	font-family:'ＭＳ Ｐゴシック';
+	border-style:none;
+	padding-right:4px;
+}
+
+.dataSubTable_0{
+
+	min-height:33px;
+	height:50%;
+	max-height:50%;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#376092;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:11pt;
+}
+
+.dataSubTable_1{
+
+	height:50.00%;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#376092;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:11pt;
+}
+
+
+
+.dataSubTable_0_1{
+
+	min-height:33px;
+	height:50%;
+	max-height:50%;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+}
+
+.dataSubTable_1_1{
+
+	height:50.00%;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:17px;
+
+}
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.Memo {
+
+     background-image:url('../../IMG/memo.png');
+     background-repeat:no-repeat;
+     background-position:40% 40%;
+     background-size:35px 35px;
+     border:1px solid #376092;
+}
+
+.flag1	{
+	background-image:url('../../IMG/flag1.png');
+	background-repeat:no-repeat;
+	background-size:40px;
+	background-position:center;
+    border:1px solid #376092;
+}
+.flag2	{
+	background-image:url('../../IMG/flag2.png');
+	background-repeat:no-repeat;
+	background-size:40px;
+	background-position:center;
+    border:1px solid #376092;
+}
+.flag3	{
+	background-image:url('../../IMG/flag3.png');
+	background-repeat:no-repeat;
+	background-size:40px;
+	background-position:center;
+    border:1px solid #376092;
+}
+.flag5 {
+    background-image:url('../../IMG/flag5.png');
+    background-repeat:no-repeat;
+    background-size:40px;
+    background-position:center;
+    border:1px solid #376092;
+}
+.flagMemoKanri	{
+	background-image:url('../../IMG/flagMemoKanri.png');
+	background-repeat:no-repeat;
+	background-size:40px;
+	background-position:center;
+    border:1px solid #376092;
+}
+.flagMemoStaff	{
+	background-image:url('../../IMG/flagMemoStaff.png');
+	background-repeat:no-repeat;
+	background-size:40px;
+	background-position:center;
+    border:1px solid #376092;
+}
+.flagMemo	{
+	background-image:url('../../IMG/flagMemo.png');
+	background-repeat:no-repeat;
+	background-size:40px;
+	background-position:center;
+    border:1px solid #376092;
+}
+
+.featOn	{
+	background-image:url('../../IMG/Jucyu.png');
+	background-repeat:no-repeat;
+	background-size:15px;
+	background-position:center;
+    margin:0px;
+    height:inherit;
+}
+
+.featOff	{
+	vertical-align:middle;
+	background-image:url('../../IMG/Jucyu_Gray.png');
+	background-repeat:no-repeat;
+	background-size:15px;
+	background-position:center;	
+    margin:0px;
+    height:inherit;
+}
+
+/* 2016/07/06 add start C#4 U-Car受注のチップ追加 */
+.featOn_Ucar	{
+	background-image:url('../../IMG/JucyuUcar.png');
+	background-repeat:no-repeat;
+	background-size:15px;
+	background-position:center;
+    margin:0px;
+    height:inherit;
+}
+
+.featOff_Ucar	{
+	vertical-align:middle;
+	background-image:url('../../IMG/JucyuUcar_Gray.png');
+	background-repeat:no-repeat;
+	background-size:15px;
+	background-position:center;	
+    margin:0px;
+    height:inherit;
+}
+/* 2016/07/06 add end   C#4 U-Car受注のチップ追加 */
+
+.underline {
+    text-decoration:underline;
+}

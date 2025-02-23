@@ -1,0 +1,12 @@
+<apex:page Controller="myVfTestController" action="{!pageLoad}">
+    <apex:form >   
+         <div id='test'> 
+          <apex:repeat value="{!msg}" var="m">                
+              <apex:outputLabel value="{!m}"></apex:outputLabel>
+              <br/>   
+          </apex:repeat>  
+        </div>  
+     
+       <apex:commandButton action="{!bb}" value="222" rerender="test"/>
+    </apex:form>
+</apex:page>

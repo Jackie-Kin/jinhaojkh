@@ -1,0 +1,89 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　活動予定
+ * ファイル名 : _T_SR_CSS_KatsudoKekkaNyuryokuTabNextActivity.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/20  HISOL清水    新規作成
+ */
+.S10101-na-header-sub-title {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  text-align: left;
+  text-shadow: 0px 1px 1px rgba(25, 58, 102, 0.75);
+
+  margin-right:12px;
+}
+
+.S10101-na-header-sub-value {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  text-align: left;
+  text-shadow: 0px 1px 1px rgba(25, 58, 102, 0.75);
+
+  margin-right:20px;
+}
+
+.S10101-na-icon {
+  width: 48px;
+  height: 26px;
+
+  margin-top: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.S10101-na-icon.hot {
+  background-image: url("../images/hot.svg");
+}
+
+.S10101-na-icon.warm {
+  background-image: url("../images/warm.svg");
+}
+
+.S10101-na-icon.cold {
+  background-image: url("../images/cold.svg");
+}
+
+
+/**/
+  /* フッターボタン */
+.S10101-footer-btn {
+  border-radius: 3px;
+  background-color: #193a66;
+  box-shadow: 0px 1px 1px 0px rgba(17, 65, 128, 0.3);
+  width: 122px;
+  height: 25px;
+  font-family: Meiryo;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 45px;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+  display: inline-block;
+  margin: 1px 1px 1px 1px;
+}
+
+
+.S10101-footer-btn-off.S1-common-btn-hover:hover {
+  background-color: rgba(153, 153, 153, 1) !important;
+  color: #ffffff !important;
+}
+
+.S10101-btn-able {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.S10101-btn-disable {
+  cursor: default;
+  background: url(../images/btn_off.svg) top left /cover no-repeat fixed;
+}

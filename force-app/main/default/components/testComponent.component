@@ -1,0 +1,9 @@
+<apex:component controller="testComponentController">
+<apex:attribute name="value" type="String" description="Sample component."
+assignTo="{!selectedValue}"/>
+<p>
+Value = {!value}<br/>
+selectedValue = {!selectedValue}<br/>
+testComponent= {!testComponent}
+</p>
+</apex:component>

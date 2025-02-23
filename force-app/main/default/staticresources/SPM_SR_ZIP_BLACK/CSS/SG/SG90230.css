@@ -1,0 +1,52 @@
+﻿@charset "UTF-8"; 
+
+
+.popMain{
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+#wrapTable{
+    width: 100%;
+    height: 100%;
+}
+
+#wrapTable tr td div span{
+    font-size: 11pt;
+    margin-left: 3px;
+}
+
+
+
+.title{
+    background: black;
+    border-radius: 5px;
+    height: 30px;
+    box-shadow: 4px 4px 0px 0px rgb(210,210,210);
+}
+
+.title span{
+    color: white;
+    font-size: 11pt;
+    font-weight: bold;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+}
+
+
+.cellFont {
+    padding-left: 10px;
+    border-style: none;
+}
+
+.cellFont span a{
+    color: #376092;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12pt;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+}
+

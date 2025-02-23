@@ -1,0 +1,159 @@
+﻿.spm-pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 2px 0;
+  border-radius: 4px;
+  vertical-align: middle;
+  height: 22px;
+}
+
+.spm-pagination > li {
+  display: inline;
+}
+.spm-pagination > li > a,
+.spm-pagination > li > span {
+  position: relative;
+  float: left;
+  margin-left: 16px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  background-color:#3e659a;
+  font-size: 15px;
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(25, 58, 102, 0.75);
+}
+
+.spm-pagination > .first > a,
+.spm-pagination > .prev > a,
+.spm-pagination > .next > a,
+.spm-pagination > .last > a,
+.spm-pagination > .omit > a,
+.spm-pagination > .omitdammy > a {
+  border: none;
+  background: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.spm-pagination > li > a > div {
+  background-size: 100% 100%;
+}
+
+.spm-pagination > .first > a,
+.spm-pagination > .last > a
+{
+  width: 12px;  
+}
+.spm-pagination > .first > a > div,
+.spm-pagination > .last > a > div
+{
+  width: 100%;
+  height: 11px;
+  position: absolute;
+  top:25%;
+}  
+
+.spm-pagination > .prev > a,
+.spm-pagination > .next > a
+{
+  width: 6px;
+}
+.spm-pagination > .prev > a > div,
+.spm-pagination > .next > a > div {
+  width: 100%;
+  height: 11px;
+  position: absolute;
+  top:25%;
+}  
+
+.spm-pagination > .omit > a > div,
+.spm-pagination > .omitdammy > a > div {
+  width: 20px;
+  height: 20px;
+}
+
+.spm-page-link {
+  height: 100%;
+}
+.spm-page-item next > .spm-page-link > div {
+  position: absolute;
+  top:25%;
+}
+
+.spm-page-number > .spm-page-link {
+  width: 24px;
+  text-align: center;
+}
+
+.spm-pagination > .first > a > div {
+  /* 2019/08/19 mod start 融合版格納先変更 */
+  /* background-image: url('../Images/pagination-first.svg'); */
+  background-image: url('../images/pagination-first.svg');
+  /* 2019/08/19 mod end 融合版格納先変更 */
+}
+
+.spm-pagination > .prev > a > div {
+  /* 2019/08/19 mod start 融合版格納先変更 */
+  /* background-image: url('../Images/pagination-prev.svg'); */
+  background-image: url('../images/pagination-prev.svg');
+  /* 2019/08/19 mod end 融合版格納先変更 */
+}
+
+.spm-pagination > .next > a > div {
+  /* 2019/08/19 mod start 融合版格納先変更 */
+  /* background-image: url('../Images/pagination-next.svg'); */
+  background-image: url('../images/pagination-next.svg');
+  /* 2019/08/19 mod end 融合版格納先変更 */
+}
+
+.spm-pagination > .last > a > div {
+  /* 2019/08/19 mod start 融合版格納先変更 */
+  /* background-image: url('../Images/pagination-last.svg'); */
+  background-image: url('../images/pagination-last.svg');
+  /* 2019/08/19 mod end 融合版格納先変更 */
+}
+
+.spm-pagination > .omit > a > div,
+.spm-pagination > .omitdammy > a > div {
+  /* 2019/08/19 mod start 融合版格納先変更 */
+  /* background-image: url('../Images/pagination-omit.png'); */
+  background-image: url('../images/pagination-omit.png');
+  /* 2019/08/19 mod end 融合版格納先変更 */
+}
+
+.spm-pagination > li > a:hover,
+.spm-pagination > li > span:hover,
+.spm-pagination > li > a:focus,
+.spm-pagination > li > span:focus {
+  z-index: 2;
+  color: #ccc;
+}
+.spm-pagination > .active > a,
+.spm-pagination > .active > span,
+.spm-pagination > .active > a:hover,
+.spm-pagination > .active > span:hover,
+.spm-pagination > .active > a:focus,
+.spm-pagination > .active > span:focus {
+  z-index: 3;
+  background-color: rgb(22, 43, 80);
+  cursor: default;
+}
+.spm-pagination > .disabled > span,
+.spm-pagination > .disabled > span:hover,
+.spm-pagination > .disabled > span:focus,
+.spm-pagination > .disabled > a,
+.spm-pagination > .disabled > a:hover,
+.spm-pagination > .disabled > a:focus {
+  color: #777;
+  cursor: not-allowed;
+  visibility: hidden;
+}
+
+.spm-pagination-label {
+  font-size: 12px;
+  color: rgb(25, 58, 102);
+  text-shadow: 0px 1px 1px rgba(25, 58, 102, 0.75);
+}
+

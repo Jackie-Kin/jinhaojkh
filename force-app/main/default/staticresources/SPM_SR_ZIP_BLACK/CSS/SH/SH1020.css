@@ -1,0 +1,472 @@
+﻿html,body,form{
+    font-family: Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+body{
+	background: url(../../IMG/bg-main.jpg) no-repeat;
+	margin:0px; padding:0px; background-color:black;
+	min-width:1024px;
+	min-height:760px;
+	max-height:99.75%;
+	height:99.73%;
+    overflow: hidden;
+}
+
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+.fakeContainer { 
+	margin: 0 0 0;
+	border: 1px;
+	width: 100%; 
+	height: 98%; 
+	overflow: hidden;
+    background-color:transparent !important;
+   
+}
+
+.spm_header{
+    font-family: 'ＭＳ ゴシック'; 
+}
+
+.clearfix{
+    margin:0;
+    padding:0;
+}
+
+.clearfix:after {
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+header {
+    position:absolute;
+    top:15px;
+    left: 50px;
+	display:block;
+    margin: 0;
+    padding: 0;
+    z-index:11;
+}
+
+
+.center {
+	text-align:center;
+}
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:14pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.textHeader {
+    height: 100px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+.tdKoumoku1_main
+{ 
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: left;
+    font-size:16pt;
+    color:white;
+        
+}
+
+.title_text
+{ 
+    border-style: none;
+    text-align: left;
+    font-size:16pt;
+    position:absolute;
+    top:1%;
+    left:3.7%;
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    vertical-align:central;
+}
+
+.title_image
+{ 
+    width:25px;
+    height:25px;
+    vertical-align:middle;
+}
+.save_Button
+{ 
+    position:absolute;
+    top:20px;
+    right:4%;
+
+    width:80px;
+    height:35px;
+    z-index:100;
+    font-family:"游ゴシック";
+    font-size:20px;
+    background-image:url(../IMG/button_Save.png);
+}
+
+.th_TenpoCd
+{ 
+    background-color:#000050; 
+	border:1px solid #1D3364;
+    width:10%;
+    height:36px;
+    font-size:medium;
+    font-family:MS Pゴシック;
+    padding-left:20px;
+    text-align:left;
+}
+
+.th_Tenpomei
+{ 
+    background-color:#000050; 
+	border:1px solid #1D3364;
+    width:14%;
+    height:36px;
+    font-size:medium;
+    font-family:MS Pゴシック;
+    padding-left:20px;
+    text-align:left;
+}
+
+.th_SyakenMokuhyo
+{ 
+    background-color:#000050; 
+	border:1px solid #1D3364;
+    width:19%;
+    height:36px;
+    font-size:medium;
+    font-family:MS Pゴシック;
+    padding-left:20px;
+    text-align:left;
+}
+
+.th_12TenMokuhyo
+{ 
+    background-color:#000050; 
+	border:1px solid #1D3364;
+    width:19%;
+    height:36px;
+    font-size:medium;
+    font-family:MS Pゴシック;
+    padding-left:20px;
+    text-align:left;
+}
+
+.th_ProcMokuhyo
+{ 
+    background-color:#000050; 
+	border:1px solid #1D3364;
+    width:19%;
+    height:36px;
+    font-size:medium;
+    font-family:MS Pゴシック;
+    padding-left:20px;
+    text-align:left;
+}
+
+.th_IppanMokuhyo
+{ 
+    background-color:#000050; 
+	border:1px solid #1D3364;
+    width:19%;
+    height:36px;
+    font-size:medium;
+    font-family:MS Pゴシック;
+    padding-left:20px;
+    text-align:left;
+}
+
+
+.th_SyakenPrice
+{ 
+    background-color:#000050; 
+	border:1px solid #1D3364;
+    width:15.2%;
+    height:36px;
+    font-size:medium;
+    font-family:MS Pゴシック;
+    padding-left:20px;
+    text-align:left;
+}
+
+.th_12TenPrice
+{ 
+    background-color:#000050; 
+	border:1px solid #1D3364;
+    width:15.2%;
+    height:36px;
+    font-size:medium;
+    font-family:MS Pゴシック;
+    padding-left:20px;
+    text-align:left;
+}
+
+.th_ProcPrice
+{ 
+    background-color:#000050; 
+	border:1px solid #1D3364;
+    width:15.2%;
+    height:36px;
+    font-size:medium;
+    font-family:MS Pゴシック;
+    padding-left:20px;
+    text-align:left;
+}
+
+.th_IppanPrice
+{ 
+    background-color:#000050; 
+	border:1px solid #1D3364;
+    width:15.2%;
+    height:36px;
+    font-size:medium;
+    font-family:MS Pゴシック;
+    padding-left:20px;
+    text-align:left;
+}
+
+.th_HosyoPrice
+{ 
+    background-color:#000050; 
+	border:1px solid #1D3364;
+    width:15.2%;
+    height:36px;
+    font-size:medium;
+    font-family:MS Pゴシック;
+    padding-left:20px;
+    text-align:left;
+}
+
+
+
+/* 表コンテンツ部*/
+.data_TenpoCd
+{ 
+    background-color:#000000; 
+	border:1px solid #1D3364;
+    height:42px;
+    margin-left:10px
+}
+
+.data_Tenpomei
+{ 
+    background-color:#000000; 
+	border:1px solid #1D3364;
+    height:42px;
+    margin-left:10px
+}
+
+.data_SyakenMokuhyo
+{ 
+    background-color:#000000; 
+	border:1px solid #1D3364;
+    height:42px;
+    margin-left:10px
+}
+
+.data_12TenMokuhyo
+{ 
+    background-color:#000000; 
+	border:1px solid #1D3364;
+    height:42px;
+    margin-left:10px
+}
+
+.data_ProcMokuhyo
+{ 
+    background-color:#000000;
+	border:1px solid #1D3364;
+    height:42px;
+    margin-left:10px
+}
+
+.data_IppanMokuhyo
+{ 
+    background-color:#000000; 
+	border:1px solid #1D3364;
+    height:42px;
+    margin-left:10px
+}
+
+
+.data_SyakenPrice
+{ 
+    background-color:#000000; 
+	border:1px solid #1D3364;
+    height:42px;
+    margin-left:10px
+}
+
+.data_12TenPrice
+{ 
+    background-color:#000000; 
+	border:1px solid #1D3364;
+    height:42px;
+    margin-left:10px
+}
+
+.data_ProcPrice
+{ 
+    background-color:#000000; 
+	border:1px solid #1D3364;
+    height:42px;
+    margin-left:10px
+}
+
+.data_IppanPrice
+{ 
+    background-color:#000000; 
+	border:1px solid #1D3364;
+    height:42px;
+    margin-left:10px
+}
+
+.data_HosyoPrice
+{ 
+    background-color:#000000; 
+	border:1px solid #1D3364;
+    height:42px;
+    margin-left:10px
+}
+
+
+
+.tab_window {
+    width:95%;
+    height:95%;
+    position: absolute;
+    top:50px;
+    z-index:50;
+} 
+
+.tab_header {
+    list-style: none;
+    position:relative;
+    z-index:100;
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+    font-size:18px;
+    z-index:90;
+} 
+
+
+
+.tab_header .select{
+    z-index:110;
+    color:#FFFFFF;
+} 
+
+.select {
+    z-index:110;
+} 
+
+.tab_header li {
+    background:#000050; 
+    padding:5px 25px; 
+    float:left; 
+    margin-right:0px;
+	border-top:1px solid #1D3364;
+	border-bottom:1px solid #1D3364;
+	border-right:1px solid #1D3364;
+	border-left:1px solid #1D3364;
+    border-radius: 4px;
+    color:#5C5C63;
+    width:110px;
+    text-align:left;
+} 
+
+#tab_header_target {
+    background:#000050; 
+	border-top:1.5px solid #1D3364;
+	border-bottom:1px solid #1D3364;
+	border-right:0px solid #1D3364;
+	border-left:1px solid #1D3364;
+}
+
+#tab_header_target.select {
+    background:#000050; 
+	border-bottom:3px solid #000050;
+}
+
+
+#tab_header_price.select {
+    background:#000050; 
+	border-bottom:3px solid #000050;
+}
+
+
+.tab_content {
+    position:relative;
+    top:4.89%;
+    z-index:5;
+    width:98%;
+    height:90%;
+    z-index:100;
+}
+
+.tab_content li {
+
+    background:#000050; 
+    padding:20px;
+    list-style: none;
+	border-top:1px solid #1D3364;
+	border-bottom:1px solid #1D3364;
+	border-right:1px solid #1D3364;
+	border-left:1px solid #1D3364;
+    height:90%;
+    border-radius: 10px;
+    position:absolute;
+    width:97%;
+    padding-top:30px;
+} 
+
+.hide {
+    display:none;
+} 
+
+.tab_content_header {
+    background:#000050;
+
+} 
+.tab_content_text {
+    background-color:#000000;
+	border:1px solid #1D3364;
+    color:#FFFFFF;
+    text-align:right;
+    border-radius: 4px;
+    font-size:16pt;
+    margin-left:20px;
+    width:60%;
+    
+} 
+.tab_content_text::-ms-clear  {
+    display: none;
+} 
+
+.tab_content_lbl {
+    text-align:left;
+    margin-left:20px;
+} 

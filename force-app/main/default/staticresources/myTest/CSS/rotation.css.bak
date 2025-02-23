@@ -1,0 +1,2086 @@
+﻿body{
+	background: url(../IMG/bg-main.jpg) no-repeat;
+	width: 100%;
+	overflow:hidden;
+}
+.clearfix:after {
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+.spm_header *{
+    font-family: 'ＭＳ Ｐゴシック';
+}
+
+.spm_header td img, .spm_header td span{
+    font-size: 16pt;
+}
+
+.spm_header td{
+    padding:1px;
+    font-size: 16pt;
+}
+
+.spm_header .spm_head_2{
+    vertical-align: middle;
+}
+
+.spm_header .headerTitle{
+    font-size: 16pt;
+}
+
+.headerStaffName {
+    font-size: 12pt !important;
+}
+    
+.headerUpDateText {
+    font-size:9pt !important;
+}
+
+.headerUpDateDate {
+    font-size:9pt !important;
+}
+
+.listTable{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+}
+
+#header{
+	background: url(../IMG/bg_logo.png) repeat-x;
+}
+#header h1 {
+	height: 28px;
+}
+#wrap{
+	position: relative;
+	width: 100%;
+	height: 1010px;
+	/*background: url(../IMG/bg_square.png) repeat;*/
+}
+
+#wrap h2 {
+	font-size: 30px;
+	padding-top: 36px;
+	margin-left: 6.7%;
+	width:300px;
+}
+#wrap h2 .number,
+#wrap h2 .number span {
+	font-size: 56px;
+}
+#wrap h2 .month {
+	font-size: 40px;
+	left:100px;
+}
+
+.service_info_zoom-1 {
+	position:absolute;
+	top:-36px;
+}
+.service_info_zoom-1-bg {
+	position:absolute;
+	top:68px;
+}
+.service_info_zoom-1-bg .bg {
+	position:absolute;
+	top:91px;
+	height:2px !important;
+}
+.service_info_zoom-1-bg .kekka-01 {
+	height:2px !important;
+	top:170px;
+}
+.uriage-01 {
+	position: relative;
+	width: 592px;
+	height: 535px;
+	/*background: url(../IMG/border-service-zoom-blue.png) no-repeat;*/
+	margin-top: 4px;
+	z-index:100;
+	font-weight:bold;
+}
+.uriage-01 span{
+	font-weight:normal;
+}
+.uriage-01 p {
+	width: 100%;
+	font-size: 18px;
+	text-align: right;
+}
+.uriage-01 span {
+	font-size: 40px;
+}
+.uriage-01 span.senen {
+	font-size: 20px;
+}
+.uriage-01 .uri01 span, .uriage-01 .uri02 span,
+.uriage-01 .uri03 span, .uriage-01 .uri04 span {
+	color: #c00000;
+}
+.uriage-01 .uri05 span {
+	color: #f2cd01;
+}
+.uriage-01 .uri06 span {
+	color: #ddfffd;
+}
+.uriage-01 .uri01 {
+	position: absolute;
+	top: 18px;
+	right: 383px;
+}
+.uriage-01 .uri02 {
+	position: absolute;
+	top: 109px;
+	right: 409px;
+}
+.uriage-01 .uri03 {
+	position: absolute;
+	top: 195px;
+	right: 420px;
+}
+.uriage-01 .uri04 {
+	position: absolute;
+	top: 280px;
+	right: 422px;
+}
+.uriage-01 .uri05 {
+	position: absolute;
+	top: 367px;
+	right: 420px;
+}
+.uriage-01 .uri06 {
+	position: absolute;
+	top: 453px;
+	right: 412px;
+}
+.uriage-01 .bg01 {
+	position: absolute;
+	width: 592px;
+	height: 103px;
+	background: url(../IMG/border-service-zoom-red.png) no-repeat;
+	top: 2px;
+}
+.uriage-01 .bg02 {
+	position: absolute;
+	width: 592px;
+	height: 86px;
+	background: url(../IMG/border-service-zoom-red.png) no-repeat;
+	background-position: 0px -104px;
+	top: 104px;
+}
+.uriage-01 .bg03 {
+	position: absolute;
+	width: 592px;
+	height: 83px;
+	background: url(../IMG/border-service-zoom-red.png) no-repeat;
+	background-position: 0px -190px;
+	top: 191px;
+}
+.uriage-01 .bg04 {
+	position: absolute;
+	width: 592px;
+	height: 85px;
+	background: url(../IMG/border-service-zoom-red.png) no-repeat;
+	background-position: 0px -275px;
+	top: 274px;
+}
+.uriage-01 .bg05 {
+	position: absolute;
+	width: 592px;
+	height: 86px;
+	background: url(../IMG/border-service-zoom-yellow.png) no-repeat;
+	background-position: 0px -360px;
+	top: 359px;
+}
+.uriage-01 .bg06 {
+	position: absolute;
+	width: 592px;
+	height: 92px;
+	background: url(../IMG/border-service-zoom-blue.png) no-repeat;
+	background-position: 0px -445px;
+	top: 446px;
+}
+.kekka-01 .bg01 {
+	position: absolute;
+	width: 367px;
+	height: 199px;
+	background: url(../IMG/border-service-zoom-kekka-blue.png) no-repeat;
+	top: 0px;
+	left: 0px;
+	z-index: 500;
+}
+.kekka-01 .bg02 {
+	position: absolute;
+	width: 367px;
+	height: 199px;
+	background: url(../IMG/border-service-zoom-kekka-blue.png) no-repeat;
+	background-position:0px -199px;
+	top: 199px;
+	left: 0px;
+	z-index: 500;
+}
+
+.kekka-01 {
+	position: absolute;
+	width: 364px;
+	height: 452px;
+/*	background: url(../IMG/border-service-zoom-kekka-blue.png) no-repeat; */
+	top: 275px;
+	left: 226px;
+	z-index: 500;
+}
+.kekka-01 p{
+	font-size: 18px;
+	color: #c4e0f9;
+	text-align: right;
+}
+.kekka-01 span{
+	font-size: 40px;
+	color: #c4e0f9;
+}
+.kekka-01 .kongetsu{
+	position: absolute;
+	top: 15px;
+	right: 192px;
+	width:200px;
+}
+.kekka-01 .kongetsu .kon01{
+	margin-right: -5px;
+}
+.kekka-01 .kongetsu .kon02{
+	padding-right: 10px;
+}
+.kekka-01 .kongetsu .kon03{
+	padding-right: 15px;
+}
+.kekka-01 .raigetsu{
+	position: absolute;
+	top: 207px;
+	right: 184px;
+}
+.kekka-01 .raigetsu .rai01 {
+	padding-right: 30px;
+}
+.kekka-01 .raigetsu .rai02 {
+	padding-right: 20px;
+}
+.kekka-01 .raigetsu .rai03 {
+	padding-right: 13px;
+}
+
+
+.uriage-02 .bg01-up {
+	position: absolute;
+	width: 2px;
+	height: 123px;
+	background: url(../IMG/border-service-zoom-01-00-blue.png) no-repeat;
+	top: 2px;
+	background-position: -566px 0px;
+	left: 566px;
+}
+
+.uriage-02 .bg01 {
+	position: absolute;
+	width: 568px;
+	height: 202px;
+	background: url(../IMG/border-service-zoom-01-00-blue.png) no-repeat;
+	top: 2px;
+}
+.uriage-02 .bg02 {
+	position: absolute;
+	width: 592px;
+	height: 191px;
+	background: url(../IMG/border-service-zoom-01-00-blue.png) no-repeat;
+	background-position: 0px -202px;
+	top: 204px;
+}
+.uriage-02 .bg03 {
+	position: absolute;
+	width: 592px;
+	height: 166px;
+	background: url(../IMG/border-service-zoom-01-00-blue.png) no-repeat;
+	background-position: 0px -392px;
+	top: 395px;
+}
+
+.uriage-02 {
+	position: absolute;
+	width: 569px;
+	height: 700px;
+	/*background: url(../IMG/border-service-zoom-01-00-blue.png) no-repeat;*/
+	top: 265px;
+	left: 0px;
+	z-index: 500;
+}
+.uriage-02 p{
+	font-size: 18px;
+	color: #c4e0f9;
+	text-align: right;
+}
+.uriage-02 span{
+	font-size: 40px;
+}
+.uriage-02 .sengetsu{
+	position: absolute;
+	top: 19px;
+	right: 358px;
+	width:250px;
+}
+.uriage-02 .sengetsu .sen01{
+	margin-right: 0px;
+}
+.uriage-02 .sengetsu .sen02{
+	padding-right: 12px;
+}
+.uriage-02 .sengetsu .sen03{
+	padding-right: 23px;
+}
+.uriage-02 .kongetsu{
+	position: absolute;
+	top: 212px;
+	right: 386px;
+	width:200px;
+}
+.uriage-02 .kongetsu .kon01{
+	padding-right: 9px;
+}
+.uriage-02 .kongetsu .kon02{
+	padding-right: 10px;
+}
+.uriage-02 .kongetsu .kon03{
+	padding-right: 3px;
+}
+.uriage-02 .raigetsu{
+	position: absolute;
+	top: 395px;
+	right: 338px;
+	width:200px;
+}
+.uriage-02 .raigetsu .rai01 {
+	padding-right: 49px;
+}
+.uriage-02 .raigetsu .rai02 {
+	padding-right: 24px;
+}
+.uriage-02 .raigetsu .rai03 {
+	padding-right: 0px;
+}
+
+
+.kekka-02 .bg01-up {
+	position: absolute;
+	width: 2px;
+	height: 119px;
+	background: url(../IMG/border-service-zoom-01-01-blue.png) no-repeat;
+	top: 2px;
+	background-position: -340px 0px;
+	left: 340px;
+}
+.kekka-02 .bg01 {
+	position: absolute;
+	width: 341px;
+	height: 193px;
+	background: url(../IMG/border-service-zoom-01-01-blue.png) no-repeat;
+	top: 2px;
+}
+.kekka-02 .bg02 {
+	position: absolute;
+	width: 300px;
+	height: 181px;
+	background: url(../IMG/border-service-zoom-01-01-blue.png) no-repeat;
+	background-position: 0px -192px;
+	top: 195px;
+}
+.kekka-02 .bg03 {
+	position: absolute;
+	width: 440px;
+	height: 183px;
+	background: url(../IMG/border-service-zoom-01-01-blue.png) no-repeat;
+	background-position: 0px -372px;
+	top: 376px;
+	pointer-events : none;
+}
+.kekka-02 {
+	position: absolute;
+	width: 380px;
+	height: 700px;
+	/*background: url(../IMG/border-service-zoom-01-01-blue.png) no-repeat;*/
+	top: 412px;
+	left: 227px;
+	z-index: 500;
+}
+.kekka-02 p{
+	font-size: 18px;
+	color: #c4e0f9;
+	text-align: right;
+}
+.kekka-02 span{
+	font-size: 40px;
+}
+.kekka-02 .sengetsu{
+	position: absolute;
+	top: 15px;
+	right: 206px;
+	width:200px;
+}
+.kekka-02 .sengetsu .sen01{
+	padding-right: 0px;
+}
+.kekka-02 .sengetsu .sen02{
+	padding-right: 2px;
+}
+.kekka-02 .sengetsu .sen03{
+	padding-right: 0px;
+}
+.kekka-02 .kongetsu{
+	position: absolute;
+	top: 197px;
+	right: 152px;
+	width:200px;
+}
+.kekka-02 .kongetsu .kon01{
+	padding-right: 50px;
+}
+.kekka-02 .kongetsu .kon02{
+	padding-right: 22px;
+}
+.kekka-02 .kongetsu .kon03{
+	padding-right: 0px;
+}
+.kekka-02 .raigetsu{
+	position: absolute;
+	top: 381px;
+	right: 19px;
+	width:250px;
+}
+.kekka-02 .raigetsu .rai01 {
+	padding-right: 113px;
+}
+.kekka-02 .raigetsu .rai02 {
+	padding-right: 50px;
+}
+.kekka-02 .raigetsu .rai03 {
+	padding-right: 0px;
+}
+
+.uriage-03 .bg-under {
+	position: absolute;
+	width: 585px;
+	height: 1px;
+	background: url(../IMG/border-service-zoom-02-00-blue-xline.png) no-repeat;
+	background-position: 0px -549px;
+	top: 551px;
+	left: 0px;
+}
+.uriage-03 .bg01 {
+	position: absolute;
+	width: 592px;
+	height: 189px;
+	background: url(../IMG/border-service-zoom-02-00-blue-yline.png) no-repeat;
+	top: 2px;
+}
+.uriage-03 .bg01-line {
+	position: absolute;
+	width: 592px;
+	height: 189px;
+	background: url(../IMG/border-service-zoom-02-00-blue-xline.png) no-repeat;
+	top: 2px;
+}
+.uriage-03 .bg02 {
+	position: absolute;
+	width: 592px;
+	height: 183px;
+	background: url(../IMG/border-service-zoom-02-00-blue-yline.png) no-repeat;
+	background-position: 0px -189px;
+	top: 191px;
+}
+.uriage-03 .bg02-line {
+	position: absolute;
+	width: 592px;
+	height: 183px;
+	background: url(../IMG/border-service-zoom-02-00-blue-xline.png) no-repeat;
+	background-position: 0px -189px;
+	top: 191px;
+}
+.uriage-03 .bg03 {
+	position: absolute;
+	width: 592px;
+	height: 178px;
+	background: url(../IMG/border-service-zoom-02-00-blue-yline.png) no-repeat;
+	background-position: 0px -371px;
+	top: 375px;
+}
+
+.uriage-03 {
+	position: absolute;
+	width: 562px;
+	height: 700px;
+	/*background: url(../IMG/border-service-zoom-02-00.png) no-repeat;*/
+	top: 262px;
+	left: -10px;
+	z-index: 500;
+}
+.uriage-03 p{
+	font-size: 18px;
+	color: #c4e0f9;
+	text-align: right;
+}
+.uriage-03 span{
+	font-size: 40px;
+}
+.uriage-03 .sengetsu{
+	position: absolute;
+	top: 8px;
+	right: 370px;
+	width:200px;
+}
+.uriage-03 .sengetsu .sen01{
+	padding-right: 0px;
+}
+.uriage-03 .sengetsu .sen02{
+	padding-right: 10px;
+}
+.uriage-03 .sengetsu .sen03{
+	padding-right: 18px;
+}
+.uriage-03 .kongetsu{
+	position: absolute;
+	top: 196px;
+	right: 382px;
+	width:200px;
+}
+.uriage-03 .kongetsu .kon01{
+	padding-right: 12px;
+}
+.uriage-03 .kongetsu .kon02{
+	padding-right: 11px;
+}
+.uriage-03 .kongetsu .kon03{
+	padding-right: 0px;
+}
+.uriage-03 .raigetsu{
+	position: absolute;
+	top: 380px;
+	right: 307px;
+	width:200px;
+}
+.uriage-03 .raigetsu .rai01 {
+	padding-right: 70px;
+}
+.uriage-03 .raigetsu .rai02 {
+	padding-right: 30px;
+}
+.uriage-03 .raigetsu .rai03 {
+	padding-right: 0px;
+}
+
+.kekka-03 .bg-under {
+	position: absolute;
+	width: 309px;
+	height: 1px;
+	background: url(../IMG/border-service-zoom-02-01-blue-xline.png) no-repeat;
+	background-position: 0px -528px;
+	top: 531px;
+	left: 0px;
+}
+.kekka-03 .bg01 {
+	position: absolute;
+	width: 330px;
+	height: 175px;
+	background: url(../IMG/border-service-zoom-02-01-blue-yline.png) no-repeat;
+	top: 2px;
+}
+.kekka-03 .bg01-line {
+	position: absolute;
+	width: 330px;
+	height: 175px;
+	background: url(../IMG/border-service-zoom-02-01-blue-xline.png) no-repeat;
+	top: 2px;
+}
+.kekka-03 .bg02 {
+	position: absolute;
+	width: 300px;
+	height: 183px;
+	background: url(../IMG/border-service-zoom-02-01-blue-yline.png) no-repeat;
+	background-position: 0px -175px;
+	top: 177px;
+}
+.kekka-03 .bg02-line {
+	position: absolute;
+	width: 300px;
+	height: 183px;
+	background: url(../IMG/border-service-zoom-02-01-blue-xline.png) no-repeat;
+	background-position: 0px -175px;
+	top: 177px;
+}
+.kekka-03 .bg03 {
+	position: absolute;
+	width: 300px;
+	height: 178px;
+	background: url(../IMG/border-service-zoom-02-01-blue-yline.png) no-repeat;
+	background-position: 0px -356px;
+	top: 360px;
+}
+
+
+.kekka-03 {
+	position: absolute;
+	width: 339px;
+	height: 700px;
+	/*background: url(../IMG/border-service-zoom-02-01.png) no-repeat;*/
+	top: 144px;
+	left: 261px;
+	z-index: 500;
+}
+.kekka-03 p{
+	font-size: 18px;
+	color: #c4e0f9;
+	text-align: right;
+}
+.kekka-03 span{
+	font-size: 40px;
+}
+.kekka-03 .sengetsu{
+	position: absolute;
+	top: -7px;
+	right: 102px;
+	width:220px;
+}
+.kekka-03 .sengetsu .sen01{
+	padding-right: 0px;
+}
+.kekka-03 .sengetsu .sen02{
+	padding-right: 30px;
+}
+.kekka-03 .sengetsu .sen03{
+	padding-right: 60px;
+}
+.kekka-03 .kongetsu{
+	position: absolute;
+	top: 182px;
+	right: 184px;
+	width:200px;
+}
+.kekka-03 .kongetsu .kon01{
+	padding-right: 3px;
+}
+.kekka-03 .kongetsu .kon02{
+	padding-right: 10px;
+}
+.kekka-03 .kongetsu .kon03{
+	padding-right: 16px;
+}
+.kekka-03 .raigetsu{
+	position: absolute;
+	top: 361px;
+	right: 177px;
+	width:200px;
+}
+.kekka-03 .raigetsu .rai01 {
+	padding-right: 27px;
+}
+.kekka-03 .raigetsu .rai02 {
+	padding-right: 20px;
+}
+.kekka-03 .raigetsu .rai03 {
+	padding-right: 0px;
+}
+
+
+.uriage {
+	position: relative;
+	width: 470px;
+	height: 535px;
+	margin-top: 30px;
+}
+.uriage p {
+	width: 100%;
+	font-size: 18px;
+	text-align: right;
+}
+.uriage span {
+	font-size: 40px;
+}
+.uriage span.senen {
+	font-size: 20px;
+}
+.uriage .uri01 span, .uriage .uri02 span,
+.uriage .uri03 span, .uriage .uri04 span {
+	color: #c00000;
+}
+.uriage .uri05 span {
+	color: #f2cd01;
+}
+.uriage .uri06 span {
+	color: #ddfffd;
+}
+.uriage .bg01 {
+	position: absolute;
+	width: 463px;
+	height: 100px;
+	background: url(../IMG/border-service-red.png) no-repeat;
+	top: 2px;
+}
+.uriage .bg02 {
+	position: absolute;
+	width: 470px;
+	height: 86px;
+	background: url(../IMG/border-service-red.png) no-repeat;
+	background-position: 0px -100px;
+	top: 102px;
+}
+.uriage .bg03 {
+	position: absolute;
+	width: 470px;
+	height: 84px;
+	background: url(../IMG/border-service-red.png) no-repeat;
+	background-position: 0px -186px;
+	top: 189px;
+}
+.uriage .bg04 {
+	position: absolute;
+	width: 470px;
+	height: 83px;
+	background: url(../IMG/border-service-red.png) no-repeat;
+	background-position: 0px -272px;
+	top: 274px;
+}
+.uriage .bg05 {
+	position: absolute;
+	width: 470px;
+	height: 87px;
+	background: url(../IMG/border-service-yellow.png) no-repeat;
+	background-position: 0px -356px;
+	top: 357px;
+}
+.uriage .bg06 {
+	position: absolute;
+	width: 470px;
+	height: 92px;
+	background: url(../IMG/border-service-blue.png) no-repeat;
+	background-position: 0px -442px;
+	top: 444px;
+}
+.uriage span {
+	font-weight:normal;
+}
+.uriage .uri01 {
+	position: absolute;
+	top: 18px;
+	right: 278px;
+	font-weight:bold;
+}
+.uriage .uri02 {
+	position: absolute;
+	top: 107px;
+	right: 285px;
+	font-weight:bold;
+}
+.uriage .uri03 {
+	position: absolute;
+	top: 193px;
+	right: 288px;
+	font-weight:bold;
+}
+.uriage .uri04 {
+	position: absolute;
+	top: 279px;
+	right: 287px;
+	font-weight:bold;
+}
+.uriage .uri05 {
+	position: absolute;
+	top: 365px;
+	right: 277px;
+	font-weight:bold;
+}
+.uriage .uri06 {
+	position: absolute;
+	top: 452px;
+	right: 263px;
+	font-weight:bold;
+}
+
+
+.kekka .bg01 {
+	position: absolute;
+	width: 237px;
+	height: 219px;
+	background: url(../IMG/border-syaken-blue.png) no-repeat;
+	top: 2px;
+}
+.kekka .bg02 {
+	position: absolute;
+	width: 245px;
+	height: 217px;
+	background: url(../IMG/border-syaken-blue.png) no-repeat;
+	top: 221px;
+	background-position: 0px -216px;
+}
+
+.kekka {
+	position: absolute;
+	width: 236px;
+	height: 452px;
+	top: 357px;
+	left: 225px;
+	z-index: 200;
+}
+.kekka p{
+	font-size: 18px;
+	color: #c4e0f9;
+	text-align: right;
+}
+.kekka b{
+	font-size: 18px;
+}
+
+.kekka span{
+	font-size: 40px;
+	color: #c4e0f9;
+}
+.kekka .kongetsu{
+	position: absolute;
+	top: 30px;
+	right: 73px;
+}
+.kekka .kongetsu .kon01{
+	padding-right: 15px;
+}
+.kekka .kongetsu .kon02{
+	padding-right: 10px;
+	width:150px;
+}
+.kekka .kongetsu .kon03{
+	padding-right: 0;
+}
+.kekka .raigetsu{
+	position: absolute;
+	top: 233px;
+	right: 31px;
+}
+.kekka .raigetsu .rai01 {
+	padding-right: 35px;
+}
+.kekka .raigetsu .rai02 {
+	padding-right: 20px;
+}
+.kekka .raigetsu .rai03 {
+	padding-right: 5px;
+}
+.circle {
+	position: absolute;
+	width: 1420px;
+	height: 848px;
+	margin-top: 25px;
+	background: url(../IMG/bg_circle_large2.png) no-repeat;
+	background-size: contain;
+	background-position: 270px 0;
+	top: 10px;
+	left: 500px;
+}
+.circle h3, .circle h4, .circle h4 span {
+	color: #c1ddf5;
+	text-shadow: 0 0 10px #18517f;
+}
+.circle .service_big_zoom {
+	width: 1082px;
+	height: 1000px;
+	background: url(../IMG/bg_service_zoom.png) no-repeat;
+	position: absolute;
+	top: -20px;
+	left: -87px;
+	z-index: 110;
+}
+.circle .service_big_zoom h3 {
+	width: 5em;
+	float: left;
+	margin: 0px 0 5px;
+	padding-left: 70px;
+	font-size: 50px;
+}
+.circle .service_big_zoom h4 {
+	clear: both;
+	width: 110px;
+	margin-left: 155px;
+	float: left;
+	font-size: 30px;
+	font-weight:bold;
+	text-align:right;
+	margin-top:5px;
+}
+.circle .service_big_zoom div.right-cont {
+	width: 425.53px;
+	float: left;
+	background: #000;
+	margin-top: 15px;
+	padding: 5px 15px;
+	box-shadow: 1px 1px 1px #292a30;
+}
+.circle .service_big_zoom div.right-cont p {
+	font-size: 18px;
+}
+.circle .service_big_zoom div.right-cont p.left {
+	width: 60%;
+	float: left;
+}
+.circle .service_big_zoom div.right-cont p.right {
+	width: 40%;
+	float: right;
+}
+.circle .service_big_zoom div p span.blue {
+	background: #43b6ff;
+	border: solid 1px #43b6ff;
+	box-sizing: border-box;
+}
+.circle .service_big_zoom div p span.pink {
+	background: #ff9292;
+	border: solid 1px #ff9292;
+	box-sizing: border-box;
+}
+.circle .service_big div p span.blue-fr {
+	border: solid 1px #43b6ff;
+	box-sizing: border-box;
+}
+.circle .service_big_zoom div p span.pink-fr {
+	border: solid 1px #c00000;
+	box-sizing: border-box;
+}
+.circle .service_big_zoom div p span.blue-fr {
+	border: solid 1px #43b6ff;
+	box-sizing: border-box;
+}
+.circle .service_big_zoom div.uri {
+	width: 560px;
+	margin-top: 5px;
+	margin-left:5px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+.circle .service_big_zoom div.uri .left-goal {
+	width:198px;
+	display:inline-block;
+}
+.circle .service_big_zoom div.uri .left-jisseki {
+	width:170px;
+	display:inline-block;
+}
+
+.circle .service_big_zoom div.syaken {
+	width: 668.41px;
+	margin-top: 0;
+	padding: 0 15px 5px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+.circle .service_big_zoom div.uri em,
+.circle .service_big_zoom div.syaken em {
+	font-size: 30px;
+	font-style: normal;
+}
+.circle .service_big_zoom div.uri em span,
+.circle .service_big_zoom div.syaken em span {
+	font-size: 18px;
+}
+.circle .service_big_zoom div.graph {
+	clear: both;
+	padding-top: 10px;
+	margin-left: 250px;
+	margin-bottom: 0px;
+	position:relative;
+}
+.circle .service_big_zoom div.graph img {
+	vertical-align: top;
+	width:320px;
+	height:80px;
+	display:inline-block;
+}
+.circle .service_big_zoom div.graph .dummy {
+	vertical-align: top;
+	width:320px;
+	height:80px;
+	display:inline-block;
+}
+.circle .service_big_zoom div.graph .chartdiv {
+	position:absolute;
+	width:365px;
+	height:100px;
+	top:-5px;
+	left:-20px;
+}
+.circle .service_big_zoom div.graph .v-line {
+	position:absolute;
+	width:1px;
+	height:90px;
+	top:5px;
+	left:180px;
+	border-left:1px solid #ffffff;
+}
+.circle .service_big_zoom div.graph p {
+	display: inline-block;
+	margin-left: 35px;
+	font-size: 20px;
+	text-align: center;
+	width:220px;
+}
+.circle .service_big_zoom div.graph p em {
+	font-size: 40px;
+	font-style: normal;
+}
+.circle .service_big_zoom div.graph p em span {
+	font-size: 20px;
+}
+.circle .service_big_zoom div.graph p em.white {
+	color: #fff;
+}
+.circle .service_big_zoom div.graph p.syaken {
+	margin-left: 60px;
+}
+.circle .service_big_zoom table {
+	margin-left: 170px;
+}
+.circle .service_big_zoom table th {
+	padding: 0 10px;
+	font-size: 18px;
+	font-weight: normal;
+	vertical-align: middle;
+	color: #ddfffd;
+	text-shadow: 0 0 10px #18517f;
+}
+.circle .service_big_zoom table td {
+	padding: 0 10px;
+	font-size: 15px;
+	vertical-align: middle;
+	color: #ddfffd;
+}
+.circle .service_big_zoom table td.right {
+	text-align: right;
+}
+.circle .service_big_zoom table td.center {
+	text-align: center;
+}
+.circle .service_big_zoom table td.center em {
+	font-size: 30px;
+	font-style: normal;
+	color: #c00000;
+}
+.circle .service_big_zoom table td.center span {
+	font-size: 15px;
+	color: #c00000;
+}
+
+
+.circle .service_big {
+	width: 1082px;
+	height: 819px;
+	background: url(../IMG/bg_service.png) no-repeat;
+	position: absolute;
+	top: -32px;
+	left: -90px;
+	z-index: 100;
+}
+.circle .service_big h3 {
+	width: 5em;
+	float: left;
+	margin: 40px 0 5px;
+	padding-left: 70px;
+	font-size: 50px;
+}
+.circle .service_big h4 {
+	clear: both;
+	width: 2.5em;
+	margin-left: 70px;
+	float: left;
+	font-size: 40px;
+}
+.circle .service_big div.right-cont {
+	width: 425.53px;
+	float: left;
+	background: #000;
+	margin-top: 40px;
+	padding: 5px 15px;
+	box-shadow: 1px 1px 1px #292a30;
+}
+.circle .service_big div.right-cont p {
+	font-size: 18px;
+}
+.circle .service_big div.right-cont p.left {
+	width: 60%;
+	float: left;
+}
+.circle .service_big div.right-cont p.right {
+	width: 40%;
+	float: right;
+}
+.circle .service_big div p span.blue {
+	background: #43b6ff;
+	border: solid 1px #43b6ff;
+	box-sizing: border-box;
+}
+.circle .service_big div p span.pink {
+	background: #ff9292;
+	border: solid 1px #ff9292;
+	box-sizing: border-box;
+}
+.circle .service_big div p span.blue-fr {
+	border: solid 1px #43b6ff;
+	box-sizing: border-box;
+}
+.circle .service_big div p span.pink-fr {
+	border: solid 1px #c00000;
+	box-sizing: border-box;
+}
+.circle .service_big div.uri {
+	width: 787.34px;
+	margin-top: 0;
+	padding: 0 15px 5px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+.circle .service_big div.syaken {
+	width: 668.41px;
+	margin-top: 0;
+	padding: 0 15px 5px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+.circle .service_big div.uri em,
+.circle .service_big div.syaken em {
+	font-size: 48px;
+	font-style: normal;
+}
+.circle .service_big div.uri em span,
+.circle .service_big div.syaken em span {
+	font-size: 18px;
+}
+.circle .service_big div.graph {
+	clear: both;
+	padding-top: 20px;
+	margin-left: 0px;
+	margin-bottom: 20px;
+}
+.circle .service_big div.graph img {
+	vertical-align: top;
+}
+.circle .service_big div.graph p {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 20px;
+	text-align: center;
+}
+.circle .service_big div.graph p em {
+	font-size: 50px;
+	font-style: normal;
+	color: #c00000;
+}
+.circle .service_big div.graph p em span {
+	font-size: 20px;
+}
+.circle .service_big div.graph p em.white {
+	color: #fff;
+}
+.circle .service_big div.graph p.syaken {
+	margin-left: 60px;
+}
+.circle .service_big table {
+	margin-left: 240px;
+}
+.circle .service_big table th {
+	padding: 0 10px;
+	font-size: 18px;
+	font-weight: normal;
+	vertical-align: middle;
+	color: #ddfffd;
+	text-shadow: 0 0 10px #18517f;
+}
+.circle .service_big table td {
+	padding: 0 10px;
+	font-size: 15px;
+	vertical-align: middle;
+	color: #ddfffd;
+}
+.circle .service_big table td.right {
+	text-align: right;
+}
+.circle .service_big table td.center {
+	text-align: center;
+}
+.circle .service_big table td.center em {
+	font-size: 30px;
+	font-style: normal;
+	color: #c00000;
+}
+.circle .service_big table td.center span {
+	font-size: 15px;
+	color: #c00000;
+}
+
+
+.circle .nouki {
+	width: 325px;
+	height: 219px;
+	background: url(../IMG/bg_nouki.png) no-repeat;
+	position: absolute;
+	top: 5px;
+	left: 900px;
+	line-height: 210%;
+	padding-top: 20px;
+}
+.circle .nouki h3 {
+	margin-bottom: 5px;
+	padding-left: 55px;
+	font-size: 24.48px;
+}
+.circle .nouki p {
+	padding-left: 50px;
+	font-size: 13.77px;
+	color: #ddfffd;
+}
+.circle .nouki p.okure {
+	margin-left: 1.2em;
+	font-size: 30.6px;
+}
+.circle .nouki p.okure span {
+	font-size: 13.77px;
+}
+.circle .nouki p em {
+	font-size: 30.6px;
+	font-style: normal;
+	/*color: #c00000;*/
+}
+.circle .nouki p em.tanni {
+	font-size: 15.3px;
+}
+
+.circle .ucar {
+	width: 349px;
+	height: 249px;
+	background: url(../IMG/bg_ucar.png) no-repeat;
+	position: absolute;
+	top: 240px;
+	left: 1040px;
+	line-height: 230%;
+	padding-top: 20px;
+}
+.circle .ucar h3 {
+	margin-bottom: 5px;
+	padding-left: 55px;
+	font-size: 28.8px;
+}
+.circle .ucar p {
+	padding-left: 50px;
+	font-size: 16.2px;
+	color: #ddfffd;
+}
+.circle .ucar p.per {
+	margin-left: 80px;
+}
+.circle .ucar p em {
+	font-size: 36px;
+	font-style: normal;
+}
+.circle .ucar p em.tanni {
+	font-size: 18px;
+}
+.circle .ucar p .yellow {
+	color: #ffd800;
+}
+
+.circle .newcar {
+	width: 373px;
+	height: 261px;
+	background: url(../IMG/bg_newcar.png) no-repeat;
+	position: absolute;
+	top: 512px;
+	left: 960px;
+	line-height: 250%;
+	padding-top: 20px;
+}
+.circle .newcar h3 {
+	margin-bottom: 5px;
+	padding-left: 55px;
+	font-size: 30.4px;
+}
+.circle .newcar p {
+	padding-left: 50px;
+	font-size: 17.1px;
+	color: #ddfffd;
+}
+.circle .newcar p em {
+	font-size: 38px;
+	font-style: normal;
+}
+.circle .newcar p em.tanni {
+	font-size: 19px;
+}
+.circle .newcar p .red {
+	color: #c00000;
+}
+.circle .newcar p.per {
+	margin-left: 70px;
+}
+.circle .newcar div.small-daisu {
+    display: table;
+	padding-left: 50px;
+	font-size: 17.1px;
+	color: #ddfffd;
+}
+.circle .newcar div.small-daisu div.small-jisseki {
+    display: table-cell;
+    white-space:nowrap;
+    width:100px;
+    text-align:right;
+}
+.circle .newcar div.small-daisu div.small-jissekisa {
+    display: table-cell;
+    white-space:nowrap;
+    width:100px;
+    text-align:right;
+}
+.circle .newcar .tanni {
+	font-size: 19px;
+}
+.circle .hoken {
+	width: 381px;
+	height: 284px;
+	background: url(../IMG/bg_hoken.png) no-repeat;
+	position: absolute;
+	top: 690px;
+	left: 670px;
+	line-height: 280%;
+	padding-top: 20px;
+}
+.circle .hoken h3 {
+	margin-bottom: 5px;
+	padding-left: 55px;
+	font-size: 32px;
+}
+.circle .hoken p {
+	padding-left: 50px;
+	font-size: 18px;
+	color: #ddfffd;
+}
+.circle .hoken p em {
+	font-size: 40px;
+	font-style: normal;
+}
+.circle .hoken p em.tanni {
+	font-size: 20px;
+}
+.circle .hoken p .yellow {
+	color: #ffd800;
+}
+.circle .hoken p.per {
+	margin-left: 90px;
+}
+
+
+.circle .service {
+	width: 514px;
+	height: 384px;
+	background: url(../IMG/bg_service_small.png) no-repeat;
+	position: absolute;
+	top: 270px;
+	left: 908px;
+	line-height: 230%;
+	padding-top: 20px;
+}
+.circle .service h3 {
+	margin-bottom: 5px;
+	padding-left: 55px;
+	font-size: 32px;
+}
+.circle .service p {
+	/*padding-left: 90px;*/
+	font-size: 18px;
+	color: #ddfffd;
+	line-height: 1.2;
+}
+.circle .service .service01{
+	padding-left: 370px;
+	font-weight: bold;
+}
+.circle .service .service02,
+.circle .service .service04,
+.circle .service .service06,
+.circle .service .service08,
+.circle .service .service10,
+.circle .service .service12{
+	text-align: center;
+	font-size: 15px;
+}
+.circle .service .service03,
+.circle .service .service05,
+.circle .service .service07,
+.circle .service .service09,
+.circle .service .service11,
+.circle .service .service13{
+	padding-left: 90px;
+}
+.circle .service .service03 .red{
+	font-size: 18px;
+	color:#f00;
+}
+.circle .service .service07 .yellow{
+	font-size: 18px;
+	color:#ffd800;
+}
+
+
+
+.circle .newcar_big {
+	width: 1040px;
+	height: 772px;
+	position: absolute;
+	top: -20px;
+	left: -80px;
+	background: url(../IMG/bg_newcar_big.png) no-repeat;
+}
+.circle .newcar_big h3 {
+	margin: 64px 0 5px;
+	padding-left: 200px;
+	float: left;
+	font-size: 60px;
+}
+.circle .newcar_big .text_graph {
+	position: absolute;
+	left: 410px;
+	top: 36px;
+}
+.circle .newcar_big h4 {
+	width: 2.5em;
+	padding-left: 160px;
+	clear: both;
+	float: left;
+	font-size: 40px;
+	margin-top:20px;
+}
+.circle .newcar_big h4 span {
+	width: 2.5em;
+	clear: both;
+	float: left;
+	font-size: 40px;
+}
+.circle .newcar_big div.right-cont {
+	width: 425.53px;
+	padding: 5px 15px;
+	margin-top: 40px;
+	float: left;
+	background: #000;
+	box-shadow: 1px 1px 1px #292a30;
+}
+.circle .newcar_big div.right-cont_ju,
+.circle .newcar_big div.right-cont_tou {
+	/*width: 425.53px;*/
+	/*padding: 5px 15px;*/
+	/*margin-top: 40px;*/
+	float: left;
+	background: #000;
+	box-shadow: 1px 1px 1px #292a30;
+
+	width: 640px;
+	margin-top: 5px;
+	padding: 0 15px 5px;
+	font-size: 18px;
+	vertical-align: middle;
+	font-style: normal;
+    white-space: nowrap;
+}
+.circle .newcar_big div.right-cont p {
+	font-size: 18px;
+}
+.circle .newcar_big div.right-cont p.left {
+	width: 60%;
+	float: left;
+}
+.circle .newcar_big div.right-cont p.right {
+	width: 40%;
+	float: right;
+}
+.circle .newcar_big div p span.blue {
+	background: #43b6ff;
+	border: solid 1px #43b6ff;
+	box-sizing: border-box;
+}
+.circle .newcar_big div p span.pink {
+	background: #ff9292;
+	border: solid 1px #ff9292;
+	box-sizing: border-box;
+}
+.circle .newcar_big div p span.blue-fr {
+	border: solid 1px #43b6ff;
+	box-sizing: border-box;
+}
+.circle .newcar_big div p span.pink-fr {
+	border: solid 1px #c00000;
+	box-sizing: border-box;
+}
+.circle .newcar_big div.ju {
+	width: 640px;
+	margin-top: 5px;
+	padding: 0 15px 5px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+.circle .newcar_big div.tou {
+	width: 640px;
+	margin-top: 0;
+	padding: 0 15px 5px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+.circle .newcar_big div.ju em,
+.circle .newcar_big div.tou em {
+	font-size: 48px;
+	font-style: normal;
+}
+.circle .newcar_big div.right-cont_ju em,
+.circle .newcar_big div.right-cont_tou em {
+	font-size: 48px;
+	font-style: normal;
+}
+.circle .newcar_big div.ju em span,
+.circle .newcar_big div.tou em span {
+	font-size: 18px;
+}
+.circle .newcar_big div.right-cont_ju em span,
+.circle .newcar_big div.right-cont_tou em span {
+	font-size: 18px;
+}
+.circle .newcar_big div.graph {
+	padding-top: 15px;
+	margin-bottom: 17px;
+	clear: both;
+	text-align: center;
+	padding-bottom:30px;
+}
+.circle .newcar_big div.graph img {
+	vertical-align: top;
+}
+.circle .newcar_big div.graph p {
+	padding-top: 20px;
+	margin-left: -130px;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+}
+.circle .newcar_big div.graph p em {
+	font-size: 50px;
+	font-style: normal;
+	color: #c00000;
+}
+.circle .newcar_big div.graph p em span {
+	font-size: 20px;
+}
+.circle .newcar_big div.graph p em.white {
+	color: #fff;
+}
+.circle .newcar_big div.graph p.syaken {
+	margin-left: -140px;
+}
+.circle .newcar_big table {
+	margin-left: 170px;
+}
+.circle .newcar_big table th {
+	padding: 0 10px;
+	font-size: 18px;
+	font-weight: normal;
+	vertical-align: middle;
+	color: #ddfffd;
+	text-shadow: 0 0 10px #18517f;
+}
+.circle .newcar_big table td {
+	padding: 0 10px;
+	font-size: 15px;
+	vertical-align: middle;
+	color: #ddfffd;
+}
+.circle .newcar_big table td.right {
+	text-align: right;
+}
+.circle .newcar_big table td.center {
+	text-align: center;
+}
+.circle .newcar_big table td.center em {
+	font-size: 30px;
+	font-style: normal;
+	color: #c00000;
+}
+.circle .newcar_big table td.center span {
+	font-size: 15px;
+	color: #c00000;
+}
+
+#chartdiv_1,
+#chartdiv_2 {
+	float:left;
+	margin-left:190px;
+	z-index:300;
+}
+
+#chartdiv_9,
+#chartdiv_10 {
+	float:left;
+	margin-left:190px;
+	z-index:300;
+}
+.amcharts-main-div {
+	z-index:300;
+}
+.graph {
+	position:relative;
+}
+.graph .v-line {
+	position:absolute;
+	height:130px;
+	width:1px;
+	border-left:1px solid #ffffff;
+	left:441px;
+	top:30px;
+	z-index:500;
+}
+.service_big .graph .v-line::before,
+.newcar_big .graph .v-line::before
+ {
+	position:absolute;
+	top:-5px;
+	left:-2.9px;
+	width:6px;
+	height:6px;
+	background-color:#ffffff;
+	border-radius:3px;
+	content:"";
+	z-index:500;
+}
+.service_big .graph .v-line::after,
+.newcar_big .graph .v-line::after
+ {
+	position:absolute;
+	top:125px;
+	left:-2.9px;
+	width:6px;
+	height:6px;
+	background-color:#ffffff;
+	border-radius:3px;
+	content:"";
+	z-index:500;
+}
+.service_big_zoom .graph .v-line::before {
+	position:absolute;
+	top:-5px;
+	left:-3.9px;
+	width:6px;
+	height:6px;
+	background-color:#ffffff;
+	border-radius:3px;
+	content:"";
+	z-index:500;
+}
+.service_big_zoom .graph .v-line::after {
+	position:absolute;
+	top:88px;
+	left:-3.9px;
+	width:6px;
+	height:6px;
+	background-color:#ffffff;
+	border-radius:3px;
+	content:"";
+	z-index:500;
+}
+
+.graph .unit {
+	position:absolute;
+	left:250px;
+	top:18px;
+}
+.graph .plan {
+	position:absolute;
+	left:202px;
+	top:67px;
+	background-color:#000000;
+	width:40px;
+	height:28px;
+	z-index:500;
+	line-height:30px;
+}
+.service_big_zoom .graph .unit {
+	position:absolute;
+	left:30px;
+	top:4px;
+	z-index:500;
+}
+.service_big_zoom .graph .plan {
+	position:absolute;
+	left:-5px;
+	top:24px;
+	background-color:#000000;
+	width:35px;
+	height:30px;
+	z-index:500;
+	line-height:30px;
+	z-index:500;
+}
+.juchu {
+	width: 581px;
+	height: 570px;
+	position: relative;
+	top: 235px;
+	left:-10px;
+	/*z-index:100;*/
+}
+.newcar_info_bg .juchu {
+	/*background: url(../IMG/border-juchu-red.png) no-repeat;*/
+    z-index: 1;
+}
+.newcar_info_bg .touroku {
+	/*background: url(../IMG/border-touroku-blue.png) no-repeat;*/
+}
+.juchu .bg01 {
+	position:absolute;
+	width:580px;
+	height:192px;
+	top:0px;
+	left:0px;
+	display:block;
+	content:"";
+	z-index:1;
+}
+.hot_normal {
+    background: url(../IMG/border-juchu-blue.png) no-repeat;
+}
+.hot_err {
+    background: url(../IMG/border-juchu-red.png) no-repeat;
+}
+.juchu .bg02 {
+	position:absolute;
+	background-position: 0px -192px;
+	width:580px;
+	height:187px;
+	top:192px;
+	left:0px;
+	display:block;
+	content:"";
+	/*z-index:4;*/
+}
+.divHitritu {
+    display:table-row;
+    font-size:18px;
+}
+.divHitrituVal {
+    display: table-cell;
+    text-align: right;
+    width: 57px;
+}
+.warm_normal {
+    background: url(../IMG/border-juchu-blue.png) no-repeat;
+}
+.warm_err {
+    background: url(../IMG/border-juchu-yellow.png) no-repeat;
+}
+.juchu .bg03 {
+	position:absolute;
+	background-position: 0px -382px;
+	width:580px;
+	height:190px;
+	top:378px;
+	left:0px;
+	display:block;
+	content:"";
+	/*z-index:4;*/
+}
+.katudo_normal {
+    background: url(../IMG/border-juchu-blue.png) no-repeat;
+}
+.katudo_err {
+    background: url(../IMG/border-juchu-red.png) no-repeat;
+}
+.divKatudoSintyoku {
+    display:table-row;
+    font-size:18px;
+}
+.divKatudoSintyokuVal {
+    display: table-cell;
+    text-align: right;
+    width: 57px;
+}
+.touroku .bg01 {
+	position:absolute;
+	width:310px;
+	height:100px;
+	top:0px;
+	left:0px;
+	display:block;
+	content:"";
+	/*z-index:5;*/
+}
+.touroku_normal {
+    background: url(../IMG/border-touroku-blue.png) no-repeat;
+}
+.touroku_err {
+    background: url(../IMG/border-touroku-red.png) no-repeat;
+}
+.touroku .bg02 {
+	position: absolute;
+	background: url(../IMG/border-touroku-blue.png) no-repeat;
+	background-position: 0px -100px;
+	width: 350px;
+	height: 140px;
+	top: 100px;
+	left: 0px;
+	display: block;
+	content: "";
+	/*z-index: 4;*/
+}
+.touroku .bg03 {
+	position: absolute;
+	background: url(../IMG/border-touroku-blue.png) no-repeat;
+	background-position: 0px -240px;
+	width: 500px;
+	height: 90px;
+	top: 240px;
+	left: 0px;
+	display: block;
+	content: "";
+	z-index: 4;
+}
+
+
+.juchu .juchu01,
+.juchu .juchu02,
+.juchu .juchu03{
+	line-height: 1.3;
+}
+.juchu .juchu01 {
+	position: absolute;
+	top: 16px;
+	left: 53px;
+	padding-right: 20px;
+    z-index: 2;
+}
+.juchu .juchu02 {
+	position: absolute;
+	top: 203px;
+	left: 24px;
+	padding-right: 20px;
+}
+.juchu .juchu02 .ju04{
+	position: relative;
+	left: 10px;
+}
+.juchu .juchu03 {
+	position: absolute;
+	top: 392px;
+	left: 45px;
+	margin-left: 50px;
+}
+.juchu .juchu03 .ju02,
+.juchu .juchu03 .ju03,
+.juchu .juchu03 .ju04{
+	position: relative;
+}
+.juchu .juchu03 .ju02{
+	left: 14px;
+}
+.juchu .juchu03 .ju03{
+	left: 30px;
+}
+.juchu .juchu03 .ju04{
+	left: 45px;
+}
+.juchu .juchu03 .ju01, .juchu .juchu03 .ju02, .juchu .juchu03 .ju03 {
+    margin-left: -50px;
+}
+
+.juchu p, .juchu p #lblZanKatudoNin {
+	width: 100%;
+	font-size: 18px;
+	text-align: right;
+}
+.juchu .ju01{
+	color: #ddfffd;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+    font-size: 27px;
+}
+.juchu .ju02 .ken,
+.juchu .ju02 .nin{
+	font-size: 18px;
+	color:#f00;
+}
+.juchu .ju02, .juchu .ju02 #lblFusokuHot ,.juchu .ju02 #lblFusokuHotKen{
+	color:#c4e0f9;
+}
+.juchu .ju02, .juchu .ju02 #lblFusokuWarm ,.juchu .ju02 #lblFusokuWarmNin{
+	color:#c4e0f9;
+}
+.juchu .ju02, .juchu .ju02 #lblZanKatudo ,.juchu .ju02 #lblZanKatudoNin{
+	color:#c4e0f9;
+}
+.juchu .juchu02 .ju02,
+.juchu .juchu02 .ju02 .nin{
+	color: #ffd800;
+}
+.juchu .ju03,
+.juchu .ju03 .num,
+.juchu .ju04,
+.juchu .ju04 .num{
+	color: #c4e0f9;
+}
+.juchu .ju03 .num,
+.juchu .ju04 .num{
+	font-size: 30px;
+}
+
+
+.touroku {
+	/*width: 375px;*/
+    width: 320px;
+	height: 336px;
+	position: absolute;
+	top: 469px;
+	left: 259px;
+	z-index: 1;
+}
+.touroku p,
+.touroku .dai{
+	font-size: 20px;
+	color: #c4e0f9;
+}
+
+ .touroku p #lblTorokuOkure, .touroku p #lblTorokuOkureDai{
+	color: #F00;
+}
+.torokuOkureDai {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.touroku .num{
+	font-size: 40px;
+	color: #c4e0f9;
+}
+.touroku .tou01{
+	letter-spacing: 0.1em;
+}
+.touroku .tou01,
+.touroku .dai{
+	font-weight: bold;
+}
+.touroku .touroku01,
+.touroku .touroku02,
+.touroku .touroku03{
+	position: absolute;
+}
+.touroku .touroku01{
+	top: 11px;
+	left: 36px;
+	width:120px;
+}
+.touroku .touroku02{
+	top: 115px;
+	left: 20px;
+	width:220px;
+}
+.touroku .touroku03{
+	top: 249px;
+	left: 160px;
+	width:280px;
+}
+.touroku .touroku01 .tou02,
+.touroku .touroku02 .tou01-2,
+.touroku .touroku02 .tou01-3,
+.touroku .touroku02 .tou02,
+.touroku .touroku03 .tou02{
+	position: relative;
+}
+.touroku .touroku01 .tou02{
+	left: 40px;
+}
+.touroku .touroku02 .tou01-2{
+	left: 30px;
+    top: 5px;
+}
+.touroku .touroku02 .tou01-3{
+	left: 75px;
+}
+.touroku .touroku02 .tou02{
+	left: 130px;
+    top: 15px;
+}
+.touroku .touroku03 .tou02{
+	left: 124px;
+}
+.newcar_info {
+	position:absolute;
+	top:-41px;
+	left:0px;
+}
+.newcar_info_bg {
+	position:absolute;
+	top:-41px;
+	left:0px;
+	width:571px;
+	height:500px;
+}
+.newcar_info_bg .touroku {
+	width:313px;
+}
+.service_info {
+	position:absolute;
+	top:-10px;
+	left:0px;
+	z-index:200;
+}
+.service_info_bg {
+	position:absolute;
+	top:-10px;
+	left:0px;
+	width:480px;
+	height:800px;
+}
+.service_info_bg .uriage .bg {
+	position:absolute;
+	top:111px;
+	left:0px;
+	width:463px;
+	height:3px;
+}
+.service_info_bg .kekka .bg {
+	position:absolute;
+	width:237px;
+	height:2px;
+	z-index:200;
+}
+
+.red {
+	color:#c00000;
+}
+.zoom-button {
+	position: absolute;
+	width: 250px;
+	height: 100px;
+	bottom: 13px;
+	left: 396px;
+}
+.bold {
+	font-weight:bold;
+}
+#footer {
+	background: url(../IMG/bg_footer.png) repeat-x;
+	height: 52px;
+}
+
+.uriage-01 b,
+.uriage-02 b,
+.uriage-03 b,
+.kekka-01 b,
+.kekka-02 b,
+.kekka-03 b {
+	font-weight:bold;
+	font-size:18px;
+}

@@ -1,0 +1,1018 @@
+﻿@charset "UTF-8"; 
+
+body {
+   margin:0px; padding:0px; background-color:black;
+   min-width:1024px;
+   min-height:760px;
+   max-height:99.75%;
+   height:99.73%;
+
+}
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+
+/* tdタグ（ヘッダ項目タイトル）
+・グラデーションあり
+*/
+.tdKoumokuTitle
+{
+    background-position: -webkit-gradient(linear, left top, left bottom, from(#5050FF), to(#507CD1)); 
+    padding: 0px; 
+    margin: 0px; 
+    border-style: solid;
+    border-width: thin;
+    background: -webkit-gradient(linear, left top, left bottom, from(#967652), to(#494529));
+    background: linear-gradient(to bottom,#967652,#494529);
+    text-align: center;
+}
+
+/* 表ヘッダー部*/
+.tdKoumoku1 
+{ 
+    height:30px;
+    width:100%;
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size:16pt;
+    color:white;
+}
+
+/* 表ヘッダー部*/
+.tdKoumoku1_main
+{ 
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: left;
+    font-size:16pt;
+    color:white;
+      background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+
+
+/* 表ヘッダー部*/
+
+
+.tdKoumoku2
+{
+   
+    height:30px;
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    border-width: thin;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#a6bcd4));
+    background: linear-gradient(to bottom,white,#a6bcd4);
+    text-align: center;
+    vertical-align:middle;
+}
+
+.btnKoumoku1
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    height:30px;
+    padding: 0px; 
+    margin: 0px; 
+    font-size:16pt;                 
+    border-style: none;
+    border-width: thin;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#a6bcd4));
+    background: linear-gradient(to bottom,white,#a6bcd4);
+    text-align: center;
+    vertical-align:middle;
+
+     /* 枠の影 */
+    box-shadow:2px 2px 10px #000;
+    -webkit-box-shadow:2px 2px 7px #111;  
+}
+
+.btnKoumoku1_Jyu
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    height:30px;
+    padding: 0px; 
+    margin: 0px; 
+    font-size:17pt;            
+    border-style: none;
+    border-width: thin;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#a6bcd4));
+    background: linear-gradient(to bottom,white,#a6bcd4);
+    text-align: center;
+    vertical-align:middle;
+
+     /* 枠の影 */
+    box-shadow:2px 2px 10px #000;
+    -webkit-box-shadow:2px 2px 7px #111;  
+}
+
+.btnKoumoku2
+{
+    Height:40px;
+    padding: 0px; 
+    margin: 0px; 
+    color:Black;
+    line-height:100%;
+    font-size:13pt;
+    border-style: none;
+    border-width: thin;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#a6bcd4));
+    background: linear-gradient(to bottom,white,#a6bcd4);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btnKoumoku2_today
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    Height:40px;
+    width:200px;
+    padding: 0px; 
+    margin: 0px; 
+    color:Black;
+    line-height:100%;
+    font-size:12pt;
+    border-style: none;
+    border-width: thin;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#a6bcd4));
+    background: linear-gradient(to bottom,white,#a6bcd4);
+    text-align: center;
+    vertical-align: middle;
+
+      /*枠の影*/ 
+    box-shadow:2px 2px 10px #000;
+    -webkit-box-shadow:2px 2px 7px #111;  
+}
+
+.btnKoumoku3
+{
+    height:40px;
+    width:73px;
+    min-width:73px;
+    max-width:73px;
+    padding: 0px; 
+    margin: 0px; 
+    color:Black;
+    font-size:16pt;
+    border-style: none;
+    border-width: thin;
+    background: -webkit-gradient(linear, left top, left bottom, from(orange), to(#FF4F02));
+    background: linear-gradient(to bottom,orange,#FF4F02);
+    text-align: center;
+    vertical-align:middle;
+
+     /* 枠の影 */
+    box-shadow:2px 2px 10px #000;
+    -webkit-box-shadow:2px 2px 7px #111;  
+}
+
+.btnKoumoku4
+{
+    height:40px;
+    width:73px;
+    min-width:73px;
+    max-width:73px;
+    padding: 0px; 
+    margin: 0px; 
+    color:Black;
+    font-size:16pt;
+    border-style: none;
+    border-width: thin;
+    background: -webkit-gradient(linear, left top, left bottom, from(Yellow), to(orange));
+    background: linear-gradient(to bottom,Yellow,orange);
+    text-align: center;
+
+     /* 枠の影 */
+    box-shadow:2px 2px 10px #000;
+    -webkit-box-shadow:2px 2px 7px #111;  
+}
+
+.btnKoumoku5
+{
+    height:40px;
+    width:73px;
+    min-width:73px;
+    max-width:73px;
+    padding: 0px; 
+    margin: 0px; 
+    color:Black;
+    font-size:16pt;
+    border-style: none;
+    border-width: thin;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#55AAFF));
+    background: linear-gradient(to bottom,white,#55AAFF);
+    text-align: center;
+
+     /* 枠の影 */
+    box-shadow:2px 2px 10px #000;
+    -webkit-box-shadow:2px 2px 7px #111;  
+}
+
+
+/* 表データ部 */
+
+.tdKoumokuName
+{
+    width:129px;
+    max-width:129px;
+    min-width:129px;
+    color:white;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    background: -webkit-gradient(linear, left top, left bottom, from(darkblue), to(black));
+    background: linear-gradient(to bottom,darkblue,black);
+    text-align: left;
+    font-size:12pt;
+    text-indent:0.2em;
+}
+
+.divKomokuName 
+{
+}
+
+/* 上段 */
+/* 受注 */
+.tdKoumokuData1
+{
+    height:33px;
+    max-height:33px;
+    min-height:33px;
+
+    width:80px;
+    max-width:80px;
+    min-width:80px;
+
+    color:White;
+    background-color:#003366;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    text-align: center;
+    vertical-align:middle;
+
+    margin:0px;
+    padding:0px;
+    border-collapse:collapse;
+}
+
+/* 上段 */
+/* 受注 */
+.tdKoumokuData1_1
+{
+    height:33px;
+    max-height:33px;
+    min-height:33px;
+
+    width:80px;
+    max-width:80px;
+    min-width:80px;
+
+    color:White;
+    background-color:#003366;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    text-align: center;
+    vertical-align:middle;
+
+    margin:0px;
+    padding:0px;
+    border-collapse:collapse;
+}
+
+/* 上段 */
+/* 受注 */
+.tdKoumokuData1_lbl
+{
+    height:30px;
+    max-height:30px;
+    width:81px;
+    min-height:29px;
+    max-width:81px;
+    min-width:81px;
+
+    border-collapse:collapse;
+    text-align: center;
+    vertical-align:middle;
+}
+
+/* Hot */
+.tdKoumokuData2
+{
+    height:35px;
+    max-height:35px;
+    width:76px;
+    max-width:76px;
+    min-width:76px;
+
+    color:White;
+    background-color:#414c54;
+    border-style: solid,solid,none,none;
+    border-width:1px,0px,0px,0px;
+    border-color:silver;
+    text-align: center;
+
+    padding:0px;
+    margin:0px;
+    border-collapse:collapse;
+
+}
+/* Warm */
+.tdKoumokuData3
+{
+    height:35px;
+    max-height:35px;
+    width:76px;
+    max-width:76px;
+    min-width:76px;
+
+    color:White;
+    background-color:#435646;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    text-align: center;
+
+    padding:0px;
+    margin:0px;
+    border-collapse:collapse;
+}
+/* Cold */
+.tdKoumokuData4
+{
+    height:35px;
+    max-height:35px;
+    width:76px;
+    max-width:76px;
+    min-width:76px;
+    color:White;
+    background-color:#25637b;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    text-align: center;
+
+    padding:0px;
+    margin:0px;
+    border-collapse:collapse;
+}
+/* 本日の・・・ */
+.tdKoumokuData5
+{
+    height:35px;
+    max-height:35px;
+    width:87px;
+    max-width:87px;
+    min-width:87px;
+    color:White;
+    background-color:Black;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    text-align: center;
+
+    padding:0px;
+    margin:0px;
+    border-collapse:collapse;
+}
+
+/* 下段 */
+/* 受注 */
+.tdKoumokuData6
+{
+    height:31px;
+    max-height:31px;
+    width:80px;
+    min-width:80px;
+    max-width:80px;
+    color:White;
+    background-color:#000033;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    text-align: center;
+    vertical-align:bottom;
+
+    padding:0px;
+    margin:0px;
+    border-collapse:collapse;
+}
+
+/* 下段 */
+/* 受注 */
+.tdKoumokuData6_1
+{
+    height:31px;
+    max-height:31px;
+    width:80px;
+    min-width:80px;
+    max-width:80px;
+    color:White;
+    background-color:#000033;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    text-align: center;
+    vertical-align:bottom;
+
+    padding:0px;
+    margin:0px;
+    border-collapse:collapse;
+}
+
+/* Hot */
+.tdKoumokuData7
+{
+    height:31px;
+    max-height:31px;
+    width:76px;
+    min-width:76px;
+    max-width:76px;
+    color:Orange;
+    background-color:#312d32;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    text-align: center;
+
+    padding:0px;
+    margin:0px;
+    border-collapse:collapse;
+    line-height:0px;
+}
+/* Warm */
+.tdKoumokuData8
+{
+    height:31px;
+    max-height:31px;
+    width:76px;
+    min-width:76px;
+    max-width:76px;
+    color:Yellow;
+    background-color:#333724;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    text-align: center;
+
+    padding:0px;
+    margin:0px;
+    border-collapse:collapse;
+    line-height:0px;
+}
+/* Cold */
+.tdKoumokuData9
+{
+    height:31px;
+    max-height:31px;
+    width:76px;
+    min-width:76px;
+    max-width:76px;
+    color:#CC66FF;
+    background-color:#144258;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    text-align: center;
+
+    padding:0px;
+    margin:0px;
+    border-collapse:collapse;
+    line-height:0px;
+}
+/* 本日の・・・ */
+.tdKoumokuData10
+{
+    height:31px;
+    width:80px;
+    max-width:80px;
+    min-width:80px;
+    max-height:31px;
+    min-height:31px;
+    max-width:80px;
+    min-width:80px;
+    color:Red;
+    background-color:Black;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    text-align: center;
+
+    padding:0px;
+    margin:0px;
+    border-collapse:collapse;
+}
+.tdKoumokuData10_SFwin01010
+{
+    height:35px;
+    width:80px;
+    max-height:35px;
+    min-height:35px;
+    max-width:80px;
+    min-width:80px;
+    color:Red;
+    background-color:Black;
+    border-style: solid;
+    border-width:1px;
+    border-color:silver;
+    text-align: center;
+}
+.button_gridview_cell_1 {
+    Border-Style:none; 
+    background-color:rgba(0,0,0,0); 
+    color:white; 
+    height:100%; 
+    width:100%; 
+    font-size:12pt;
+    padding:0;
+}
+.button_gridview_cell_2 {
+    Border-Style:none; 
+    background-color:rgba(0,0,0,0); 
+    color:red; 
+    height:100%; 
+    width:100%; 
+    font-size:17pt;
+    padding:0;
+}
+/* メイン移動ボタン */
+.bMain
+{
+    color:white;
+    border-style: solid;
+    border-width:1px;
+    border-color:black;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(gray));
+    background: linear-gradient(to bottom,white,gray);
+    text-align: left;
+    font-size:16pt;
+    text-indent:0.2em;
+}
+
+.imgArrow 
+{
+    padding:0px;
+    margin:0px;
+    border-collapse:collapse;
+    line-height:0px;
+    outline-width:0px;
+}
+
+.linkMemuListImg
+{
+    position: absolute;
+    top:11px;
+    left:10px;
+}
+.linkMemuList
+{
+    font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size:15px;
+    border-style:none;
+    background-color:transparent;
+    color:#333;
+    height:45px;
+    width:250px;
+}
+
+
+
+
+.btnSinkMdkMark
+{
+    position:absolute;
+    height:25px;
+
+    background-color:red;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F88), to(red));
+    background: linear-gradient(to bottom,#F88,red);
+
+    border:2px solid white;
+    border-radius:50%; 
+    -moz-border-radius:50%; 
+    -webkit-border-radius:50%;
+}
+
+.btnSinkMdkMark3
+{
+    top:115px;
+    left:657px;
+    left:653px;
+
+    width:35px;
+}
+
+.btnSinkMdkMark21
+{
+    top:115px;
+    left:665px;
+    left:662px;
+
+    width:25px;
+}
+
+.btnSinkMdkCnt
+{
+    background-color: transparent;
+    position:absolute;
+    height:25px;
+
+    color:white;
+    border:0px solid;
+
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;                  
+}
+
+.btnSinkMdkCnt3
+{
+    top:115px;
+    left:656px;
+    left:641px;
+
+    width:31px;
+    width:50px;
+}
+.btnSinkMdkCnt21
+{
+    top:115px;
+    left:664px;
+    left:650px;
+
+    width:30px;
+    width:50px;
+}
+
+
+.btnDaitaiMdkMark
+{
+    position:absolute;
+    height:25px;
+
+    background-color:red;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F88), to(red));
+    background: linear-gradient(to bottom,#F88,red);
+    border:2px solid white;
+    border-radius:50%; 
+    -moz-border-radius:50%; 
+    -webkit-border-radius:50%;
+}
+
+.btnDaitaiMdkMark3
+{
+    top:115px;
+    left:889px;
+
+    width:35px;
+}
+
+.btnDaitaiMdkMark21
+{
+    top:115px;
+    left:898px;
+
+    width:25px;
+}
+
+
+
+.btnDaitaiMdkCnt
+{
+    background-color: transparent;
+    position:absolute;
+    height:25px;
+
+    color:white;
+    border:0px solid;
+
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;                  
+}
+
+.btnDaitaiMdkCnt3
+{
+    top:115px;
+    left:888px;
+    left:877px;
+
+    width:31px;
+    width:50px;
+}
+.btnDaitaiMdkCnt21
+{
+    top:115px;
+    left:897px;
+    left:886px;
+
+    width:30px;
+    width:50px;
+}
+
+
+
+.headerBar{
+	background: linear-gradient(to bottom,#f0f1f4,#adb1bd);
+	position:relative;
+
+
+}
+
+
+.listHeader{
+	border-width:1px;
+	border-color:#376092;
+	border-style:solid;
+	text-align:center;
+	font-size:11pt;
+}
+
+.listData{
+	/*background:black;*/
+	border-width:1px;
+	border-color:#376092;
+	border-style:solid;
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+}
+
+.listTable{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+}
+	
+.listPart1{
+	font-size: 18pt;
+	color:white;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+}
+
+.listPart2{
+	font-size: 9pt;
+	color:gray;
+}
+
+.listTani{
+
+	vertical-align:top;
+	width:10px;
+	line-height:10px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.tdCell01{
+	
+	
+	
+	border-color:#376092;
+	border-width:1px;
+	border-style:solid;
+}
+
+.Cell01{
+	
+	border-color:#376092;
+	border-width:1px;
+	border-style:solid;
+    height:39px;
+    width:32.5%;
+}
+
+.Cell02{
+	
+	border-color:#ffc000;
+	border-width:1px;
+	border-style:solid;
+    height:39px;
+    width:32.5%;
+}
+
+
+.trSelectCell{
+    border:solid 1px;
+
+	border-top-color:#ffc000;
+	border-bottom-color:#ffc000;
+	border-left-color:#ffc000;
+	border-right-color:#ffc000;
+	
+	border-top-style:solid;
+	border-top-width:1px;
+	
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	
+	border-left-style:solid;
+	border-left-width:1px;
+	
+	border-right-style:solid;
+	border-right-width:1px;
+}
+
+.tdSelectCell{
+	
+	border-top-color:#ffc000;
+	border-bottom-color:#ffc000;
+	border-left-color:#ffc000;
+	border-right-color:#376092;
+	
+	border-top-style:solid;
+	border-top-width:1px;
+	
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	
+	border-left-style:solid;
+	border-left-width:1px;
+	
+	border-right-style:solid;
+	border-right-width:1px;
+}
+
+.tdSelectCell_top{
+	
+	border-top-color:#376092;
+	border-bottom-color:#ffc000;
+	border-left-color:#376092;
+	border-right-color:#376092;
+	
+	border-top-style:solid;
+	border-top-width:1px;
+	
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	
+	border-left-style:solid;
+	border-left-width:1px;
+	
+	border-right-style:solid;
+	border-right-width:1px;
+}
+
+
+.trSelectCell_top{
+	border:solid 1px;
+
+	border-top-color:#376092;
+	border-bottom-color:#ffc000;
+	border-left-color:#376092;
+	border-right-color:#376092;
+	
+	border-top-style:solid;
+	border-top-width:1px;
+	
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	
+	border-left-style:solid;
+	border-left-width:1px;
+	
+	border-right-style:solid;
+	border-right-width:1px;
+}
+
+.trSelectCell_bottom{
+    border:solid 1px;
+	
+	border-top-color:#ffc000;
+	border-bottom-color:#376092;
+	border-left-color:#376092;
+	border-right-color:#376092;
+	
+	border-top-style:solid;
+	border-top-width:1px;
+	
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	
+	border-left-style:solid;
+	border-left-width:1px;
+	
+	border-right-style:solid;
+	border-right-width:1px;
+}
+
+.trUnSelectCell {
+    border:solid 1px;
+
+    border-top-color:#376092;
+	border-bottom-color:#376092;
+	border-left-color:#376092;
+	border-right-color:#376092;
+	
+	border-top-style:solid;
+	border-top-width:1px;
+	
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	
+	border-left-style:solid;
+	border-left-width:1px;
+	
+	border-right-style:solid;
+	border-right-width:1px;
+}
+
+.border_left {
+    border-left-style:solid;
+	border-left-width:1px;
+    border-left-color:#376092;
+
+}
+
+.border_left_Select {
+    border-left-style:solid;
+	border-left-width:1px;
+    border-left-color:#ffc000;
+}
+
+.chart_font{
+	font-size:10pt;
+}
+
+#legend {
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+ul.pie-legend {
+    list-style: none outside none;
+    float: left;
+    margin: 0 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+}
+ul.pie-legend > li {
+    float: left;
+    margin-right: 5px;
+    padding: 5px;
+    position: relative;
+    left: -50%;
+}
+.auto-style1 {
+	font-family: HGP創英角ｺﾞｼｯｸUB;
+	font-size: 19pt;
+}
+
+.tr_height {
+    height: 39px;
+}
+
+.tr_height2 {
+    height: 40px;
+}
+
+.tr_height_ranking {
+    height: 39px;
+}
+
+.tenpoName {
+    font-size: 11pt;
+
+}
+
+.sortText {
+    font-size: 11pt;
+
+}
+
+.fakeContainer { 
+	margin: 0 0 0;
+	border: 1px;
+	width: 100%; 
+	height: 550px; 
+	overflow: hidden; 
+   
+}
+
+.rankingMark {
+    text-shadow:0px 0px 15px #ffc000;
+    color:#ffc000;
+    font-weight:bold;
+}
+
+.underline{
+    text-decoration:underline;
+}

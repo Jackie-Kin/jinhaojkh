@@ -1,0 +1,211 @@
+.checkTable{
+	
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#555555;
+}
+
+.trimTable{
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+
+}
+
+.cellFont{
+	text-align:right;
+	font-size:11pt;
+	font-family:"ＭＳ Ｐゴシック";
+	text-align:right;
+}
+
+.dataFont_head{
+	text-align:left;
+	padding-left:8px;
+    padding-right:12px;
+	font-size:12.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:#666666;
+
+}
+
+.dataFont{
+	text-align:left;
+	padding-left:12px;
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#666666;
+
+}
+
+.dataFont_Select{
+	font-size:12pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:#376092;
+
+}
+
+.tabledataFont{
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#666666;
+
+}
+
+.tabledataFont2{
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#000000;
+
+}
+
+.tabledataFont3{
+	font-size:14pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#000000;
+
+}
+
+.tabledataFont4{
+	font-size:22pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#000000;
+
+}
+
+.tabledataFont_red{
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	/* color:rgb(219,67,59); */
+	color:#900000;
+
+}
+
+.width_Hinban {width:90px;max-width:140px;min-width:140px;overflow:hidden;}
+.width_Hinmei {width:220px;max-width:220px;min-width:220px;overflow:hidden;}
+.width_Hassei {width:120px;max-width:120px;min-width:120px;overflow:hidden;}
+
+.titleFont{
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:left;
+    font-weight:100;
+}
+
+.color_Red {
+    color:red;
+}
+
+.contentTable{
+	padding:0px;
+	border-collapse:collapse;
+	font-size:15pt;
+	text-align:center;
+	/*border:1px solid rgb(112,112,112);*/
+	
+}
+
+.th_width2 {
+    width:78px;
+}
+
+.tableData{
+	border:1px solid rgb(112,112,112);
+	text-align:center;
+    white-space:nowrap;
+	
+}
+
+.tableData_Header {
+  border: 1px solid rgb(112,112,112);
+  text-align: center;
+}
+
+.tableData_Row {
+  border: 1px solid rgb(112,112,112);
+  text-align: center;
+  padding-left:5px;
+  vertical-align:middle;
+}
+
+.dataRowHeight{
+	height:36px;
+}
+
+.dataRowHeight_Header{
+	height:26px;
+}
+
+.dataRowHeight2{
+	height:49px;
+}
+
+.dataRowHeight3{
+	height:38px;
+}
+
+.dataColumnWidth{
+	width:104px;
+}
+
+.dataColumnWidth2{
+	width:137px;
+}
+
+.dataColumnWidth3{
+	width:104px;
+}
+
+.th_color {
+    background-color:rgb(198,217,241);
+}
+
+.totalRowHeight{
+	height:65px;
+	border-top:3px solid rgb(112,112,112);
+}
+
+/* "計画日（日付）"の背景色 */
+.backColor_Cream{
+	background-color:rgb(255,255,204);
+	box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.4) inset;
+}
+
+.backColor_Wine{
+	background-color:rgb(192,0,0);
+	box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.4) inset;
+}
+
+/* 追工名称の文字を改行しないようにする*/
+.tuikoMei{
+	white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.imgStall {
+
+position:absolute;
+top:3px;
+left:28px;
+}
+
+.cellStall {
+/*position:absolute;
+top:14px;
+left:48px;*/
+text-align:center;
+
+}
+
+section{
+    width: 100%;
+}

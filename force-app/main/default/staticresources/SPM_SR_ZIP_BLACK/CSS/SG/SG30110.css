@@ -1,0 +1,835 @@
+﻿
+body {
+   margin:0px; padding:0px; background-color:black;
+   min-width:1024px;
+   min-height:760px;
+   max-height:99.75%;
+   height:99.73%;
+
+}
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+.fakeContainer { 
+	margin: 0 0 0;
+	border: 1px;
+	width: 100%; 
+	height: 95%; 
+	overflow: hidden; 
+   
+}
+
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.sortText {
+
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 32%;
+    top:10px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.jokenText {
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 50%;
+    top:25px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.kensuText {
+    font-size: 13pt !important;
+}
+
+.kenText {
+    font-size: 11pt;
+    vertical-align: top;
+}
+
+
+.headerBar{
+	background: linear-gradient(to bottom,#f0f1f4,#adb1bd);
+	position:relative;
+
+
+}
+
+
+.listHeader{
+		border-width:2px;
+		border-style:solid;
+		border-color:#376092;
+		border-style:solid;
+		text-align:center;
+		font-size:10pt;
+}
+
+
+	.listTable{
+		padding:0px;
+		border-collapse:collapse;
+		margin:0px;
+
+	}
+
+	.listTable_sub{
+		padding:0px;
+		border-collapse:collapse;
+		margin:0px;
+		border-style:none;
+		width:100%;
+		height:100%;
+       
+
+	}
+
+    .listTable_sub_{
+		padding:0px;
+		border-collapse:collapse;
+		margin:0px;
+		border-style:none;
+		width:100%;
+		height:100%;
+       
+
+	}
+
+    .listTable_sub_RED{
+		padding:0px;
+		border-collapse:collapse;
+		margin:0px;
+		border-style:none;
+		width:100%;
+		height:100%;
+        background-color:#430707;
+
+	}
+
+     .listTable_sub_RED_select{
+		padding:0px;
+		border-collapse:collapse;
+		margin:0px;
+		border-style:none;
+		width:100%;
+		height:100%;
+        background: linear-gradient(to bottom,rgba(35,60,83,1),#430707,rgba(35,60,83,1));
+	}
+
+    .listTable_sub2{
+        /* 2015/09/03 del start */
+		/*height:65px;*/
+        /* 2015/09/03 del end */
+        /* 2015/09/03 add start */
+		height:96px;
+        /* 2015/09/03 add end */
+	}
+
+
+
+	.td_Staff{
+        /*2017/07/05 mod start*/
+        /*width:5.37%;
+		min-width:5.37%;
+		max-width:5.37%;*/
+
+        width:4.87%;
+		min-width:4.87%;
+		max-width:4.87%;
+        /*2017/07/05 mod end*/
+		border: 1px solid #376092;
+        text-decoration:underline;
+	}
+
+	.data_Staff{
+        /*2017/07/05 mod start*/
+        /*width:5.37%;
+		min-width:5.37%;
+		max-width:5.37%;*/
+
+        width:4.87%;
+		min-width:4.87%;
+		max-width:4.87%;
+        /*2017/07/05 mod end*/
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:14px;
+        border: 1px solid #376092;
+	}
+
+	.data_CyumonNo{
+		
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:12pt;
+        border: 1px solid #376092;
+	}
+
+    .data_CyumonNo1{
+		
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+        /*2015/08/28 del start 注文番号を灰文字に変更*/
+		/*color:gray;*/
+        /*2015/08/28 del end 注文番号を灰文字に変更*/
+		font-size:12pt;
+    
+	}
+
+	.td_Okyaku{
+		width:11.23%;
+		min-width:11.23%;
+		max-width:11.23%;
+		border: 1px solid #376092;
+        text-decoration:underline;
+	}
+
+.data_Okyaku {
+    width:11.23%;
+	min-width:11.23%;
+	max-width:11.23%;
+    border: 1px solid #376092;
+}
+
+	.td_SyasyuZaiko{
+		width:7.81%;
+		max-width:7.81%;
+		min-width:80px;
+		border: 1px solid #376092;
+        text-decoration:underline;
+	}
+
+	.data_Zaiko{
+
+        width:7.81%;
+		max-width:7.81%;
+		min-width:80px;
+		font-family:'ＭＳ Ｐゴシック';
+		font-size:10pt;
+        border: 1px solid #376092;
+       
+	}
+
+    .data_Zaiko1{
+
+        width:7.81%;
+		max-width:7.81%;
+		min-width:80px;
+		font-family:'ＭＳ Ｐゴシック';
+		font-size:10pt;
+       
+	}
+
+	.td_Jyutuubi{
+		width:5.94%;
+		max-width:5.94%;
+		border: 1px solid #376092;
+        text-decoration:underline;
+	}
+
+	.data_Jyutuubi{
+        /*2017/07/05 mod start*/
+        /*width:5.94%;
+		max-width:5.94%;*/
+
+        width:3.94%;
+		max-width:3.94%;
+        /*2017/07/05 mod end*/
+
+		font-size:17px;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		border: 1px solid #376092;
+        color:gray;
+	}
+
+	.td_Keikaku{
+		width:5.27%;
+		border: 1px solid #376092;
+        position:relative;
+	}
+
+	.data_Keikaku{
+        /*2017/07/05 mod start*/
+        /*width:5.25%;*/
+
+        width:3.25%;
+        /*2017/07/05 mod end*/
+		border-style:solid;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		border: 1px solid #376092;
+
+	}
+
+	.data_Keikaku_nomal{
+        width:5.25%;
+		font-size:16px;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+        border: 1px solid #376092;
+
+	}
+
+	.data_Keikaku_gray{
+        width:5.25%;
+		font-size:16px;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		color:gray;
+        border: 1px solid #376092;
+	}
+
+	.data_keikaku_red{
+        width:5.25%;
+		/*font-size:16px;*/
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+        /* 2018/03/28 mod start 運用課題No.650 色変更 */
+		/*color:#900000;*/
+		color:#EE0000;
+        /* 2018/03/28 mod end 運用課題No.650 色変更 */
+		/*background:#900000;*/
+        /*border:2px solid #900000;*/
+         border: 1px solid #376092;
+        background-image:url(../../IMG/flag_orange.png);
+        background-repeat:no-repeat;
+        background-position:20% 15%;
+        /* 2015/09/03 add start */
+        background-size: 20% 30%;
+        /* 2015/09/03 add end */
+	}
+
+    .data_keikaku_red_Text{
+        width:5.25%;
+		/*font-size:16px;*/
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+        /* 2018/03/28 mod start 運用課題No.650 色変更 */
+		/*color:#900000;*/
+		color:#EE0000;
+        /* 2018/03/28 mod end 運用課題No.650 色変更 */
+		/*background:#900000;*/
+        /*border:2px solid #900000;*/
+         border: 1px solid #376092;
+	}
+
+	.td_Status{
+        /*2017/07/05 mod start*/
+        /*width:6.76%;*/
+        
+        width:4.76%;
+       max-width:4.76%;
+        max-width:4.76%;
+        /*2017/07/05 mod end*/
+		border: 1px solid #376092;
+	}
+
+	.td_Staturs{
+        width:6.76%;
+		border: 1px solid #376092;
+        text-decoration:underline;
+	}
+
+    .data_Staturs {
+        /*2017/07/05 mod start*/
+        /*width:6.76%;*/
+        
+        width:4.76%;
+       max-width:4.76%;
+        max-width:4.76%;
+        /*2017/07/05 mod end*/
+        
+        border: 1px solid #376092;
+    }
+
+    .data_Staturs_red {
+        width:6.76%;
+        border: 1px solid #376092;
+        /*background-color:#900000;*/
+        /*border:2px solid #900000;*/
+
+        background-image:url(../../IMG/flag_orange.png);
+        background-repeat:no-repeat;
+        background-position:20% 15%;
+        /* 2015/09/03 add start */
+        background-size: 15% 30%;
+        /* 2015/09/03 add end */
+    }
+
+    .data_Staturs_red_select {
+        width:6.76%;
+        /*border: 1px solid #376092;
+        background: linear-gradient(to bottom,rgba(35,60,83,1),#900000,rgba(35,60,83,1));*/
+        /*border:2px solid #7f1d32;*/
+
+        background-image:url(../../IMG/flag_orange.png);
+        background-repeat:no-repeat;
+        background-position:20% 15%;
+        /* 2015/09/03 add start */
+        background-size: 15% 30%;
+        /* 2015/09/03 add end */
+    }
+
+
+.data_Kaisuu {
+
+     border: 1px solid #376092;
+     text-decoration:underline;
+}
+
+	.td_Nosya{
+		width:4.76%;
+		border: 1px solid #376092;
+	}
+    
+	.td_Nousya{
+		width:4.76%;
+		border: 1px solid #376092;
+        text-decoration:underline;
+	}
+
+    /*2017/07/05 mod start*/
+    /*width:5.76%;*/
+	.td_Nousya2{
+		width:9.26%;
+		border: 1px solid #376092;
+        text-decoration:underline;
+	}
+    /*2017/07/05 mod start*/
+    /*width:5.76%;*/
+
+	.data_Nousya_nomal{
+        /*2017/07/05 mod start*/
+        /*width:5.76%;*/
+
+        width:4.76%;
+        /*2017/07/05 mod end*/
+		font-size:17px;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+       border: 1px solid #376092;
+	}
+
+    /*2017/07/05 mod start*/
+	.data_Nousya_nomal2{
+         width:9.26%;
+         min-width:9.26%;
+         max-width:9.26%;
+		font-size:17px;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+       border: 1px solid #376092;
+	}
+    /*2017/07/05 mod end*/
+
+	.data_Nousya_gray{
+         width:5.76%;
+		font-size:17px;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		color:gray;
+        border: 1px solid #376092;
+	}
+
+	.data_Nousya{
+         width:5.76%;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		border-width:2px;
+		border-style:solid;
+		border: 1px solid #376092;
+        position:relative;
+	}
+
+    .data_Nousya_red{
+         width:5.76%;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		border-width:2px;
+		border-style:solid;
+		border: 1px solid #376092;
+        /*background:#900000;*/
+        /*border:2px solid #900000;*/
+
+        background-image:url(../../IMG/flag_orange.png);
+        background-repeat:no-repeat;
+        background-position:20% 15%;
+        /* 2015/09/03 add start */
+        background-size: 20% 30%;
+        /* 2015/09/03 add end */
+	}
+
+	.td_line{
+		border: 1px solid #376092;
+	}
+
+	.td_LTkj{
+		width:6.36%;
+		border: 1px solid #376092;
+	}
+
+	.td_LT{
+        /* 2017/07/05 add start */
+        /*width:8.86%;*/
+		width:7.36%;
+        /* 2017/07/05 add end */
+		border: 1px solid #376092;
+        text-decoration:underline;
+	}
+
+	.td_LT_data{
+		text-align:right;
+		
+       
+	}
+
+	.data_LT_nomal{
+        /*2017/07/05 mod start*/
+        /*width:8.86%;*/
+
+        width:7.36%;
+        max-width:7.36%;
+        min-width:7.36%;
+        /*2017/07/05 mod end*/
+        
+		border-width:1px;
+		border-style:solid;
+		border: 1px solid #376092;
+
+	}
+
+	.data_LT_gray{
+        width:8.86%;    
+		color:gray;
+		border-width:1px;
+		border-style:solid;
+		border: 1px solid #376092;
+
+	}
+	.tdKoumoku1 
+	{ 
+	    height:30px;
+	    width:100%;
+	    padding: 0px; 
+	    margin: 0px; 
+	    border-style: none;
+	    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+	    background: linear-gradient(to bottom,black,darkblue);
+	    text-align: left;
+	    font-size:16pt;
+	    color:white;
+	}
+
+	.listPart1{
+		font-size: 16pt;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+        text-align:right;
+	}
+
+	.listPart2{
+		font-size: 8pt;
+		color:gray;
+	}
+
+
+	.listData{
+
+		background:#000000;
+		border-color:#376092;
+		border-style:solid;
+		border-width:1px;
+		padding:0px;
+		font-size:18px;
+		text-align:center;
+	}
+
+	/*.listTani{
+		text-align:right;
+		vertical-align:top;
+		width:25%;
+		line-height:0px;
+		font-family:'ＭＳ Ｐゴシック';
+		border-style:none;
+		padding-right:4px;
+		padding-top:3px;
+	}*/
+
+    .listTani{
+	text-align:right;
+	vertical-align:top;
+	width:40%;
+	line-height:0px;
+	font-family:'ＭＳ Ｐゴシック';
+	border-style:none;
+	padding-right:4px;
+	padding-top:8px;
+	font-size: 9pt;
+	color:gray;
+    height:60px;
+}
+
+	.listTani_kaisu{
+		text-align:right;
+		vertical-align:top;
+		width:25%;
+		line-height:200%;
+		font-family:'ＭＳ Ｐゴシック';
+		border-style:none;
+		padding-right:4px;
+	}
+
+	.dataSubTable_0{
+
+        /* 2015/09/03 del start */
+		/*min-height:43px;
+		height:67.33%;
+		max-height:67.33%;
+		border-bottom-style:dashed;
+		border-bottom-width:1px;
+		border-bottom-color:#376092;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:11pt;
+        text-align:center;*/
+        /* 2015/09/03 del end */
+        /* 2015/09/03 add start */
+		height:33.33%;
+		min-height:60px;
+		max-height:33.33%;
+		border-bottom-style:dashed;
+		border-bottom-width:1px;
+		border-bottom-color:#376092;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:11pt;
+        text-align:center;
+        /* 2015/09/03 add end */
+	}
+
+	.dataSubTable_1{
+
+		height:50.00%;
+        min-height:50.00%;
+        max-height:50.00%;
+		border-bottom-style:dashed;
+		border-bottom-width:1px;
+		border-bottom-color:#376092;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:11pt;
+        text-align:center;
+	}
+
+
+
+	.dataSubTable_0_1{
+
+        /* 2015/09/03 del start */
+		/*height:32.33%;
+		max-height:32.33%;
+		min-height:22px;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+         text-align:center;*/
+        /* 2015/09/03 del end */
+        /* 2015/09/03 add start */
+		height:33.33%;
+		min-height:30px;
+		max-height:33.33%;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+        text-align:center;
+        /* 2015/09/03 add end */
+	}
+
+    /* 2015/09/03 add start */
+    .dataSubTable_1_0{
+
+		height:50.00%;
+        min-height:50.00%;
+        max-height:50.00%;
+		border-bottom-style:dashed;
+		border-bottom-width:1px;
+		border-bottom-color:#376092;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:13pt;
+        text-align:center;
+	}
+    /* 2015/09/03 add end */
+
+	.dataSubTable_1_1{
+
+		height:50.00%;
+        min-height:50.00%;
+        max-height:50.00%;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+         text-align:center;
+		font-size:17px;
+
+	}
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.listData_Select{
+
+	background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1)) !important;
+	border-color:#376092 !important;
+	border:#376092 solid 1px !important;
+	
+}
+
+ .data_Staturs_Gray_select {
+        width:6.76%;
+        background: linear-gradient(to bottom,rgba(35,60,83,1),#a6a6a6,rgba(35,60,83,1)) !important;
+        border: 1px solid #376092;
+    }
+
+
+.data_keikaku_red_select{
+        width:5.25%;
+		/*font-size:16px;*/
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		color:white;
+
+        background-image:url(../../IMG/flag_orange.png);
+        background-repeat:no-repeat;
+        background-position:20% 15%;
+        /* 2015/09/03 add start */
+        background-size: 20% 30%;
+        /* 2015/09/03 add end */
+		
+        /*background: linear-gradient(to bottom,rgba(35,60,83,1),#900000,rgba(35,60,83,1)) !important;*/
+        /*border:2px solid #7f1d32;*/
+}
+
+.listData{
+
+	background:#000000;
+	border:#376092 solid 1px;
+	
+}
+
+.fontColor_nomal {
+    color:white;
+}
+
+.fontColor_gray {
+    color:gray;
+}
+
+/* 2015/08/28 add start 遅れの場合、赤文字にする*/
+.fontColor_red {
+    /* 2018/03/28 mod start 運用課題No.650 色変更 */
+	/*color:#900000;*/
+	color:#EE0000;
+    /* 2018/03/28 mod end 運用課題No.650 色変更 */
+}
+/* 2015/08/28 add end 遅れの場合、赤文字にする*/
+
+.okure_bgRed_top {
+
+    color:white;
+    /*background-color:#900000;*/
+    /*border:2px solid #900000;*/
+}
+
+.okure_bgRed_bottom {
+
+    color:white;
+    /*background-color:#900000;*/
+    /*border:2px solid #900000;*/
+    background-image:url(../../IMG/flag_orange.png);
+    background-repeat:no-repeat;
+    /* 2015/09/03 del start */
+    /*background-position:10% 15%;*/
+    /* 2015/09/03 del end */
+    /* 2015/09/03 add start */
+    background-position:10% 30%;
+    background-size: 15% 60%;
+    /* 2015/09/03 add end */
+}
+
+.okure_bgRed_select_top {
+
+    color:white;
+    /*background: linear-gradient(to bottom,rgba(35,60,83,1),#900000) !important;*/
+    /*border:2px solid #7f1d32;*/
+}
+
+.okure_bgRed_select_bottom {
+
+    color:white;
+    /*background: linear-gradient(to bottom,#900000,rgba(35,60,83,1)) !important;*/
+    /*border:2px solid #7f1d32;*/
+    background-image:url(../../IMG/flag_orange.png);
+    background-repeat:no-repeat;
+    /* 2015/09/03 del start */
+    /*background-position:10% 15%;*/
+    /* 2015/09/03 del end */
+    /* 2015/09/03 add start */
+    background-position:10% 30%;
+    background-size: 15% 60%;
+    /* 2015/09/03 add end */
+}
+
+
+.okure_TextRed {
+    
+    /* 2018/03/28 mod start 運用課題No.650 色変更 */
+	/*color:#900000;*/
+	color:#EE0000;
+    /* 2018/03/28 mod end 運用課題No.650 色変更 */
+}
+
+.span_furiatebi {
+    font-size: 10px;
+}
+
+ /* 明細3行の列 変更対応 */
+	.dataSubTable_3{
+		height:33.33%;
+        min-height:33.33%;
+        max-height:33.33%;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		
+        text-align:left;
+	}
+
+	.dataSubTable_3_1{
+        min-height:22px;
+        text-align:center;
+	}
+
+	.dataSubTable_3_2{
+        text-align:right;
+	}
+
+    .span_Syorui3{
+        font-size:16px
+
+	}
+
+.underline {
+    text-decoration:underline;
+}

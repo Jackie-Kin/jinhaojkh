@@ -1,0 +1,343 @@
+﻿body {
+    background-color:white !important;
+}
+
+.title{
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    font-size:11pt;
+    box-shadow: 4px 4px 0px 0px rgb(210,210,210);
+    background-color:black;
+}
+
+.td_Cell {
+
+border-color:#2f528d;
+border-width:2px;
+border-style:solid;
+}
+
+.th_Header {
+
+border-top:2px solid #2f528d;
+border-left:2px solid #2f528d;
+border-right:2px solid #2f528d;
+}
+
+.tbl_okyaku {
+
+width:100%;
+height:80px;
+min-height:80px;
+max-height:80px;
+padding:5px;
+border-collapse:collapse;
+border:solid 1px black;
+}
+
+.td_okyaku {
+
+    font-size:12pt;
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+    color:black;
+    height:35px;
+    width:50%;
+    text-align:left;
+    vertical-align:middle;
+    padding-left:10px;
+    padding-top:4px;
+}
+
+.td_date {
+
+    font-size:9pt;
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+    color:#7f7978;
+    width:50%;
+    text-align:right;
+    vertical-align:middle;
+    padding-right:10px;
+    padding-top:4px;
+}
+
+.td_staff {
+
+    font-size:8pt;
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+    color:#7f7978;  
+    height:35px;
+    width:50%;
+    text-align:left;
+    vertical-align:middle;
+    padding-left:10px;
+    padding-bottom:4px;
+}
+
+.td_memo {
+
+    font-size:8pt;
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+    color:#7f7978;  
+    width:50%;
+    text-align:left;
+    vertical-align:middle;
+    padding-left:10px;
+    padding-bottom:4px;
+}
+
+
+
+
+
+.snsDay{
+	border-radius:30px;
+	height:23px;
+	width:130px;
+	/* background-color:rgb(185,205,229); */
+	color:#666666;
+	font-weight:bold;
+	border:1px solid gray;
+	font-family:'ＭＳ Ｐゴシック';
+	
+}
+
+.snsSpeakerFont{
+	font-family:'ＭＳ Ｐゴシック';
+	font-size:9.5pt;
+}
+
+.snsTime_Tencho{
+	vertical-align:bottom;
+	text-align:left;
+	color:#666666;
+	font-family:"ＭＳ Ｐゴシック";
+	font-weight:bold;
+	padding-left:20px;
+}
+
+.snsComment_Staff{
+	align:right;
+}
+
+.snsTime_Staff{
+	vertical-align:bottom;
+	text-align:right;
+	color:#666666;
+	font-family:"ＭＳ Ｐゴシック";
+	font-weight:bold;
+	padding-right:20px;
+}
+
+.snsFont{
+    font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#00F;
+	margin-left:35px;
+}
+
+.snsComment{
+	width:540px;
+	text-align:left;
+	border-radius:8px;
+	border-color:rgb(156,156,156);
+	background-color:rgb(255,255,204);
+	box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.4) inset;
+	
+}
+
+
+<!-- SNSの吹き出しを作るためのクラス -->
+.wrapper {
+	padding-top:40px;
+	position: relative;
+} 
+
+.box_Tencho {
+	padding:12px 20px 12px 20px;
+    position: relative;
+    /* background: rgb(242,242,242); */
+    margin-top: 13px;
+    margin-left:20px;
+    border: 1px solid #444;
+    border-radius:5px;
+    font-size:11.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#666666;
+    max-width:300px;
+    word-wrap: break-word;
+    word-break:break-all;
+    text-align:left;
+}
+
+.box_Tencho:after {
+    content: '';
+    position: absolute;
+    border-bottom: 10px solid rgb(255,255,255);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    top: -9px;
+    left: 5px;
+}
+
+.box_Tencho:before {
+    content: '';
+    position: absolute;
+    border-bottom: 10px solid #444;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    top: -11px;
+    left: 5px;
+}
+
+.box_Tencho_Midoku {
+	padding:12px 20px 12px 20px;
+    position: relative;
+    /* background: rgb(242,242,242); */
+    margin-top: 13px;
+    margin-left:20px;
+    border: 1px solid #444;
+    border-radius:5px;
+    font-size:11.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#666666;
+    max-width:300px;
+    word-wrap: break-word;
+    word-break:break-all;
+    text-align:left;
+}
+
+.box_Tencho_Midoku:after {
+    content: '';
+    position: absolute;
+    border-bottom: 10px solid #D3EDFB;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    top: -9px;
+    left: 5px;
+}
+
+.box_Tencho_Midoku:before {
+    content: '';
+    position: absolute;
+    border-bottom: 10px solid #444;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    top: -11px;
+    left: 5px;
+}
+
+
+.box_Staff {
+	padding:12px 20px 12px 20px;
+    position: relative;
+    /* background: rgb(242,242,242); */
+    margin-top: 13px;
+    margin-right:20px;
+    border: 1px solid #444;
+    border-radius:5px;
+    font-size:11.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#666666;
+    max-width:300px;
+    word-wrap: break-word;
+    word-break:break-all;
+    text-align:left;
+}
+
+.box_Staff:after {
+    content: '';
+    position: absolute;
+    border-bottom: 10px solid rgb(255,255,255);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    top: -9px;
+    right: 5px;
+}
+
+.box_Staff:before {
+    content: '';
+    position: absolute;
+    border-bottom: 10px solid #444;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    top: -11px;
+    right: 5px;
+}
+
+.box_Staff_Midoku {
+	padding:12px 20px 12px 20px;
+    position: relative;
+    /* background: rgb(242,242,242); */
+    margin-top: 13px;
+    margin-right:20px;
+    border: 1px solid #444;
+    border-radius:5px;
+    font-size:11.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#666666;
+    max-width:300px;
+    word-wrap: break-word;
+    word-break:break-all;
+    text-align:left;
+}
+
+.box_Staff_Midoku:after {
+    content: '';
+    position: absolute;
+    border-bottom: 10px solid #D3EDFB;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    top: -9px;
+    right: 5px;
+}
+
+.box_Staff_Midoku:before {
+    content: '';
+    position: absolute;
+    border-bottom: 10px solid #444;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    top: -11px;
+    right: 5px;
+}
+
+.midokuText {
+    background-color:#D3EDFB;
+
+}
+
+.tbl_okyaku_Select{
+	border:#8ae16e solid 5px;
+    height:70px;
+    min-height:70px;
+    max-height:70px;
+    padding:0px;
+}
+
+.td_okyaku_Select {
+    height:35px;
+    padding-left:6px;
+    padding-top:0px;
+}
+
+.td_date_Select {
+    padding-right:6px;
+    padding-top:0px;
+}
+
+.td_staff_Select {
+    height:35px;
+    padding-left:6px;
+    padding-bottom:0px;
+}
+
+.td_memo_Select {
+    padding-bottom:0px;
+}

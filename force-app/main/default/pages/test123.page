@@ -1,0 +1,1130 @@
+<apex:page applyBodyTag="false" applyHtmlTag="false" showHeader="false" sidebar="false" >
+
+
+<html><head><script src="/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript?rel=1561406144000" type="text/javascript"></script><script src="/jslibrary/1548902828220/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"></script><script src="/resource/1533606850000/jQueryMin/jQueryMin/jquery-1.12.4.min.js" type="text/javascript"></script><script src="/static/111213/js/picklist4.js" type="text/javascript"></script><script src="/jslibrary/1553583056220/sfdc/VFState.js" type="text/javascript"></script><script src="/resource/1533606850000/toast/js/toastjs.js" type="text/javascript"></script><link class="user" href="/resource/1557722991000/T_SR_ZIP_COMMON/assets/styles/T_SR_CSS_SLDSCorrect.css" rel="stylesheet" type="text/css" /><link class="user" href="/resource/1557722991000/T_SR_ZIP_COMMON/assets/styles/salesforce-lightning-design-system-vf.css" rel="stylesheet" type="text/css" /><link class="user" href="/resource/1533606850000/toast/css/toastcss.css" rel="stylesheet" type="text/css" /><script>(function(UITheme) {
+    UITheme.getUITheme = function() { 
+        return UserContext.uiTheme;
+    };
+}(window.UITheme = window.UITheme || {}));</script><script>(function(UITheme) {
+    UITheme.getUITheme = function() { 
+        return UserContext.uiTheme;
+    };
+}(window.UITheme = window.UITheme || {}));</script></head><span id="j_id0:j_id4">
+    <script type="text/javascript">
+        
+        var jicj = jicj || {};
+
+        jicj.mobile = {
+            
+            const: {
+                ID_BACKDROP: "sj110101Backdrop",
+                ID_TRANSPARENT_BACKDROP: "sj110101TransparentBackdrop",
+                BACKDROP_OPEN_STYLE: "slds-backdrop_open",
+            },
+
+            showBackdrop: function() {
+
+                var cns = jicj.mobile.const;
+
+                var backdrop = document.getElementById(cns.ID_BACKDROP);
+                backdrop.classList.add(cns.BACKDROP_OPEN_STYLE);
+            },
+
+            showTransparentBackdrop: function() {
+
+                var cns = jicj.mobile.const;
+
+                var backdrop = document.getElementById(cns.ID_TRANSPARENT_BACKDROP);
+                backdrop.classList.add(cns.BACKDROP_OPEN_STYLE);
+            },
+
+            hideBackdrop: function() {
+
+                var cns = jicj.mobile.const;
+
+                var backdrop = document.getElementById(cns.ID_BACKDROP);
+                backdrop.classList.remove(cns.BACKDROP_OPEN_STYLE);
+
+                var transparentBackdrop = document.getElementById(cns.ID_TRANSPARENT_BACKDROP);
+                transparentBackdrop.classList.remove(cns.BACKDROP_OPEN_STYLE);
+            },
+
+            scrollTopForBody: function(userAgent, body) {
+
+                if (userAgent === "Android") {
+                    body.scrollTop = 0;
+                }
+            },
+
+            addEventText: function() {
+                var inputs = document.querySelectorAll("input[type='text']");
+                for (var i = 0; i < inputs.length; i++) {
+                    inputs[i].removeEventListener('keypress', jicj.mobile._disableEnter, false);
+                    inputs[i].addEventListener('keypress', jicj.mobile._disableEnter, false);
+                }
+            },
+
+            _disableEnter: function(e) {
+
+                if (e.keyCode === 13) {
+                    e.preventDefault();
+                    document.activeElement.blur();
+                }
+            }
+        }
+    
+    </script>
+
+    
+    <div class="jicj-scope">
+        <div class="slds-backdrop" id="sj110101Backdrop" style="opacity: 0.1; transition-duration: 0s;"></div>
+        <div class="slds-backdrop" id="sj110101TransparentBackdrop" style="opacity: 0; transition-duration: 0s;"></div>
+    </div>
+
+    <style type="text/css">
+        .slds-scope .slds-has-error .slds-input,
+        .slds-scope .slds-has-error .slds-textarea,
+        .slds-scope .slds-has-error .slds-select {
+            background-color: #ffccd1 !important;
+        }
+
+        .slds-scope .lookup-container a {
+            width: 10% !important;
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+        }
+
+        .slds-scope .lookup-container img {
+            background-image: url(/img/func_icons/util/lookup20.gif) !important;
+            width: 20px !important;
+            height: 20px !important;
+            background-position: top left !important;
+            background-repeat: no-repeat !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style></span>
+
+  <style type="text/css">
+  
+        .sj110101-scope .test-label {
+            width: 45px;
+        }
+        
+html, body {
+    overflow: hidden;
+}
+
+body {
+    background: #FFFFFF;
+    margin: 0 !important;
+}
+
+.sj110101-scope *, .sj110101-scope *:before, .sj110101-scope *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sj110101-scope div {
+    display: block;
+}
+
+.sj110101-scope .display-none {
+    display: none;
+}
+
+.sj110101-scope .header {
+    background: #FFFFFF;
+    width: 100%;
+    padding: .5rem;
+}
+
+.sj110101-scope .indicator {
+    position: relative;
+    background: #FFFFFF;
+    height: 40px;
+    width: 100%;
+}
+
+.sj110101-scope .navigation-container {
+    border-bottom: 1px solid rgb(221, 219, 218);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.sj110101-scope .navigation-item {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: list-item;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: .875rem;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    line-height: 1.25;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.sj110101-scope .navigation-item a {
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+}
+
+.sj110101-scope .navigation-item>a {
+    background-color: transparent;
+    text-transform: uppercase;
+    display: block;
+    line-height: 40px;
+}
+
+.sj110101-scope .navigation-item>a, .sj110101-scope .navigation-item>a:hover,
+    .sj110101-scope .navigation-item>a:focus, .sj110101-scope .navigation-item>a:active,
+    .sj110101-scope .navigation-item>a:visited {
+    color: #706e6b;
+    text-decoration: none;
+}
+
+.sj110101-scope .navigation-item>a:hover, .sj110101-scope .navigation-item>a:active
+    {
+    outline: none;
+}
+
+.sj110101-scope .navigation-item a.selected {
+    color: rgb(22, 50, 92);
+}
+
+.sj110101-scope .indicator-state {
+    background: none;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    border-bottom: none;
+}
+
+.sj110101-scope .indicator-bar {
+    height: 2px;
+    background-color: #0070d2;
+}
+
+.sj110101-scope .carousel-body {
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.sj110101-scope .uiScroller {
+    position: relative;
+    height: 100%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.sj110101-scope .uiScroller>* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sj110101-scope .uiScroller>.scroller {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.sj110101-scope .scroll-horizontal>.scroller {
+    height: 100%;
+}
+
+.sj110101-scope .content {
+    background: none;
+    position: relative;
+    white-space: normal;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sj110101-scope .scroll-vertical {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.sj110101-scope .scroll-vertical>.scroller {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.sj110101-scope .action-anchor {
+    color: #0070d2 !important;
+    font-weight: bold;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    text-decoration: none !important;
+}
+
+.sj110101-scope .tip-container {
+    display: inline-block;
+    zoom: 1;
+}
+
+.sj110101-scope .tip-label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: .25em;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    line-height: 1.5rem;
+    margin: .1rem;
+    padding-left: .25rem;
+    padding-right: .25rem;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    zoom: 1;
+}
+
+.sj110101-scope .tip-label input[type='button'] {
+    display: none;
+}
+
+.sj110101-scope .tip-label_normal {
+    border: 2px solid #0070d2;
+    background-color: #0070d2;
+}
+
+.sj110101-scope .tip-label_result {
+    border: 2px solid #000000;
+    background-color: #0070d2;
+}
+
+.sj110101-scope .tip-label_exist {
+    border: 2px solid #4bca81;
+    background-color: #4bca81;
+}
+
+.sj110101-scope .tip-label_not-exist {
+    border: 2px solid #d8dde6;
+    background-color: #d8dde6;
+}
+
+.sj110101-scope .tip-label_important {
+    border: 2px solid #c23934;
+    background-color: #c23934;
+}
+
+.sj110101-scope .tip-label_complete {
+    border: 2px solid #706e6b;
+    background-color: #706e6b;
+}
+
+.sj110101-scope .btn-container {
+    display: inline-block;
+    padding: .2rem;
+    vertical-align: top;
+    width: 4rem;
+}
+
+.sj110101-scope .btn-link {
+    line-height: 1;
+    font-weight: normal;
+    border: none;
+    background: none;
+    color: #999 !important;
+    padding: 4px 3px;
+}
+
+.sj110101-scope .all-event-show {
+    border-bottom: 1px solid #d8dde6;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+.sj110101-scope .first-row {
+    background-color: #e3f3ff;
+    padding-top: .5rem;
+}
+
+.sj110101-scope .data-row {
+    border-bottom: 1px solid #d8dde6;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.sj110101-scope .padding {
+    padding-bottom: 8rem;
+}
+
+.sj110101-scope .empty-list-content {
+    display: block;
+}
+
+.sj110101-scope .empty-list-message {
+    padding: 100px 2rem 1rem 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #706e6b;
+}
+</style>
+
+  <body>
+    <div class="sj110101-scope">
+<form id="j_id0:sj110101Form" name="j_id0:sj110101Form" method="post" action="https://icr-tcs-spm1-dev-ed--c.ap4.visual.force.com/apex/T_P_KatsudoKekkaNyuryoku_Mobile_jh" enctype="application/x-www-form-urlencoded" novalidate="novalidate">
+<input type="hidden" name="j_id0:sj110101Form" value="j_id0:sj110101Form" />
+<span id="j_id0:sj110101Form:j_id8"><script id="j_id0:sj110101Form:j_id8:j_id9:j_id12" type="text/javascript">afterfunc=function(){A4J.AJAX.Submit('j_id0:sj110101Form',null,{'similarityGroupingId':'j_id0:sj110101Form:j_id8:j_id9:j_id12','parameters':{'j_id0:sj110101Form:j_id8:j_id9:j_id12':'j_id0:sj110101Form:j_id8:j_id9:j_id12'} } )};
+</script><span id="j_id0:sj110101Form:j_id8:j_id9:valueUpdate" style="display: none;"><input id="j_id0:sj110101Form:j_id8:j_id9:dispFlg" type="hidden" name="j_id0:sj110101Form:j_id8:j_id9:dispFlg" value="false" /><input id="j_id0:sj110101Form:j_id8:j_id9:completeFlg" type="hidden" name="j_id0:sj110101Form:j_id8:j_id9:completeFlg" value="false" /><input id="j_id0:sj110101Form:j_id8:j_id9:level" type="hidden" name="j_id0:sj110101Form:j_id8:j_id9:level" value="error" /><input id="j_id0:sj110101Form:j_id8:j_id9:title" type="hidden" name="j_id0:sj110101Form:j_id8:j_id9:title" value="排他エラー" /><input id="j_id0:sj110101Form:j_id8:j_id9:comment" type="hidden" name="j_id0:sj110101Form:j_id8:j_id9:comment" value="" /><br /></span><span id="j_id0:sj110101Form:j_id8:j_id9:errorList" style="display: none;"><input id="j_id0:sj110101Form:j_id8:j_id9:windowClose" type="hidden" name="j_id0:sj110101Form:j_id8:j_id9:windowClose" value="false" />
+      <div id="errorSource">
+        
+      </div></span>
+  <style type="text/css">
+    .jq-toast-wrap {
+    　　max-width: 68% !important;
+    　　width: 450px !important;
+    }
+    .jq-toast-single {
+      width: 100% !important;
+    }
+    .jq-toast-single a {
+      color: #eee !important;
+    }
+  </style>
+  <script type="text/javascript">
+    var errorToast;
+          
+    // 最初からエラーがある場合は表示
+    dispCheck();
+    
+    // トースト表示チェック
+    function dispCheck() {
+      // dispFlgがtrueなら表示
+      var dispFlg = document.getElementById('j_id0:sj110101Form:j_id8:j_id9:dispFlg').value;      
+      if (dispFlg == 'true') {
+        // ポップアップ表示処理
+        // 標準化VF対応 nullなら初期化
+        if($.toast == null || errorToast == null) {
+          initToast(); 
+        }
+        createToast();
+      }
+    }
+    
+    
+    
+    // トースト作成処理
+    function createToast() {
+      var level = document.getElementById('j_id0:sj110101Form:j_id8:j_id9:level').value;
+      var title = document.getElementById('j_id0:sj110101Form:j_id8:j_id9:title').value;
+      var comment = '<div id="dispArea"></div>';
+      errorToast = $.toast({
+        heading: title, // Optional heading to be shown on the toast
+        text: comment, // Text that is to be shown in the toast
+        icon: level, // Type of toast icon (Infomation,Warning,Error,Success)
+        showHideTransition: 'fade', // fade, slide or plain
+        allowToastClose: true, // Boolean value true or false
+        hideAfter: false, // false to make it sticky or number representing the miliseconds as time after which toast needs to be hidden
+        stack: 1, // false if there should be only one toast at a time or a number representing the maximum number of toasts to be shown at a time
+        position: 'top-center', // bottom-left or bottom-right or bottom-center or top-left or top-right or top-center or mid-center or an object representing the left, right, top, bottom values
+        textAlign: 'left',  // Text alignment i.e. left, right or center
+        loader: true,  // Whether to show loader or not. True by default
+        loaderBg: '#9EC600',  // Background color of the toast loader
+        beforeShow: function () { cloneErrorSource(); }, // will be triggered before the toast is shown
+        afterShown: function () { afterfunc();　}, // will be triggered after the toat has been shown
+        beforeHide: function () {}, // will be triggered before the toast gets hidden
+        afterHidden: function () {}  // will be triggered after the toast has been hidden
+      });
+    }
+   
+    
+    // VFPage上で表示しているエラーメッセージをトースト上に表示させる
+    function cloneErrorSource() {
+      $('#dispArea').empty();
+      $('#errorSource').clone().appendTo('#dispArea');
+    }
+    
+    function taostReflesh() {
+      cloneErrorSource();
+      toastWindowClose();
+    }
+
+    // 表示するメッセージがなくなった場合、ポップアップを閉じる
+    function toastWindowClose() {
+      var windowClose;
+      windowClose = $("[id$='\:windowClose']").val();
+
+      if(windowClose == 'true') {
+        console.log('try close');
+        errorToast.reset(); 
+      }
+    }
+  </script></span><script id="j_id0:sj110101Form:j_id32" type="text/javascript">sj110101_delKatsudoYotei=function(workObjId,btnType){A4J.AJAX.Submit('j_id0:sj110101Form',null,{'similarityGroupingId':'j_id0:sj110101Form:j_id32','containerId':'j_id0:sj110101Form:sj110101Actions','oncomplete':function(request,event,data){jicj.mobile.hideBackdrop();},'parameters':{'workObjId':(typeof workObjId!='undefined'&&workObjId!=null)?workObjId:'','btnType':(typeof btnType!='undefined'&&btnType!=null)?btnType:'delKatsudoYotei','j_id0:sj110101Form:j_id32':'j_id0:sj110101Form:j_id32'} } )};
+</script>
+
+        
+        <div class="slds-scope" id="sj110101Header">
+          <div class="header slds-no-space slds-has-divider_bottom slds-media_center">
+            <div class="slds-media">
+              <div class="slds-button-group" role="group">
+                
+                <input class="slds-button slds-button_neutral" onclick="if ('true' === 'true') { jicj.sj110101.cancel('編集内容は登録されていません。よろしいですか。'); }                                                 else { jicj.sj110101.cancel(null);}" type="button" value="キャンセル" />
+              </div>
+              <div class="slds-media__body">
+                
+                <h1 align="center" class="slds-page-header__title slds-align-middle">&#27963;&#21205;&#32080;&#26524;&#20837;&#21147;</h1>
+              </div>
+              <div class="slds-button-group" role="group"><input class="slds-button slds-button_brand" id="j_id0:sj110101Form:j_id36" name="j_id0:sj110101Form:j_id36" onclick="jicj.mobile.showBackdrop();;return A4J.AJAX.Submit('j_id0:sj110101Form',event,{'similarityGroupingId':'j_id0:sj110101Form:j_id36','html5Validate':true,'oncomplete':function(request,event,data){jicj.mobile.hideBackdrop();                                                                 if ('false' === 'true') { sforce.one.back(true); }                                                                 else { jicj.sj110101.moveTop(); }},'parameters':{'j_id0:sj110101Form:j_id36':'j_id0:sj110101Form:j_id36','btnType':'save'} } );" value="登録" type="submit" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jicj-scope" id="sj110101Carousel">
+          
+          <div class="indicator" style="display: none;">
+            <div class="indicator-state">
+              <div class="indicator-bar"></div>
+            </div>
+          </div>
+
+          <div class="carousel-body uiScroller scroller-wrapper scroll-horizontal">
+            <div class="scroller">
+              <section class="content">
+                <div class="uiScroller scroller-wrapper scroll-vertical">
+                  
+                  <div class="scroller slds-scope"><div id="j_id0:sj110101Form:sj110101Inputs"><input id="j_id0:sj110101Form:sj110101CanNavigate" type="hidden" name="j_id0:sj110101Form:sj110101CanNavigate" value="false" /><input id="j_id0:sj110101Form:sj110101SelectionTab" type="hidden" name="j_id0:sj110101Form:sj110101SelectionTab" /><script id="j_id0:sj110101Form:j_id40" type="text/javascript">sj110101_inputKatsudoJokyo=function(btnType,workObjId,activityType){A4J.AJAX.Submit('j_id0:sj110101Form',null,{'similarityGroupingId':'j_id0:sj110101Form:j_id40','containerId':'j_id0:sj110101Form:j_id39','oncomplete':function(request,event,data){jicj.sj110101.navigateToURL('/apex/T_P_KatsudoJokyoNoNyuryoku_Mobile');},'parameters':{'j_id0:sj110101Form:j_id40':'j_id0:sj110101Form:j_id40','workObjId':(typeof workObjId!='undefined'&&workObjId!=null)?workObjId:'','btnType':(typeof btnType!='undefined'&&btnType!=null)?btnType:'inputKatsudoJokyo','activityType':(typeof activityType!='undefined'&&activityType!=null)?activityType:''} } )};
+</script><script id="j_id0:sj110101Form:j_id44" type="text/javascript">sj110101_addKatsudoTaisho=function(btnType,dispMode,sharyoId,nayoseMotoOkyakusamaId){A4J.AJAX.Submit('j_id0:sj110101Form',null,{'similarityGroupingId':'j_id0:sj110101Form:j_id44','containerId':'j_id0:sj110101Form:j_id39','oncomplete':function(request,event,data){jicj.sj110101.navigateToURL('/apex/T_P_KatsudoTaishoNoTsuika_Mobile');},'parameters':{'sharyoId':(typeof sharyoId!='undefined'&&sharyoId!=null)?sharyoId:'','dispMode':(typeof dispMode!='undefined'&&dispMode!=null)?dispMode:'','nayoseMotoOkyakusamaId':(typeof nayoseMotoOkyakusamaId!='undefined'&&nayoseMotoOkyakusamaId!=null)?nayoseMotoOkyakusamaId:'','btnType':(typeof btnType!='undefined'&&btnType!=null)?btnType:'addKatsudoTaisho','j_id0:sj110101Form:j_id44':'j_id0:sj110101Form:j_id44'} } )};
+</script><script id="j_id0:sj110101Form:j_id49" type="text/javascript">sj110101_setKatsudoYotei=function(btnType,workObjId){A4J.AJAX.Submit('j_id0:sj110101Form',null,{'similarityGroupingId':'j_id0:sj110101Form:j_id49','containerId':'j_id0:sj110101Form:j_id39','oncomplete':function(request,event,data){jicj.sj110101.navigateToURL('/apex/T_P_YoteiToroku_Mobile');},'parameters':{'j_id0:sj110101Form:j_id49':'j_id0:sj110101Form:j_id49','workObjId':(typeof workObjId!='undefined'&&workObjId!=null)?workObjId:'','btnType':(typeof btnType!='undefined'&&btnType!=null)?btnType:'setKatsudoYotei'} } )};
+</script><script id="j_id0:sj110101Form:j_id52" type="text/javascript">sj110101_editKatsudoYotei=function(btnType,workObjId){A4J.AJAX.Submit('j_id0:sj110101Form',null,{'similarityGroupingId':'j_id0:sj110101Form:j_id52','containerId':'j_id0:sj110101Form:j_id39','oncomplete':function(request,event,data){jicj.sj110101.navigateToURL('/apex/T_P_YoteiToroku_Mobile');},'parameters':{'workObjId':(typeof workObjId!='undefined'&&workObjId!=null)?workObjId:'','j_id0:sj110101Form:j_id52':'j_id0:sj110101Form:j_id52','btnType':(typeof btnType!='undefined'&&btnType!=null)?btnType:'editKatsudoYotei'} } )};
+</script><script id="j_id0:sj110101Form:j_id55" type="text/javascript">sj110101_addKatsudoYotei=function(btnType,workObjId){A4J.AJAX.Submit('j_id0:sj110101Form',null,{'similarityGroupingId':'j_id0:sj110101Form:j_id55','containerId':'j_id0:sj110101Form:j_id39','oncomplete':function(request,event,data){jicj.sj110101.navigateToURL('/apex/T_P_YoteiToroku_Mobile');},'parameters':{'workObjId':(typeof workObjId!='undefined'&&workObjId!=null)?workObjId:'','btnType':(typeof btnType!='undefined'&&btnType!=null)?btnType:'addKatsudoYotei','j_id0:sj110101Form:j_id55':'j_id0:sj110101Form:j_id55'} } )};
+</script><div id="j_id0:sj110101Form:sj110101Messages">
+
+    <style type="text/css">
+        
+        .jicj-mobile-scope .page-level-errors {
+            outline: none;
+            border-bottom: 1px solid rgb(221, 219, 218); 
+        }
+
+        .jicj-mobile-scope .generic-notification-error {
+            background: #c23934;
+            padding: 1rem;
+            color: #ffffff;
+            line-height: 1.25;
+        }
+
+        .jicj-mobile-scope .generic-notification-warning {
+            background: #ffb75d;
+            padding: 1rem;
+            color: #ffffff;
+            line-height: 1.25;
+        }
+
+        .jicj-mobile-scope .generic-error-text {
+            font-size: 1rem;
+        }
+
+        .jicj-mobile-scope .error-list {
+            font-size: .875rem;
+            list-style: none;
+            color: #c23934;
+            margin: 0;
+            padding: .5rem 1rem .25rem 1rem;
+        }
+
+    </style></div><div id="j_id0:sj110101Form:sj110101BaseData" style="margin-top: .5rem; margin-left: .5rem; margin-right: .5rem;" class="slds-form slds-form_stacked">
+                          <div class="slds-form-element slds-has-divider_bottom" style="padding-bottom: 15px;">
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td style="width: 45%"><span id="j_id0:sj110101Form:j_id66" class="slds-form-element">
+                                    <label class="slds-form-element__label">&#12362;&#23458;&#27096;&#21517;</label>
+                                    <div class="slds-form-element__control">&#12486;&#12473;&#12488; &#12362;&#23458;
+                                    </div></span></td>
+                                <td style="width: 25%"><span id="j_id0:sj110101Form:j_id71" style="margin-right:15px">
+                                    <span style="margin-right: 15px">
+                                      <img height="25px" src="/resource/1561102941000/SPM_SR_ZIP_BLACK/IMG/flag_on_orange.png" />
+                                    </span>
+                                    <span> <img height="25px" src="/resource/1561102941000/SPM_SR_ZIP_BLACK/IMG/flag_on_orange.png" />
+                                    </span></span></td>
+                                <td style="width: 30%">
+                                  <div><span id="j_id0:sj110101Form:j_id74" class="slds-form-element">
+                                      <label class="slds-form-element__label">&#30331;&#37682;No.</label>
+                                      <div class="slds-form-element__control">&#27700;&#25144; 302&#65393;3942 &#65404;&#65396;&#65437;&#65408;
+                                      </div></span>
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                          </div><span id="j_id0:sj110101Form:j_id79" class="slds-form-element">
+                            <label class="slds-form-element__label" style="width: 80%">&#12304;&#36554;&#36009;&#12305;</label>
+                            <input class="slds-button slds-button_neutral" type="button" value="活動追加" />
+                            <input class="slds-button slds-button_neutral" type="button" value="活動切替" /></span>
+                          
+                          
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">&#25509;&#35302;&#30456;&#25163;</label>
+                            <div>
+                              <input class="slds-button_neutral" type="button" value="本人" /> <input class="slds-button_neutral" type="button" value="家族" /> <input class="slds-button_neutral" type="button" value="その他" />
+                            </div>
+                          </div>
+                          
+                          
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">&#25509;&#35302;&#26041;&#27861;</label>
+                            <div>
+                              <input class="slds-button_neutral" type="button" value="TEL" /> <input class="slds-button_neutral" type="button" value="来店" />
+                            </div>
+                            <div>
+                              <input class="slds-button_neutral" type="button" value="メール" /> <input class="slds-button_neutral" type="button" value="訪問" />
+                            </div>
+                          </div>
+                          
+                          
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">
+                              <abbr class="slds-required">*</abbr>&#27963;&#21205;&#32080;&#26524;
+                            </label>
+                            <div>
+                              <div>
+                                <input class="slds-button_neutral" type="button" value="活動日変更" /> <input class="slds-button_neutral" type="button" value="活動継続" />
+                              </div>
+                              <div>
+                                <input class="slds-button_neutral" id="check" type="button" value="査定" /> <input class="slds-button_neutral" type="button" value="試乗" />
+                              </div>
+                              <div>
+                                <input class="slds-button_neutral" type="button" value="見積" /> <input class="slds-button_neutral" type="button" value="ホット発生" />
+                              </div>
+                              <div>
+                                <input class="slds-button_neutral" type="button" value="ホット取消" /> <input class="slds-button_neutral" type="button" value="受注" />
+                              </div>
+                              <div>
+                                <input class="slds-button_neutral" type="button" value="断念" />
+                              </div>
+                            </div>
+                            <div style="display: none">
+                              <div>
+                                <input class="slds-button_neutral" type="button" value="活動日変更" /> <input class="slds-button_neutral" type="button" value="活動継続" />
+                              </div>
+                              <div>
+                                <input class="slds-button_neutral" type="button" value="成功" /> <input class="slds-button_neutral" type="button" value="断念" />
+                              </div>
+                              <div>
+                                <input class="slds-button_neutral" type="button" value="清算" />
+                              </div>
+                            </div>
+                            <div style="display: none">
+                              <div>
+                                <input class="slds-button_neutral" type="button" value="活動日変更" /> <input class="slds-button_neutral" type="button" value="活動継続" />
+                              </div>
+                              <div>
+                                <input class="slds-button_neutral" type="button" value="契約" /> <input class="slds-button_neutral" type="button" value="断念" />
+                              </div>
+                            </div>
+                          </div>
+                          
+                          
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">&#27425;&#22238;&#25509;&#35302;&#26041;&#27861;</label>
+                            <div>
+                              <input class="slds-button_neutral" type="button" value="TEL" /> <input class="slds-button_neutral" type="button" value="来店" />
+                            </div>
+                            <div>
+                              <input class="slds-button_neutral" type="button" value="メール" /> <input class="slds-button_neutral" type="button" value="訪問" />
+                            </div>
+                          </div>
+                          <div class="slds-form-element" id="checkDiv" style="display: none">
+                            <label class="slds-form-element__label">&#26619;&#23450;&#24773;&#22577;</label>
+                            <div>
+                              <label class="slds-form-element__label test-label">&#36554;&#21517;</label><input type="text" name="j_id0:sj110101Form:j_id82" class="" />
+                            </div>
+                            <div>
+                              <label class="slds-form-element__label test-label">&#24180;&#24335;</label><input type="text" name="j_id0:sj110101Form:j_id84" class="" />
+                            </div>
+                            <div>
+                              <label class="slds-form-element__label test-label">&#26619;&#23450;&#38989;</label><input type="text" name="j_id0:sj110101Form:j_id86" class="" />
+                            </div>
+                          </div>
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">&#27963;&#21205;&#12513;&#12514;</label>
+                            <div><textarea name="j_id0:sj110101Form:j_id88" style="width:200px;height:3em;" maxlength="255"></textarea>
+                            </div>
+                          </div>
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">&#37325;&#35201;&#12513;&#12514;</label>
+                            <div><textarea name="j_id0:sj110101Form:j_id90" style="width:200px;height:3em;" maxlength="255"></textarea>
+                            </div>
+                          </div>
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">&#27963;&#21205;&#20104;&#23450;&#26085;</label>
+                            <div><input type="text" name="j_id0:sj110101Form:j_id92" class="slds-input" />
+                            </div>
+                          </div>
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">&#38283;&#22987;&#26178;&#21051;</label>
+                            <div><input type="text" name="j_id0:sj110101Form:j_id94" class="slds-input" />
+                            </div>
+                          </div>
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">&#32066;&#20102;&#26178;&#21051;</label>
+                            <div><input type="text" name="j_id0:sj110101Form:j_id96" class="slds-input" />
+                            </div>
+                          </div>
+
+
+                          <div class="padding"></div></div></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div><div id="j_id0:sj110101Form:j_id101"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="i: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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateVersion" name="com.salesforce.visualforce.ViewStateVersion" value="201906241955440634" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="AGV5SnViMjVqWlNJNklteGxNVVpJTFZGRk0wODVSek5RYld3MVVWOXNlR1ZETkUwNGFESXpMV0ZxTVVwc1ptUk5iMnRYVlVWY2RUQXdNMlFpTENKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUlzSW10cFpDSTZJbnRjSW5SY0lqcGNJakF3UkRaR01EQXdNREF4YjJkVlExd2lMRndpZGx3aU9sd2lNREpITmtZd01EQXdNREE1WVRkeVhDSXNYQ0poWENJNlhDSjJabk5wWjI1cGJtZHJaWGxjSWl4Y0luVmNJanBjSWpBd05UWkdNREF3TURBNWJtMWxaMXdpZlNJc0ltTnlhWFFpT2xzaWFXRjBJbDBzSW1saGRDSTZNVFUyTVRVeU9UUXdOVGd3TXl3aVpYaHdJam93ZlE9PS4uTjk5RUlXSEhwNEZOSlBpSU8zLUhmWGtyVDBfazk3WF8xemFHQ1B0MC1qUT0=" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateCSRF" name="com.salesforce.visualforce.ViewStateCSRF" value="VmpFPSxNakF4T1Mwd05pMHlPVlF3TmpveE1Eb3dOUzQ0TURSYSw0djBrNXFDbHJFcmxQc1BpWXRKUHZCLFptWmhOV0ps" /></span></span>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+  
+    $("#check").click(function(){
+        $("#checkDiv").css('display','block');
+    });
+    
+        var jicj = jicj || {};
+        jicj.sj110101 = {
+
+            // 定数群
+            const: {
+                SF_HEADER_HEIGHT: 65,
+                ID_HEADER: "sj110101Header",
+                ID_CAROUSEL: "sj110101Carousel",
+                SELECTOR_SECTIONS: ".sj110101-scope .carousel-body section",
+                SELECTOR_HORIZONTAL_SCROLLER: ".sj110101-scope .scroll-horizontal > .scroller",
+                SELECTOR_VERTICAL_SCROLLER: ".sj110101-scope .scroll-vertical > .scroller",
+                SELECTOR_INDICATOR: ".sj110101-scope .indicator",
+                SELECTOR_INDICATOR_ITEMS: ".sj110101-scope .indicator li",
+                SELECTOR_INDICATOR_BAR: ".sj110101-scope .indicator-bar",
+                SELECTOR_TABS: ".sj110101-scope .tab",
+                CSS_SELECTED: "selected",
+                DURATION_CLICK_ITEM: 300,
+                EASING_REGULAR: "cubic-bezier(0.33, 0.66, 0.66, 1.00)"
+                
+            },
+
+            // カルーセル
+            carousel: null,
+
+            // 選択中のタブ
+            selectionTab: null,
+
+            // カルーセルのセクションの幅
+            sectionWidth: null,
+
+            // カルーセルのセクションの高さ
+            sectionHeight: null,
+
+            // インジケータの移動量
+            indicatorInterval: null,
+
+            /**
+             * 初期表示処理
+             */
+            ready: function() {
+
+                var self = jicj.sj110101;
+                var cns = self.const;
+
+                self.carousel = document.getElementById(cns.ID_CAROUSEL);
+
+                self.initSize();
+                self.register();
+
+                var selectionTab = document.getElementById(
+                    "j_id0:sj110101Form:sj110101SelectionTab").value;
+
+                if (selectionTab != null) {
+                    
+                    self.moveCarousel(parseInt(selectionTab, 10), false);
+                }
+            },
+
+            /**
+             * 画面サイズ初期化処理
+             */
+            initSize: function () {
+
+                var self = jicj.sj110101;
+                var cns = self.const;
+
+                var sfHeaderHeight = cns.SF_HEADER_HEIGHT;
+                var headerHeight = document.getElementById(cns.ID_HEADER).getBoundingClientRect().height;
+                var indicatorHeight = self.getIndicator().getBoundingClientRect().height;
+
+                self.sectionWidth = window.screen.width;
+                self.sectionHeight = window.screen.height - sfHeaderHeight - headerHeight - indicatorHeight;
+
+                var sectionWidthPx = self.sectionWidth + "px";
+                var sectionHeightPx = self.sectionHeight + "px";
+
+                // セクションのサイズを指定
+                var sections = self.getSections();
+                for (var i = 0; i < sections.length; i++) {
+
+                    sections[i].style.width = sectionWidthPx;
+                }
+
+                // 垂直スクロール領域のサイズを設定
+                var verticalScrollers = self.getVerticalScrollers();
+                for (var i = 0; i < verticalScrollers.length; i++) {
+                    verticalScrollers[i].style.height = sectionHeightPx;
+                }
+
+                // 水平スクロール領域のサイズを設定
+                var horizontalScroller = self.getHorizontalScroller();
+                horizontalScroller.style.width = sectionWidthPx;
+                horizontalScroller.style.height = sectionHeightPx;
+
+                // インジケータのサイズを設定
+                var items = self.getNavigationItems();
+                self.getIndicatorBar().style.width = (100 / items.length) + "%";
+                self.indicatorInterval = parseInt(self.sectionWidth / items.length, 10);
+            },
+
+            /**
+             * イベント登録処理
+             */
+            register: function() {
+
+                var self = jicj.sj110101;
+
+                // ナビゲーションタップ時のイベント登録
+                var items = self.getNavigationItems();
+                for (var i = 0; i < items.length; i++) {
+                    items[i].addEventListener("click", self.touchNavigationItem, true);
+                }
+            },
+
+            /**
+             * セクション取得
+             */
+            getSections: function () {
+                return jicj.sj110101.carousel.querySelectorAll(
+                    jicj.sj110101.const.SELECTOR_SECTIONS);
+            },
+
+            /**
+             * 水平スクローラ取得
+             */
+            getHorizontalScroller: function () {
+                return jicj.sj110101.carousel.querySelector(
+                    jicj.sj110101.const.SELECTOR_HORIZONTAL_SCROLLER);
+            },
+
+            /**
+             * 垂直スクローラ取得
+             */
+            getVerticalScrollers: function () {
+                return jicj.sj110101.carousel.querySelectorAll(
+                    jicj.sj110101.const.SELECTOR_VERTICAL_SCROLLER);
+            },
+
+            /**
+             * インジケータ取得
+             */
+            getIndicator: function () {
+                return jicj.sj110101.carousel.querySelector(
+                    jicj.sj110101.const.SELECTOR_INDICATOR);
+            },
+
+            /**
+             * ナビゲーション項目取得
+             */
+            getNavigationItems: function () {
+                return jicj.sj110101.carousel.querySelectorAll(
+                    jicj.sj110101.const.SELECTOR_INDICATOR_ITEMS);
+            },
+
+            /**
+             * インジケータバー取得
+             */
+            getIndicatorBar: function () {
+                return jicj.sj110101.carousel.querySelector(
+                    jicj.sj110101.const.SELECTOR_INDICATOR_BAR);
+            },
+
+            /**
+             * ナビゲーション項目タップ時のイベントハンドラ
+             */
+            touchNavigationItem: function() {
+
+                var self = jicj.sj110101;
+
+                if (self.isAnimating) {
+
+                    return;
+                }
+
+                var items = self.getNavigationItems();
+
+                for (var i = 0; i < items.length; i++) {
+
+                    if (items[i] === this) {
+
+                        self.moveCarousel(i, true);
+                        break;
+                    }
+                }
+            },
+
+            /**
+             * カルーセルの先頭タブに遷移する
+             */
+            moveTop: function() {
+
+                var self = jicj.sj110101;
+
+                // 先頭タブに遷移する
+                self.moveCarousel(0, true);
+
+                // 先頭タブのスクロール位置を最上部に設定
+                var verticalScroller = self.getVerticalScrollers()[0];
+                verticalScroller.scrollTop = 0;
+            },
+
+            /**
+             * カルーセルの移動
+             */
+            moveCarousel: function (tabNumber, activeDuration) {
+
+                var self = jicj.sj110101;
+                var cns = self.const;
+
+                self.selectionTab = tabNumber;
+
+                // タブを選択状態にする
+                self.selectTab(tabNumber);
+
+                var indTransform = "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0," + (self.indicatorInterval * tabNumber) + ",0,0,1)";
+                var indTransitionDuration = cns.DURATION_CLICK_ITEM + "ms";
+                var indTransitionTimingFunction = cns.EASING_REGULAR;
+
+                var scrTransform = "translate3d(" + (-self.sectionWidth * tabNumber) + "px, 0px, 0px)";
+                var scrTransitionDuration = cns.DURATION_CLICK_ITEM + "ms";
+                var scrTransitionTimingFunction = cns.EASING_REGULAR;
+
+                // インジケータバーを移動
+                var indicatorBar = self.getIndicatorBar();
+                self.setTransform(indicatorBar, indTransform);
+                if (activeDuration) {
+                    self.setTransitionDuration(indicatorBar, indTransitionDuration);
+                    self.setTransitionTimingFunction(indicatorBar, indTransitionTimingFunction);
+                }
+
+                // コンテンツを移動
+                var scroller = self.getHorizontalScroller();
+                self.setTransform(scroller, scrTransform);
+                if (activeDuration) {
+                    self.setTransitionDuration(scroller, scrTransitionDuration);
+                    self.setTransitionTimingFunction(scroller, scrTransitionTimingFunction);
+                }
+
+                // タブ番号を保存
+                document.getElementById("j_id0:sj110101Form:sj110101SelectionTab").value = tabNumber;
+
+                // アニメーション中フラグを立てる
+                self.isAnimating = true;
+
+                // アニメーションが終了したら、スタイルを削除し、アニメーション中フラグをおろす
+                setTimeout(
+                    function () {
+                        self.setTransition(indicatorBar, null);
+                        self.setTransition(scroller, null);
+                        self.isAnimating = false;
+                    },
+                    cns.DURATION_CLICK_ITEM);
+            },
+
+            /**
+             * ナビゲーション項目を選択状態にする
+             */
+            selectTab: function(tabNumber) {
+
+                var self = jicj.sj110101;
+                var cns = self.const;
+
+                var indicator = self.getIndicator();
+                var tabs = indicator.querySelectorAll(cns.SELECTOR_TABS);
+                var length = tabs.length;
+
+                for (var i = 0; i < length; i++) {
+
+                    if (i === tabNumber) {
+                        tabs[i].classList.add(cns.CSS_SELECTED);
+                    }
+                    else {
+                        tabs[i].classList.remove(cns.CSS_SELECTED);
+                    }
+                }
+            },
+
+            /**
+             * CSSスタイル transition設定
+             */
+            setTransition: function(element, trans) {
+                element.style.webkitTransition = trans;
+                element.style.transition = trans;
+            },
+
+            /**
+             * CSSスタイル transition-duration設定
+             */
+            setTransitionDuration: function(element, trans) {
+                element.style.webkitTransitionDuration = trans;
+                element.style.transitionDuration = trans;
+            },
+
+            /**
+             * CSSスタイル transition-timing-function設定
+             */
+            setTransitionTimingFunction: function(element, trans) {
+                element.style.webkitTransitionTimingFunction = trans;
+                element.style.transitionTimingFunction = trans;
+            },
+
+            /**
+             * CSSスタイル transforce設定
+             */
+            setTransform: function(element, trans) {
+                element.style.webkitTransform = trans;
+                element.style.transform = trans;
+            },
+
+            /**
+             * 画面遷移処理
+             */
+            navigateToURL: function(url) {
+
+                jicj.mobile.hideBackdrop();
+
+                var canNavigate = document.getElementById(
+                    "j_id0:sj110101Form:sj110101CanNavigate");
+
+                if (canNavigate.value === "true") {
+                    sforce.one.navigateToURL(url);
+                } else {
+                    jicj.sj110101.moveTop();
+                }
+            },
+
+            /**
+             * 活動状況の入力遷移アクション
+             */
+            inputKatsudoJokyo: function (workObjId, katsudoType) {
+
+                jicj.mobile.showBackdrop();
+                sj110101_inputKatsudoJokyo(
+                    "inputKatsudoJokyo", workObjId, katsudoType);
+            },
+
+            /**
+             * 活動対象の追加遷移アクション
+             */
+            addKatsudoTaisho: function (dispMode, sharyoId, nayoseMotoOkyakusamaId) {
+
+                jicj.mobile.showBackdrop();
+                sj110101_addKatsudoTaisho(
+                    "addKatsudoTaisho", dispMode, sharyoId, nayoseMotoOkyakusamaId);
+            },
+
+            /**
+             * 予定登録（設定）遷移アクション
+             */
+            setKatsudoYotei: function (workObjId) {
+
+                jicj.mobile.showBackdrop();
+                sj110101_setKatsudoYotei(
+                    "setKatsudoYotei", workObjId);
+            },
+
+            /**
+             * 予定登録（変更）遷移アクション
+             */
+            editKatsudoYotei: function (workObjId) {
+
+                jicj.mobile.showBackdrop();
+                sj110101_editKatsudoYotei(
+                    "editKatsudoYotei", workObjId);
+            },
+
+            /**
+             * 予定登録（追加）遷移アクション
+             */
+            addKatsudoYotei: function (workObjId) {
+
+                jicj.mobile.showBackdrop();
+                sj110101_addKatsudoYotei(
+                    "addKatsudoYotei", workObjId);
+            },
+
+            /**
+             * 予定登録（削除）遷移アクション
+             */
+            delKatsudoYotei: function (message, workObjId) {
+
+                if (window.confirm(message)) {
+
+                    jicj.mobile.showBackdrop();
+                    sj110101_delKatsudoYotei(workObjId);
+                }
+            },
+
+            /**
+             * キャンセル時のアクション
+             */
+            cancel : function(message) {
+
+                if ((message == null) || window.confirm(message)) {
+
+                    sforce.one.back(false);
+                }
+            }
+        };
+
+        (function() {
+            jicj.sj110101.ready();
+        })();
+
+    </script><span id="j_id0:sj110101Scripts">
+    <script type="text/javascript">
+            // input[type="text"] イベント付け直し
+            jicj.mobile.addEventText();
+        </script></span><script type="text/javascript">Sfdc.onReady(function(){
+    SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:sj110101Form"]);
+
+});</script></html>
+</apex:page>

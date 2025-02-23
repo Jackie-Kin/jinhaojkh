@@ -1,0 +1,388 @@
+<!--
+システム   : 次期営業支援システム全国版
+機能名    : 活動結果入力（S1）
+ファイル名 : T_P_KatsudoKekkaNyuryoku_Mobile_lht.page
+
+VERSION    DATE        BY          CHANGE/COMMENT
+----------------------------------------------------------------
+1.00       2018/03/22  HSOL        新規作成
+-->
+<apex:page showHeader="false" sidebar="false"
+           applyHtmlTag="true" applyBodyTag="false"
+          docType="html-5.0" standardStylesheets="false">
+    <apex:includeScript value="{!URLFOR($Resource.jQueryMin, '/jQueryMin/jquery-1.12.4.min.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.T_SR_ZIP_COMMON, '/assets/styles/T_SR_CSS_SLDSCorrect.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.T_SR_ZIP_COMMON, '/assets/styles/salesforce-lightning-design-system-vf.css')}" />
+    <apex:include pageName="T_P_MobileCommonResource" />
+
+    <style type="text/css">
+
+        html, body {
+            overflow: hidden;
+        }
+    
+        body {
+            background: #FFFFFF;
+            margin: 0 !important;
+        }
+        
+        .sj110101-scope *,
+        .sj110101-scope *:before,
+        .sj110101-scope *:after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .sj110101-scope div {
+            display: block;
+        }
+        
+        .sj110101-scope .header {
+            background: #FFFFFF;
+            width: 100%;
+            padding: .5rem;
+        }
+
+        .sj110101-scope .scroller {
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .sj110101-scope .padding {
+            padding-bottom: 8rem;
+        }
+
+    </style>
+    <body>
+        <div class="sj110101-scope">
+            <apex:form html-novalidate="novalidate">
+                <!-- ヘッダーエリア -->
+                <div id="sj110101Header" class="slds-scope">
+                    <div class="header slds-no-space slds-has-divider_bottom slds-media_center">
+                        <div class="slds-media">
+                            <div class="slds-button-group" role="group">
+                                <!-- ヘッダー左ボタン -->
+                                <apex:commandButton value="キャンセル" 
+                                                    styleClass="slds-button slds-button_neutral"
+                                                    oncomplete="sforce.one.back(false);">
+                                    <apex:param name="btnType" value="cancelYoteiToroku" />
+                                </apex:commandButton>
+                            </div>
+                            <!-- ボタンを右寄せするために空のボディを配置 -->
+                            <div class="slds-media__body">
+                                <!-- ヘッダーボディエリア -->
+                                <h1 class="slds-page-header__title slds-align-middle" align="center">活動結果入力</h1>
+                            </div>
+                            <div class="slds-button-group" role="group">
+                                <!-- ヘッダー左ボタン -->
+                                <apex:commandButton value="登録"  
+                                                    styleClass="slds-button slds-button_neutral"
+                                                    onclick="jicj.mobile.showBackdrop();">
+                                    <apex:param name="btnType" value="saveYoteiToroku" />
+                                </apex:commandButton>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sj110101Scroller" class="scroller slds-scope">
+                    <apex:outputPanel styleClass="slds-form slds-form_stacked" layout="block" id="sj110101PageBody"
+                                    style="margin-top: .5rem; margin-left: .5rem; margin-right: .5rem;">
+                        
+                                                  <div
+                            class="slds-form-element slds-has-divider_bottom"
+                            style="padding-bottom: 15px;">
+                            <table width="100%" cellspacing="0"
+                              cellpadding="0">
+                              <tr>
+                                <td style="width: 45%"><apex:outputPanel styleClass="slds-form-element">
+                                    <label
+                                      class="slds-form-element__label">お客様名</label>
+                                    <div
+                                      class="slds-form-element__control">
+                                      <apex:outputText value="テスト お客" />
+                                    </div>
+                                  </apex:outputPanel></td>
+                                <td style="width: 25%"><apex:outputpanel style="margin-right:15px">
+                                    <span style="margin-right: 15px">
+                                      <img
+                                      src="{!URLFOR($Resource.SPM_SR_ZIP_BLACK, 'IMG/flag_on_orange.png')}"
+                                      height="25px"></img>
+                                    </span>
+                                    <span> <img
+                                      src="{!URLFOR($Resource.SPM_SR_ZIP_BLACK, 'IMG/flag_on_orange.png')}"
+                                      height="25px"></img>
+                                    </span>
+                                  </apex:outputpanel></td>
+                                <td style="width: 30%">
+                                  <div>
+                                    <apex:outputPanel styleClass="slds-form-element">
+                                      <label
+                                        class="slds-form-element__label">登録No.</label>
+                                      <div
+                                        class="slds-form-element__control">
+                                        <apex:outputText value="水戸 302ｱ3942 ｼｴﾝﾀ" />
+                                      </div>
+                                    </apex:outputPanel>
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                          <apex:outputPanel styleClass="slds-form-element">
+                            <label class="slds-form-element__label"
+                              style="width: 650px">【車販】</label>
+                            <input type="button" value="活動追加"
+                              class="slds-button slds-button_neutral test-label-buttonTwo" />
+                            <input type="button" value="活動切替"
+                              class="slds-button slds-button_neutral test-label-buttonTwo" />
+                          </apex:outputPanel>
+                        
+                          <!-- 接触エリア -->
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">接触相手</label>
+                            <div>
+                              <input type="button"
+                                class="slds-button_neutral test-label-buttonTwo" value="本人"
+                                onclick="" /> <input type="button"
+                                class="slds-button_neutral test-label-buttonTwo" value="家族"
+                                onclick="" /> <input type="button"
+                                class="slds-button_neutral test-label-buttonTwo" value="その他"
+                                onclick="" />
+                            </div>
+                          </div>
+                          
+                          <!-- 接触方法エリア -->
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">接触方法</label>
+                            <div>
+                              <input type="button"
+                                class="slds-button_neutral test-label-buttonOne" value="TEL"
+                                onclick="" /> <input type="button"
+                                class="slds-button_neutral test-label-buttonOne" value="来店"
+                                onclick="" />
+                            </div>
+                            <div>
+                              <input type="button"
+                                class="slds-button_neutral test-label-buttonOne" value="メール"
+                                onclick="" /> <input type="button"
+                                class="slds-button_neutral test-label-buttonOne" value="訪問"
+                                onclick="" />
+                            </div>
+                          </div>
+                          
+                          <!-- 活動結果エリア -->
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">
+                              <abbr class="slds-required">*</abbr>活動結果
+                            </label>
+                            <div>
+                              <div>
+                                <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne"
+                                  value="活動日変更" onclick="" /> <input
+                                  type="button"
+                                  class="slds-button_neutral test-label-buttonOne"
+                                  value="活動継続" onclick="" />
+                              </div>
+                              <div>
+                                <input type="button" id="check"
+                                  class="slds-button_neutral test-label-buttonOne" value="査定"
+                                  onclick="" /> <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne" value="試乗"
+                                  onclick="" />
+                              </div>
+                              <div>
+                                <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne" value="見積"
+                                  onclick="" /> <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne"
+                                  value="ホット発生" onclick="" />
+                              </div>
+                              <div>
+                                <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne"
+                                  value="ホット取消" onclick="" /> <input
+                                  type="button"
+                                  class="slds-button_neutral test-label-buttonOne" value="受注"
+                                  onclick="" />
+                              </div>
+                              <div>
+                                <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne" value="断念"
+                                  onclick="" />
+                              </div>
+                            </div>
+                            <div style="display: none">
+                              <div>
+                                <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne"
+                                  value="活動日変更" onclick="" /> <input
+                                  type="button"
+                                  class="slds-button_neutral test-label-buttonOne"
+                                  value="活動継続" onclick="" />
+                              </div>
+                              <div>
+                                <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne" value="成功"
+                                  onclick="" /> <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne" value="断念"
+                                  onclick="" />
+                              </div>
+                              <div>
+                                <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne" value="清算"
+                                  onclick="" />
+                              </div>
+                            </div>
+                            <div style="display: none">
+                              <div>
+                                <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne"
+                                  value="活動日変更" onclick="" /> <input
+                                  type="button"
+                                  class="slds-button_neutral test-label-buttonOne"
+                                  value="活動継続" onclick="" />
+                              </div>
+                              <div>
+                                <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne" value="契約"
+                                  onclick="" /> <input type="button"
+                                  class="slds-button_neutral test-label-buttonOne" value="断念"
+                                  onclick="" />
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <!-- 次回接触方法エリア -->
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">次回接触方法</label>
+                            <div>
+                              <input type="button"
+                                class="slds-button_neutral test-label-buttonOne" value="TEL"
+                                onclick="" /> <input type="button"
+                                class="slds-button_neutral test-label-buttonOne" value="来店"
+                                onclick="" />
+                            </div>
+                            <div>
+                              <input type="button"
+                                class="slds-button_neutral test-label-buttonOne" value="メール"
+                                onclick="" /> <input type="button"
+                                class="slds-button_neutral test-label-buttonOne" value="訪問"
+                                onclick="" />
+                            </div>
+                          </div>
+                          <div class="slds-form-element"
+                            style="display: none" id="checkDiv">
+                            <label class="slds-form-element__label">査定情報</label>
+                            <div>
+                              <label
+                                class="slds-form-element__label test-label">車名</label>
+                              <apex:inputText styleClass="" />
+                            </div>
+                            <div>
+                              <label
+                                class="slds-form-element__label test-label">年式</label>
+                              <apex:inputText styleClass="" />
+                            </div>
+                            <div>
+                              <label
+                                class="slds-form-element__label test-label">査定額</label>
+                              <apex:inputText styleClass="" />
+                            </div>
+                          </div>
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label">活動メモ</label>
+                            <div class="slds-form-element__control">
+                                 <textarea class="slds-textarea" value="今月末でタスクを終わる予定" maxlength="255"></textarea>
+                            </div>
+                        </div>
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label">重要メモ</label>
+                            <div class="slds-form-element__control">
+                                 <textarea class="slds-textarea" value="今月末でタスクを終わる予定" maxlength="255"></textarea>
+                            </div>
+                        </div>
+                          
+
+                          <div class="slds-form-element">
+                            <label class="slds-form-element__label">活動予定日</label>
+                            <div class="slds-form-element__control">
+                                <input class="slds-input" value="2019-06-25" type="date"></input>
+                            </div>
+                          </div>
+
+                        <apex:outputPanel styleClass="slds-form-element" layout="block" id="startTimePanel">
+                            <label class="slds-form-element__label">開始時刻</label>
+                            <div class="slds-form-element__control">
+                                 <input class="slds-input" type="time" value="06:26"></input>
+                            </div>
+                        </apex:outputPanel>
+                        <apex:outputPanel styleClass="slds-form-element" layout="block" id="endTimePanel">
+                            <label class="slds-form-element__label">終了時刻</label>
+                            <div class="slds-form-element__control">
+                                 <input class="slds-input" type="time" value="06:26"></input>
+                            </div>
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+
+
+
+                    <div class="padding" />
+                </div>
+            </apex:form>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+  
+        $("#check").click(function(){
+            $("#checkDiv").css('display','block');
+        });        
+
+        var jicj = jicj || {};
+        jicj.sj110101 = {
+
+            const: {
+                SF_HEADER_HEIGHT: 65,
+                ID_HEADER: "sj110101Header",
+                ID_SCROLLER: "sj110101Scroller",
+            },
+
+            /**
+             * スクロール位置を最上部に設定する
+             */
+            scrollTop: function() {
+
+                var cns = jicj.sj110101.const;
+
+                var scroller = document.getElementById(cns.ID_SCROLLER);
+                scroller.scrollTop = 0;
+            },
+
+            /**
+             * 初期表示処理
+             */
+            ready: function() {
+
+                var cns = jicj.sj110101.const;
+
+                var windowHeight = window.screen.height;
+                var sfHeaderHeight = cns.SF_HEADER_HEIGHT;
+                var headerHeight = document.getElementById(cns.ID_HEADER).getBoundingClientRect().height;
+                var scroller = document.getElementById(cns.ID_SCROLLER);
+                scroller.style.height = (windowHeight - sfHeaderHeight - headerHeight) + "px";
+            }
+        };
+
+        (function() {
+            jicj.sj110101.ready();
+        })();
+
+    </script>
+    <apex:outputPanel id="sj110101Scripts">
+        <script type="text/javascript">
+            // input[type="text"] イベント付け直し
+            jicj.mobile.addEventText();
+        </script>
+    </apex:outputPanel>
+</apex:page>

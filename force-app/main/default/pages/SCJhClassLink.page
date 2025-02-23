@@ -1,0 +1,70 @@
+<apex:page docType="html-5.0" controller="SCJhClassLinkController"
+    showHeader="false" standardStylesheets="false" sidebar="false"
+    cache="false" expires="0" readonly="true">
+
+    <head>
+
+<apex:slds />
+
+<title>クラス一覧</title>
+</head>
+        <apex:form styleclass="slds-scope">
+            <p>クラスリスト（黒SPM）</p>
+            <p>クラス数：{!totalCnt}</p>
+            
+            <apex:datatable border="1" cellpadding="5" var="apexClass"
+                value="{!apexClassInfos}">
+                <apex:column id="edit" style="text-align:center">
+                    <a onclick='OpenWindow(this,1);' href="#">編集</a>
+                </apex:column>
+                <apex:column id="classname">
+                    <apex:facet name="header">
+                        画面ID（表示ラベル）
+                </apex:facet>
+                    <apex:outputfield value="{!apexClass.name}" />
+                </apex:column>
+                <apex:column id="classModifiedTime">
+                    <apex:facet name="header">
+                        最新更新時間
+                </apex:facet>
+                    <apex:outputfield value="{!apexClass.LastModifiedDate}" />
+                </apex:column>              
+                <apex:column id="classid">
+                    <apex:facet name="header">
+                        画面ID
+                </apex:facet>
+                    <apex:outputfield value="{!apexClass.id}" />
+                </apex:column>
+            </apex:datatable>
+        </apex:form>
+<script>
+    function OpenWindow(obj,actFlag){
+        if (actFlag==1){
+           var id1=$(obj).parent().parent().find("td").eq(3).find("span").text();
+           window.open("https://icr-tcs-spm2-dev-ed.my.salesforce.com/"+id1);
+        }    
+    }
+    
+    $(function () {
+        $("[id*=pageid]").hide();
+    });
+</script>
+<style>
+th{
+    background: #f2f3f3;
+    border-width: 0 0 1px 1px;
+    border-color: #e0e3e5;
+    color: #000;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 5px 2px 4px 5px;
+}
+table
+{
+    border-collapse: separate;
+    border-spacing: 2px;
+    -webkit-border-horizontal-spacing: 2px;
+    -webkit-border-vertical-spacing: 2px;
+}
+</style>
+</apex:page>

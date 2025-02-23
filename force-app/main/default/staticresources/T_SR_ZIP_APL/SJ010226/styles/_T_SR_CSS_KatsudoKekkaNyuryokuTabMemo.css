@@ -1,0 +1,74 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　メモ
+ * ファイル名 : _T_SR_CSS_KatsudoKekkaNyuryokuTabMemo.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/20  HISOL清水    新規作成
+ */
+.S10101-mm {
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+  height: 74px;
+
+  margin-top: 4px;
+  display: flex;
+}
+
+.S10101-mm-activity-memo {
+  margin-left: 19px;
+  width: 47.9%;
+}
+
+.S10101-mm-important-memo {
+  margin-left: 11px;
+  width: 47.9%;
+}
+
+.S10101-mm-memo-title {
+  color: #193a66;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.56px;
+  line-height: 26px;
+  text-align: left;
+  float:left;
+  width:75px;
+  height: 26px;
+}
+
+.S10101-sakusei-date-title,
+.S10101-sakusei-date-value,
+.S10101-memo-kensu {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.56px;
+  line-height: 26px;
+  text-align: left;
+  float:left;
+}
+
+.S10101-sakusei-date-title {
+  width:55px;
+}
+
+.S10101-sakusei-date-value {
+  width:88px;
+}
+
+.S10101-mm-memo-textarea {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 80);
+  box-sizing: border-box;
+  /*width: 472px;*/
+  width: 100%;
+  height: 44px;
+  min-height: 44px; /* Site.css対策 */
+  overflow-y: auto;
+  font-family:Meiryo;
+  resize: none;
+}

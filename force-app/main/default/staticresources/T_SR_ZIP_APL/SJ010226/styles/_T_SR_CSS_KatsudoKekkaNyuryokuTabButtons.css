@@ -1,0 +1,62 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　ボタン
+ * ファイル名 : _T_SR_CSS_KatsudoKekkaNyuryokuTabButtons.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/20  HISOL清水    新規作成
+ */
+.S10101-na-button-area {
+  width: 348px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-right: 11px;
+  margin-left: auto;
+  position:relative;
+}
+
+.S10101-na-button {
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #193a66;
+  box-shadow: 0px 1px 1px 0px rgba(17,65,128,0.3);
+  width: 80px;
+  height: 26px;
+  line-height: 26px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(40,76,126,0.75);
+  cursor: pointer;
+  margin-left:7px;
+}
+
+.S10101-na-button:hover {
+  background-color: #2f578e;
+}
+
+.S10101-na-button.inactive{
+  background-color: #999999;
+  cursor: default;
+}
+
+.S10101-na-button.inactive:hover{
+  background-color: #999999;
+  cursor: default;
+}
+
+.S10101-warn-button {
+  background-color:#ffa500;
+}
+
+.S10101-warn-button:hover {
+  background-color:#FFD700;
+}
+
+.S10101-no-button {
+  display:none;
+}

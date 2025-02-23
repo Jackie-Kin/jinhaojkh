@@ -1,0 +1,386 @@
+﻿@charset "UTF-8"; 
+
+/* スクロールバーが現れる不具合を修正 */
+body {
+     overflow:hidden !important;
+}
+/* スクロールバーが現れる不具合を修正 */
+
+/*グレーアウトのスタイル定義*/
+#gray{
+ background:#000;
+ opacity:0.5;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:0px;
+ left:0;
+ display:none;
+
+}
+
+/*ポップアップ部分のスタイル定義*/
+#square{
+ display:block;
+ background-color:#fff;
+ overflow:hidden;
+}
+
+#popup{
+ display:block;
+ overflow:hidden;
+ border:none;
+}
+
+.gray_panel{
+ background:#000;
+ opacity:0.5;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:0px;
+ left:0;
+ display:none;
+ z-index:1000;
+}
+
+.checkTable{
+	
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#555555;
+}
+
+.trimTable{
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+
+}
+
+.cellFont{
+	
+	font-size:11pt;
+	font-family:"ＭＳ Ｐゴシック";
+	text-align:right;
+}
+
+.dataFont{
+	text-align:left;
+	/*padding-left:12px;*/
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#666666;
+
+}
+
+.dataFont_head{
+	text-align:left;
+	padding-left:12px;
+	font-size:12.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:#666666;
+
+}
+
+.naviFont{
+	font-family:"HG丸ｺﾞｼｯｸM-PRO";
+	font-size:8.5pt;
+	text-align:left;
+	color:rgb(99,148,212);
+	margin-bottom:3px;
+}
+
+.naviFont_red{
+	font-family:"HG丸ｺﾞｼｯｸM-PRO";
+	font-size:8.5pt;
+	text-align:left;
+	color:red;
+	margin-bottom:3px;
+}
+
+.tabledataFont{
+	font-size:10pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:#666666;
+    user-select:none;
+    -ms-user-select: none;
+}
+
+.dataFont_Select{
+	font-size:12pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:#376092;
+
+}
+
+.txtdataFont{
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#1f497d;
+
+}
+
+
+.titleFont{
+	font-size:11pt;
+    font-family:"ＭＳ Ｐゴシック";
+}
+
+
+.tableData_Header {
+	border: 1px solid #CCCCCC;
+  text-align: center;
+}
+
+.dataRowHeight{
+	height:32px;
+}
+
+.totalRowHeight{
+	height:50px;
+	border-top:3px solid #CCCCCC;
+}
+
+
+.memoFont{
+	font-size:10pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:100;
+	color:#666666;
+}
+
+.tabledataFont_Underbar{
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:rgb(85,142,227);
+	border-bottom:3px solid #CCCCCC;
+
+}
+
+
+#backColor_gray{
+	background-color:rgb(166,166,166);
+}
+
+.symbolFont{
+	font-size:9pt;
+	font-family:"ＭＳ Ｐゴシック";
+	font-weight:bold;
+	color:#666666;
+	
+}
+
+
+.listData_Select{
+
+	background: #900000;
+	border-color:red;
+	border:red solid 2px;
+    color:white;
+	
+	
+}
+
+.title_mojiStyle{
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:10.5pt;
+
+}
+
+.tblAnnai {
+    /*width:100%;*/
+    border-collapse:collapse;
+    border:1px solid #CCCCCC;
+    /*padding-left:50px;*/
+}
+
+.tblAnnai th {
+    border-collapse:collapse;
+    border:1px solid #CCCCCC;
+    font-weight:100;
+}
+
+.width_check {width:65px;}
+.width_AnnaiTiming {width:128.95px;}
+.width_Tantou {width:62.93px;}
+.width_Status {width:78.34px;}
+.width_Yoteibi {width:83.75px;}
+.width_Jissekibi {width:83.75px;}
+.width_Hensin {width:51.32px;}
+.width_Houhou {width:63.79px;}
+.width_Tokkijikou {width:312.94px;}
+
+.check_sp {
+    width:65px;
+    border:1px solid #CCCCCC;
+}
+
+.tableData_AnnaiTiming {
+    width:119.95px;
+    text-align:left;
+    padding-left:10px;
+    border:1px solid #CCCCCC;
+}
+
+.tableData_Tantou {
+    width:62.93px;
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    color:#666666;
+    text-align:center;
+    border:1px solid #CCCCCC;
+}
+
+.tableData_Status {
+    width:78.34px;
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    color:#666666;
+    text-align:center;
+    border:1px solid #CCCCCC;
+}
+
+.tableData_Yoteibi {
+    width:83.75px;
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    color:#666666;
+    text-align:center;
+    border:1px solid #CCCCCC;
+}
+
+.tableData_Jissekibi {
+    width:83.75px;
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    color:#666666;
+    text-align:center;
+    border:1px solid #CCCCCC;
+}
+
+.tableData_Hensin {
+    width:51.32px;
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    color:#666666;
+    text-align:center;
+    border:1px solid #CCCCCC;
+}
+
+.tableData_Houhou {
+    width:63.79px;
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    color:#666666;
+    text-align:center;
+    border:1px solid #CCCCCC;
+}
+
+.tableData_Tokkijikou {
+    width:303.94px;
+    font-family:"ＭＳ Ｐゴシック";
+    text-align:left;
+    padding-left:10px;
+    border:1px solid #CCCCCC;
+}
+
+        /*グレーアウトのスタイル定義*/
+
+
+/*2017/11/16 add start U-Car SPM対応　納期案内*/
+.newCar{
+    vertical-align:bottom;
+}
+
+.usedCar{
+    vertical-align:bottom;
+}
+
+#txtTorokuKb{
+    width:60px;
+}
+
+#TorokuKb{
+    width:65px;
+}
+
+#txtTorokuNo{
+    width:62px;
+}
+
+#TorokuNo{
+    width:135px;
+}
+
+#dataFollow{
+    width:110px;
+}
+/*2017/11/16 add end U-Car SPM対応　納期案内*/
+
+label{
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type=checkbox]{
+	filter: alpha(opacity="1");
+	opacity: 0.01;
+	MozOpacity: 0.01;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.checkboxView{
+	display: block;
+	width: 30px;
+	height: 29px;
+	margin-left: 20px;
+    margin-right: 15px;
+	background: url(../../IMG/ico_check.png) left top no-repeat;
+	float: left;
+}
+.checkboxView.selected{
+	background-position: left bottom;
+}
+label .title{
+	display: block;
+	margin-left: 30px;
+	line-height: 32px;
+    text-align:left;
+}
+
+ul{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 33%;
+	padding-left: 10px;
+	padding-right: 2px;
+    margin-top:.0px;
+    margin-bottom:0px;
+	float: left;
+}
+ul li,
+ol li{
+	margin-bottom: 7px;
+	list-style: none;
+	font-size: 28px;
+}
+
+.mail {
+    width:20px;
+}
+
+.tabledataFont_Youbi{
+	font-size:8pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:100;
+	vertical-align:bottom;
+
+}
+
+section{
+    width: 100%;
+}

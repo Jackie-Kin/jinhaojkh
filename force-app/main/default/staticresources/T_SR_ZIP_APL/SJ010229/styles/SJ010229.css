@@ -1,0 +1,354 @@
+﻿/**
+ * システム   : 次期営業支援システム融合版
+ * 機能名     : リクエスト情報画面スタイル
+ * ファイル名 : SJ010299.css
+ * 
+ * VERSION     DATE                BY                 CHANGE/COMMENT
+ * ---------------------------------------------------------------------------------
+ * 1.00        2019/08/05          FSI                新規作成
+ */
+.S010229-container {
+  font-size: 0.5em;
+}
+
+.S010229-left {
+  float: left;
+}
+
+.S010229-header-column {
+  float: left;
+  padding-left: 20px;
+  display: flex;
+}
+
+.S010229-right {
+  float: right;
+}
+
+.S010229-button-area {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-left: auto;
+  position: relative;
+}
+
+.S010229-paging-area {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-left: auto;
+  position: relative;
+}
+
+.S010229-button-area.right {
+  justify-content: flex-end;
+}
+
+.S010229-icon-map {
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-left: 30px;
+  background-image: url("../../common/images/icon_map.svg");
+  background-position: center;
+}
+
+.S010229-column-title {
+  color: #193a66;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.56px;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.S010229-column-val {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  line-height: 24px;
+  text-align: left;
+  display: flex;
+}
+
+.S010229-column-kana {
+  font-size: 14px;
+}
+
+.S010229-column-namae {
+  font-size: 18px;
+}
+
+.S010229-tel-view {
+  font-size: 15px;
+}
+
+.S010229-column-title-width {
+  width: 100px;
+}
+
+.S010229-column-okyaku-width {
+  width: 150px;
+}
+
+.S010229-column-okyaku-top {
+  width: 15%;
+}
+
+.S010229-column-second-top {
+  display: block;
+  width: 24.19%;
+}
+
+.S010229-column-second-nontop {
+  width: 40.74%;
+}
+
+.S010229-header-row {
+  display: flex;
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+
+.S010229-header-row.top {
+  margin-bottom: 0px;
+}
+
+.S010229-header-row.bottom {
+  margin-bottom: 5px;
+}
+
+.S010229-header-row.backcolor {
+  background-color: #ecf3fc;
+  width: 100%;
+  height: 25px;
+}
+
+.S010229-header-row-kana {
+  height: 18px;
+  display: flex;
+}
+
+.S010229-not-button-area-width {
+  width: calc(100% - 370px);
+}
+
+.S010229-right-button.inactive {
+  background-color: #999999;
+  cursor: default;
+}
+
+.S010229-right-button {
+  border-radius: 3px;
+  background-color: #193a66;
+  box-shadow: 0px 1px 1px 0px rgba(17, 65, 128, 0.3);
+  width: 75px;
+  height: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+}
+
+.S010229-right-button:hover {
+  background-color: #2f578e;
+}
+
+.S010229-right-button.inactive:hover {
+  background-color: #999999;
+}
+
+#S010229-smb-button,
+#S010229-sns-button {
+  font-size: 14px;
+}
+
+#S010229-sns-count {
+  position: absolute;
+  top: 12px;
+  right: -7px;
+  width: 25px;
+  height: 25px;
+  line-height: 26px;
+  color: #fff;
+  text-align: center;
+  background-color: rgb(234,88,88);
+  border-radius: 15px;
+}
+
+.S010229-header-row:first-child .S010229-left {
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.S010229-header-row:first-child .S010229-right {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#S010229-post-view {
+  min-width: 77px;
+}
+
+#S010229-address-view {
+  max-width: calc(100% - 15px - 77px - 52px);
+}
+
+.S010229-mj-kyamassy {
+  color: red;
+}
+
+#S010229-mail-view {
+  /**
+   * アドレスが長い場合に、メールアイコンのボタンが隠れてしまうため
+   * 暫定で対応
+   */
+  max-width: 460px;
+}
+
+.S010229-content-header {
+  border-radius: 3px 3px 0 0;
+  background-color: #193a66;
+  height: 26px;
+  width: 100%;
+}
+
+.S010229-content-header.disabled {
+  background-color: #a6a6a6;
+}
+
+.S010229-content-header-char {
+  font-family: Meiryo;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  line-height: 26px;
+  text-align: left;
+  text-shadow: 0px 2px 3px rgba(102, 102, 102, 0.3);
+  margin-left: 20px;
+}
+
+.S010229-content {
+  border-radius: 0 0 3px 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+}
+
+.S010229-content.basic {
+  height: 55px;
+}
+
+.S010229-content.reservation {
+  height: 175px;
+}
+
+.S010229-content.contact {
+  height: 103px;
+}
+
+.S010229-content.disabled {
+  background-color: #e6e6e6;
+}
+
+.S010229-content-space {
+  height: 15px;
+}
+
+.S010229-row {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 19px;
+  margin-right: 19px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.S010229-column {
+  display: flex;
+  width: 32%;
+}
+
+.S010229-column.right {
+  width: 28%;
+}
+
+.S010229-title {
+  color: #193a66;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  width: 37%;
+}
+
+.S010229-value {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  width: 63%;
+}
+
+.S010229-value .S010229-syaryo-no {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.S010229-mm {
+  display: flex;
+}
+
+.S010229-mm-activity-memo {
+  margin-left: 19px;
+  width: 47.9%;
+}
+
+.S010229-mm-important-memo {
+  margin-left: 11px;
+  width: 47.9%;
+}
+
+.S010229-mm-activity-memo.wide {
+  margin-left: 19px;
+  width: 97%;
+}
+
+.S010229-mm-memo-title {
+  color: #193a66;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.56px;
+  line-height: 26px;
+  text-align: left;
+  float: left;
+  height: 26px;
+}
+
+.S010229-mm-memo-textarea {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 80);
+  box-sizing: border-box;
+  width: 100%;
+  height: 65px;
+  min-height: 65px; /* Site.css対策 */
+  overflow-y: auto;
+  font-family: Meiryo;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.S010229-hidden {
+  display: none;
+}

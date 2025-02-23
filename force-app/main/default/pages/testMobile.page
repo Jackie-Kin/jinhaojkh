@@ -1,0 +1,6 @@
+<apex:page docType="html">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  电话号码: <input type="date" name="usrtel"></input>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

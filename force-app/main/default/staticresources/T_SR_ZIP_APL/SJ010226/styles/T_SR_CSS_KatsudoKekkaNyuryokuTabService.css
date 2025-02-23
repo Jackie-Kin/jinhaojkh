@@ -1,0 +1,21 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　サービス
+ * ファイル名 : T_SR_CSS_KatsudoKekkaNyuryokuTabService.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/20  HISOL清水    新規作成
+ */
+.S10101-s-right-body {
+  padding-left: 3%;
+}
+
+.S10101-s-spm1 {
+  height: 210px;
+}
+
+.S10101-s-spm2 {
+  height: 175px;
+  margin-top: 3px;
+}

@@ -1,0 +1,83 @@
+<apex:page docType="html-5.0" controller="SCJhPageLinkController"
+ showHeader="false" standardStylesheets="false" sidebar="false"
+    cache="false" expires="0">
+
+    <head>
+<!--<apex:includeScript value="{!URLFOR($Resource.SPM_SR_ZIP_BLACK, 'Script_win/jquery.min.js')}" />-->
+<!--<apex:includeScript value="{!URLFOR($Resource.SPM_SR_ZIP_BLACK, 'Script_win/jquery-ui.min.js')}" />-->
+<apex:slds />
+
+<title>ページ一覧</title>
+</head>
+        <apex:form styleclass="slds-scope">
+            <p>ページリスト（黒SPM）</p>
+            <p>ページ数：{!totalCnt}</p>
+            
+            <apex:datatable border="1" cellpadding="5" var="apexPage"
+                value="{!apexPageInfos}">
+                <apex:column id="edit">
+                    <a style="margin-left: 10px;" onclick='OpenWindow(this,1);' href="#">編集</a>
+                    <span>|</span>
+                    <a onclick='OpenWindow(this,2);' href="#">画面表示</a>
+                </apex:column>
+                <apex:column id="pagename">
+                    <apex:facet name="header">
+                        画面ID（表示ラベル）
+                </apex:facet>
+                    <apex:outputfield value="{!apexPage.name}" />
+                </apex:column>
+                <apex:column id="pagelabel">
+                    <apex:facet name="header">
+                        画面名称
+                </apex:facet>
+                    <apex:outputfield value="{!apexPage.masterlabel}" />
+                </apex:column>
+                <apex:column id="pageModifiedTime">
+                    <apex:facet name="header">
+                        最新更新時間
+                </apex:facet>
+                    <apex:outputfield value="{!apexPage.LastModifiedDate}" />
+                </apex:column>              
+                <apex:column id="pageid">
+                    <apex:facet name="header">
+                        画面ID
+                </apex:facet>
+                    <apex:outputfield value="{!apexPage.id}" />
+                </apex:column>
+            </apex:datatable>
+        </apex:form>
+<script>
+    function OpenWindow(obj,actFlag){
+        if (actFlag==1){
+           var id1=$(obj).parent().parent().find("td").eq(4).find("span").text();
+           window.open("https://icr-tcs-spm2-dev-ed.my.salesforce.com/"+id1);
+        }
+        if (actFlag==2){
+           var id2=$(obj).parent().parent().find("td").eq(1).find("span").text();
+           window.open("https://icr-tcs-spm2-dev-ed--c.ap4.visual.force.com/apex/"+id2);
+        }       
+    }
+    
+    $(function () {
+        $("[id*=pageid]").hide();
+    });
+</script>
+<style>
+th{
+    background: #f2f3f3;
+    border-width: 0 0 1px 1px;
+    border-color: #e0e3e5;
+    color: #000;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 5px 2px 4px 5px;
+}
+table
+{
+    border-collapse: separate;
+    border-spacing: 2px;
+    -webkit-border-horizontal-spacing: 2px;
+    -webkit-border-vertical-spacing: 2px;
+}
+</style>
+</apex:page>

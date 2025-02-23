@@ -1,0 +1,57 @@
+<apex:page showHeader="false" applyHtmlTag="false" applyBodyTag="false" Controller="MyTrainingDetailController" action="{!pageload}">
+    <head>
+        <apex:includeScript value="{!URLFOR($Resource.myResource, '/myResource/JS/jquery/jquery-3.3.1.js')}"/>
+        <apex:slds />
+    </head>
+    <apex:form styleclass="slds-scope">          
+        <apex:pageBlock id="pbId">
+
+        <div>
+            <apex:outputLabel value="{!msg}"></apex:outputLabel>           
+        </div>            
+        	<apex:pageBlockSection title="データ明細" columns="2" collapsible="false">
+                <apex:outputPanel >
+                    <apex:commandButton status="fetchStatus" reRender="pbId" value="First Rec" action="{!setCon.first}" disabled="{!!setCon.hasPrevious}" title="First Page"/>
+                    <apex:commandButton status="fetchStatus" reRender="pbId" value="Previous Rec" action="{!setCon.previous}" disabled="{!!setCon.hasPrevious}" title="Previous Page"/>
+                    <apex:commandButton status="fetchStatus" reRender="pbId" value="Next Rec" action="{!setCon.next}" disabled="{!!setCon.hasNext}" title="Next Page"/>
+                    <apex:commandButton status="fetchStatus" reRender="pbId" value="Last Rec" action="{!setCon.last}" disabled="{!!setCon.hasNext}" title="Last Page"/>                
+                </apex:outputPanel>                                             
+                <apex:outputPanel >                      
+                    <apex:actionStatus id="fetchStatus" >
+                        <apex:facet name="start" >
+                            <img src="/img/loading.gif" />                    
+                        </apex:facet>
+                    </apex:actionStatus>
+                </apex:outputPanel>            
+                <div>
+                    <apex:repeat value="{!objRecords}" var="ob">
+                        <apex:outputPanel >
+                            <apex:outputLink styleClass="slds-button slds-button--neutral onesetupCreateMenuTrigger" value="/apex/myTrainingDetail_edit?objName={!pObjName}&recid={!ob.Id}&editmode=1">
+                                新規
+                            </apex:outputLink> 
+                            <span>     </span>
+                            <apex:outputLink styleClass="slds-button slds-button--neutral onesetupCreateMenuTrigger" value="/apex/myTrainingDetail_edit?objName={!pObjName}&recid={!ob.Id}&editmode=2">
+                                コピー新規
+                            </apex:outputLink>                            
+                            <span>     </span>
+                            <apex:outputLink styleClass="slds-button slds-button--neutral onesetupCreateMenuTrigger" value="/apex/myTrainingDetail_edit?objName={!pObjName}&recid={!ob.Id}&editmode=3">
+                                編集
+                            </apex:outputLink>
+                            <span>     </span>
+                            <apex:commandLink styleClass="slds-button slds-button--neutral onesetupCreateMenuTrigger" 
+                                              onclick="if(confirm('sure to delete?')){return true;}return false;" action="{!DeleteObject}" value="削除">
+                                <apex:param name="delId" assignTo="{!recId}" value="{!ob.Id}" />
+                            </apex:commandLink>                            
+                        </apex:outputPanel>                         
+     					<apex:repeat value="{!objFields}" var="fields">
+                            <apex:outputField id="fdName" value="{!ob[fields.objName]}"/>            
+                        </apex:repeat>
+                    </apex:repeat>  
+                </div>
+            </apex:pageBlockSection> 
+       <!-- <apex:actionFunction action="{!DeleteObject}" name="deleteFunc" reRender="pbId" >
+            <apex:param name="firstParam" value="" assignTo="{!recid}" />
+        </apex:actionFunction>   -->
+        </apex:pageBlock>     
+    </apex:form>    
+</apex:page>

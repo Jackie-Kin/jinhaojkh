@@ -1,0 +1,185 @@
+﻿
+
+* {
+        user-select:none;
+    -ms-user-select: none;
+}
+html, body, form{
+    -ms-touch-action: manipulation;
+    width:100%;
+    height:100%;
+    min-width:1024px;
+    max-width:100%;
+    min-height:766px;
+    max-height:100%;
+    margin: 0;
+    padding: 0;
+    background-color:black; 
+    font-family: 'ＭＳ Ｐゴシック'; 
+}
+
+html {-ms-touch-action:none}
+
+a
+{
+	text-decoration:none;
+}
+
+.headTitleFont{
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:rgb(64,64,64);
+}
+
+/* 表ヘッダー部*/
+.spm_header
+{ 
+    height:28px;
+    min-height:28px;
+    max-height:28px;
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: left;
+    font-size:16pt;
+    color:white;
+	background: linear-gradient(to bottom,#f0f1f4,#adb1bd);
+	position:relative;
+}
+
+.headerTitle {
+
+    color:black;
+}
+
+.headerStaffName {
+    color: black;
+    top: 7px;
+    left: 76.67%;
+    font-size: 12pt;
+    position: absolute;
+    font-weight: bold;
+}
+    
+.headerUpDateText {
+
+    top:2px; 
+    left:90.82%;
+    font-size:9pt;
+    position:absolute;
+    color:black;
+}
+
+.headerUpDateDate {
+
+    top:15px; 
+    left:90.82%;
+    font-size:9pt;
+    position:absolute;
+    color:black;
+}
+
+.fteerBar{
+	background: linear-gradient(to bottom,#323230 0%,#181818 59%,#000000 60%,#000000);
+	border-color:black;
+	border-style:none;
+	border-width:0px;
+
+    width:100%;
+    height:56px;
+    min-height:56px;
+    max-height:56px;
+    position:absolute;
+    bottom:0px;
+    z-index:1000;
+}
+
+/*グレーアウトのスタイル定義*/
+#gray{
+ background:#000;
+ opacity:0.5;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:58px;
+ left:0;
+ display:none;
+
+}
+
+/*ポップアップ部分のスタイル定義*/
+#square{
+ display:block;
+ 
+
+ background-color:#fff;
+ overflow:hidden;
+}
+
+#popup{
+ display:block;
+
+ overflow:hidden;
+ border:none;
+}
+
+.footerMenuText_01 {
+
+    font-size:11pt;
+    font-family:'HGP創英角ｺﾞｼｯｸUB';
+}
+
+.footerMenuText_02 {
+
+    font-size:8pt;
+    font-family:'HGP創英角ｺﾞｼｯｸUB';
+
+}
+
+.footerMenuText_03 {
+
+    font-size:8pt;
+    font-family:'HGP創英角ｺﾞｼｯｸUB';
+    user-select:none;
+    -ms-user-select: none;
+
+}
+
+#header_Popup {
+	position: relative;
+	display: inline-block;
+	padding: 0 15px;
+	width: auto;
+	min-width: 115px;
+	height: 40px;
+	color: #F6F6F6;
+	line-height: 40px;
+	text-align: center;
+	background: #000000;
+	z-index: 0;
+    border-radius: 10px;        /* CSS3草案 */  
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;   /* Firefox用 */
+}
+#header_Popup:after {
+	content: "";
+	position: absolute;
+	top: -10px; left: 50%;
+	margin-left: -10px;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+	border-color: transparent transparent #19283C transparent;
+}
+
+.btnLogout {
+
+    background: linear-gradient(to bottom,#47598e 0%,#181818 59%,#03070c 60%,#0e1f6f);
+    color:white;
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+    font-size:17pt;
+    width:230px;
+    height:35px;
+    border:none;
+}

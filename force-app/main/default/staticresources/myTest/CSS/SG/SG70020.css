@@ -1,0 +1,118 @@
+﻿.divHeader {
+    width: 100%;
+    height: 5.60%;
+    max-height: 5.60%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+.divMain {
+    height: 99%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position:relative;
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+    
+}
+.graphMain {
+    height: 95%;
+    width: 95%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.graphArrow {
+    margin-bottom: 0px;
+    display: inline-block;
+    visibility:hidden;
+    cursor: pointer;
+}
+
+/*2017/08/24 add start KPI(VS)*/
+.divMainVs {
+    height: 99%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position:relative;
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+    
+}
+
+.graphMainVs {
+    height: 90%;
+    width: 45%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.graphtitle {
+    font-size:25pt;
+}
+
+/*2017/08/24 add end KPI(VS)*/
+
+.message-dialog {
+    display: none;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    height: 150px;
+    position:absolute;
+    background-color: #ffffff;
+    transform : translate(-50%,-50%);
+    border-radius: 20px;
+}
+
+.title {
+    height: 22px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-family: "HGP創英角ｺﾞｼｯｸUB";
+    padding-top: 5px;
+    font-size: 11pt;
+    text-align: center;
+    color: white;
+    box-shadow: 4px 4px 0px 0px rgb(210,210,210);
+    background: black;
+}
+
+.message {
+    height: 90px;
+    width: 90%;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-family: "HGP創英角ｺﾞｼｯｸUB";
+    padding-top: 5px;
+    font-size: 12pt;
+    color: #595959;
+    text-align: left;
+    line-height: 40px;
+}

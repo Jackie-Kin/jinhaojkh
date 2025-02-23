@@ -1,0 +1,698 @@
+﻿
+body {
+   margin:0px; padding:0px; background-color:black;
+   min-width:1024px;
+   min-height:760px;
+   max-height:99.75%;
+   height:99.73%;
+
+}
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+        
+.fakeContainer { 
+	margin: 0 0 0;
+	border: 1px;
+	width: 100%; 
+	height: 94.5%; 
+	overflow: hidden; 
+   
+}
+
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.sortText {
+
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 50%;
+    top:10px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+
+
+.td_Dummy {
+    background-color:transparent !important;
+    border-top:0px none !important;
+    border-bottom:0px none !important;
+}
+
+.HeaderStyle {
+   
+    font-family:ＭＳ Ｐゴシック;
+    font-size:12pt;
+    color:#ffffff;
+    background-color:#00007c;
+}
+
+
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.th_Staff {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    height:90px;
+    font-weight:normal;
+}
+
+.th_Month {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+.th_Target {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:10.41667%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Keizokuzumi {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:10.41667%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Mikeizoku {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#376092;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    width:10.41667%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+/*
+.th_Target_ThisMonth {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Keizokuzumi_ThisMonth {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#376092;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Mikeizoku_ThisMonth {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#376092;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_1mu_NextMonth {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_6mu {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Target_NextMonth {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_6mu_Nyuko {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#376092;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_6mu_MiNyuko {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#376092;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_6mu_NextMonth {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_12ten {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Target_AfterNextMonth {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_12ten_Nyuko {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#376092;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_12ten_MiNyuko {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#376092;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_12ten_NextMonth {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_6ten {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_6ten_ThisMonth {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_6ten_Nyuko {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#376092;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_6ten_MiNyuko {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#376092;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_6ten_NextMonth {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Syaken {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Syaken_ThisMonth {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Syaken_Nyuko {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#376092;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Syaken_MiNyuko {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#376092;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+*/
+
+.th_Sub {
+
+    background-color:darkblue;
+    border-left: 1px solid #376092;
+    border-right: 1px solid #376092;
+    border-bottom: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.font_red {
+    color:red;
+}
+
+.font_gray {
+    color:gray;
+}
+
+.dataSubTable_0{
+
+	min-height:30px;
+	height:50%;
+	max-height:50%;
+	
+}
+
+.dataSubTable_0_border{
+
+	min-height:24px;
+	height:50%;
+	max-height:50%;
+	border-bottom-style:dashed;
+	border-bottom-width:1px;
+	border-bottom-color:#376092;
+	
+}
+
+.follow_background_hot{
+
+	/*background-color:#2A2105;*/
+	background-color:#3d2d0a;	
+
+}
+
+.follow_background_hot2{
+
+	/*background-color:#2D261A;*/
+	background-color:#453721;	
+	
+}
+
+.follow_background_warm{
+
+	/*background-color:#2B2A05;*/
+	background-color:#3d3a0a;	
+
+}
+
+.follow_background_warm2{
+
+	/*background-color:#2D2D12;*/
+	background-color:#484524;	
+
+}
+
+.follow_background_cold{
+
+	/*background-color:#191B27;*/
+	background-color:#1f2936;	
+
+}
+
+.follow_background_cold2{
+
+	/*background-color:#21252B;*/
+	background-color:#2f363f;	
+
+}
+
+.sesshoku_background_hot{
+
+	/*background: linear-gradient(to bottom, #2B2005 0%, #271303 100%);*/
+	background: linear-gradient(to bottom, #3d300a 0%, #381e0a 100%);	
+}
+
+.sesshoku_background_warm{
+
+	/*background: linear-gradient(to bottom, #2C2A00 0%, #2B2203 100%);*/
+	background: linear-gradient(to bottom, #3d3c0a 0%, #3d320a 100%);	
+
+}
+
+.sesshoku_background_cold{
+
+	/*background: linear-gradient(to bottom, #182027 0%, #071220 100%);*/
+	background: linear-gradient(to bottom, #262e37 0%, #11253f 100%);	
+
+
+}
+
+.mikeikaku_red_background{
+
+	background-color:#900000;
+
+}
+
+.yajirushi_font_style{
+
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:9pt;
+	text-align:center;
+
+}
+
+.okure_red_font{
+
+	color:#900000;
+
+}
+
+.sesshokuHind_text_style{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:20px;
+	padding-left:10px;
+
+}
+
+.footer{
+	font-family:HGP創英角ｺﾞｼｯｸUB;	
+    background: linear-gradient(to bottom,#323230 0%,#181818 59%,#000000 60%,#000000);
+    border-top:1px rgb(89,89,89) solid;
+    border-bottom:1px rgb(89,89,89) solid;
+}
+
+#border_double_top{
+	border-top: 3px double #376092;
+}
+
+.smaller_font{
+	font-size:small;
+}
+
+.listTable{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+
+}
+
+.listTable_sub{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+	border-style:none;
+	width:100%;
+	height:65px;
+	text-align:right;
+
+}
+
+
+.listData{
+
+	background:#000000;
+	border-color:#376092;
+	border-style:solid;
+	border-width:1px;
+	padding:0px;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:16pt;
+
+}
+
+.listData_text_style{
+
+	padding-left:10px;
+    background-color:black;
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+	
+}
+
+.listData_doubletext_style{
+
+    /*padding-bottom:21px;*/
+    padding-bottom:2px;
+	
+}
+
+
+.data_Staff {
+
+    background-color:black;
+    border: 1px solid #376092;
+    font-size:12pt;
+}
+
+.data_Target {
+
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+.data_Keizokuzumi {
+
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+.data_Mikeizoku {
+
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+.data_FusokuHot {
+
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+.data_Mikeikaku {
+
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+.data_Okure {
+
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+.td_line{
+	border: 1px solid #376092;
+}
+
+.td_Goukei_Top {
+
+    border: 1px solid #376092;
+    border-top:double 3px  #376092;
+}
+
+.td_Goukei_Bottom {
+
+    border-bottom:double 3px  #376092;
+}
+
+.listTani{
+	text-align:right;
+	vertical-align:top;
+	width:45%;
+	line-height:0px;
+	font-family:'ＭＳ Ｐゴシック';
+	border-style:none;
+	padding-right:4px;
+	padding-top:8px;
+	font-size: 9pt;
+	color:gray;
+    background-color:black;
+}
+
+.underline{
+    text-decoration:underline;
+}

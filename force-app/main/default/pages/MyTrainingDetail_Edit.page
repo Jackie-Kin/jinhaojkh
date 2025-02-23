@@ -1,0 +1,27 @@
+<apex:page controller="MyTrainingDetailController_Edit" action="{!PageLoad}" >
+    <head>
+        <apex:includeScript value="{!URLFOR($Resource.myResource, '/myResource/JS/jquery/jquery-3.3.1.js')}"/>
+        <apex:slds />
+    </head>
+    <apex:form styleclass="slds-scope">
+        <apex:pageBlock id="pbId">
+        <div>
+            <apex:outputLabel value="{!msg}"></apex:outputLabel>           
+        </div>            
+        	<apex:pageBlockSection title="データ明細" columns="2" collapsible="false">
+                <div>
+                    <apex:repeat value="{!objRec}" var="ob">
+                        <apex:outputPanel >
+                            <apex:commandButton styleClass="slds-button slds-button--neutral onesetupCreateMenuTrigger" value="保存" action="{!SaveRec}" rerender="pbId"/>
+                            <span>     </span>
+                            <apex:commandButton styleClass="slds-button slds-button--neutral onesetupCreateMenuTrigger" value="取り消し" action="{!Cancel}"/>
+                        </apex:outputPanel>  
+     					<apex:repeat value="{!objFields}" var="fields">
+                            <apex:inputField id="fdName" value="{!ob[fields.objName]}"/>            
+                        </apex:repeat>
+                    </apex:repeat>  
+                </div>
+            </apex:pageBlockSection>
+        </apex:pageBlock>        
+    </apex:form>
+</apex:page>

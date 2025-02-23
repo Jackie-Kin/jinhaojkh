@@ -1,0 +1,21 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　見込み客（S1）
+ * ファイル名 : T_SR_CSS_KatsudoKekkaNyuryokuTab_S1.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/15  HISOL張    新規作成
+ */
+.S10101-pc-right-body {
+  padding-left: 3%;
+}
+
+.S10101-pc-spm1 {
+  height: 234px;
+}
+
+.S10101-pc-spm2 {
+  height: 148px;
+  margin-top: 5px;
+}

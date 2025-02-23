@@ -1,0 +1,100 @@
+<apex:page applyBodyTag="false" applyHtmlTag="false" showHeader="false">
+    <script type="text/javascript">
+        
+        var jicj = jicj || {};
+
+        jicj.mobile = {
+            
+            const: {
+                ID_BACKDROP: "sj110101Backdrop",
+                ID_TRANSPARENT_BACKDROP: "sj110101TransparentBackdrop",
+                BACKDROP_OPEN_STYLE: "slds-backdrop_open",
+            },
+
+            showBackdrop: function() {
+
+                var cns = jicj.mobile.const;
+
+                var backdrop = document.getElementById(cns.ID_BACKDROP);
+                backdrop.classList.add(cns.BACKDROP_OPEN_STYLE);
+            },
+
+            showTransparentBackdrop: function() {
+
+                var cns = jicj.mobile.const;
+
+                var backdrop = document.getElementById(cns.ID_TRANSPARENT_BACKDROP);
+                backdrop.classList.add(cns.BACKDROP_OPEN_STYLE);
+            },
+
+            hideBackdrop: function() {
+
+                var cns = jicj.mobile.const;
+
+                var backdrop = document.getElementById(cns.ID_BACKDROP);
+                backdrop.classList.remove(cns.BACKDROP_OPEN_STYLE);
+
+                var transparentBackdrop = document.getElementById(cns.ID_TRANSPARENT_BACKDROP);
+                transparentBackdrop.classList.remove(cns.BACKDROP_OPEN_STYLE);
+            },
+
+            scrollTopForBody: function(userAgent, body) {
+
+                if (userAgent === "Android") {
+                    body.scrollTop = 0;
+                }
+            },
+
+            addEventText: function() {
+                var inputs = document.querySelectorAll("input[type='text']");
+                for (var i = 0; i < inputs.length; i++) {
+                    inputs[i].removeEventListener('keypress', jicj.mobile._disableEnter, false);
+                    inputs[i].addEventListener('keypress', jicj.mobile._disableEnter, false);
+                }
+            },
+
+            _disableEnter: function(e) {
+
+                if (e.keyCode === 13) {
+                    e.preventDefault();
+                    document.activeElement.blur();
+                }
+            }
+        }
+    
+    </script>
+
+    <!-- 網掛け -->
+    <div class="jicj-scope">
+        <div id="sj110101Backdrop" class="slds-backdrop"
+             style="opacity: 0.1; transition-duration: 0s;"></div>
+        <div id="sj110101TransparentBackdrop" class="slds-backdrop" 
+             style="opacity: 0; transition-duration: 0s;"></div>
+    </div>
+
+    <style type="text/css">
+        .slds-scope .slds-has-error .slds-input,
+        .slds-scope .slds-has-error .slds-textarea,
+        .slds-scope .slds-has-error .slds-select {
+            background-color: #ffccd1 !important;
+        }
+
+        .slds-scope .lookup-container a {
+            width: 10% !important;
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+        }
+
+        .slds-scope .lookup-container img {
+            background-image: url(/img/func_icons/util/lookup20.gif) !important;
+            width: 20px !important;
+            height: 20px !important;
+            background-position: top left !important;
+            background-repeat: no-repeat !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+
+</apex:page>

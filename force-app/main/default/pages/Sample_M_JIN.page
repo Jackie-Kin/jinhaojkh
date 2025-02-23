@@ -1,0 +1,119 @@
+<apex:page docType="html-5.0" controller="Sample_M_JINController"
+    showHeader="false" standardStylesheets="false" sidebar="false"
+    applyHtmlTag="false" applyBodyTag="false" cache="false" expires="0"
+    action="{!pageLoad}">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>SPM</title>
+
+<apex:insert name="header"/>
+
+<script>
+           $(window).load(function () {
+               var kengen;
+               kengen = $("j_id0:form1:kengen").val();
+
+               // 表示するメニューの切り替え
+               if (kengen == '0') {
+                   $("#btnsite").attr("href", "./SG90041");
+               }
+               
+               
+           });   
+   </script>
+</head>
+
+<body>
+    <div id="clear_panel"
+        style="height: 100%; width: 100%; z-index: 601; display: none; position: absolute;"></div>
+    <apex:form id="form1" style="position:relative;">
+
+        <!-- スクロール終わりにて再取得処理のため必要-->
+        <apex:commandButton id="btnReload" style="display:none" />
+        <apex:inputHidden value="{!lblprePageV}" id="prePageV" />
+        <!-- ページ数を設定必要　現在は100件単位としている -->
+        <apex:inputHidden value="{!lblnextPageV}" id="nextPageV" />
+        <apex:inputHidden value="{!lblmaxPage}" id="maxPage" />
+        <apex:inputHidden value="{!lblscrollVT}" id="scrollVT" />
+        <apex:inputHidden value="{!lblscrollVB}" id="scrollVB" />
+        <apex:inputHidden value="{!lblscrollType}" id="scrollType" />
+        <!-- スクロール終わりにて再取得処理のため必要-->
+        <apex:inputHidden value="{!lblcurScrollTop}" id="curScrollTop" />
+        <apex:inputHidden value="{!lblcurSelRow}" id="curSelRow" />
+
+        <!-- 納期CS向上ボード　ｽﾃｲﾀｽ画面にて使用 -->
+        <apex:inputHidden value="{!lblnext}" id="next" />
+        <apex:inputHidden value="{!lblprev}" id="prev" />
+        <apex:inputHidden value="{!lblmax}" id="max" />
+        <apex:inputHidden value="{!lblscrollTop}" id="scrollTop" />
+
+        <!-- 販売店設定マスタの情報を保持 -->
+        <apex:inputHidden value="{!lbldaigaeTitle}" id="daigaeTitle" />
+
+        <!-- 試行店区分 -->
+        <apex:inputHidden value="{!lblhdnKbTrial}" id="hdnKbTrial" />
+        <apex:inputHidden value="{!lblhdnKbTrial}"
+            id="hdnTrialOkyakuSearchUrl" />
+        <apex:inputHidden value="{!lblhdnKbTrial}"
+            id="hdnTrialOkyakuSearchUrlQuery" />
+        <apex:inputHidden value="{!lblhdnKbTrial}" id="hdnTrialUrl" />
+
+        <!-- 試行店対応更新用隠しボタン -->
+        <apex:commandButton id="btnUpdateField" styleClass="hiddenButton"
+            style="display:none" />
+        <apex:inputHidden value="{!lblhdnPopupKbn}" id="hdnPopupKbn" />
+
+
+
+        <div id="header_Popup"
+            style="width: 240px; max-height: 85%; background-color: #000000; position: absolute; display: none; z-index: 99999; padding: 5px; right: 5px; top: 25px;">
+            <apex:inputHidden value="{!lblhdnDataCdStaff}" id="hdnDataCdStaff" />
+            <apex:inputHidden value="{!lblhdnDataKjStaffMei}"
+                id="hdnDataKjStaffMei" />
+            <apex:inputHidden value="{!lblhdnSplitChar}" id="hdnSplitChar" />
+            <apex:inputHidden value="{!lblhdnCdStaff}" id="hdnCdStaff" />
+            <apex:commandButton id="btnStaff" style="display:none;" />
+            <apex:commandButton id="btnLogout" style="display:none;" />
+            <apex:commandButton id="btnIeClose" style="display:none;" />
+            <apex:commandButton id="btnBack" style="display:none;" />
+        </div>
+
+        <div class="spm_header" id="spm_header">
+            <!-- ヘッダー作成-->
+            <table class="listTable" style="width: 100%; z-index: 100">
+                <tr>
+                    <td
+                        style="width: 20%; white-space: normal; vertical-align: middle; text-align: left;">
+
+                    </td>
+                    <!-- ヘッダー作成-->
+                    <td
+                        style="width: 5%; white-space: normal; vertical-align: middle; text-align: left;">
+
+                    </td>
+                    <td style="text-align: center" class="spm_head_2"><apex:outputPanel styleclass="headerTitle" id="lblTitle" /></td>
+                    <td style="width: 25%" class="spm_head"><apex:outputPanel styleclass="headerStaffName" id="lblStaffName">豊田　太郎さん</apex:outputPanel>
+                        <apex:outputPanel styleclass="headerUpDateText" id="lblUpDateText">最終更新日時</apex:outputPanel>
+                        <apex:outputPanel styleclass="headerUpDateDate" id="lblUpDateDate">06/16 13:30</apex:outputPanel>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="mainPage" style="height: 86.5%; width: 100%;">
+            <apex:insert name="main" />
+        </div>
+
+        <div class="fteerBar"
+            style="min-height: 52px; max-height: 52px; height: 52px;">
+
+        </div>
+
+    </apex:form>
+
+</body>
+
+
+    </html>
+</apex:page>

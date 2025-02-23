@@ -1,0 +1,44 @@
+﻿@charset "UTF-8"; 
+
+body {
+     margin:0px; padding:0px; background-color:white;
+}
+
+.title{
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    font-size:11pt;
+    box-shadow: 4px 4px 0px 0px rgb(210,210,210);
+}
+
+
+
+.header_title_mojiStyle{
+	
+	color:white;
+	font-size:12pt;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	
+}
+
+.header_mojiStyle{
+	
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:12pt;
+	
+}
+
+.header_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	font-size:12.5pt;
+	color:#666666;
+	
+}
+
+.blancColumn {
+    width:1px;
+}

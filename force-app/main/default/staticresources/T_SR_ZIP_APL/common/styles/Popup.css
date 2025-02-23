@@ -1,0 +1,81 @@
+﻿.popup-container {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 1000;
+}
+
+.popup-container.background {
+    z-index: 0;
+}
+
+.popup-container.centering {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-container header {
+    background-color: #193a66;
+    width: 100%;
+    height: 45px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.popup-container .header-left {
+    float: left;
+    height: 100%;
+}
+
+.popup-container .header-right {
+    float: right;
+    width: 23px;
+    height: 100%;
+}
+
+.popup-container main {
+    display: block;
+    height: 94.1%;
+    background-color: white;
+    box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.popup-container section.styles,
+.popup-container section.scripts {
+    display: none;
+}
+
+.popup-container .popup-close {
+    width: 23px;
+    height: 23px;
+    /* 2019/07/05 mod start 融合版T_SR_ZIP_COMMON化 */
+    /* background-image: url("../../../Areas/S0/Images/icon_close.svg"); */
+    background-image: url("../images/icon_close.svg");
+    /* 2019/07/05 mod end 融合版T_SR_ZIP_COMMON化 */
+}
+
+.popup-left {
+  float: left;
+}
+
+.popup-title {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2.04px;
+  line-height: 24px;
+  text-align: left;
+  text-shadow: 0px 1px 1px rgba(25, 58, 102, 0.75);
+  margin-left: 12px;
+}
+
+.popup-icon {
+  box-shadow: 0px 1px 1px 0px rgba(25, 58, 102, 0.75);
+  width: 22px;
+  height: 22px;
+}

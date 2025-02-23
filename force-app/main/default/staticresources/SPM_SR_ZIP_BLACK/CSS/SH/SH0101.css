@@ -1,0 +1,234 @@
+﻿.ddlLabel{
+    font-size:19px;
+    background-color:#666666;
+    border:2px solid #666666;
+    color:white;
+    text-align:center;
+    vertical-align:central;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    padding-left:5px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+.ddlMain{
+    font-size:19px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    vertical-align:central;
+    padding-right:5px;
+    padding-top:2px;
+    padding-bottom:2px;
+    margin-right:0px;
+    margin-top:2px;
+    /*border:2px solid #666666;
+    text-align:center;
+    vertical-align:central;*/
+}
+.lblSelect{
+    font-size:18px;
+    border:1px solid #666666;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    padding-right:15px;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:3px;
+    margin-right:3px;
+    text-align:left;
+    /*border:2px solid #666666;
+    text-align:center;
+    vertical-align:central;*/
+}
+
+.btnCss{
+    font-size:22px;
+    text-align:center;
+    border-radius:10px;
+    padding-left:5px;
+    padding-left:5px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+/*input[type="text"][disabled]
+{
+    height:50px; 
+    font-size:xx-large;
+    width:45%;
+    border-width:0px;
+    text-align:center;
+    padding-top:10px;
+    background-color:#880000;
+}*/
+
+.divTimeTextWhite
+{
+    border:1px solid black;
+    background-color:white;
+    width:100%;
+    height:62px;
+    white-space:nowrap;
+}
+
+.divTimeTextGray
+{
+    border:1px solid black;
+    background-color:#888888;
+    width:100%;
+    height:62px;
+    white-space:nowrap;
+}
+
+.ImeModedis{
+    ime-mode:disabled;
+    -ms-ime-mode:disabled;
+}
+
+input[type="checkbox"],[type="radio"]
+{
+ width:20px;
+ height:20px;
+ border:15px;
+}
+
+
+
+.divDetailAuto
+{
+    OVERFLOW-X: hidden; 
+    OVERFLOW-Y: scroll; 
+    width:99.60%; 
+    height:595px;    
+    border-radius:10px;
+    background-color:transparent;
+    border-style: None; 
+}
+
+.StopGridView{
+    /*color:white;
+    background-color:#555555;*/
+    width:100%;
+    height:300px;
+    border:0px solid white;
+    overflow:hidden;
+
+}
+.StopGridHeader{
+    color:#444444;
+    background-color:transparent;
+    width:100%;
+    height:40px;
+    border:0px solid #888888;
+    border-top-width:0px;
+    border-right-width:1px;
+    border-left-width:1px;
+}
+.GridRow{
+    border:1px solid #888888;
+    border-top-width:0px;
+}
+
+.StopGridText{
+    color:black;
+    background-color:#FFFFFF;
+    height:100%;
+    width:99%;
+    border:0px solid black;
+    font-size:large;
+    padding:0px;
+}
+
+.StopGridText2{
+    color:black;
+    background-color:#FFFFFF;
+    height:100%;
+    width:97%;
+    border:0px solid black;
+    font-size:large;
+}
+
+.StopGridLabel{
+    color:black;
+    /*background-color:#FFFFFF;*/
+    height:100%;
+    width:99%;
+    border:0px solid black;
+    font-size:large;
+    font-family: Arial, Helvetica, 'ＭＳ ゴシック', 'MS Gothic', 'メイリオ', Meiryo, sans-serif; 
+    padding-left:3px;
+}
+
+.StopGridTransText{
+    color:white;
+    background-color:#5f5f5f;
+    height:80px;
+    border:1px solid white;
+    border-left-width:0px;
+    border-bottom-width:2px;
+    border-top-width:1px;
+    font-size:xx-large;
+    width:0px;
+    padding:0px;
+}
+
+.lblDelete{
+    width:50px;
+    text-align:center;
+    padding-right:5px !important;
+}
+
+.InsTableOFF{
+    border:0px solid gray;
+    border-radius:10px;
+    height:600px;
+    color:transparent;
+    overflow:auto;
+    width:100%;
+    background-color:transparent;
+}
+
+.InsTableON{
+    border:2px solid gray;
+    border-radius:10px;
+    padding-right:0px;
+    height:600px;
+    overflow:auto;
+    width:100%;
+    background-color:#CCCCCC;
+}
+
+.gridMainON{
+    margin-left:5%;
+    width:90%;
+    height:600px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+.gridMainOFF{
+    /*display:none;*/
+    margin-left:5%;
+    width:90%;
+    height:600px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+.NoneDisplay
+{
+    display:none;
+    width:0px;
+}
+
+.BorderRightON
+{
+    border-right-width:1px !important;
+    border-top-width:0px !important;
+}
+
+.BorderRightOFF
+{
+    border-right-width:0px !important;
+    border-top-width:0px !important;
+}

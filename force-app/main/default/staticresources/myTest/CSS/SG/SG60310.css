@@ -1,0 +1,204 @@
+﻿@charset "UTF-8"; 
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.divTable {
+    display: table;
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+	border-style:none;
+	width:100%;
+	height:100%;
+    text-align:center;
+}
+.divDataText {
+    display: table-cell;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+.listData_text_style{
+	vertical-align: top;
+}
+.listData{
+	background:#000000;
+	border-color:#376092;
+	border-style:solid;
+	border-width:1px;
+	padding:0px;
+	font-size:18px;
+	text-align:center;
+	min-height:43px;
+}
+/*2018/05/17 add start ゾーン対応*/
+.listData_BLOCK{
+	background:#10253f;
+}
+.listData_Zensya {
+	border-bottom:4px solid #376092;
+}
+/*2018/05/17 add end ゾーン対応*/
+
+.th_Tenpo{
+    height:55px;
+    width: 5%;
+    max-width: 5%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+    font-weight:normal;
+	border:1px solid #376092;
+    background-color: #00007C  !important;
+}
+.th_top {
+	height:20px;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+    font-weight:normal;
+    border-width: 1px 1px 0px 1px !important;
+    border-style: solid !important;
+    border-color: #376092 !important;
+    background-color: #00007C  !important;
+    pointer-events : none;
+}
+
+.th_syorui,  .th_haisokibo,  .th_nosyacyosei,  .th_toroku,  .th_nosya,  .th_kaisyu {
+    height:40px;
+    width: 10%;
+    max-width: 10%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+    font-weight:normal;
+	border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #376092;
+    background-color: #00007C  !important;
+}
+.data_Tenpo {
+	font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+	letter-spacing:1px;
+    height:60px;
+    width: 5%;
+    max-width: 5%;
+	border:1px solid #376092;
+}
+.data_syorui,  .data_haisokibo,  .data_nosyacyosei,  .data_toroku,  .data_nosya,  .data_kaisyu {
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	letter-spacing:1px;
+    height:60px;
+    width: 10%;
+    max-width: 10%;
+	border:1px solid #376092;
+}
+
+.all_Tenpo {
+    background-color: #000000 !important;
+	font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+	letter-spacing:1px;
+    height:60px;
+    width: 10%;
+    max-width: 10%;
+    border-bottom: 3px double #376092 !important;
+    font-weight: normal;
+}
+.all_Data {
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	letter-spacing:1px;
+    height:60px;
+    width: 10%;
+    max-width: 10%;
+    border-bottom: 3px double #376092 !important;
+    font-weight: normal;
+}
+
+.fakeContainer { 
+	margin: 0 0 20px;
+	border: 1px;
+	width: 100%; 
+	height: 96%; 
+	overflow: hidden; 
+}
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+.listData_Select {
+    background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+}
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.listTable{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+
+}
+
+.underline {
+    text-decoration:underline;
+}
+.divDataText span{
+    font-size: 1.5em;
+}
+
+.redColor{
+    color: #f00;
+}
+
+.unit{
+    margin-left: 15px;
+    margin-right: 80px;
+    font-size: 1em !important;
+}
+
+/************************************************/
+
+/*body {
+   margin:0px; padding:0px;
+   background-color:black;
+   min-width:1024px;
+   min-height:760px;
+	height:99.73%;
+	max-height:99.75%;
+}
+html {
+	height:99.73%;
+	max-height:99.75%;
+	min-width:1024px;
+	min-height:760px;
+
+}
+
+.form1{
+	    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+		background: linear-gradient(to bottom,darkblue,#010010);
+}*/
+

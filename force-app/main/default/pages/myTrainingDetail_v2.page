@@ -1,0 +1,3 @@
+<apex:page controller="myTrainingDetailController_v2">
+  <c:mytrainingdetailcomponent record="{!objname}" rcid="{!rcid}" />
+</apex:page>

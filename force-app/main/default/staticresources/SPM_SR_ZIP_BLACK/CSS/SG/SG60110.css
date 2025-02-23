@@ -1,0 +1,187 @@
+﻿@charset "UTF-8"; 
+
+.divMain{
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.listData{
+	background:#000000;
+	border-color:#376092;
+	border-style:solid;
+	border-width:1px;
+	padding:0px;
+	font-size:18px;
+	text-align:center;
+	min-height:43px;
+}
+
+/*2018/05/25 add start ゾーン対応*/
+.listData_BLOCK{
+	background:#10253f;
+}
+.listData_Zensya {
+	border-bottom:4px solid #376092;
+}
+/*2018/05/25 add end ゾーン対応*/
+
+.th_Tenpo{
+    height:65px;
+    width: 4.55%;
+    max-width: 4.55%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+    font-weight:normal;
+	border:1px solid #376092;
+    text-decoration:underline;
+}
+
+.th_ListHeader{
+	height:20px;
+    color:white;
+	font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+    font-weight:normal;
+    border-width: 1px 1px 0px 1px !important;
+    border-style: solid !important;
+    border-color: #376092 !important;
+    pointer-events : none;
+}
+
+.th_MokuhyoMonth{
+    height:45px;
+    width: 4.55%;
+    max-width: 4.55%;
+	font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+    font-weight:normal;
+	border-width: 0px 1px 1px 1px !important;
+    border-style: solid;
+    border-color: #376092;
+    text-decoration:underline;
+}
+.th_JisekiMonth, .th_JisekisaMonth, .th_TasseiMikomiMonth, .th_TasseiRitsuMonth 
+{
+    height:45px;
+    width: 4.55%;
+    max-width: 4.55%;
+	font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+    font-weight:normal;
+	border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #376092;
+    text-decoration:underline;
+}
+.data_Tenpo 
+{
+    font-family:ＭＳ Ｐゴシック;
+	font-size:14px;
+	letter-spacing:1px;
+    height:60px;
+    width: 4.55%;
+    max-width: 4.55%;
+	border:1px solid #376092;
+}
+
+/*.data_Furiatesumi{
+    font-family:'HGP創英角ｺﾞｼｯｸUB';
+	letter-spacing:1px;
+    height:60px;
+    width: 4.55%;
+    max-width: 4.55%;
+	border:1px solid #376092;
+}*/
+
+.data_MokuhyoMonth, .data_JisekiMonth, .data_JisekisaMonth, .data_TasseiMikomiMonth, .data_TasseiRitsuMonth 
+{
+    font-family:'HGP創英角ｺﾞｼｯｸUB';
+	letter-spacing:1px;
+    height:60px;
+    width: 4.55%;
+    max-width: 4.55%;
+	border:1px solid #376092;
+}
+
+/*.data_MokuhyoMonth, .data_JisekiMonth, .data_JisekisaMonth, .data_TourokuOkure, .data_TasseiRitsuMonth, .data_MikomiMonth, .data_TasseiMikomiMonth, 
+.data_MokuhyoToday, .data_JisekisaToday{
+    font-family:'HGP創英角ｺﾞｼｯｸUB';
+	letter-spacing:1px;
+    height:60px;
+    width: 4.55%;
+    max-width: 4.55%;
+	border:1px solid #376092;
+}*/
+
+.fakeContainer{ 
+	margin: 0 0 20px;
+	border: 1px;
+	width: 100%; 
+	height: 96%; 
+	overflow: hidden; 
+}
+
+.textHeader{
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+/*.listData_Select {
+    background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+}*/
+
+.tenpoName{
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.divTable{
+    display: table;
+    padding:0px;
+    border-collapse:collapse;
+    margin:0px;
+    border-style:none;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+.divTableRow{
+    display: table-row;
+}
+.divTani{
+    display: table-cell;
+    text-align:right;
+    vertical-align:top;
+    height: 15px;
+    font-family:'ＭＳ Ｐゴシック';
+    border-style:none;
+    padding-right:4px;
+    padding-top:8px;
+    font-size: 9pt;
+    color:gray;
+}
+.divDataText{
+    display: table-cell;
+    vertical-align: top;
+}
+
+.underline{
+    text-decoration:underline;
+}

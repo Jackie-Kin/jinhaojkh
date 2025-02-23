@@ -1,0 +1,522 @@
+﻿
+body {
+   margin:0px; padding:0px; background-color:black;
+   min-width:1024px;
+   min-height:760px;
+   max-height:99.75%;
+   height:99.73%;
+
+}
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+.fakeContainer { 
+	margin: 0 0 0;
+	border: 1px;
+	width: 100%; 
+	height: 95%; 
+	overflow: hidden; 
+   
+}
+
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.sortText {
+
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 50%;
+    top:10px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.jokenText {
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 50%;
+    top:25px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.headerBar{
+	background: linear-gradient(to bottom,#f0f1f4,#adb1bd);
+	position:relative;
+
+
+}
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.th_staff {
+    border:1px #376092 solid;
+    width:8%;
+    background-color:darkblue !important;
+    height:65px;
+}
+
+.th_hindo {
+    border:1px #376092 solid;
+    width:8%;
+    background-color:darkblue !important;
+}
+
+.th_month {
+    border:1px #376092 solid;
+    width:20.8%;
+    background-color:darkblue !important;
+    height:35px;
+    font-family:'ＭＳ Ｐゴシック';
+    font-weight:normal;
+}
+
+
+
+.th_n6 {
+    border:1px #376092 solid;
+    background-color:darkblue !important;
+}
+
+.td_staff {
+    background-color:black;
+    border:1px #376092 solid;
+    min-height:100px;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+.td_hindo {
+     background-color:black;
+     border:1px #376092 solid;
+}
+
+.td_month {
+     background-color:black;
+     border:1px #376092 solid;
+}
+
+
+
+section{
+	width:100%;
+	min-width:1020px;
+	height:100%;
+	min-height:700px;
+
+}
+
+/*table{
+	border-collapse:collapse;
+	border:1px rgb(55,96,146) solid;
+	width:100%;
+	min-width:1020px;
+	height:100%;
+}*/
+
+.trh1{ height:3.6%;		}
+.trh2{ height:6.6%;		}
+.tra2{ height:40.0%;	}
+.tra1{ height:20.0%;	}
+.tra3{ height:15.0%;	}
+
+/*th{	
+	height:20px;
+	font-weight:normal;
+	font-size:11pt;
+	border:1px rgb(55,96,146) solid;
+	padding:2px;
+}
+
+td{
+	min-width:72px;
+	border:1px rgb(55,96,146) solid;
+	background-color:black;
+}*/
+
+.stname{
+	width:7%;
+	min-width:72px;
+	text-align:center;
+	font-size:13pt;
+	line-height:16pt;
+	font-family:HGP創英角ｺﾞｼｯｸUB;
+	letter-spacing:1px;
+}
+
+.ttltip{
+	width:9%;
+	/*min-width:96px;*/
+	vertical-align:middle;
+    background-color:black;
+    border:1px #376092 solid;
+    word-wrap:break-word;
+    word-break:break-all;   
+}
+
+.monbox{
+	width:12%;
+	/*min-width:121px;*/
+    background-color:black;
+    border:1px #376092 solid;
+    word-wrap:break-word;
+    word-break:break-all;  
+}
+
+.tipwrap{
+	height:100%;
+}
+
+.sam{
+	margin-left:3px;
+	margin-top:3px;
+	padding:2px;
+}
+
+.tra2 .tip,.tra3 .tip,.tra4 .tip{
+	width:30%;
+	height:23px;
+	margin-left:1.5%;
+	margin-bottom:2%;
+	float:left;
+	line-height:23px;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.tip{
+	width:17%;
+    min-width:30px;
+    font-size:13pt;
+	height:23px;
+	margin-left:1.5%;
+	margin-bottom:2%;
+	float:left;
+	line-height:23px;
+	vertical-align:middle;
+	text-align:center;
+    position:relative;
+}
+
+.tip p{
+	height:100%;
+	width:100%;
+	min-height:22px;
+	color:white;
+	font-size:14pt;
+	line-height:24px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+
+.moji {
+    position:absolute;
+    z-index:200;
+    top:0px;
+    left:0px;
+}
+
+
+.samtip{
+	width:78%;
+   
+	height:20px;
+	min-height:18px;
+	margin:5% 0 5px 12%;
+	
+	font-family:'ＭＳ Ｐゴシック';
+	font-size:15pt;	
+	letter-spacing:-1px;
+	text-align:center;
+	line-height:10pt;
+	
+	display:block;
+	text-align:center;
+	left:0%;
+
+	position:relative;
+
+    
+}
+
+.samtip:before{
+	content:"";
+	width:2%;
+	height:100%;
+	left:0;
+	display:block;
+	position:absolute;
+	background: linear-gradient(to bottom, rgb(10,94,125) 0%, rgb(14,139,184) 100%);
+}
+.samtip:after{
+	content:"";
+	width:98%;
+	height:5%;
+	min-height:2px;
+	top:84%;
+	left:0%;
+	display:block;
+	position:absolute;
+	background: linear-gradient(to bottom, rgb(10,94,0) 0%, rgb(14,139,184) 100%);
+	border:1px white solid;
+}
+
+/* U-Car SPM：2017/11/28 add start */
+.ucarnewcar{
+	text-align:left;
+	margin-left: 5%;
+}
+/* U-Car SPM：2017/11/28 add end */
+
+.ttltip .orange:before{
+	background:linear-gradient(to top,rgb(200,150,0) 0%,rgb(214,87,0) 50%,rgb(130,53,0) 100%);
+}
+.ttltip .orange:after{
+	background: linear-gradient(to bottom left,rgb(200,150,0) 0%,rgb(214,87,0) 50%,rgb(130,53,0) 100%);
+	border-color:rgb(274,150,70);
+}
+
+.ttltip .yellow:before{
+	background:linear-gradient(to top,rgb(166,162,0) 0%,rgb(112,85,0) 63%,rgb(122,73,0) 100%);
+}
+.ttltip .yellow:after{
+	background: linear-gradient(to bottom left,rgb(166,162,0) 0%,rgb(112,85,0) 63%,rgb(122,73,0) 100%);
+	border-color:rgb(196,191,0);
+}
+
+.ttltip .blue:before{
+	background: linear-gradient(to top,rgb(0,61,134) 0%,rgb(0,46,84) 50%,rgb(13,26,41) 100%);
+}
+.ttltip .blue:after{
+	background: linear-gradient(to bottom left,rgb(0,61,134) 0%,rgb(0,46,84) 50%,rgb(13,26,41) 100%);
+	border-color:rgb(0,117,158);
+}
+
+.ttltip .black:before{
+	background: linear-gradient(to top,rgb(64,64,64) 0%,rgb(38,38,38) 50%,rgb(0,0,0) 100%);
+}
+.ttltip .black:after{
+	background: linear-gradient(to bottom,rgb(64,64,64) 0%,rgb(38,38,38) 50%,rgb(0,0,0) 100%);
+	border-color:rgb(127,127,127);
+}
+
+/* 2017/11/29 del start U-Car_SPM車検画面対応 */
+/* .monbox{
+	width:130px;
+	padding-top:2px;
+	vertical-align:top;
+}*/
+/* 2017/11/29 del end U-Car_SPM車検画面対応 */
+
+.tipwrap .orange{
+	background:linear-gradient(to right bottom,rgb(130,86,0) 0%,rgb(134,54,0) 50%,rgb(85,34,0) 100%);
+	border:1px rgb(189,89,9) solid;
+}
+
+.tipwrap .yellow{
+	background:linear-gradient(to right bottom,rgb(96,90,0) 0%,rgb(78,64,0) 63%,rgb(74,49,0) 100%);
+	border:1px rgb(122,118,0) solid;
+	border-radius:1px;
+}
+
+.tipwrap .blue{
+	background:linear-gradient(to right bottom,rgb(0,61,134) 0%,rgb(0,46,84) 63%,rgb(13,26,41) 100%);
+	border:1px rgb(0,117,158) solid;
+	border-radius:1px;
+}
+
+.tipwrap .grey{
+	background:linear-gradient(to right bottom,rgb(169,169,169) 0%,rgb(134,134,134) 63%,rgb(64,64,64) 100%);
+	border:1px rgb(191,191,191) solid;
+	border-radius:1px;
+}
+
+.tipwrap .black{
+	background:linear-gradient(to right bottom,rgb(37,37,37) 0%,rgb(27,27,27) 63%,rgb(0,0,0) 100%);
+	border:1px rgb(79,79,79) solid;
+	border-radius:1px;
+}
+
+.featOn	{
+	background-image:url('../../IMG/Jucyu.png');
+	background-repeat:no-repeat;
+	background-size:24px;
+	background-position:center;
+}
+
+.featOff	{
+	vertical-align:middle;
+	background-image:url('../../IMG/Jucyu_Gray.png');
+	background-repeat:no-repeat;
+	background-size:24px;
+	background-position:center;	
+}
+
+/* 2016/07/06 add start C#4 U-Car受注のチップ追加 */
+.featOn_Ucar	{
+	background-image:url('../../IMG/JucyuUcar.png');
+	background-repeat:no-repeat;
+	background-size:24px;
+	background-position:center;
+}
+
+.featOff_Ucar	{
+	vertical-align:middle;
+	background-image:url('../../IMG/JucyuUcar_Gray.png');
+	background-repeat:no-repeat;
+	background-size:24px;
+	background-position:center;	
+}
+/* 2016/07/06 add end   C#4 U-Car受注のチップ追加 */
+
+.flag1	{
+	background-image:url('../../IMG/flag1.png');
+	background-repeat:no-repeat;
+	background-size:23px;
+	background-position:center;
+}
+.flag2	{
+	background-image:url('../../IMG/flag2.png');
+	background-repeat:no-repeat;
+	background-size:23px;
+	background-position:center;
+}
+.flag3	{
+	background-image:url('../../IMG/flag_icon03.png');
+	background-repeat:no-repeat;
+	background-size:23px;
+	background-position:center;
+}
+.flag5	{
+	background-image:url('../../IMG/flag_icon05.png');
+	background-repeat:no-repeat;
+	background-size:23px;
+	background-position:center;
+}
+.flagMemoKanri	{
+	background-image:url('../../IMG/flagMemoKanri.png');
+	background-repeat:no-repeat;
+	background-size:22px;
+	background-position:center;
+}
+.flagMemoStaff	{
+	background-image:url('../../IMG/flagMemoStaff.png');
+	background-repeat:no-repeat;
+	background-size:22px;
+	background-position:center;
+}
+.flagMemo	{
+	background-image:url('../../IMG/flagMemo.png');
+	background-repeat:no-repeat;
+	background-size:22px;
+	background-position:center;
+}
+
+.clr	{ clear:both; }
+
+.box	{ display:table; }
+.boxcell{ display:table-cell;}
+/*span	{ margin-left:5px; }*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.underline{
+    text-decoration:underline;
+}
+
+/* 2016/07/14 add start C#47 ツールチップの表示対応 */
+.memoLabel {
+    width:250px;
+    height:23px;
+
+	line-height:15px;
+    font-size: 11pt;
+    font-family: ＭＳ ゴシック;
+    color:black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.upperBox {
+    margin-top:-5px;
+    border-bottom: dashed black 1pt;
+}
+
+.lowerBox {
+    margin-top:4px;
+}
+
+/* 省略文字の表示 */
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+div.ui-tooltip{
+    width:  255px;
+    height: 85px;
+    background:linear-gradient(to bottom,rgb(255,255,255) 0%,rgb(200,200,200) 70%,rgb(150,150,150) 100%);
+}
+/* 2016/07/14 add end   C#47 ツールチップの表示対応 */
+
+/* 2017/11/29 mod start U-Car_SPM車検画面対応 */
+hr.separator {
+	border:solid #00759e;
+	border-width:1.2px 0 0 0;
+}
+div.newcarSum {
+	height: 160px;
+}
+div.ucarSum {
+	height: 160px;
+}
+div.newcar {
+	height: 160px;
+}
+div.ucar {
+	height: 160px;
+}
+/* 2017/11/29 mod end U-Car_SPM車検画面対応 */

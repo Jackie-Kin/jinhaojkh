@@ -1,0 +1,170 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　入庫履歴
+ * ファイル名 : _T_SR_CSS_KatsudoKekkaNyuryokuTabReceiptHistory.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/20  HISOL清水    新規作成
+ */
+.S10101-rh {
+  width: 100%;
+  height: 100%;
+}
+
+.S10101-rh-content-header {
+  border-radius: 3px 3px 0 0;
+  background-color: #193a66;
+  height: 22px;
+
+  width: 100%;
+}
+
+.S10101-rh-content-header-char {
+  font-family: Meiryo;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  line-height: 22px;
+  text-align: left;
+  text-shadow: 0px 2px 3px rgba(102, 102, 102, 0.3);
+
+  margin-left:20px;
+}
+
+.S10101-rh-content {
+  border-radius: 0 0 3px 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px rgba(102,102,102,0.3);
+  height: 122px;
+  display: flex;
+}
+
+.S10101-rh-content-list {
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+
+  height: 103px;
+  width: 96%;
+
+  margin-top:5px;
+  margin-left: 20px;
+}
+
+/* リストのヘッダー */
+.S10101-rh-list-header {
+  width: 100%;
+  height: 23px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: #375884;
+  display: flex;
+}
+
+.S10101-rh-list-header > div {
+  float: left;
+  padding-left: 9px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.S10101-rh-list-no {
+  width: 6%;
+}
+
+.S10101-rh-list-date {
+  width: 13%;
+}
+
+.S10101-rh-list-kubun {
+  width: 9%;
+}
+
+.S10101-rh-list-tenpo {
+  width: 10%;
+}
+
+.S10101-rh-list-syain {
+  width: 10%;
+}
+
+.S10101-rh-list-uriage {
+  width: 12%;
+  text-align: right!important;
+}
+
+.S10101-rh-list-nebiki {
+  width: 12%;
+  text-align: right!important;
+}
+
+.S10101-rh-list-kyori {
+  width: 13%;
+  text-align: right!important;
+}
+
+.S10101-rh-list-jucyuu {
+  width: 15%;
+  padding-left: 30px!important;
+}
+
+/* リストのデータ部 */
+.S10101-rh-list-deta {
+  height: 79px;
+  overflow-y: auto;
+}
+
+.S10101-rh-list-deta-detail {
+  background-color: rgba(92, 151, 230, 0.08);
+  height: 25px;
+  margin-bottom: 2px;
+
+  display: flex;
+}
+
+.S10101-rh-list-deta-detail > div {
+  float: left;
+  padding-left: 10px;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.S10101-rh-list-deta-detail .S10101-rh-list-uriage,
+.S10101-rh-list-deta-detail .S10101-rh-list-nebiki,
+.S10101-rh-list-deta-detail .S10101-rh-list-kyori {
+  padding-right: 8px;
+}
+
+.S10101-rh-list-syousaiBtn {
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #193a66;
+  box-shadow: 0px 1px 1px 0px rgba(17,65,128,0.3);
+  width: 70px;
+  height: 23px;
+  margin-top:1px;
+  padding-top: 4px;
+  padding-left: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  line-height: 17px;
+  text-align: left;
+  text-shadow: 0px 1px 1px rgba(40,76,126,0.75);
+  cursor: pointer;
+}
+
+.S10101-rh-list-syousaiBtn:hover{
+  background-color: #2f578e;
+}

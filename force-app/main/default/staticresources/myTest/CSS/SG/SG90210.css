@@ -1,0 +1,398 @@
+﻿@charset "UTF-8"; 
+
+body {
+
+     margin:0px; padding:0px; background-color:white;
+     overflow:hidden !important; /*スクロールバーが現れる不具合を修正*/
+}
+
+.title{
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    font-size:11pt;
+    text-align:center;
+    color:white;
+    box-shadow: 4px 4px 0px 0px rgb(210,210,210);
+    background:black;
+}
+
+.syaryoJoho_tblStyle{
+	
+	padding:0px;
+	border-collapse:collapse;
+
+}
+
+.sp_left {
+    padding-left:20px;
+}
+
+.UnderBar{
+	border-bottom:2px solid rgb(49,133,156);
+}
+
+.nyukoRireki_tblStyle{
+	
+	padding:0px;
+	border-collapse:collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	width:97%;
+	
+}
+
+.mojiStyle{
+	
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	
+}
+
+.header_title_mojiStyle{
+	
+	color:white;
+	font-size:12pt;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	
+}
+
+.header_mojiStyle{
+	
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:12pt;
+	
+}
+
+.header_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	font-size:12.5pt;
+	color:#666666;
+	
+}
+
+
+.title_mojiStyle{
+	
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:10.5pt;
+
+}
+
+.hoyuSyaryo_check_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:12pt;
+	color:#0F718B;
+	
+}
+
+.hoyuSyaryo_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:12pt;
+	color:#666666;
+	
+}
+
+.syaryoJoho_mojiStyle{
+
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:10.5pt;
+	
+}
+
+.syaryoJoho_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:10.5pt;
+	color:#666666;
+	
+}
+
+.syaryoJoho_textStyle_select{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:10.5pt;
+	color:rgb(49,133,156);
+	
+}
+
+.nyukoRireki_header_mojiStyle{
+	
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+
+}
+
+.nyukoRireki_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:11pt;
+	color:#666666;
+
+}
+
+.nyukoRireki_date_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:11pt;
+	color:#666666;
+	text-align:left;
+	padding-left:15px;
+
+}
+
+.nyukoRireki_integer_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:11pt;
+	text-align:right;
+	color:#666666;
+	padding-right:10px;
+}
+
+.image_pin{
+
+	width:15px;
+	margin-top:1px;
+	margin-right:5px;
+		
+}
+
+.listTable{
+
+	padding:0px;
+	border-collapse:collapse;
+	border: 1px solid #CCCCCC;
+}
+
+.listTable td{
+
+	border-collapse:collapse;
+	border: 1px solid #CCCCCC;
+}
+
+.checkBox{
+	padding:0px;
+	margin:0px;
+	height:25px;
+	width:26px;
+	min-width:26px;
+	max-width:26px;
+	border-radius:4px;
+	border-color:rgb(156,156,156);
+	background-color:rgb(255,255,204);
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4) inset;
+}
+.hoyuuSyaryo{
+	min-width:90px;
+	font-size:12pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#666666;
+	text-align:left;
+}
+.hoyuuSyaryo_select{
+	min-width:90px;
+	font-size:12pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:rgb(49,133,156);
+	text-align:left;
+}
+
+.hoyuDaisu_Font {
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:20pt;
+	color:#666666;
+}
+
+.tableData{
+	border:1px solid rgb(199,199,199);
+	text-align:center;
+    white-space:nowrap;
+	
+}
+
+.tableData_right{
+	border:1px solid rgb(199,199,199);
+	text-align:right;
+    white-space:nowrap;
+    /*padding-right:10px;*/
+    position:relative;
+    right:7px;
+	
+}
+
+.tabledataFont{
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#666666;
+
+}
+
+.width1 {width:120px;}
+.width2 {width:200px;}
+.width3 {width:250px;}
+.width4 {width:200px;}
+
+.width5 {width: 80px;}
+.width6 {width: 330px;}
+
+
+
+        /*グレーアウトのスタイル定義*/
+
+label{
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+
+label .title{
+	display: block;
+	margin-left: 30px;
+	line-height: 32px;
+    text-align:left;
+}
+
+.input{
+	text-align:left;
+	font-size:12pt;
+	border:0px none;
+	/* background: radial-gradient(rgb(255,255,204),rgb(255,255,204),rgb(153,153,126)); */
+	background-color:rgb(255,255,204);
+	box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.4) inset;
+	vertical-align:top;
+    padding:10px;
+}
+
+.txtInput {
+    background-color:rgb(255,255,204);
+    border:0px none;
+    font-size:12pt;
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+	/*font-weight:bold;*/
+	color:#666666;
+}
+
+.mojisu_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	/*font-weight:bold;*/
+	font-size:12pt;
+	color:#666666;
+	
+}
+
+.preview_textStyle {
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+	/*font-weight:bold;*/
+	font-size:12pt;
+	color:#666666;
+}
+
+/* テキストボックスの×ボタンを消す */
+input::-ms-clear { display:none; }
+
+.headersp {
+    padding-left:15px;
+}
+
+.headerTable {
+    height:20px;
+    padding:0px;
+    border-collapse:collapse;
+    margin-top:10px
+}
+
+.header_titlesp {
+    padding-left:10px;
+    
+}
+
+/* メールアドレス指定ポップアップ分 */
+.popup {
+    display: none;
+    left: 45%;
+    top: 50%;
+    width: 600px;
+    height: 400px;
+    position:absolute;
+    background-color: #ffffff;
+    transform : translate(-43%,-50%);
+    border-radius: 20px;
+    border:1px black solid;
+    z-index:603;
+}
+
+.popup_disp {
+    height: 90px;
+    width: 90%;
+    margin-left: 40px;
+    margin-top: 25px;
+    font-family: "HGP創英角ｺﾞｼｯｸUB";
+    padding-top: 5px;
+    font-size: 14pt;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+}
+
+#gray{
+ background:#000;
+ opacity:0.5;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:0px;
+ left:0;
+ display:none;
+
+}
+
+.popupTitle{
+	border-radius: 5px;
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    font-size:11pt;
+    text-align:center;
+    color:white;
+    box-shadow: 4px 4px 0px 0px rgb(210,210,210);
+    background:black;
+    width:1000px;
+}
+
+.closeImg{
+    vertical-align:middle;
+}
+
+.rank{
+    width:20px;
+    
+}
+
+.datasource{
+    width:200px;
+    text-align:left;
+}
+.address{
+    width:300px;
+    text-align:left;
+}
+
+.set_btn{
+    width:50px;
+    height:30px;
+    vertical-align:middle;
+}
+
+.popup_table{
+    border-collapse:collapse;
+}
+/* メールアドレス指定ポップアップ分 */

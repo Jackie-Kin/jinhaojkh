@@ -1,0 +1,172 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　商談実績
+ * ファイル名 : _T_SR_CSS_KatsudoKekkaNyuryokuTabActualNegotiation.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/20  HISOL清水    新規作成
+ */
+.S10101-an-content {
+  display: flex;
+}
+
+.S10101-an-content-negotiation {
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+  height: 142px;
+
+  width: 66.0%;
+}
+
+.S10101-an-content-installment {
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+  height: 142px;
+
+  width: 33.2%; /* 合計 99.2*/
+  margin-left: 9px;
+}
+
+.S10101-an-content-header {
+  border-radius: 3px 3px 0 0;
+  background-color: #193a66;
+  height: 22px;
+  width: 100%;
+}
+
+.S10101-an-content-header-char {
+  font-family: Meiryo;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  line-height: 22px;
+  text-align: left;
+  text-shadow: 0px 2px 3px rgba(102, 102, 102, 0.3);
+
+  margin-left:20px;
+}
+
+.S10101-an-content {
+  border-radius: 3px;
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+  height: 119px;
+
+  display: flex;
+}
+
+.S10101-an-assessment {
+  margin-left: 19px;
+  /*width: 307px;*/
+  width: 30.0%;
+}
+
+.S10101-an-try {
+  margin-left: 10px;
+  /*width: 307px;*/
+  width: 20.3%;
+}
+
+.S10101-an-estimates {
+  margin-left: 10px;
+  /*width: 307px;*/
+  width: 43.0%;/* 合計 93.3*/
+}
+
+.S10101-an-installment {
+  margin-left: 10px;
+  width: 95.0%;
+}
+
+.S10101-an-cnt-title {
+  color: #193a66;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.56px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.S10101-an-cnt-val {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.S10101-an-title {
+  color: #193a66;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.S10101-an-val {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+  line-height: 24px;
+  text-align: center;
+}
+.S10101-an-val.right {
+  margin-right: 3px;
+  text-align: right;
+}
+
+.S10101-an-top {
+  height: 28px;
+  display: flex;
+
+  margin-top: 2px;
+
+  justify-content: space-between;
+}
+
+.S10101-an-row {
+  background-color: rgba(92, 151, 230, 0.08);
+  height: 25px;
+  display: flex;
+
+  margin-top: 2px;
+  justify-content: space-between;
+}
+
+.S10101-an-half {
+  width: 50%;
+}
+
+.S10101-an-quarter {
+  width: 25%;
+}
+
+.S10101-an-col-width {
+  width: 15%;
+}
+
+.S10101-an-val-width {
+  width: 35%;
+}
+
+.S10101-an-val-width-wide {
+  width: 75%;
+}
+
+.S10101-an-installment-col-width-wide {
+  width: 32%;
+}
+
+.S10101-an-installment-col-width-short {
+  width: 10%;
+}
+
+.S10101-an-installment-val-width {
+  width: 29%;
+}

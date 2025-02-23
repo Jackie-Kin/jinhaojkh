@@ -1,0 +1,21 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　その他（S1）
+ * ファイル名 : T_SR_CSS_KatsudoKekkaNyuryokuTabOther.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/15  HISOL張    新規作成
+ */
+.S10101-o-right-body {
+  padding-left: 3%;
+}
+
+.S10101-o-spm1 {
+  height: 210px;
+}
+
+.S10101-o-spm2 {
+  height: 144px;
+  margin-top: 3px;
+}

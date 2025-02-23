@@ -1,0 +1,206 @@
+﻿body {
+    background-color:white !important;
+}
+
+.title{
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    font-size:11pt;
+    box-shadow: 4px 4px 0px 0px rgb(210,210,210);
+    background-color:black;
+}
+
+.Main{
+     font-size:16pt;
+}
+
+#gray2{
+ background:#000;
+ opacity:0.5;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:0px;
+ left:0;
+ display:none;
+
+}
+
+.ErrorRed {
+    background-color:rgba(255, 51, 51, 1) !important;
+}
+
+
+.dropdown {
+	  position: relative;
+	  display: inline-block;
+	  text-align: left;
+	}
+
+.dropdown .select {
+	background: #fff;
+	color: #555;
+	border: 1px solid #ddd;
+	border-right: none;
+	border-radius: 4px 0 0 4px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	margin-bottom: 0;
+	padding: 6px 6px 6px 12px;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: relative;
+	width: 250px;
+	height: 45px;
+	text-align: right;
+	text-valign: middle;
+}
+	
+.dropdown .right {
+	background: #fff;
+	color: #555;
+	cursor: pointer;
+	border: 1px solid #ddd;
+	border-radius: 0 4px 4px 0;
+	display: inline-block;
+	margin-left: 0;
+	margin-bottom: 0;
+	padding: 6px 0 6px 0px;
+	width: 35px;
+	height: 45px;
+	text-align: right;
+	text-valign: middle;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.dropdown .right:after {
+	content: '';
+	position: absolute;
+	border: 5px solid transparent;
+	border-top: 5px solid #555;
+	top: 25px;
+	right: 15px;
+	  
+}
+
+
+.dropdown .option-list {
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	box-shadow: 0 5px 7px rgba(0, 0, 0, 0.17);
+	font-size: 14px;
+	left: 0;
+	list-style: none;
+	margin: 2px 0 0;
+	min-width: 160px;
+	max-height: 275px;
+	overflow-y: auto;
+	padding: 5px 0;
+	position: absolute;
+	top: 100%;
+	z-index: 100;
+	display: none;
+}
+
+.dropdown .option-list .div_list {
+	clear: both;
+	color: #333;
+	font-weight: 400;
+	padding: 3px 20px;
+	white-space: nowrap;
+	text-valign: middle;
+	text-align: right;
+}
+
+.dropdown .option-list .div_list:hover {
+	background: #4285F4;
+	color: #fff;
+}
+.dropdown .option-list .div_list .div_img img{
+	height: 40px;
+	width: 40px;
+}
+
+.div_img img{
+	height: 40px;
+	width: 40px;
+}
+
+.div_text{
+	width: 190px;
+	text-align: left;
+	text-valign: middle;
+	display: inline-block;
+	color: #376092;
+	font-weight: bold;
+	font-family: 'HGP創英角ｺﾞｼｯｸUB';
+	font-size: 1.2em;
+	margin-right: 5px;
+	text-decoration: underline;
+}
+.div_img{
+	width: 50px;
+	text-align: right;
+	text-valign: middle;
+	display: inline-block;
+}
+
+.div_list{
+	width: 250px;
+	height: 40px;
+}
+
+
+.message-dialog {
+    display: none;
+    left: 45%;
+    top: 50%;
+    width: 600px;
+    height: 150px;
+    position:absolute;
+    background-color: #ffffff;
+    transform : translate(-43%,-50%);
+    border-radius: 20px;
+    border:1px black solid;
+    z-index:603;
+}
+
+.title {
+    height: 22px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-family: "HGP創英角ｺﾞｼｯｸUB";
+    padding-top: 5px;
+    font-size: 11pt;
+    text-align: center;
+    color: white;
+    box-shadow: 4px 4px 0px 0px rgb(210,210,210);
+    background: black;
+}
+
+.message {
+    height: 90px;
+    width: 90%;
+    margin-left: 40px;
+    margin-top: 25px;
+    font-family: "HGP創英角ｺﾞｼｯｸUB";
+    padding-top: 5px;
+    font-size: 14pt;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+}
+

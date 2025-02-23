@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="130px" height="70px" viewBox="0 0 65 35">
+<style type="text/css"><![CDATA[
+.style0 {
+  font-size: 16px;
+  font-family: "Roboto-Regular";
+  fill: rgb(255,255,255);
+}
+]]></style>
+<clipPath id="clip0"><rect x="0" y="0" width="65" height="35" rx="2"/></clipPath><defs>
+<symbol id="symbol0"><rect x="0" y="0" width="65" height="35" rx="2"/></symbol></defs>
+<g><use xlink:href="#symbol0" x="0" y="0" width="65" height="35" fill="rgb(207,157,0)"/><use xlink:href="#symbol0" x="0" y="0" width="65" height="35" fill="none" stroke="rgb(207,137,0)" stroke-width="2.00px" clip-path="url(#clip0)"/></g><text transform="translate(31.83,23.43)" class="style0"><tspan x="-15.34 -4.27 7.39" fill="rgb(255,255,255)">HOT</tspan></text></svg>

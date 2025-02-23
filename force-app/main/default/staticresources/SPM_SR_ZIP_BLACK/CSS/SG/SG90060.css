@@ -1,0 +1,200 @@
+﻿@charset "UTF-8"; 
+
+th{
+	text-align:left;
+	font-weight:100;
+	padding-left:8px;
+	/*padding-bottom:5px*/
+}
+
+.table_style{
+	border-collapse:collapse;
+	font-size:10.5pt;
+}
+
+
+.td_tableHeader{
+	text-align:center;
+	font-family:"ＭＳ Ｐゴシック";
+	border: 1px solid #CCCCCC;
+	height:20px;
+}
+
+.td_tableData{
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:12pt;
+	text-align:center;
+	color:#666666;
+	border: 1px solid #CCCCCC;
+	height:20px;
+    width:150px;
+}
+
+.td_space {
+    padding-left:45px;
+}
+
+.tableData_Font{
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:12pt;
+	text-align:center;
+	color:#666666;
+	border: 1px solid #CCCCCC;
+	height:20px;
+}
+
+.width_day      { width:108px;max-width:108px;min-width:108px; }
+.width_koumoku  { width:90px;max-width:90px;min-width:90px; }
+.width_aite     { width:80px;max-width:80px;min-width:80px; }
+.width_hoho     { width:122px;max-width:122px;min-width:122px; }
+.width_kekka    { width:115px;max-width:115px;min-width:115px; }
+
+.width_day2      { width:118px; }
+.width_koumoku2  { width:82px;max-width:82px;min-width:82px; }
+.width_hassei2   { width:89px; }
+
+.memoFont{
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:11pt;
+	text-align:center;
+	color:#666666;
+}
+
+.title_mojiStyle{
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:10.5pt;
+
+}
+
+.image_pin{
+
+	width:15px;
+	margin-top:1px;
+	margin-right:5px;
+		
+}
+
+/* 2017/10/23 add start コネクティッド連携 */
+.image_health_check{
+
+    width:100px;
+    position:relative;
+    left:15px;
+    top:7px;
+}
+
+.lbl_health_check{
+    font-size:9.5pt;
+    position:relative;
+    right:78px;
+    bottom:2px;
+    font-weight:bold;
+}
+/* 2017/10/23 add end コネクティッド連携 */
+
+.listTable{
+
+	padding:0px;
+	border-collapse:collapse;
+	border: 1px solid #CCCCCC;
+}
+
+.listTable td{
+
+	padding:0px;
+	border-collapse:collapse;
+	border: 1px solid #CCCCCC;
+}
+
+.kaisuFont{
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:14pt;
+	color:#666666;
+}
+
+.red_color{
+    color:#900000;
+}
+
+.checkboxView{
+	display: block;
+	width: 30px;
+	height: 27px;
+	margin-right: 5px;
+    margin-left:10px;
+	background: url(../../IMG/ico_check2.png) left top no-repeat;
+	float: left;
+}
+.checkboxView.selected{
+	background-position: left bottom;
+}
+
+.hoyuuSyaryo{
+	min-width:90px;
+	font-size:12pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#666666;
+	text-align:left;
+}
+
+.hoyuuSyaryo_select{
+	min-width:90px;
+	font-size:12pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:rgb(49,133,156);
+	text-align:left;
+}
+
+label{
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type=checkbox]{
+	filter: alpha(opacity="1");
+	opacity: 0.01;
+	MozOpacity: 0.01;
+	position: absolute;
+	top: 0;
+	left: 0;
+    display:none;
+}
+
+ul{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 2px;
+    margin-top:0px;
+    margin-bottom:0px;
+	float: left;
+    /*min-width:1024px;*/
+}
+
+ul li,
+ol li{
+	margin-bottom: 7px;
+	list-style: none;
+	font-size: 22px;
+    float:left;
+    /*width:150px;*/
+    text-overflow: ellipsis;
+}
+
+.selected {
+    color:rgb(49,133,156);
+}
+
+.headerTable {
+    margin-top:5px
+}
+
+hr{
+    margin-top:0px;
+}
+
+section{
+    width: 963px;
+    height: 553px;
+}

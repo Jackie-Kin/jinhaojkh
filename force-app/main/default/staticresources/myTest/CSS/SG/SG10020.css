@@ -1,0 +1,558 @@
+﻿
+body {
+   margin:0px; padding:0px; background-color:black;
+   min-width:1024px;
+   min-height:760px;
+   max-height:99.75%;
+   height:99.73%;
+
+}
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,#00007c);
+    text-align: left;
+    color: white;
+}
+
+.textKensuu {
+     font-size: 13pt !important;
+}
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+        
+.fakeContainer { 
+	margin: 0 0 0;
+	border: 1px;
+	width: 100%; 
+	height: 90%; 
+	overflow: hidden;
+    background-color:transparent !important;
+   
+}
+
+.td_Dummy {
+    background-color:transparent !important;
+    border-top:0px none !important;
+    border-bottom:0px none !important;
+}
+
+.HeaderStyle {
+   
+    font-family:ＭＳ Ｐゴシック;
+    font-size:12pt;
+    color:#ffffff;
+    background-color:#00007c;
+}
+
+.th_Hoyuu {
+
+    height:32.5px;
+    min-height:32.5px;  
+    max-height:32.5px;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:12pt;
+    border: 1px solid #376092;
+    color:#ffffff;
+    font-weight:normal;
+    background-color:#00007c !important;
+}
+
+
+
+.td_Hoyuu {
+    
+    border: 1px solid #376092;
+    color:#ffffff;
+    background-color:black;
+    padding:0px;
+        
+    font-size:10.5pt;
+    text-align:center;
+}
+
+.td_Follow {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+
+    background-color:black;
+
+}
+
+.td_Staff {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    background-color:black;
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+    font-size:11pt;
+
+}
+
+.td_Okyaku {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    background-color:black;
+    padding:0px;
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+    font-size:10.5pt;
+    text-align:center;
+}
+
+.td_Mikomi {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    background-color:black;
+    font-family:Calibri;
+    font-size:12pt;
+    text-align:center;
+}
+
+.td_Nouki {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    background-color:black;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:12pt;
+    text-align:center;
+}
+
+
+.td_Service {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    background-color:black;
+     font-family:ＭＳ Ｐゴシック;
+    font-size:12pt;
+    text-align:center;
+}
+
+.td_Hoken {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    background-color:black;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:12pt;
+    text-align:center;
+}
+
+.th_Dummy {
+    background: linear-gradient(to bottom,00008a,black);
+    border-top:0px none;
+    border-bottom:0px none;
+}
+
+
+.th_Mikomi {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:12pt;
+    width:8.38%;
+    min-width:8.38%;
+    max-width:8.38%;
+    font-weight:normal;
+    background-color:#00007c !important;
+}
+
+.th_Nouki {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:12pt;
+    width:8.38%;
+    min-width:8.38%;
+    max-width:8.38%;
+    font-weight:normal;
+    background-color:#00007c !important;
+}
+
+.th_Follow {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    width:3.4%;
+    
+}
+
+.th_staff {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    width:4.4%;
+
+}
+
+.th_Okyaku {
+    height:32.5px;
+    min-height:32.5px;  
+    max-height:32.5px;
+    border: 1px solid #376092;
+    color:#ffffff;
+    width:8.38%;
+    min-width:8.38%;
+    max-width:8.38%;
+}
+
+.th_NewCar {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    
+}
+
+.th_Service {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    width:8.38%;
+    min-width:8.38%;
+    max-width:8.38%;
+}
+
+.th_Hoken {
+
+    border: 1px solid #376092;
+    color:#ffffff;
+    width:8.38%;
+    min-width:8.38%;
+    max-width:8.38%;
+}
+
+/* 表ヘッダー部*/
+.tdKoumoku1 
+{ 
+    height:30px;
+    width:100%;
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size:16pt;
+    color:white;
+}
+
+/* 表ヘッダー部*/
+.tdKoumoku1_main
+{ 
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: left;
+    font-size:16pt;
+    color:white;
+      background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,#00007c,#010010);
+}
+
+.listTable{
+		padding:0px;
+		border-collapse:collapse;
+		margin:0px;
+	}
+
+
+
+.listTable_row {
+    width:100%;
+   
+    padding:0px;
+     height:65px;
+    min-height:65px;
+    max-height:65px;
+}
+
+.listTable_tr {
+    height:32.5px;
+    min-height:32.5px;
+    max-height:32.5px;
+  
+
+}
+
+.listTable_Td_top {
+
+    border-left:0px none;
+    border-right:0px none;
+    border-top:0px;
+    border-bottom:1px solid #376092;
+
+}
+
+.listTable_Td_bottom {
+
+    border-left:0px none;
+    border-right:0px none;
+    border-bottom:0px;
+    border-top:1px solid #376092;
+}
+
+.listTable_Td_left {
+
+    border-left:0px none;
+    border-right:1px dashed  #376092;/* 2015/08/20 セルの背景にイメージで中央線を引くように変更 */
+    border-top:0px;
+    border-bottom:0px none;
+
+}
+
+.listTable_Td_right {
+
+    border-left:1px dashed  #376092;/* 2015/08/20 セルの背景にイメージで中央線を引くように変更 */
+    border-right:0px none;
+    border-top:0px;
+    border-bottom:0px none;
+}
+
+
+.type1_left {
+
+    border: 1px solid #376092;
+    background-color:black;
+    padding:0px;
+    font-weight:600;
+
+    color:#ffffff;  
+    font-size:12pt;
+    text-align:center;
+/* 2015/08/21 add start */
+    border-right-style:dashed;
+/* 2015/08/21 add end */
+
+    width:80px;
+}
+
+.type1_center {
+
+    border: 1px solid #376092;
+    background-color:black;
+    padding:0px;
+
+    color:#ffffff;  
+    font-size:11pt;
+    text-align:center;
+}
+
+.type1_right {
+    border: 1px solid #376092;
+    background-color:black;
+    padding:0px;
+    font-weight:600;
+
+    color:#ffffff;  
+    font-size:12pt;
+    text-align:center;
+/* 2015/08/21 add start */
+    border-left-style:dashed;
+/* 2015/08/21 add end */
+
+    width:22px;
+   
+}
+
+.type2_left {
+    border: 1px solid #376092;
+    background-color:black;
+    padding:0px;
+    font-weight:600;
+
+    color:#ffffff;  
+    font-size:12pt;
+    text-align:center;
+/* 2015/08/21 add start */
+    border-right-style:dashed;
+/* 2015/08/21 add end */
+
+    width:80px;
+}
+
+.type2_center {
+
+    border: 1px solid #376092;
+    background-color:black;
+    padding:0px;
+
+    color:#ffffff;  
+    font-size:11pt;
+    text-align:center;
+}
+
+.type2_right {
+
+    border: 1px solid #376092;
+    background-color:black;
+    padding:0px;
+    font-weight:600;
+
+    color:#ffffff;  
+    font-size:12pt;
+    text-align:center;
+/* 2015/08/21 add start */
+    border-left-style:dashed;
+/* 2015/08/21 add end */    
+    width:22px;
+
+}
+
+.td_Dummy_cell {
+    border: 1px solid transparent;
+    background-color:transparent;
+    padding:0px;
+}
+
+.td_Dummy_noneRight {
+    background-color:transparent !important;
+    border-top:1px solid transparent !important;
+    border-bottom:0px none !important;
+    border-right:0px none !important;
+}
+
+
+
+.type1_center_select{
+
+	background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1)) !important;
+    border-top:#376092 solid 1px !important;
+    border-bottom:#376092 solid 1px !important;
+
+    /*border-left:0px none !important;
+    border-right:0px none !important;*/
+
+
+}
+
+.type1_left_select{
+
+	background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1)) !important;
+    border-top:#376092 solid 1px !important;
+    border-bottom:#376092 solid 1px !important;
+
+    /*border-left:#376092 solid 2px !important;
+    border-right:0px none !important;*/
+}
+
+.type1_right_select{
+
+	background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1)) !important;
+    border-top:#376092 solid 1px !important;
+    border-bottom:#376092 solid 1px !important;
+
+    /*border-left:0px none !important;
+    border-right:#376092 solid 2px !important;*/
+}
+
+.type2_center_select{
+
+	background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1)) !important;
+    border-top:#376092 solid 1px !important;
+    border-bottom:#376092 solid 1px !important;
+
+    /*border-left:0px none !important;
+    border-right:0px none !important;*/
+}
+
+.type2_left_select{
+
+	background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1)) !important;
+    border-top:#376092 solid 1px !important;
+    border-bottom:#376092 solid 1px !important;
+
+    /*border-left:#376092 solid 2px !important;
+    border-right:0px none !important;*/
+}
+
+.type2_right_select{
+
+	background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1)) !important;
+    border-top:#376092 solid 1px !important;
+    border-bottom:#376092 solid 1px !important;
+
+    /*border-left:0px none !important;
+    border-right:#376092 solid 2px !important;*/
+}
+
+.text_white {
+    color:white;
+}
+
+.text_red {
+    color:red;
+}
+
+/* 2015/08/20 start セルの背景にイメージで中央線を引くように変更 */
+/* LINEパターン１ */
+.line_ptn1 {
+    background-image:url(../../img/line_dash.png);
+    background-repeat:repeat-y;
+    background-position:50%;
+    background-size: 1px;
+    height:100%;
+}
+
+/* LINEパターン２*/
+.line_ptn1_select{
+    /*background-image:url(../../img/line_dash.png);*/
+    background-repeat:repeat-y;
+    background-position:50%;
+    background-size: 1px;
+	/*background:url(../../img/line_dash.png), linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1)) !important;*/
+    border-top:#376092 solid 1px !important;
+    border-bottom:#376092 solid 1px !important;
+
+}
+/* 2015/08/20 end セルの背景にイメージで中央線を引くように変更 */
+
+.th_Main1 {
+
+
+}
+
+.th_Sub {
+
+    width:15px;
+    max-width:15px;
+}
+
+.underline{
+    text-decoration:underline;
+}

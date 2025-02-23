@@ -1,0 +1,615 @@
+﻿body {
+}
+
+body {
+   margin:0px; padding:0px; background-color:black;
+   min-width:1024px;
+   min-height:760px;
+   max-height:99.75%;
+   height:99.73%;
+
+}
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+.fakeContainer { 
+	margin: 0 0 0;
+	border: 1px;
+	width: 100%; 
+	height: 95%; 
+	overflow: hidden; 
+   
+}
+
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.sortText {
+
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 50%;
+    top:10px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.jokenText {
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 50%;
+    top:25px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.headerBar{
+	background: linear-gradient(to bottom,#f0f1f4,#adb1bd);
+	position:relative;
+
+
+}
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.th_staff {
+    border:1px #376092 solid;
+    width:9.2%;
+    background-color:darkblue !important;
+    height:65px;
+}
+
+.th_hindo {
+    border:1px #376092 solid;
+    width:10.35%;
+    background-color:darkblue !important;
+}
+
+.th_month {
+    border:1px #376092 solid;
+    width:90.8%;
+    background-color:darkblue !important;
+    height:35px;
+    font-family:'ＭＳ Ｐゴシック';
+    font-weight:normal;
+}
+
+.th_n6 {
+    border:1px #376092 solid;
+    background-color:darkblue !important;
+}
+
+.td_staff {
+    background-color:black;
+    border:1px #376092 solid;
+    min-height:100px;
+}
+
+.td_hindo {
+     background-color:black;
+     border:1px #376092 solid;
+}
+
+.td_month {
+     background-color:black;
+     border:1px #376092 solid;
+}
+
+
+
+section{
+	width:100%;
+	min-width:1020px;
+	height:100%;
+	min-height:700px;
+
+}
+
+
+.trh1{ height:3.6%;		}
+.trh2{ height:6.6%;		}
+.tra2{ height:40.0%;	}
+.tra1{ height:20.0%;	}
+.tra3{ height:15.0%;	}
+
+
+.stname{
+	width:7%;
+	min-width:72px;
+	text-align:center;
+	font-size:13pt;
+	line-height:16pt;
+	font-family:HGP創英角ｺﾞｼｯｸUB;
+	letter-spacing:1px;
+}
+
+
+.samtip{
+	width:78%;
+   
+	height:20px;
+	min-height:18px;
+	margin:5% 0 5px 12%;
+	
+	font-family:'ＭＳ Ｐゴシック';
+	font-size:15pt;	
+	letter-spacing:-1px;
+	text-align:center;
+	line-height:10pt;
+	
+	display:block;
+	text-align:center;
+	left:0%;
+
+	position:relative;
+
+    
+}
+
+.ttltip .bar_orange:before{
+	background:linear-gradient(to top,rgb(200,150,0) 0%,rgb(214,87,0) 50%,rgb(130,53,0) 100%);
+}
+.ttltip .bar_orange:after{
+	background: linear-gradient(to bottom left,rgb(200,150,0) 0%,rgb(214,87,0) 50%,rgb(130,53,0) 100%);
+	border-color:rgb(274,150,70);
+}
+
+.ttltip .bar_yellow:before{
+	background:linear-gradient(to top,rgb(166,162,0) 0%,rgb(112,85,0) 63%,rgb(122,73,0) 100%);
+}
+.ttltip .bar_yellow:after{
+	background: linear-gradient(to bottom left,rgb(166,162,0) 0%,rgb(112,85,0) 63%,rgb(122,73,0) 100%);
+	border-color:rgb(196,191,0);
+}
+
+.ttltip .bar_blue:before{
+	background: linear-gradient(to top,rgb(0,61,134) 0%,rgb(0,46,84) 50%,rgb(13,26,41) 100%);
+}
+.ttltip .bar_blue:after{
+	background: linear-gradient(to bottom left,rgb(0,61,134) 0%,rgb(0,46,84) 50%,rgb(13,26,41) 100%);
+	border-color:rgb(0,117,158);
+}
+
+.ttltip .bar_black:before{
+	background: linear-gradient(to top,rgb(64,64,64) 0%,rgb(38,38,38) 50%,rgb(0,0,0) 100%);
+}
+.ttltip .bar_black:after{
+	background: linear-gradient(to bottom,rgb(64,64,64) 0%,rgb(38,38,38) 50%,rgb(0,0,0) 100%);
+	border-color:rgb(127,127,127);
+}
+
+.samtip:before{
+	content:"";
+	width:2%;
+	height:100%;
+	left:0;
+	display:block;
+	position:absolute;
+	background: linear-gradient(to bottom, rgb(10,94,125) 0%, rgb(14,139,184) 100%);
+}
+.samtip:after{
+	content:"";
+	width:98%;
+	height:5%;
+	min-height:2px;
+	top:84%;
+	left:0%;
+	display:block;
+	position:absolute;
+	background: linear-gradient(to bottom, rgb(10,94,0) 0%, rgb(14,139,184) 100%);
+	border:1px white solid;
+}
+
+.ttltip{
+	width:9%;
+	min-width:96px;
+	vertical-align:middle;
+    background-color:black;
+    border:1px #376092 solid;   
+}
+
+.monbox{
+	width:12%;
+	min-width:121px;
+    background-color:black;
+    border:1px #376092 solid;  
+}
+
+.tipwrap{
+	height:100%;
+}
+
+.sam{
+	margin-left:3px;
+	margin-top:3px;
+	padding:2px;
+}
+
+.tra2 .tip,.tra3 .tip,.tra4 .tip{
+	width:30%;
+	height:23px;
+	margin-left:1.5%;
+	margin-bottom:2%;
+	float:left;
+	line-height:23px;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.moji {
+    position:absolute;
+    z-index:200;
+    top:0px;
+    left:0px;
+}
+
+
+
+
+
+.monbox{
+	width:130px;
+	padding-top:2px;
+	vertical-align:top;
+}
+
+
+
+
+.flag1	{
+	background-image:url('../../IMG/flag1.png');
+	background-repeat:no-repeat;
+	background-size:23px;
+	background-position:center;
+}
+.flag2	{
+	background-image:url('../../IMG/flag2.png');
+	background-repeat:no-repeat;
+	background-size:23px;
+	background-position:center;
+}
+.flag3	{
+	background-image:url('../../IMG/flag_icon03.png');
+	background-repeat:no-repeat;
+	background-size:23px;
+	background-position:center;
+}
+.flagMemoKanri	{
+	background-image:url('../../IMG/flagMemoKanri.png');
+	background-repeat:no-repeat;
+	background-size:22px;
+	background-position:center;
+}
+.flagMemoStaff	{
+	background-image:url('../../IMG/flagMemoStaff.png');
+	background-repeat:no-repeat;
+	background-size:22px;
+	background-position:center;
+}
+.flagMemo	{
+	background-image:url('../../IMG/flagMemo.png');
+	background-repeat:no-repeat;
+	background-size:22px;
+	background-position:center;
+}
+
+.clr	{ clear:both; }
+
+.box	{ display:table; }
+.boxcell{ display:table-cell;}
+/*span	{ margin-left:5px; }*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tip{
+    
+	font-family:ＭＳ Ｐゴシック 本文;	
+	
+	border-radius: 7px;        /* CSS3草案 */  
+   -webkit-border-radius: 7px;    /* Safari,Google Chrome用 */  
+   -moz-border-radius: 7px;   /* Firefox用 */
+   
+	min-width:180px;
+	min-height:105px;
+	
+	height:105px;
+
+	display:inline-block;
+
+    margin:1px;
+}
+
+.tip td{
+
+
+    min-width:180px;
+	min-height:100px;
+	
+	width:12%;
+	height:100px;
+}
+
+.orange{
+	background:linear-gradient(to right bottom,rgb(208,158,0) 0%,rgb(214,87,0) 50%,rgb(130,53,0) 100%);
+	border:1px rgb(247,150,70) solid;
+    color:white;
+}
+
+.yellow{
+	background:linear-gradient(to right bottom,rgb(166,162,0) 0%,rgb(112,85,0) 63%,rgb(122,73,0) 100%);
+	border:1px rgb(168,128,0) solid;
+    color:white;
+}
+
+.navy{
+	background:linear-gradient(to right bottom,rgb(0,61,134) 0%,rgb(0,46,84) 50%,rgb(13,26,41) 100%);
+	border:1px rgb(0,117,158) solid;
+    color:white;
+}
+
+.white{
+	background:linear-gradient(to right bottom,rgb(255,255,255) 0%,rgb(219,219,219) 50%,rgb(144,144,144) 100%);
+	border:1px rgb(255,255,255) solid;
+    color:#000000;
+}
+
+.white_red{
+	background:linear-gradient(to right bottom,rgb(255,255,255) 0%,rgb(219,219,219) 50%,rgb(144,144,144) 100%);
+	border:1px rgb(255,0,0) solid;
+    color:#000000;
+}
+
+.blue{
+	background:linear-gradient(to right bottom,rgb(115,116,255) 0%,rgb(80,96,255) 50%,rgb(12,2,226) 100%);
+	border:1px rgb(160,163,206) solid;
+}
+
+.gray{
+	background:linear-gradient(to right bottom,rgb(168,168,168) 0%,rgb(136,136,136) 50%,rgb(66,66,66) 100%);
+	border:1px rgb(185,185,185) solid;
+}
+
+.black{
+	background:linear-gradient(to right bottom,rgb(37,37,37) 0%,rgb(27,27,27) 63%,rgb(0,0,0) 100%);
+	border:1px rgb(79,79,79) solid;
+}
+
+.white_color{
+    color:#BFBFBF;
+}
+
+.orange_color{
+    color:#f79646;
+}
+
+.yellow_color{
+    color:#a88000;
+}
+
+.navy_color{
+    color:#376092;
+}
+
+.blue_color{
+    color:#8EB4E3;
+}
+
+.gray_color{
+    color:#bfbfbf;
+}
+
+.black_color{
+    color:#595959;
+}
+
+.green_color{
+    color:#006600;
+}
+
+.red_color{
+    color:#FF0000;
+}
+
+.abbreviation {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	width: 83%;
+	white-space: nowrap;
+}
+
+.abbreviation_car {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	width: 44%;
+	white-space: nowrap;
+}
+
+
+.visible{
+    display:block;
+}
+
+.nonvisible{
+    display:none;
+}
+
+.underline{
+    text-decoration:underline;
+}
+
+/* 2016/07/14 add start C#47 ツールチップの表示対応 */
+.memoLabel {
+    width:250px;
+    height:23px;
+
+	line-height:15px;
+    font-size: 11pt;
+    font-family: ＭＳ ゴシック;
+    color:black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.upperBox {
+    margin-top:-5px;
+    border-bottom: dashed black 1pt;
+}
+
+.lowerBox {
+    margin-top:4px;
+}
+
+/* 省略文字の表示 */
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+div.ui-tooltip{
+    width:  255px;
+    height: 85px;
+    background:linear-gradient(to bottom,rgb(255,255,255) 0%,rgb(200,200,200) 70%,rgb(150,150,150) 100%);
+}
+/* 2016/07/14 add end   C#47 ツールチップの表示対応 */
+
+/*GridView用*/
+.Grid-Main {
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    user-select: none;
+    -ms-user-select: none;
+}
+
+.Grid-SPM01{
+    margin-top: -70px;
+    border-collapse:collapse;
+    background-color:darkblue;
+    position:relative;
+    border-width:0px;
+    border-style:solid;
+    width:99.7%;
+    height:1px;
+    border-collapse:collapse;
+    padding:0px;
+    margin:0px;
+}
+
+.Grid-Header-tr {
+    font-family:ＭＳ Ｐゴシック;
+    height:20px; 
+    width:100%;
+}
+
+.Grid-Header-td{
+    /*height: 65px;*/
+    border: 1px solid #376092;
+}
+
+#Grid-Table-Header {
+    color:#ffffff;
+    background-color:#00007c;
+    font-size:12pt;
+    margin:0px;
+    padding:0px;
+    border:1px
+}
+
+/*GridView用(明細部分)*/
+
+#Grid-Data-Section{
+    width:auto;
+    overflow-y: hidden;
+}
+
+.Grid-Data-tr {
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+    font-size:20px;
+    background-color:black;
+    height:20px; 
+    width:100%;
+}
+
+.Grid-Data-tr > td {
+    border: 1px solid #376092;
+}
+
+#Grid-Table-Data{
+    font-size:12pt;
+    color:#ffffff;
+    background-color:black;
+    height: 65px;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    border:1px
+    border-collapse: collapse;
+}
+
+ /*ローディングアイコン*/
+.Grid-Loading-Icon {
+    position: fixed;
+    _position: absolute:
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    display: none;
+    width="100;
+    height="100;
+}
+
+.loadingWrap{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:9999;
+}

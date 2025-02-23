@@ -1,0 +1,270 @@
+<apex:page docType="html-5.0" controller="myMetaSearchController"
+    showHeader="false" standardStylesheets="false" sidebar="false"
+    cache="false" expires="0" readonly="true" action="{!pageLoad}">
+
+    <head>
+<apex:includeScript value="{!URLFOR($Resource.myTest, 'Script_win/jquery.min.js')}" />
+<apex:includeScript value="{!URLFOR($Resource.myTest, 'Script_win/jquery-ui.min.js')}" />
+<apex:slds />
+
+<title>ページ一覧</title>
+    </head>
+    <apex:form id="listForm" styleclass="slds-scope">
+        <h1 class="pageType noSecondHeader" style="color: #000;font-size: 2em;font-weight: normal;">資源リスト</h1>
+        <div style="margin-left: 10px;">
+            <span>機能ID：</span>
+            <apex:inputText id="searchText" value="{!searchText}"
+                style="width: 150px;" />
+            <span>&nbsp;&nbsp;&nbsp;</span>
+            <apex:commandButton action="{!doSearch}" value="実行" id="cmdExecute"
+                rerender="areaInfo" onclick="lockForm()" oncomplete="cmdExecuteComplete()" status="searchStatus">
+            </apex:commandButton>
+            <span>※機能IDを入力（空文字の場合、全対象検索）</span>
+        </div>
+        <div style="margin-left: 10px; color: red;font-weight: bold;font-size:16pt;">
+            <span><apex:actionStatus startText="検索中..." stopText=" "
+                    id="searchStatus" /></span>
+        </div>
+
+        <apex:pageBlock id="areaInfo">
+            <div style="margin-right: 10px; display:none">
+                <apex:input value="{!debugContent}" />
+            </div>
+            <div id="areaPageInfo">
+                <div class="top-line">
+                    <div class="panelHeader">
+                        <h2>
+                            <a onclick="toggoleDiv('areaPageTable')">ページ対象リスト（{!totalPageCnt}）</a>
+                        </h2>
+                    </div>
+                </div>
+                <div id="areaPageTable">
+                    <apex:datatable border="1" cellpadding="5" var="apexPage"
+                        id="pageListTable" value="{!apexPageInfos}">
+                        <apex:column id="edit">
+                            <a style="margin-left: 10px;" onclick='OpenPageWindow(this,1);'
+                                href="#">編集</a>
+                            <span>|</span>
+                            <a onclick='OpenPageWindow(this,2);' href="#">画面表示</a>
+                        </apex:column>
+                        <apex:column id="pagename">
+                            <apex:facet name="header">
+                                画面ID（表示ラベル）
+                        </apex:facet>
+                            <apex:outputfield value="{!apexPage.name}" />
+                        </apex:column>
+                        <apex:column id="pagelabel">
+                            <apex:facet name="header">
+                                画面名称
+                        </apex:facet>
+                            <apex:outputfield value="{!apexPage.masterlabel}" />
+                        </apex:column>
+                        <apex:column id="pageModifiedTime">
+                            <apex:facet name="header">
+                                最新更新時間
+                        </apex:facet>
+                            <apex:outputfield value="{!apexPage.LastModifiedDate}" />
+                        </apex:column>
+                                              
+                        <apex:column id="pageid">
+                            <apex:facet name="header">
+                                画面ID
+                        </apex:facet>
+                            <apex:outputfield value="{!apexPage.id}" />
+                        </apex:column>
+                    </apex:datatable>
+                </div>
+            </div>
+
+            <div id="areaClassInfo">
+                <div class="top-line">
+                    <div class="panelHeader">
+                        <h2>
+                            <a onclick="toggoleDiv('areaClassTable')">クラス対象リスト（{!totalClsCnt}）</a>
+                        </h2>
+                    </div>
+                </div>
+                <div id="areaClassTable">
+                    <apex:datatable border="1" cellpadding="5" var="apexClass"
+                        id="classListTable" value="{!apexClassInfos}">
+                        <apex:column id="edit">
+                            <a onclick='OpenClassWindow(this);' href="#">編集</a>
+                        </apex:column>
+                        <apex:column id="classname">
+                            <apex:facet name="header">
+                                画面ID（表示ラベル）
+                         </apex:facet>
+                            <apex:outputfield value="{!apexClass.name}" />
+                        </apex:column>
+                        <apex:column id="classModifiedTime">
+                            <apex:facet name="header">
+                                        最新更新時間
+                        </apex:facet>
+                            <apex:outputfield value="{!apexClass.LastModifiedDate}" />
+                        </apex:column>
+                        <apex:column id="classid">
+                            <apex:facet name="header">
+                                        画面ID
+                         </apex:facet>
+                            <apex:outputfield value="{!apexClass.id}" />
+                        </apex:column>
+                    </apex:datatable>
+                </div>
+            </div>
+
+            <div id="areaComponentInfo">
+                <div class="top-line">
+                    <div class="panelHeader">
+                        <h2>
+                            <a onclick="toggoleDiv('areaCompnentTable')">コンポネント対象リスト（{!totalCompCnt}）</a>
+                        </h2>
+                    </div>
+                </div>
+                <div id="areaCompnentTable">
+                    <apex:datatable border="1" cellpadding="5" var="apexComp"
+                        id="compListTable" value="{!apexComponentInfos}">
+                        <apex:column id="edit">
+                            <a onclick='OpenCompWindow(this);' href="#">編集</a>
+                        </apex:column>
+                        <apex:column id="compname">
+                            <apex:facet name="header">
+                                    画面ID（表示ラベル）
+                            </apex:facet>
+                            <apex:outputfield value="{!apexComp.name}" />
+                        </apex:column>
+                        <apex:column id="compusing">
+                            <apex:facet name="header">
+                                    使用箇所
+                            </apex:facet>
+                            <apex:outputfield value="{!apexComp.controllerkey}" />
+                        </apex:column>
+                        <apex:column id="compModifiedTime">
+                            <apex:facet name="header">
+                                    最新更新時間
+                            </apex:facet>
+                            <apex:outputfield value="{!apexComp.LastModifiedDate}" />
+                        </apex:column>
+                        <apex:column id="compid">
+                            <apex:facet name="header">
+                                    画面ID
+                            </apex:facet>
+                            <apex:outputfield value="{!apexComp.id}" />
+                        </apex:column>
+                    </apex:datatable>
+                </div>
+            </div>
+            <div id="areaObjectInfo">
+                <div class="top-line">
+                    <div class="panelHeader">
+                        <h2>
+                            <a onclick="toggoleDiv('areaObjectInfo')">オブジェクト対象リスト（{!totalObjectCnt}）</a>
+                        </h2>
+                    </div>
+                </div>
+			</div>
+        </apex:pageBlock>
+
+    </apex:form>
+    <script>
+    function OpenPageWindow(obj,actFlag){
+        if (actFlag==1){
+           var id1=$(obj).parent().parent().find("td").eq(4).find("span").text();
+           window.open("/"+id1);
+        }
+        if (actFlag==2){
+           var id2=$(obj).parent().parent().find("td").eq(1).find("span").text();
+           window.open("/apex/"+id2);
+        }     
+    }
+    
+    function OpenClassWindow(obj){
+          var id1=$(obj).parent().parent().find("td").eq(3).find("span").text();
+          window.open("/"+id1);
+    }  
+    
+    function OpenCompWindow(obj){
+          var id1=$(obj).parent().parent().find("td").eq(4).find("span").text();
+          window.open("/"+id1);
+    }  
+    
+    function OpenLogWindow(obj){
+          var id1=$(obj).parent().parent().find("td").eq(4).find("span").text();
+          window.open("/p/setup/layout/ApexDebugLogDetailEdit/d?retURL="+id1);
+          //<a href="/p/setup/layout/ApexDebugLogDetailEdit/d?retURL=%2Fsetup%2Fui%2FlistApexTraces.apexp%3FretURL%3D%252Fui%252Fsetup%252FSetup%253Fsetupid%253DLogs%26setupid%3DApexDebugLogs&amp;setupid=ApexDebugLogs&amp;apex_log_id=07L6F00005VH438UAD" class="actionLink">参照</a>
+    }    
+    
+     $(function() {
+        $("[id*=pageid]").hide();
+        $("[id*=classid]").hide();  
+        $("[id*=compid]").hide();  
+    });
+    
+    function cmdExecuteComplete(){
+        $("[id*=pageid]").hide();
+        $("[id*=classid]").hide();      
+        $("[id*=compid]").hide(); 
+        
+        $("[id*=listForm]").prop( "disabled", false );    
+    };
+    
+    function lockForm(){
+         $("[id*=listForm]").prop( "disabled", true );
+    }
+    
+    function toggoleDiv(obj){
+        $("#" + obj).toggle();
+    }
+</script>
+    <style>
+th {
+    background: #f2f3f3;
+    border-width: 0 0 1px 1px;
+    border-color: #e0e3e5;
+    color: #000;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 5px 2px 4px 5px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    -webkit-border-horizontal-spacing: 2px;
+    -webkit-border-vertical-spacing: 2px;
+}
+
+div {
+    padding: 2px;
+    margin: 2px;
+    border: 2px;
+}
+
+.panelHeader {
+    position: relative;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #222;
+    font-size: 1.1em;
+}
+
+.top-line {
+    margin-top: 10px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #ccc;
+    padding-bottom: 8px;
+    background-color: #dedede;
+}
+
+th {
+    border-width: 0 1px 0 0;
+    border-color: #d4dadc;
+    border-style: solid;
+    background: #fff url(/img/alohaSkin/grid_headerbg.gif) 0 bottom repeat-x;
+    color: #000;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 5px 2px 4px 5px;
+}
+</style>
+
+</apex:page>

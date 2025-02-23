@@ -1,0 +1,221 @@
+﻿@charset "UTF-8"; 
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.listTable_sub{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+	border-style:none;
+	width:100%;
+	height:100%;
+    text-align:center;
+}
+
+.listData_text_style{
+
+	padding-left:10px;
+	
+}
+.listData{
+	background:#000000;
+	border-color:#376092;
+	border-style:solid;
+	border-width:1px;
+	padding:0px;
+	font-size:18px;
+	text-align:center;
+	min-height:43px;
+}
+
+.listTani{
+	text-align:right;
+	vertical-align:top;
+	width:25%;
+	font-family:'ＭＳ Ｐゴシック';
+	border-style:none;
+	padding-right:4px;
+    padding-top:8px;
+	padding-bottom:17px;
+	font-size: 9pt;
+	color:gray;
+}
+.th_Tenpo {
+    height:65px;
+    width: 5.55%;
+    max-width: 5.55%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+    font-weight:normal;
+	border:1px solid #376092;
+    text-decoration:underline;
+}
+
+.th_Furiatesumi{
+    height:65px;
+    width: 5.55%;
+    max-width: 5.55%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+    font-weight:normal;
+	border:1px solid #376092;
+    text-decoration:underline;
+}
+
+.th_jyuchuMonth, .th_jyuchuToday{
+	height:20px;
+    color:white;
+	font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+    font-weight:normal;
+    border-width: 1px 1px 0px 1px !important;
+    border-style: solid !important;
+    border-color: #376092 !important;
+    pointer-events : none;
+}
+.th_MokuhyoMonth, .th_MokuhyoToday {
+    height:45px;
+    width: 5.55%;
+    max-width: 5.55%;
+	font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+    font-weight:normal;
+	border-width: 0px 1px 1px 1px !important;
+    border-style: solid;
+    border-color: #376092;
+    text-decoration:underline;
+}
+.th_JisekiMonth, .th_TourokuOkure, .th_TasseiRitsuMonth, .th_MikomiMonth, .th_TasseiMikomiMonth, .th_MikomiTasseiRitsuMonth,
+.th_JisekisaToday, .th_TasseiRitsuToday, .th_HotCount, .th_HitRitsuHot, .th_JyuchuMikomiHot, .th_HusokuHot,
+.th_WarmCount, .th_HotHasseiRitsuWarm, .th_HotMikomiWarm, .th_HusokuWarm, .th_KeikakuKatsudo, .th_SessyokuKatsudo,
+.th_MisessyokuKatsudo, .th_JisshiRistuKatsudo {
+    height:45px;
+    width: 5.55%;
+    max-width: 5.55%;
+	font-family:ＭＳ Ｐゴシック;
+    font-size:14px;
+    font-weight:normal;
+	border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #376092;
+    text-decoration:underline;
+}
+.data_Tenpo {
+    font-family:ＭＳ Ｐゴシック;
+	font-size:14px;
+	letter-spacing:1px;
+    height:60px;
+    width: 5.55%;
+    max-width: 5.55%;
+	border:1px solid #376092;
+}
+
+.data_Furiatesumi {
+    font-family:'HGP創英角ｺﾞｼｯｸUB';
+	letter-spacing:1px;
+    height:60px;
+    width: 5.55%;
+    max-width: 5.55%;
+	border:1px solid #376092;
+}
+
+.data_MokuhyoMonth, .data_JisekiMonth, .data_TourokuOkure,.data_TasseiRitsuMonth, .data_MikomiMonth, .data_TasseiMikomiMonth, .data_MikomiTasseiRitsuMonth,
+.data_MokuhyoToday, .data_JisekisaToday, .data_TasseiRitsuToday, .data_HotCount, .data_HitRitsuHot, .data_JyuchuMikomiHot, .data_HusokuHot,
+.data_WarmCount, .data_HotHasseiRitsuWarm, .data_HotMikomiWarm, .data_HusokuWarm, .data_KeikakuKatsudo, .data_SessyokuKatsudo,
+.data_MisessyokuKatsudo, .data_JisshiRistuKatsudo {
+    font-family:'HGP創英角ｺﾞｼｯｸUB';
+	letter-spacing:1px;
+    height:60px;
+    width: 5.55%;
+    max-width: 5.55%;
+	border:1px solid #376092;
+}
+
+.fakeContainer { 
+	margin: 0 0 20px;
+	border: 1px;
+	width: 100%; 
+	height: 96%; 
+	overflow: hidden; 
+}
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+.listData_Select {
+    background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+}
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.listTable{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+
+}
+.divTable {
+    display: table;
+    padding:0px;
+    border-collapse:collapse;
+    margin:0px;
+    border-style:none;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+.divTableRow {
+    display: table-row;
+}
+.divTani {
+    display: table-cell;
+    text-align:right;
+    vertical-align:top;
+    height: 15px;
+    font-family:'ＭＳ Ｐゴシック';
+    border-style:none;
+    padding-right:4px;
+    padding-top:8px;
+    font-size: 9pt;
+    color:gray;
+}
+.divDataText {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.underline {
+    text-decoration:underline;
+}
+
+.blockBgcolor {
+    background-color: #10253f;
+}
+.listData_Zensya {
+	border-bottom:4px solid #376092;
+}

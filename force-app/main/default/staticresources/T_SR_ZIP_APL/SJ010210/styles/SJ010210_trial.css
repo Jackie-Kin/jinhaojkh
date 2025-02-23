@@ -1,0 +1,554 @@
+﻿
+body {
+   margin:0px; padding:0px; background-color:black;
+   min-width:1024px;
+   min-height:760px;
+   max-height:99.75%;
+   height:99.73%;
+   overflow: hidden;
+}
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+.table_main {
+    padding:0px;
+    border-collapse:collapse;
+    width:100%;
+}
+
+.td_Mikomi {
+    min-width:150px;
+    max-width:150px;
+    width:150px;
+    height:174px;
+   
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+}
+
+.mikomiTable,
+.noukiCSGyomu,
+.noukiCSAnnai,
+.serviceTable,
+.hokenTable,
+.otherTable {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mikomiTable tr:nth-child(1) { height: 0px; }
+.mikomiTable tr:nth-child(1) td { padding-top: 3px; }
+.mikomiTable tr:nth-child(4) { height: 0px; }
+.mikomiTable tr:nth-child(4) td { padding-bottom: 3px; }
+
+.noukiCSGyomu tr:nth-child(1) { height: 0px; }
+.noukiCSGyomu tr:nth-child(1) td { padding-top: 3px; }
+.noukiCSGyomu tr:nth-child(3) { height: 0px; }
+.noukiCSGyomu tr:nth-child(3) td { padding-bottom: 3px; }
+
+.noukiCSAnnai tr:nth-child(1) { height: 0px; }
+.noukiCSAnnai tr:nth-child(1) td { padding-top: 3px; }
+.noukiCSAnnai tr:nth-child(3) { height: 0px; }
+.noukiCSAnnai tr:nth-child(3) td { padding-bottom: 3px; }
+
+.serviceTable tr:nth-child(1) { height: 0px; }
+.serviceTable tr:nth-child(1) td { padding-top: 3px; }
+.serviceTable tr:nth-child(4) { height: 0px; }
+.serviceTable tr:nth-child(4) td { padding-bottom: 3px; }
+
+.hokenTable tr:nth-child(1) { height: 0px; }
+.hokenTable tr:nth-child(1) td { padding-top: 3px; }
+.hokenTable tr:nth-child(4) { height: 0px; }
+.hokenTable tr:nth-child(4) td { padding-bottom: 3px; }
+
+.otherTable tr:nth-child(1) { height: 0px; }
+.otherTable tr:nth-child(1) td { padding-top: 3px; }
+.otherTable tr:nth-child(3) { height: 0px; }
+.otherTable tr:nth-child(3) td { padding-bottom: 3px; }
+
+.td_NoukiCS {
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+}
+
+.td_Gyoumu {
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+    height:88px;
+}
+
+.td_Annai {
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+    height:88px;
+}
+
+
+.td_Service {
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+    height:174px;
+}
+
+.td_Hoken {
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+    height:88px;
+}
+
+.td_Other {
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+    height:88px;
+}
+
+.td_space {
+    max-width:2px;
+    min-width:2px;
+    width:5px;
+    background-color:transparent;
+    border-top:0px none;
+    border-bottom:0px none;
+}
+
+.td_Item {
+    background-color: rgb(233,241,252);
+    border:1px solid #CCCCCC;
+    width:100%;
+}
+
+.font-number {
+    font-size:25pt;
+    text-decoration: underline;
+    vertical-align:middle;
+}
+
+.font-number-day {
+    font-size:25pt;
+    vertical-align:sub;
+}
+
+.font-number-sumi {
+    vertical-align:bottom;
+    line-height:90%;
+    text-align:left;
+    font-size:12pt;
+}
+
+.pnl_main {
+    text-align:left;
+}
+
+.pnl_Gyoumu {
+    white-space: nowrap;
+}
+
+.pnl_Annai {
+    white-space: nowrap;
+}
+
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: rgb(25, 58, 102);    
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+.kanbanTitle {
+    width: 100%;
+}
+
+.dayTitle {
+    width: 30%;
+}
+
+.dayTitle table {
+    margin: 0px auto;
+}
+
+.dayTitleTriangle {
+    width: 50px;
+    background-color: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#c0c0c0));
+    font-size: Medium;
+}
+
+.dayTitleTriangle img {
+    display: block;
+}
+
+.dayTitleLabel {
+    background-color: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#c0c0c0)); 
+    font-size: Medium;
+}
+
+article{
+    vertical-align: top;
+    min-width: 180px;
+    max-width: 180px;
+	width:180px;
+	margin:2px 3px 0px 3px;
+	padding:0px;
+	border-radius:10px;
+	text-align:left;
+	border:3px solid #0D2A66;
+	white-space:normal;
+    display: inline-block;
+    position: relative;
+}
+
+
+.sumi_css1 {
+    background-color: #0D2A66;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+.sumi_css2 {
+    background-color: #0D2A66;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+.sumi_css3 {
+    background-color:#2F2F2F;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    border:3px solid #2F2F2F;
+}
+.sumi_css4 {
+    background-color:#2F2F2F;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    border:3px solid #2F2F2F;
+}
+
+.sumi_flag,
+.callcenter_flag,
+.TCicon_flag,
+.netrequest_flag,
+.Connectedicon_flag {
+    position:absolute;
+    top:45px;
+}
+
+.sumi_flag {
+    right:24px;
+    width: 16px;
+    height: 22px;
+}
+
+.callcenter_flag {
+    right:45px;
+    width:22px; 
+    height:22px;
+}
+
+
+
+.TCicon_flag {
+    left:21%;
+    width:14%; 
+    height:33%;
+}
+
+
+.netrequest_flag {
+    right:70px;
+    width:25px;
+    height:22px;
+}
+
+
+article div{
+
+}
+
+article .box{
+	display:table;
+	margin:2px 4px 0px;
+    height:26px;
+    text-shadow: 0px 1px 1px rgba(102, 102, 102, 0.4);
+}
+
+.tip_name, .tip_kensu{
+	display:table-cell;
+    font-size:13pt;
+	font-weight:normal;
+    font-family:Meiryo;
+}
+
+.tip_name{
+    width:11.8%;
+	height:1.56%;
+	text-align:left;
+}
+
+.tip_kensu{
+    width:5.5%;
+	text-align:center;
+    font-size: 15px;
+}
+
+.tip_kensu_div{
+    width:60px;
+    height:15px;
+	vertical-align:middle;
+    line-height:16px;
+    position:absolute;
+    top:5px;
+    right:1px;
+    border-radius:3px;
+}
+
+.tip_kensu_div_min{
+    font-size:14px;
+}
+
+article p{
+    height: 42px;
+    padding-left:5px;
+    font-weight:normal;
+    margin: 0px 5px;
+    font-size:10.5pt;
+    padding-top:8px;
+    font-family:Meiryo;
+    display:table;
+    position: relative;
+    bottom: 2px;
+}
+
+.select_border {
+    border:3px solid #00FE3C !important;
+    background-color: #4f6593;
+}
+
+.select_border_dark {
+    border:3px solid #00FE3C !important;
+    background-color: #555555;
+}
+
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: rgb(25, 58, 102);
+    height: 100%; 
+    width: 100%; 
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    position: relative;
+}
+
+
+#back_div {
+    background-color: black;
+    position: absolute;
+    display: none;
+    z-index: 500;
+    width: 90%;
+    height: 84%;
+    overflow: hidden;
+    left: 168px;
+    top: 59px;
+    filter: alpha(opacity=40);
+    -moz-opacity: 0.4;
+    opacity: 0.4;
+}
+
+#wrap {
+    margin: 5px 0 0 7px;
+    width: 99%; 
+    height: 97%; 
+    overflow: hidden;
+}
+
+.textFontColorGray {
+
+}
+
+.textFontColorLightGray {
+
+}
+
+.textFontColorDarkGray {
+    color: #999999;
+}
+
+.backGroundColorRed {
+    background-color: #B00808;
+}
+
+.backGroundColorOrange {
+    background-color: #e66d09;
+}
+
+.systemShubetsu {
+    font-size: 10.5pt;
+    position: relative;
+    bottom: 3px;
+}
+
+.nyukoInfo {
+    font-size: 10pt;
+}
+
+.nyukoInfo_min {
+    font-size: 9pt;
+}
+
+.rows1Area{
+    height:90px;
+    width:100000px;     
+    overflow:hidden;
+}
+.rows2Area {
+    height:172px;
+    width:100000px;     
+    overflow:hidden;
+}
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.underline{
+    text-decoration:underline;
+}
+
+
+.Connectedicon_flag {
+    right:98px;
+    width:22px;
+    height:22px;
+}
+
+
+
+#PnlMonthlyPlan {
+  /* IT1-1 h0174 */
+  /* height:calc(100% - 28px); */
+  height:100%;
+  width:100%; 
+  position:absolute; 
+  /* IT1-1 h0174 */
+  /* top:28px; left:0px; */
+  top:0px; left:0px; 
+  background-color:#000;
+  z-index: 1000;
+  opacity:0.7;
+}
+
+#spmDialog_10040 {
+  position: absolute;
+  top: 25%;
+  left: 16%;
+  width: 70%;
+  /* IT1-1 h0174 */
+  /* height: 40%; */
+  height: 50%;
+  z-index: 1001;
+  font-size: 26px;
+  color: #000;
+}
+
+.spm-dialog-border-10040 {
+  position: absolute;
+  background-color: #fff;
+  width:100%;
+  height:100%;
+}
+
+.spm-dialog-title-10040 {
+  padding-left: 21px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 27px;
+  color: #fff;
+  background-color: #193a66;
+  font-weight:bold;
+}
+
+.spm-dialog-main-10040 {
+  padding: 0px;
+}
+
+.spm-dialog-main-10040:after {
+  display: block;
+  clear: both;
+  height: 0px;
+  visibility: hidden;
+  content: ".";
+  height:80%;
+}
+
+.spm-dialog-message-10040 {
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  font-size: 38px;
+  float: left;
+  overflow: auto;
+  height:60%;
+  width:93%;
+  position:relative;
+  top:10%;
+  left:6%;
+  overflow:hidden;
+}
+
+.spm-dialog-buttons-10040 {
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+}
+
+.spm-dialog-button-10040 {
+  width: 145px;
+  height: 40px;
+  vertical-align: middle;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: none;
+  border-radius: 3px;
+  background-color: #193a66;
+  box-shadow: 0px 1px 1px 0px rgba(17, 65, 128, 0.3);
+  cursor: pointer;
+  font-size: 28px;
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+  position:relative;
+  left:37%;
+}
+#message_10040_1 {
+    height:70px;
+    margin-top:10px;
+}
+#message_10040_3 {
+    height:50px;
+    top:8px;
+    color:red;
+}
+#spmDialog_10040-ok-str {
+    position:relative;
+    top:6px;
+}

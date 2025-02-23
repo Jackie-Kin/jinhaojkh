@@ -1,0 +1,1295 @@
+﻿/* bodyタグ */
+body 
+{
+    font-family: 'HiraKakuProN-W3';
+}
+
+/* ヘッダー部 */
+/* 2019/07/12 del start 未使用のためコメントアウト */
+/*
+.divHeaderTag
+{
+    background-image: URL(../IMG/SPM_Header.png);   
+    -webkit-background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    background-size:100% 100%;
+}
+*/
+/* 2019/07/12 del end 未使用のためコメントアウト */
+
+/* 共通ヘッダー部 */
+.tdComHeader1 
+{ 
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(silver));
+    background: linear-gradient(to bottom,white,silver);
+    text-align: center;
+    font-size:16pt;
+}
+
+/* ボタン
+・フォントサイズ：中
+*/
+.btnM
+{
+    color: #000000;
+    font-size: Medium;
+    font-family: 'HiraKakuProN-W3';
+}
+
+.cmbTopSelect
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(silver));
+    background: linear-gradient(to bottom,white,silver);
+}
+
+/* 更新日時 */
+.lblUpdateDate 
+{
+    color:white;
+    font-size:8pt;
+    float:right; 
+    position:absolute;
+}
+
+/* ログアウトボタン */
+.btnLogout 
+{
+    width:80px;
+    height:30px;
+}
+
+/* ↓元ソース（未使用）  */
+
+
+
+
+
+/* divタグ（明細1）*/
+.divMeisai1
+{
+    table-layout: fixed; 
+    overflow: hidden;
+}
+
+/* divタグ（明細2）*/
+.divMeisai2
+{
+    table-layout: fixed; 
+    OVERFLOW: scroll; 
+}
+
+
+
+/* divタグ（明細2）
+・背景色：茶色
+*/
+.divMeisaiAuto
+{
+    OVERFLOW: auto; 
+    width:100%; 
+    background-color: #808080; 
+}
+
+/* divタグ（明細2）
+・背景色：白色
+*/
+.divMeisaiAuto2
+{
+    OVERFLOW: auto; 
+    width:100%;     
+    background-color: #FFFFFF; 
+}
+
+/* divタグ（明細2）
+・背景色：茶色
+*/
+.divMeisaiScroll
+{
+    OVERFLOW: scroll; 
+    width:100%; 
+    background-color: #808080; 
+}
+
+/* divタグ（明細2）
+・背景色：白色
+*/
+.divMeisaiHidden
+{
+    OVERFLOW: hidden; 
+    width:100%; 
+    background-color: #FFFFFF; 
+}
+
+.divBase 
+{
+    background-color:blue;
+    margin:0px; 
+    padding:0px;
+}
+
+/* 2019/07/12 del start 未使用のためコメントアウト */
+/*
+.divHeaderTag
+{
+    background-image: URL(../IMG/SPM_Header.png);   
+    -webkit-background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    background-size:100% 100%;
+}
+*/
+/* 2019/07/12 del end 未使用のためコメントアウト */
+
+.divFotterTag
+{
+    /*background-image: URL(../IMG/SPM_Fotter.png);*/   
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(silver));
+    background: linear-gradient(to bottom,white,silver);
+    -webkit-background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    background-size:100% 100%;
+}
+
+/* tableタグ（ヘッダ）
+・高さ：40PX
+*/
+.tableHeader
+{    
+    width:100%; 
+    margin:0px; 
+    padding:0px;
+    border: "1";
+    height:40px; 
+}
+
+/* tableタグ（明細） */
+.tableBody
+{    
+    table-layout: fixed;
+    overflow: hidden;
+    width:100%; 
+    border: "1"; 
+    margin:0px; 
+    padding:0px;
+}
+
+.tableBody2
+{    
+    table-layout: fixed;
+    overflow: scroll;
+    width:100%; 
+    border-width: 1px; 
+}
+
+.tableBody3
+{    
+    table-layout: fixed;
+    overflow: hidden;
+    width:100%; 
+    border-width: 1px; 
+}
+
+
+/* データグリッド */
+.GridView
+{
+    font-size: Small; 
+    border-style: Inset; 
+    background-color: #FFFFFF;
+    width:100%;
+    padding: 0px; 
+    margin: 0px; 
+}
+
+/* データグリッド 
+隠しボタンありの場合
+*/
+.GridView3
+{
+    font-size: Small; 
+    border-style: none; 
+    background-color: #FFFFFF;
+    width:100%;
+    padding: 0px; 
+    margin: 0px; 
+}
+.GridView2
+{
+    width:100%;
+    font-size: Small; 
+    border-style: None; 
+    background-color: #FFFFFF;
+}
+
+/* データグリッドWebコントロール
+未定義
+ */
+.GridConStyle
+{
+ 
+}
+
+/* データグリッドヘッダ
+・行高：20PX
+・上下左右中央揃え 
+*/
+.GridHdrStyle
+{
+    background-color: #967652;
+    border-style: solid; 
+    font-size: medium; 
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    height:20px;
+    font-family: 'HiraKakuProN-W3';
+    font-weight: normal;
+}
+
+/* データグリッド明細
+・行高：40PX
+・フォンサイズ：特大
+・上下左右中央揃え 
+*/
+.GridItmStyleXL
+{
+    font-size: X-Large; 
+    border-style: solid;
+    text-align: center;
+    vertical-align: middle;
+    height:40px; 
+    font-family: 'HiraKakuProN-W3';
+    font-weight: normal;
+}
+
+/* データグリッド明細
+・行高：40PX
+・フォンサイズ：大
+・上下左右中央揃え 
+*/
+.GridItmStyleL
+{
+    font-size: Large; 
+    border-style: solid;
+    text-align: center;
+    vertical-align: middle;
+    height:40px; 
+    font-family: 'HiraKakuProN-W3';
+    font-weight: normal;
+}
+
+/* データグリッド明細
+・行高：40PX
+・フォンサイズ：中
+・上下左右中央揃え 
+*/
+.GridItmStyleM
+{
+    font-size: Medium; 
+    border-style: solid;
+    text-align: center;
+    vertical-align: middle;
+    height:40px; 
+    font-family: 'HiraKakuProN-W3';
+    font-weight: normal;
+}
+
+/* データグリッド明細
+・行高：40PX
+・フォンサイズ：小
+・上下左右中央揃え 
+*/
+.GridItmStyleS
+{
+    font-size: Small; 
+    border-style: solid;
+    text-align: center;
+    vertical-align: middle;
+    height:40px; 
+    font-family: 'HiraKakuProN-W3';
+    font-weight: normal;
+}
+
+/* データグリッド非表示 */
+.GridHidenStyle
+{
+    width:0px; 
+    border-style: None; 
+    background-color: #FFFFFF;
+}
+
+/* データグリッド交互データ行 */
+.AlternatingRowStyle
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* ラベル
+・フォントサイズ：特大
+・フォント色：白
+・フォント太さ：太い
+*/
+.lblSizeXLColorW
+{
+    color: #FFFFFF;
+    font-size: X-Large;
+    font-family: 'HiraKakuProN-W3'; 
+    font-weight: normal;
+}
+
+/* ラベル
+・フォントサイズ：大
+・フォント色：白
+*/
+.lblSizeLColorW
+{
+    color: #FFFFFF;
+    font-size: Large;
+    font-family: 'HiraKakuProN-W3'; 
+    font-weight: normal;
+}
+
+/* ラベル
+・フォントサイズ：中
+・フォント色：白
+*/
+.lblSizeMColorW
+{
+    color: #FFFFFF;
+    font-size: Medium;
+    font-family: 'HiraKakuProN-W3'; 
+    font-weight: normal;
+}
+
+/* ラベル
+・フォントサイズ：小
+・フォント色：白
+*/
+.lblSizeSColorW
+{
+    color: #FFFFFF;
+    font-size: Small;
+    font-family: 'HiraKakuProN-W3'; 
+    font-weight: normal;
+}
+
+/* ラベル
+・フォントサイズ：特大
+・フォント色：黒
+・フォント太さ：太い
+*/
+.lblSizeXLColorB
+{
+    color: #000000;
+    font-size: X-Large;
+    font-family: 'HiraKakuProN-W3';
+    font-weight: normal;
+}
+
+/* ラベル
+・フォントサイズ：大
+・フォント色：黒
+*/
+.lblSizeLColorB
+{
+    color: #000000;
+    font-size: Large;
+    font-family: 'HiraKakuProN-W3'; 
+    font-weight: normal;
+}
+
+/* ラベル
+・フォントサイズ：中
+・フォント色：黒
+*/
+.lblSizeMColorB
+{
+    color: #000000;
+    font-size: Medium;
+    font-family: 'HiraKakuProN-W3'; 
+    font-weight: normal;
+}
+
+/* ラベル
+・フォントサイズ：小
+・フォント色：黒
+*/
+.lblSizeSColorB
+{
+    color: #000000;
+    font-size: Small;
+    font-family: 'HiraKakuProN-W3';
+    font-weight: normal;  
+}
+
+.lblKakumaru1 
+{
+    border: 2px double LightGrey;
+    border-radius:5px; 
+        -moz-border-radius:5px; 
+        -webkit-border-radius:5px;
+        text-align:center;
+        vertical-align:middle;
+        font-size:16pt;
+        color:White;
+    margin-left: 0px;
+}
+
+.lblKakumaru2
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(Yellow), to(orange));
+    background: linear-gradient(to bottom,Yellow,orange);
+    border-style:double;
+    border-width:2px;
+    border-color:LightGrey ;
+    text-align:center ;
+    vertical-align:middle;
+    font-size:16pt;
+    color:White;
+}
+.lblKakumaru3 
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#60EEFF), to(#75A9FF));
+    background: linear-gradient(to bottom,#60EEFF,#75A9FF);
+    border-style:double;
+    border-width:2px;
+    border-color:LightGrey ;
+    text-align:center ;
+    vertical-align:middle;
+    font-size:16pt;
+    color:White;
+}
+.lblKakumaru4 
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(silver), to(gray));
+    background: linear-gradient(to bottom,silver,gray);
+    border-style:double;
+    border-width:2px;
+    border-color:LightGrey ;
+    text-align:center ;
+    vertical-align:middle;
+    font-size:16pt;
+    color:White;
+}
+
+.lblKakumaru5
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(silver));
+    background: linear-gradient(to bottom,white,silver);
+    border-style:double;
+    border-width:2px;
+    border-color:LightGrey ;
+    text-align:center ;
+    vertical-align:top;
+    font-size:16pt;
+    color:black;
+}
+
+.lblKakumaru1_1
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(orange), to(#FF4F02));
+    background: linear-gradient(to bottom,orange,#FF4F02);
+    border-style:double;
+    border-width:3px;
+    border-color:white ;
+    text-align:center ;
+    vertical-align:top;
+    font-size:16pt;
+    color:black;
+
+    z-index:10;
+    position:relative;
+}
+
+.lblKakumaru2_1
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(Yellow), to(orange));
+    background: linear-gradient(to bottom,Yellow,orange);
+    border-style:double;
+    border-width:3px;
+    border-color:white ;
+    text-align:center ;
+    vertical-align:top;
+    font-size:16pt;
+    color:black;
+
+    z-index:10;
+    position:relative;
+}
+.lblKakumaru3_1
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#60EEFF), to(#75A9FF));
+    background: linear-gradient(to bottom,#60EEFF,#75A9FF);
+    border-style:double;
+    border-width:3px;
+    border-color:white ;
+    text-align:center ;
+    vertical-align:top;
+    font-size:16pt;
+    color:black;
+
+    z-index:10;
+    position:relative;
+}
+.lblKakumaru4_1
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(silver), to(gray));
+    background: linear-gradient(to bottom,silver,gray);
+    border-style:double;
+    border-width:3px;
+    border-color:white ;
+    text-align:center ;
+    vertical-align:top;
+    font-size:16pt;
+    color:black;
+
+    z-index:10;
+    position:relative;
+}
+
+.tdUserChip 
+{
+    border-radius:10px; 
+    width: 150px;
+    height: 150px;
+}
+
+.lblKakumaru6
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(silver));
+    background: linear-gradient(to bottom,white,silver);
+    border-style:solid;
+    border-width:2px;
+    border-color:red ;
+    text-align:center ;
+    vertical-align:top;
+    font-size:16pt;
+    color:black;
+}
+
+.lblKakumaru7
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(silver));
+    background: linear-gradient(to bottom,white,silver);
+    border-style:solid;
+    border-width:2px;
+    border-color:gray ;
+    text-align:center ;
+    vertical-align:top;
+    font-size:16pt;
+    color:black;
+}
+
+.lblKakumaru8
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(DarkGray), to(gray));
+    background: linear-gradient(to bottom,DarkGray,gray);
+    border-style:solid;
+    border-width:2px;
+    border-color:gray ;
+    text-align:center ;
+    vertical-align:top;
+    font-size:16pt;
+    color:black;
+}
+
+.lblKakumaru9
+{
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#60EEFF), to(#75A9FF));
+    background: linear-gradient(to bottom,#60EEFF,#75A9FF);
+    border-style:solid;
+    border-width:2px;
+    border-color:gray ;
+    text-align:center ;
+    vertical-align:top;
+    font-size:16pt;
+    color:black;
+}
+
+/* tdタグ（ヘッダ項目タイトル）
+・グラデーションあり
+*/
+.tdKoumokuTitle
+{
+    /*background-position: -webkit-gradient(linear, left top, left bottom, from(#5050FF), to(#507CD1));*/ 
+    border-color: #000000; 
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(#967652), to(#494529));
+    background: linear-gradient(to bottom,#967652,#494529);
+    text-align: center;
+}
+
+.tdKoumoku0
+{
+    padding: 0px; 
+    margin: 0px; 
+    color:white;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(darkblue));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: center;
+    font-size:16pt;
+    vertical-align:middle;
+}
+.tdKoumoku1 
+{
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(silver));
+    background: linear-gradient(to bottom,white,silver);
+    text-align: center;
+    font-size:16pt;
+}
+
+.tdKoumoku2
+{
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(White), to(LightCyan));
+    background: linear-gradient(to bottom,white,LightCyan);
+    text-align: center;
+    font-size:16pt;
+}
+
+.tdKoumoku3
+{
+    padding: 0px; 
+    margin: 0px; 
+    color:white;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(darkblue), to(black));
+    background: linear-gradient(to bottom,darkblue,black);
+    text-align: center;
+    font-size:16pt;
+}
+
+.tdKoumoku4
+{
+    padding: 0px; 
+    margin: 0px 0px 30px 0px; 
+    color:white;
+    border-style: none;
+    background-color:#2F4F77;
+    text-align:center ;
+    font-size:16pt;
+}
+
+.tdKoumoku5
+{
+    padding: 2px; 
+    margin: 2px; 
+    color:white;
+    border-style: none;
+    background-color:#2F4F77;
+    text-align:left  ;
+    vertical-align:top;
+    font-size:16pt;
+}
+
+.tdKoumoku6
+{
+    padding: 0px; 
+    margin: 0px; 
+    color:white;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(DarkGray), to(DimGray));
+    background: linear-gradient(to bottom,DarkGray,DimGray);
+    text-align: center;
+    font-size:16pt;
+}
+
+.tdKoumoku7_1
+{
+    padding: 2px; 
+    margin: 2px; 
+    color:black;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(orange), to(#FF4F02));
+    background: linear-gradient(to bottom,orange,#FF4F02);
+    text-align:center  ;
+    vertical-align:middle;
+    font-size:16pt;
+    border-style: solid;
+    border-width:1px;
+    border-color:gray;
+}
+
+.tdKoumoku7_2
+{
+    padding: 2px; 
+    margin: 2px; 
+    color:black;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(Yellow), to(orange));
+    background: linear-gradient(to bottom,Yellow,orange);
+    text-align:center  ;
+    vertical-align:middle;
+    font-size:16pt;
+    border-style: solid;
+    border-width:1px;
+    border-color:gray;
+}
+
+.tdKoumoku7_3
+{
+    padding: 2px; 
+    margin: 2px; 
+    color:black;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(#60EEFF), to(#75A9FF));
+    background: linear-gradient(to bottom,#60EEFF,#75A9FF);
+    text-align:center  ;
+    vertical-align:middle;
+    font-size:16pt;
+    border-style: solid;
+    border-width:1px;
+    border-color:gray;
+}
+
+.tdKoumoku7_4
+{
+    padding: 2px; 
+    margin: 2px; 
+    color:black;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(silver), to(gray));
+    background: linear-gradient(to bottom,silver,gray);
+    text-align:center  ;
+    vertical-align:middle;
+    font-size:16pt;
+    border-style: solid;
+    border-width:1px;
+    border-color:gray;
+}
+
+.tdKoumoku8
+{
+    padding: 2px; 
+    margin: 2px; 
+    color:black;
+    border-style: solid;
+    border-width:1px;
+    border-color:gray;
+    background-color:white;
+    text-align:center  ;
+    vertical-align:middle;
+    font-size:12pt;
+}
+
+.tdKoumoku9
+{
+    padding: 2px; 
+    margin: 2px; 
+    color:black;
+    border-style: solid;
+    border-width:1px;
+    border-color:gray;
+    background-color:WhiteSmoke;
+    text-align:center  ;
+    vertical-align:middle;
+    font-size:12pt;
+}
+
+.tdKoumoku10
+{
+    padding: 2px; 
+    margin: 2px; 
+    color:white;
+    border-style: none;
+    background-color:black;
+    text-align:center  ;
+    vertical-align:middle;
+    font-size:16pt;
+}
+
+.tdkoumoku11
+{
+    height:15px;
+    border-style:solid;
+    border-width:1px;
+    border-color:DimGray;
+    padding:0px;
+    margin:0px;
+}
+
+.tdkoumoku12
+{
+    height:10px;
+    border-style:solid;
+    border-width:1px;
+    border-color:DimGray;
+    padding:0px;
+    margin:0px;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(DarkGray));
+    background: linear-gradient(to bottom,white,DarkGray);
+    border-radius:5px; 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px;
+}
+
+/* tdタグ（ヘッダ項目メッセージ）
+・グラデーションなし
+*/
+.tdKoumokuMsg
+{
+    border-color: #000000; 
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none solid none solid;
+    border-width: thin;
+    text-align: center;
+    height:35px
+}
+
+
+.tdKoumokuData
+{
+    border-color: #000000; 
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+}
+
+/* tdタグ（テキスト項目）
+・水平中央揃え
+*/
+.tdCenter1
+{
+    padding: 0px; 
+    margin: 0px; 
+    border-color: #000000; 
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+}
+
+/* tdタグ（テキスト項目）
+・水平中央揃え
+・垂直線あり
+*/
+.tdCenter2
+{
+    padding: 0px; 
+    margin: 0px; 
+    border-color: #000000; 
+    border-style: none solid none solid;
+    border-width: thin;
+    text-align: center;
+}
+/* tdタグ（テキスト項目）
+・水平中央揃え
+・垂直線あり
+・水平線あり
+*/
+.tdCenter3
+{
+    padding: 0px; 
+    margin: 0px; 
+    border-color: #000000; 
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+}
+
+
+/* tdタグ（テキスト項目）
+・水平右揃え
+*/
+.tdRight
+{
+    border-color: #000000; 
+    border-style: solid;
+    border-width: thin;
+    text-align: right;
+}
+
+/* tdタグ
+・背景白
+*/
+.tdBackW
+{
+    background-color: #FFFFFF;
+}
+
+/* ボタン
+・フォントサイズ：特大
+*/
+.btnXL
+{
+    color: #000000;
+    font-size: X-Large;
+    font-family: 'HiraKakuProN-W3';
+}
+
+/* ボタン
+・フォントサイズ：大
+*/
+.btnL
+{
+    color: #000000;
+    font-size: Large;
+    font-family: 'HiraKakuProN-W3';
+}
+
+/* ボタン
+・フォントサイズ：中
+*/
+.btnM
+{
+    color: #000000;
+    font-size: Medium;
+    font-family: 'HiraKakuProN-W3';
+}
+
+.btnSelOn_1
+{
+    margin:0px;
+    padding:0px;
+    border-radius:5px 0px 0px 5px; 
+    -moz-border-radius:5px 0px 0px 5px; 
+    -webkit-border-radius:5px 0px 0px 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(DarkBlue), to(DeepSkyBlue));
+    background: linear-gradient(to bottom,DarkBlue,DeepSkyBlue);
+    color:White ;
+    font-weight:bolder ;
+}
+
+.btnSelOff_1
+{
+    margin:0px;
+    padding:0px;
+    border-radius:5px 0px 0px 5px; 
+    -moz-border-radius:5px 0px 0px 5px; 
+    -webkit-border-radius:5px 0px 0px 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(silver), to(Gray));
+    background: linear-gradient(to bottom,silver,Gray);
+    color:White ;
+    font-weight:bolder ;
+}
+
+.btnSelOn_2
+{
+    margin:0px;
+    padding:0px;
+    border-radius:0px 5px 5px 0px; 
+    -moz-border-radius:0px 5px 5px 0px; 
+    -webkit-border-radius:0px 5px 5px 0px;
+    background: -webkit-gradient(linear, left top, left bottom, from(DarkBlue), to(DeepSkyBlue));
+    background: linear-gradient(to bottom,DarkBlue,DeepSkyBlue);
+    color:White ;
+    font-weight:bolder ;
+}
+
+.btnSelOff_2
+{
+    margin:0px;
+    padding:0px;
+    border-radius:0px 5px 5px 0px; 
+    -moz-border-radius:0px 5px 5px 0px; 
+    -webkit-border-radius:0px 5px 5px 0px;
+    background: -webkit-gradient(linear, left top, left bottom, from(silver), to(Gray));
+    background: linear-gradient(to bottom,silver,Gray);
+    color:White ;
+    font-weight:bolder ;
+}
+
+/* リストヘッダ
+・グラデーションあり
+*/
+.listHeader
+{
+    border-style: solid;
+    font-size: small;
+    background: -webkit-gradient(linear, left top, left bottom, from(#967652), to(#494529));
+    background: linear-gradient(to bottom,#967652,#494529);
+    color: #FFFFFF;
+}
+
+.btnXLB
+{
+    width: 85px;
+    Height: 54px;
+    font-size: X-Large; 
+    font-family: 'HiraKakuProN-W3';
+    border-style: None;
+    background-color: White;
+    color: Black;
+    border-color: White;
+}
+
+.btnS999999
+{
+        width:100%;
+    font-size: small; 
+    color:#999999 ;
+    border-style:inset;
+    background-color:White ;
+    -webkit-appearance: none;
+}
+
+.table502
+{    
+    border-color:Black;
+    border-width: 1px; 
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing : 0;
+}
+
+/* テーブルロット部 */
+.tableLot
+{    
+    border-color:Black;
+    border-width: 1px; 
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing : 0;
+}
+
+/* tdタグ（ロット部） 
+・背景色グレー
+*/
+.tdLotG
+{
+    height:20px; 
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    width: 23px;
+    background-color: #dcdcdc;
+}
+
+/* tdタグ（ロット部） 
+・背景色ブルー
+*/
+.tdLotB
+{
+    height:20px; 
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    width: 23px;
+    background-color: #6495ed;
+}
+
+/* tdタグ（ロット部） 
+・背景色指定なし
+*/
+.tdLot
+{
+    height:20px; 
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    width: 23px;
+}
+
+
+.tdHead501_1
+{
+    height:20px; 
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    width: 23px;
+}
+
+.tdHead501_2
+{
+    height:20px; 
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    width: 23px;
+}
+
+.tdHead501_3
+{
+    height:20px; 
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    border-left-color: Red;
+    border-left-style:solid;
+    width: 23px;
+}
+
+.lbHead501W
+{
+    text-align: center;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: Small;
+    font-family: 'HiraKakuProN-W3';
+}
+
+/* ラベル（ロット部）
+・フォント色白
+*/
+.lbHeadLotW
+{
+    text-align: center;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: Small;
+    font-family: 'HiraKakuProN-W3';
+}
+
+.cmbTopSelect
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(silver));
+    background: linear-gradient(to bottom,white,silver);
+}
+
+.fakeContainer { /* The parent container */
+	margin: 0 0 20px;
+	border: 1px;
+	width: 1024px; /* Required to set */
+	height: 593px; /* Required to set */
+	overflow: hidden; /* Required to set */
+}
+
+.TurnString
+{
+    word-break: break-all;
+    border-color:#CCCCCC;
+}
+
+.lblCountText {
+position:absolute;
+left:950px;
+top:5px;
+}
+
+.lblCountListText {
+position:absolute;
+left:730px;
+top:5px;
+}
+
+.btnMemoMark
+{
+    position:absolute;
+    height:25px;
+    width:25px;
+
+    background-color:red;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F88), to(red));
+    background: linear-gradient(to bottom,#F88,red);
+
+    border:2px solid white;
+    border-radius:50%; 
+    -moz-border-radius:50%; 
+    -webkit-border-radius:50%;
+
+    left:145px;
+    top:10px;
+}
+
+.btnMemoMark2
+{
+    position:absolute;
+
+    height:25px;
+    width:25px;
+
+    left:145px;
+    top:10px;
+}
+
+.btnMemoMark3
+{
+    position:absolute;
+
+    width:35px;
+    height:35px;
+
+    left:145px;
+    top:0px;
+}
+
+
+.btnMemoCnt
+{
+    left:145px;
+    top:10px;
+
+    background-color: transparent;
+    position:absolute;
+    height:25px;
+
+    color:white;
+    border:0px solid;
+
+    font-size:16px;
+    font-weight:bold;                  
+}
+
+.btnMemoCnt2
+{
+    left:140px;
+    top:10px;
+
+    background-color: transparent;
+    position:absolute;
+
+    color:white;
+    border:0px solid;
+
+    height:25px;
+    width:35px;
+}
+.btnMemoCnt3
+{
+    left:140px;
+    top:0px;
+
+    background-color: transparent;
+    position:absolute;
+
+     width:45px;
+    height:35px;
+}

@@ -1,0 +1,274 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力(外側)（S1）
+ * ファイル名: T_SR_CSS_KatsudoKekkaNyuryokuTop.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/15  HISOL張     新規作成
+ */
+ .S00301-container {
+  font-size: 0.5em;
+}
+
+.S00301-left {
+  float: left;
+}
+
+.S00301-column {
+  float: left;
+  padding-left: 20px;
+  display: flex;
+}
+
+.S00301-right {
+  float: right;
+}
+
+.S00301-block-right {
+  margin-left: auto;
+}
+
+.S00301-button-area {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-left: auto;
+  position:relative;
+}
+
+.S00301-tab-view-port {
+  background-color: #5478a9;
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+  width: 100%;
+  height: 460px;
+}
+
+.S00301-tab-view-port-no-contact {
+  background-color: #5478a9;
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+  width: 100%;
+  height: 560px;
+  padding-top: 10px;
+}
+
+.S00301-tab-view {
+  display: block;
+}
+
+.S00301-hidden {
+  display: none;
+}
+
+.S00301-shop,
+.S00301-staff {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1.04px;
+  line-height: 25px;
+  text-align: center;
+  max-width: 200px;
+}
+
+.S00301-icon-detail {
+  background-image: url("../../SJ010228/images/icon_detail.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.S00301-icon-map {
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-left: 30px;
+  background-image: url("../../SJ010228/images/icon_map.svg");
+
+  background-position: center;
+}
+
+.S00301-column-title {
+  color: #193a66;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.56px;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.S00301-column-val {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  line-height: 24px;
+  text-align: left;
+  display: flex;
+}
+.S00301-column-kana {
+  font-size:14px;
+}
+.S00301-column-namae {
+  font-size: 18px;
+}
+.S00301-tel-view {
+  font-size: 15px;}
+
+.S00301-column-title-width {
+  width: 100px;
+}
+
+.S00301-column-okyaku-width {
+  width: 150px;
+}
+
+.S00301-column-okyaku-top {
+  width: 15%;
+}
+
+.S00301-column-nokeitai-width {
+  width: 350px;
+}
+
+.S00301-column-second-top {
+  display: block;
+  width: 185px;
+}
+
+.S00301-column-second-nontop {
+  width: 40.74%;
+}
+
+.S00301-row {
+  display: flex;
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+
+  .S00301-row.top {
+    margin-bottom: 0px;
+  }
+
+  .S00301-row.bottom {
+    margin-bottom: 5px;
+  }
+
+  .S00301-row.backcolor {
+    background-color: #ecf3fc;
+    width: 100%;
+    height: 25px;
+  }
+
+.S00301-row-kana {
+  height: 18px;
+  display: flex;
+}
+
+.S00301-not-button-area-width {
+  width: calc(100% - 330px)
+}
+
+.S00301-c-karte-button {
+  vertical-align: middle;
+  width: 38px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.S00301-right-button.inactive{
+  background-color: #999999;
+  cursor: default;
+}
+
+.S00301-right-button.hidden{
+  background-color: #ffffff;
+  box-shadow: 0px 0px 0px 0px;
+  cursor: default;
+}
+
+.S00301-right-button {
+  border-radius: 3px;
+  background-color: #193a66;
+  box-shadow: 0px 1px 1px 0px rgba(17, 65, 128, 0.3);
+  width: 75px;
+  height: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+}
+
+.S00301-right-button:hover {
+  background-color: #2f578e;
+}
+
+.S00301-right-button.inactive:hover{
+  background-color: #999999;
+}
+
+.S00301-right-button.hidden:hover{
+  background-color: #ffffff;
+}
+
+#S00301-smb-button,
+#S00301-chatter-button {
+  font-size: 14px;
+}
+
+.S00301-row:first-child .S00301-left {
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.S00301-row:first-child .S00301-right {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#S00301-post-view {
+  min-width: 77px;
+}
+
+#S00301-address-view {
+  max-width: calc(100% - 15px - 77px - 52px);
+}
+
+.S00301-mj-kyamassy {
+  color: red;
+}
+
+#S00301-mail-view {
+  /**
+   * アドレスが長い場合に、メールアイコンのボタンが隠れてしまうため
+   * 暫定で対応
+   */
+  max-width: 460px;
+}
+
+#S00301-follow-button {
+  width: 35px;
+  height: 35px;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  background-image: url("../../SJ010228/images/flag_on_orange.png");
+  background-position: center;
+  background-color:white;
+  margin-top:-15px;
+}
+
+#S00301-follow-button.flag-off{
+  background-image: url("../../SJ010228/images/flag_off_white.png");
+}
+
+#S00301-follow-button.inactive{
+  cursor:default;
+}

@@ -1,0 +1,209 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　活動履歴（S1）
+ * ファイル名 : _T_SR_CSS_KatsudoKekkaNyuryokuTabActivityInformation.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/15  HISOL張     新規作成
+ */
+.S10101-ai-content {
+  display: flex;
+  margin-top: 3px;
+}
+
+.S10101-ai-content-header {
+  border-radius: 3px 3px 0 0;
+  background-color: #193a66;
+  height: 22px;
+}
+
+.S10101-ai-content-body {
+  height: 97px;
+}
+
+.S10101-ai-content-list {
+  margin-top:5px;
+  margin-left: 20px;
+  height: 102px;
+}
+
+  .S10101-ai-content-list.history {
+    /*width: 553px;*/
+    width: 93.0%;
+  }
+
+  .S10101-ai-content-list.plan {
+    /*width: 340px;*/
+    width: 89.2%;
+  }
+
+.S10101-ai-content-header-char {
+  font-family: Meiryo;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  line-height: 22px;
+  text-align: left;
+  text-shadow: 0px 2px 3px rgba(102, 102, 102, 0.3);
+
+  margin-left:20px;
+}
+
+.S10101-ai-content-history {
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+  height: 130px;
+
+  /*  width: 594px;*/
+  width: 60.3%;
+}
+
+.S10101-ai-content-plan {
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+  height: 130px;
+
+  /*  width: 381px;*/
+  width: 38.9%;
+  margin-left: 9px;
+}
+
+/* リストのヘッダー */
+.S10101-ai-list-header {
+  width: 100%;
+  height: 23px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: #375884;
+  display: flex;
+}
+
+.S10101-ai-list-header > div {
+  float: left;
+  padding-left: 9px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.S10101-ai-history-date {
+  /*width: 108px;*/
+  width: 17.5%;
+}
+
+.S10101-ai-history-col {
+  /*width: 100px;*/
+  width: 16.0%;
+}
+
+.S10101-ai-history-person {
+  /* width: 89px; */
+  width: 14.1%;
+}
+
+.S10101-ai-history-approach {
+  /* width: 128px; */
+  width: 17.2%;
+}
+
+.S10101-ai-history-result {
+  /* width: 128px; */
+  width: 21.2%;
+}
+
+.S10101-ai-history-memo {
+  /* width: 128px; */
+  width: 14%;
+  text-align:center !important;
+}
+
+.S10101-ai-history-memo img {
+    cursor:pointer;
+    width:38%;
+}
+
+.S10101-ai-plan-date {
+  /*width: 128px;*/
+  width: 37.6%
+}
+
+.S10101-ai-plan-col {
+  /*width: 107px;*/
+  width: 31.4%
+}
+
+.S10101-ai-plan-origin {
+  /*width: 105px;*/
+  width: 31.0%
+}
+
+/* リストのデータ部 */
+.S10101-ai-list-deta {
+  height: 82px;
+  overflow-y: auto;
+}
+
+.S10101-ai-list-deta-detail {
+  background-color: rgba(92, 151, 230, 0.08);
+  height: 25px;
+  margin-bottom: 2px;
+
+  display: flex;
+}
+
+  .S10101-ai-list-deta-detail > div {
+    float: left;
+    padding-left: 10px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.52px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+/*.S10101-ai-other-view {
+
+  width: 28px;
+  height: 28px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  background-image: url("../../../../Areas/S1/Images/icon_memo.svg");
+
+  float:right;
+  cursor:pointer;
+}*/
+
+.S10101-ai-other-view {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 0px 0px rgba(17, 65, 128, 0.5);
+  width: 76px;
+  height: 20px;
+  line-height: 20px;
+  color: #193a66;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  text-align: center;
+  float:right;
+  margin-top: 1px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.S10101-ai-other-view:hover{
+  color: #ffffff;
+  background-color: #2f578e;
+}

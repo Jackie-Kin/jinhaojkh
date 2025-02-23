@@ -1,0 +1,39 @@
+<apex:page docType="html-5.0" controller="Sample_S_JINController"
+    showHeader="false" standardStylesheets="false" sidebar="false"
+    cache="false" expires="0">
+    
+<head>
+<apex:includeScript value="{!
+         URLFOR($Resource.Jquery,'Jquery/jquery-3.3.1.js')}"/>
+ </head>    
+    <apex:form >
+        <apex:datatable border="1" cellpadding="5" var="apexPage"
+            value="{!apexPageInfos}">
+            <apex:column id="pagename">
+                <apex:facet name="header">
+                    ApexPageName
+                </apex:facet>
+                <a onclick='OpenWindow(this);' href="#">{!apexPage.name}</a>
+            </apex:column>
+            <apex:column id="pagelabel">
+                <apex:facet name="header">
+                    ApexPagemMasterlabel
+                </apex:facet>
+                <apex:outputfield value="{!apexPage.masterlabel}" />
+            </apex:column>
+            <apex:column id="pageid">
+                <apex:facet name="header">
+                    ApexPageId
+                </apex:facet>
+                <apex:outputfield value="{!apexPage.apexpageid}" />
+            </apex:column>
+        </apex:datatable>
+    </apex:form>
+    
+<script>
+    function OpenWindow(obj){
+    var test=$(obj).parent().parent().find("td").eq(2).find("span").text();
+     window.open("https://ap4.salesforce.com/"+test);
+    }
+</script>   
+</apex:page>

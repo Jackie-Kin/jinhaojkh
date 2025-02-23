@@ -1,0 +1,167 @@
+﻿@charset "UTF-8"; 
+
+body {
+     margin:0px; padding:0px; background-color:white;
+
+}
+
+table {
+	padding:0px;
+	border-collapse:collapse;
+}
+
+.title{
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    font-size:11pt;
+}
+
+.checkTable{
+	border:1px solid black;
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#555555;
+}
+
+.checkBox{
+	padding:0px;
+	margin:0px;
+	width:25px;
+	border-radius:4px;
+	border-color:rgb(156,156,156);
+	background-color:rgb(255,255,204);
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4) inset;
+}
+
+.trimTable{
+	border-radius: 5px;        /* CSS3草案 */  
+
+}
+
+.titleFont{
+	font-size:11pt;
+	font-family:"ＭＳ Ｐゴシック";
+}
+
+.dataFont{
+	font-size:12.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:rgb(89,88,92);
+
+}
+
+.dataFont_Select{
+	font-size:12.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:#376092;
+
+}
+
+.dataFont_Underbar{
+	font-size:12.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:#376092;
+	border-bottom:3px solid #376092;
+
+}
+
+.dataFont_Underbar.unabled{
+	color:#555555;
+    border-bottom:0px;
+}
+
+.td_Listdata{
+	border:1px solid rgb(178,178,178);
+	width:180px;
+	padding:9px;
+	text-align:left;
+	
+}
+
+.Koumoku_SelectData {
+    border:1px solid white;
+	width:180px;
+	padding:9px;
+	text-align:left;
+
+}
+
+        /*グレーアウトのスタイル定義*/
+
+label{
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type=checkbox]{
+	filter: alpha(opacity="1");
+	opacity: 0.01;
+	MozOpacity: 0.01;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.checkboxView{
+	display: block;
+	width: 30px;
+	height: 31px;
+	margin-right: 10px;
+    margin-left:10px;
+	background: url(../../IMG/ico_check.png) left top no-repeat;
+	float: left;
+}
+.checkboxView.selected{
+	background-position: left bottom;
+}
+label .title{
+	display: block;
+	margin-left: 30px;
+	line-height: 32px;
+    text-align:left;
+}
+
+ul{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 34px;
+    margin-top:5px;
+	float: left;
+}
+ul li,
+ol li{
+	margin-bottom: 15px;
+	list-style: none;
+	font-size: 28px;
+}
+/*--clearfix--*/
+li:before,
+li:after {
+    content:"";
+    display:table;
+}
+li:after {
+    clear:both;
+}
+
+.visible {
+        display:block;
+}
+
+.hidden {
+        display:none;
+}
+
+.selected {
+    /*color:rgb(49,133,156);*/
+    color:#376092;
+}

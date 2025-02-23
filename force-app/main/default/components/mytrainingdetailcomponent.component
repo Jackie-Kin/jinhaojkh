@@ -1,0 +1,14 @@
+<apex:component >
+    <apex:attribute name="record" description="The type of record we are viewing."
+        type="Object" required="true"/>
+        
+    <apex:attribute name="rcid" description="The id of record."
+        type="string" required="true"/>
+                
+    <apex:pageBlock title="Viewing {!record}">
+    
+         <apex:detail subject="{!rcid}" relatedList="false"/>
+    
+    
+    </apex:pageBlock>
+</apex:component>

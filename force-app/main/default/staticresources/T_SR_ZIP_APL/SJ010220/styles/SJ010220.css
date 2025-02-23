@@ -1,0 +1,167 @@
+﻿.calendar-prompt {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.time-area {
+    height:40px;
+}
+
+.sessyoku-area {
+    height: 65px;
+}
+
+.sessyoku-area .input-title {
+        width:140px;
+}
+
+.sessyoku {
+    width: 195px!important;
+}
+
+.riyuu-area_5 {
+    height:195px;
+}
+
+.riyuu-area_7 {
+    height:290px;
+}
+
+.riyuu{
+    width: 400px!important;
+}
+
+.calendar-time {
+    margin-left: 30px;
+    width:400px;
+}
+
+.input-title {
+    font-size: 16px;
+    font-weight: bold;
+    width:70px;
+}
+
+.time-pair .input-title {
+    padding-left:17px;
+}
+
+.chk-btn-pair {
+    height:192px;
+}
+
+.chk-btn {
+    display:none;
+}
+
+.chk-btn + label {
+  display: inline-block;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #999999;
+  width: 115px;
+  height: 25px;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.chk-btn:hover + label {
+    border-color: #2f578e;
+    border-width: 2px;
+    color: #2f578e;
+    text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+}
+
+.chk-btn:checked:hover + label {
+    border-color: #999999;
+    border-width: 1px;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+}
+
+.chk-btn:checked + label {
+    background-color: #3e659a;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+    cursor:pointer;
+}
+
+.chk-area {
+  height: 34px;
+  display: flex;
+}
+
+.chk-area .input-title {
+    line-height:42px;
+}
+
+
+
+.time-pair {
+  display: flex;
+  margin-top:10px;
+}
+
+.time-div {
+  display: flex;
+}
+
+.dropdown-time {
+    width: 45px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    text-align: left;
+    padding-left: 1px;
+}
+
+.dropdown-time:disabled {
+    background-color:rgb(153, 153, 153);
+}
+
+.time-colon {
+  width: 25px;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.time-center {
+  padding: 0 8px;
+  width: 30px;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.memo-textarea {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 80);
+    box-sizing: border-box;
+    width: 402px;
+    overflow-y: auto;
+    min-height:50px;
+}
+
+.spm-calendar-button:hover {
+  background-color: #2f578e;
+}
+
+.spm-calendar-button:disabled:hover {
+  background-color: rgb(153, 153, 153);
+}

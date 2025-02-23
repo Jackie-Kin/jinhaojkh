@@ -1,0 +1,1224 @@
+
+body {
+   margin:0px; padding:0px; background-color:black;
+   min-width:1024px;
+   min-height:760px;
+   max-height:99.75%;
+   height:99.73%;
+
+}
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+        
+.fakeContainer { 
+	margin: 0 0 0;
+	border: 1px;
+	width: 100%; 
+	height: 94.5%; 
+	overflow: hidden; 
+   
+}
+
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.sortText {
+
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 50%;
+    top:10px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+
+
+.td_Dummy {
+    background-color:transparent !important;
+    border-top:0px none !important;
+    border-bottom:0px none !important;
+}
+
+.HeaderStyle {
+   
+    font-family:ＭＳ Ｐゴシック;
+    font-size:12pt;
+    color:#ffffff;
+    background-color:#00007c;
+}
+
+
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+/*****************************************/
+.th_Staff {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    height:90px;
+    font-weight:normal;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.th_Tenpo_honbu {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    height:90px;
+    font-weight:normal;
+    text-decoration:underline;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.th_Mokuhyo {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.th_Mokuhyo_honbu {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+.th_Jisseki {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+/* 2017/05/23 add start 本部管理モニター*/
+.th_Jisseki_honbu {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+.th_Jyuchukanri {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Mikomikanri {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    /* width:5.25%; */
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Mikomi {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:5.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.th_Mikomi_honbu {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:5.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.th_Hitritu {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:5.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.th_Hitritu_honbu {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:5.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.th_FusokuHot {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:5.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.th_FusokuHot_honbu {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    width:5.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.th_Hot {
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#664c47), to(#5a2845));
+    background: linear-gradient(to bottom,#664c47,#5a2845);
+    border: 1px solid #376092;
+    /* width:6.25%; */
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:10pt;
+    font-weight:normal;
+}
+
+.th_Warm {
+
+   
+    background: linear-gradient(to bottom,#666547,#664d45);
+    border: 1px solid #376092;
+    /* width:6.25%; */
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:10pt;
+    font-weight:normal;
+}
+
+.th_Cold {
+
+    
+    background: linear-gradient(to bottom,#6465ac,#3c529d);
+    border: 1px solid #376092;
+    /* width:6.25%; */
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:10pt;
+    font-weight:normal;
+}
+
+.th_Hot_Sinki {
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#664c47), to(#5a2845));
+    background: linear-gradient(to bottom,#664c47,#5a2845);
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:10pt;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+.th_Warm_Sinki {
+
+   
+    background: linear-gradient(to bottom,#666547,#664d45);
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:10pt;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+.th_Cold_Sinki {
+
+    
+    background: linear-gradient(to bottom,#32328e,#153473);
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:10pt;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+.th_Hot_Daigae {
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#664c47), to(#5a2845));
+    background: linear-gradient(to bottom,#664c47,#5a2845);
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:10pt;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+.th_Warm_Daigae {
+
+    background: linear-gradient(to bottom,#666547,#664d45);
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:10pt;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+.th_Cold_Daigae {
+
+    
+    background: linear-gradient(to bottom,#32328e,#153473);
+    border: 1px solid #376092;
+    width:6.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:10pt;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+.th_Hot_Sesshoku {
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#664c47), to(#5a2845));
+    background: linear-gradient(to bottom,#664c47,#5a2845);
+    border: 1px solid #376092;
+    width:5.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:10pt;
+    font-weight:normal;
+}
+
+.th_Warm_Sesshoku {
+
+    background: linear-gradient(to bottom,#666547,#664d45);
+    border: 1px solid #376092;
+    width:5.25%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:10pt;
+    font-weight:normal;
+}
+
+.th_Cold_Sesshoku {
+
+    background: linear-gradient(to bottom,#32328e,#153473);
+    border: 1px solid #376092;
+    width:5%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:10pt;
+    font-weight:normal;
+}
+
+.th_Shinkifollow {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+.th_Daikaifollow {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+.th_Sesshoku {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Katudo {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Mikeikaku {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    width:6.25%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Okure {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    width:6.25%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+/*****************************************/
+
+/*　2017/03/31 del start
+.th_Juten_Head {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    width:6.25%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+.th_Juten {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    width:6.25%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Juten_Ritu {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    width:6.25%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+    2017/03/31 del end
+*/
+
+/* 2017/03/31 add start */
+.Keikaku_Mijissi_Head {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    width:6.25%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+.Contact_Today_Head {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    width:6.25%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+.Keikaku_Mijissi {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    width:6.25%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.Contact_Today {
+
+    background-color:darkblue;
+    border: 1px solid #376092;
+    color:white;
+    width:6.25%;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+/* 2017/03/31 add end */
+
+
+.listTani{
+	text-align:right;
+	vertical-align:top;
+	width:40%;
+	line-height:0px;
+	font-family:'ＭＳ Ｐゴシック';
+	border-style:none;
+	padding-right:4px;
+	padding-top:8px;
+	font-size: 9pt;
+	color:gray;
+
+}
+
+.listShinChuu{
+	text-align:left;
+	vertical-align:top;
+	width:20%;
+	line-height:0px;
+	font-family:'ＭＳ Ｐゴシック';
+	border-style:none;
+	padding-right:4px;
+	padding-top:8px;
+	font-size: 11pt;
+	color:white;
+
+}
+
+.dataSubTable_0{
+
+	min-height:30px;
+	height:50%;
+	max-height:50%;
+	
+}
+
+.dataSubTable_0_border{
+
+	min-height:24px;
+	height:50%;
+	max-height:50%;
+	border-bottom-style:dashed;
+	border-bottom-width:1px;
+	border-bottom-color:#376092;
+	
+}
+
+.follow_background_hot{
+
+	/*background-color:#2A2105;*/
+	/*background-color:#3d2d0a;*/	
+	/*background:linear-gradient(to right, #3d2d0a 10%,white 1%,transparent 0%);*/
+    position:relative;
+
+}
+
+.follow_background_hot_zensha{
+
+	/*background:linear-gradient(to right, #3d2d0a 15%,white 1%,transparent 0%);*/
+
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.follow_background_hot_select{
+
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/	
+
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.follow_background_hot2{
+
+	/*background-color:#2D261A;*/
+	/*background-color:#453721;*/	
+	/*background:linear-gradient(to right, #453721 15%,white 1%,transparent 0%);*/
+    position:relative;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.follow_background_hot2_select{
+
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/	
+	
+}
+
+/* 2017/05/23 add end 本部管理モニター*/
+
+
+.follow_background_warm{
+
+	/*background-color:#2B2A05;*/
+	/*background-color:#3d3a0a;*/	
+	/*background:linear-gradient(to right, #3d3a0a 10%,white 1%,transparent 0%);*/
+    position:relative;
+}
+
+.follow_background_warm_zensha{
+
+	/*background:linear-gradient(to right, #3d3a0a 15%,white 1%,transparent 0%);*/
+
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.follow_background_warm_select{
+
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/
+
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+
+.follow_background_warm2{
+
+	/*background-color:#2D2D12;*/
+	/*background-color:#484524;*/	
+	/*background:linear-gradient(to right, #484524 15%,white 1%,transparent 0%);*/
+    position:relative;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.follow_background_warm2_select{
+
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/
+
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+
+.follow_background_cold{
+
+	/*background-color:#191B27;*/
+	/*background-color:#1f2936;*/	
+	/*background:linear-gradient(to right, #1f2936 10%,white 1%,transparent 0%);*/
+    position:relative;
+}
+
+.follow_background_cold_zensha{
+
+	/*background:linear-gradient(to right, #1f2936 15%,white 1%,transparent 0%);*/
+
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.follow_background_cold_select{
+
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/
+
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+
+.follow_background_cold2{
+
+	/*background-color:#21252B;*/
+	/*background-color:#2f363f;*/	
+	/*background:linear-gradient(to right, #2f363f 15%,white 1%,transparent 0%);*/
+    position:relative;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.follow_background_cold2_select{
+
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/
+
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.sesshoku_background_hot{
+
+	/*background: linear-gradient(to bottom, #2B2005 0%, #271303 100%);*/
+	/*background: linear-gradient(to bottom, #3d300a 0%, #381e0a 100%);*/	
+	/*background:linear-gradient(to right, #3d300a 10%,white 1%,transparent 0%);*/
+}
+
+.sesshoku_background_hot_zensha{
+
+	/*background:linear-gradient(to right, #3d300a 15%,white 1%,transparent 0%);*/
+}
+
+.sesshoku_background_hot2{
+
+	/*background: linear-gradient(to bottom, #5d502a 0%, #583e2a 100%);*/	
+	/*background:linear-gradient(to right, #5d502a 15%,white 1%,transparent 0%);*/
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.sesshoku_background_hot_select{
+
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/
+
+}
+.sesshoku_background_hot2_select{
+    
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/
+
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.sesshoku_background_warm{
+
+	/*background: linear-gradient(to bottom, #2C2A00 0%, #2B2203 100%);*/
+	/*background: linear-gradient(to bottom, #3d3c0a 0%, #3d320a 100%);*/	
+	/*background:linear-gradient(to right, #3d3c0a 10%,white 1%,transparent 0%);*/
+
+}
+
+.sesshoku_background_warm_zensha{
+
+	/*background:linear-gradient(to right, #3d3c0a 15%,white 1%,transparent 0%);*/
+
+}
+
+.sesshoku_background_warm2{
+
+	/*background: linear-gradient(to bottom, #5d5c2a 0%, #5d522a 100%);*/	
+	/*background:linear-gradient(to right, #5d5c2a 15%,white 1%,transparent 0%);*/
+
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.sesshoku_background_warm_select{
+
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/	
+
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.sesshoku_background_warm2_select{
+    
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/	
+
+}
+
+.sesshoku_background_cold{
+
+	/*background: linear-gradient(to bottom, #182027 0%, #071220 100%);*/
+	/*background: linear-gradient(to bottom, #262e37 0%, #11253f 100%);*/	
+	/*background:linear-gradient(to right, #262e37 10%,white 1%,transparent 0%);*/
+
+
+}
+
+.sesshoku_background_cold_zensha{
+
+	/*background:linear-gradient(to right, #262e37 15%,white 1%,transparent 0%);*/
+
+
+}
+
+.sesshoku_background_cold2{
+
+	/*background: linear-gradient(to bottom, #182027 0%, #071220 100%);*/
+	/*background: linear-gradient(to bottom, #464e57 0%, #31455f 100%);*/	
+	/*background:linear-gradient(to right, #464e57 15%,white 1%,transparent 0%);*/
+
+
+}
+/* 2017/05/23 add start 本部管理モニター*/
+.sesshoku_background_cold_select{
+
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/
+
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.sesshoku_background_cold2_select{
+    
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/
+
+}
+
+.mikeikaku_red_background{
+
+	background-color:#900000;
+
+}
+
+/* 2017/04/27 mod start 活動状況見える化機能開発 */
+/*.yajirushi_font_style{*/
+.change_status_today{
+/* 2017/04/27 mod end 活動状況見える化機能開発 */
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:9pt;
+	text-align:center;
+
+}
+
+.okure_red_font{
+
+	color:#900000;
+
+}
+
+.sesshokuHind_text_style{
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:20px;
+	padding-left:10px;
+
+}
+
+.footer{
+	font-family:HGP創英角ｺﾞｼｯｸUB;	
+    background: linear-gradient(to bottom,#323230 0%,#181818 59%,#000000 60%,#000000);
+    border-top:1px rgb(89,89,89) solid;
+    border-bottom:1px rgb(89,89,89) solid;
+}
+
+#border_double_top{
+	border-top: 3px double #376092;
+}
+
+/*#larger_font{
+	font-size:20pt;
+}*/
+
+.listTable{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+
+}
+
+.listTable_sub{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+	border-style:none;
+	width:100%;
+	height:65px;
+	text-align:right;
+
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+
+.listTable_sub_select{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+	border-style:none;
+	width:100%;
+	height:65px;
+	text-align:right;
+    background-color: red;
+
+}
+
+/* 2017/05/23 add end */
+
+.listData{
+
+	background:#000000;
+	border-color:#376092;
+	border-style:solid;
+	border-width:1px;
+	padding:0px;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:16pt;
+
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.listData_Select {
+    background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+
+.listData_text_style{
+
+	padding-left:10px;
+	
+}
+
+/* 2017/04/26 add start*/
+.listData_text_style_today{
+    font-size:14pt;
+}
+/* 2017/04/26 add end*/
+
+.data_Staff {
+    background-color:black; 
+    border: 1px solid #376092;
+    font-size:12pt;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.data_Staff_select {
+    background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+    border: 1px solid #376092;
+    font-size:12pt;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+
+.data_Mokuhyou {
+    background-color:black; 
+    border: 1px solid #376092;
+}
+
+
+/* 2017/05/23 add start 本部管理モニター*/
+.data_Mokuhyou_select {
+    background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+    border: 1px solid #376092;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+
+
+.data_Jisseki {
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.data_Jisseki_select { 
+    background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+    border: 1px solid #376092;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.data_Hitpoint {
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.data_Hitpoint_select {
+    background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+    border: 1px solid #376092;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.data_FusokuHot {
+    background-color:black;
+    border: 1px solid #376092;
+}
+.data_HitRitu {
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.data_FusokuHot_select {
+    background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+    border: 1px solid #376092;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.data_Mikeikaku {
+
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+.data_Okure {
+
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+.data_Juten {
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.data_Juten_select {
+    background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+    border: 1px solid #376092;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+.data_Juten_Ritu {
+    background-color:black;
+    border: 1px solid #376092;
+}
+
+/* 2017/05/23 add start 本部管理モニター*/
+.data_Juten_Ritu_select {
+    background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+    border: 1px solid #376092;
+}
+/* 2017/05/23 add end 本部管理モニター*/
+
+
+.td_line{
+	border: 1px solid #376092;
+}
+
+.td_Goukei_Top {
+
+    border: 1px solid #376092;
+    border-top:double 3px  #376092;
+}
+
+.td_Goukei_Bottom {
+
+    border-bottom:double 3px  #376092;
+}
+
+.underline{
+    text-decoration:underline;
+}
+
+/* 2017/06/07 add start 本部管理モニター*/
+.sHeaderInner table{
+    background-color:black;
+}
+/* 2017/06/07 add end 本部管理モニター*/
+
+
+.tr_New_BackGround{
+    background-color:#000000;
+}
+
+.tr_New_BackGround2{
+    /*background: linear-gradient(to right, transparent 15%,white 1%,black 15%);*/
+}
+
+.tr_New_BackGround_select{
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/
+}
+
+.tr_New_BackGround2_select{
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/
+}
+
+.tr_Ucar_BackGround{
+    background-color:#212121;
+}
+
+.tr_Ucar_BackGround_init{
+    background-color:#212121;
+}
+
+.tr_Ucar_BackGround_disp{
+    background: linear-gradient(to right, transparent 15%,white 1%,#212121 15%);
+}
+
+.tr_Ucar_BackGround_select{
+	/*background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));*/
+}
+
+.tr_Ucar_BackGround_disp_select{
+    /*background: linear-gradient(to right, transparent 15%,white 1%,#212121 15%);*/
+}
+
+.data_Keikoku_red{
+    color:red;
+}
+
+/* 2018/05/31 add start Block対応*/
+
+.data_Block_select {
+    background: #10253f;
+    border: 1px solid #376092;
+}
+
+.data_Staff_block {
+    background: #10253f;
+    border: 1px solid #376092;
+    font-size:12pt;
+}
+/* 2017/05/23 add end Block対応*/
+
+.hot_line{
+    background: linear-gradient(to bottom, #5c2a45 0%,#664c47 100%);
+    position:absolute;
+    height:300px;
+    width:8px;
+    top:0px;
+    left:0px;
+    z-index:10;
+}
+
+.warm_line{
+    /*background: linear-gradient(to bottom,#666547 0%,#664d45 100%);*/
+    background: linear-gradient(to bottom,#664d45 0%,#666547 100%);
+    position:absolute;
+    height:300px;
+    width:8px;
+    top:0px;
+    left:0px;
+    z-index:10;
+}
+
+.cold_line{
+    /*background: linear-gradient(to bottom,#32328e 0%,#153473 100%);*/
+    background: linear-gradient(to bottom,#153473 0%,#32328e 100%);
+    position:absolute;
+    height:300px;
+    width:8px;
+    top:0px;
+    left:0px;
+    z-index:10;
+}
+
+.td_Staff {
+    width:6.25%;
+}
+
+.td_Mokuhyo {
+    width:6.25%;
+}
+
+.td_Jisseki {
+    width:6.25%;
+}
+
+.td_Mikomi {
+    width:5.25%;
+}
+
+.td_Hitritu {
+    width:5.25%;
+}
+
+.td_FusokuHot {
+    width:5.25%;
+}
+
+.td_Hot_Sinki {
+    width:6.25%;
+}
+
+.td_Warm_Sinki {
+    width:6.25%;
+}
+
+.td_Cold_Sinki {
+    width:6.25%;
+}
+
+.td_Hot_Daigae {
+    width:6.25%;
+}
+
+.td_Warm_Daigae {
+    width:6.25%;
+}
+
+.td_Cold_Daigae {
+    width:6.25%;
+}
+
+.td_Mikeikaku {
+    width:6.25%;
+}
+
+.td_Okure {
+    width:6.25%;
+}
+
+.td_Hot_Sesshoku {
+    width:5.25%;
+}
+
+.td_Warm_Sesshoku {
+    width:5.25%;
+}
+
+.td_Cold_Sesshoku {
+    width:5%;
+}

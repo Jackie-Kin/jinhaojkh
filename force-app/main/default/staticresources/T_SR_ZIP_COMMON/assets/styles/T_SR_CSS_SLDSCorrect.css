@@ -1,0 +1,1232 @@
+/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : SLDS適用時の補正用CSS
+ * ファイル名 : T_SR_CSS_SLDSCorrect.css
+ *
+ *  VERSION    DATE        BY                  CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2018/02/01  (FSI)K.Ishikawa     新規作成
+ *  1.01       2018/04/09  (FSI)K.Ishikawa     開発QA No.96対応
+ */
+ 
+/********** フォント関連スタイル Start **********/
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("../fonts/webfonts/SalesforceSans-Light.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Light.woff") format("woff");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("../fonts/webfonts/SalesforceSans-LightItalic.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-LightItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("../fonts/webfonts/SalesforceSans-Regular.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Regular.woff") format("woff");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("../fonts/webfonts/SalesforceSans-Italic.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Italic.woff") format("woff");
+  font-style: italic;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("../fonts/webfonts/SalesforceSans-Bold.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Bold.woff") format("woff");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("../fonts/webfonts/SalesforceSans-BoldItalic.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-BoldItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 700; }
+
+.jicj-scope {
+    font-family: "Salesforce Sans", Arial, sans-serif !important;
+    font-size: 100%;
+}
+
+    .jicj-scope:not(html), .jicj-scope body {
+        font-size: 0.8125rem;
+    }
+
+    .jicj-scope h1,
+    .jicj-scope h2,
+    .jicj-scope h3,
+    .jicj-scope h4,
+    .jicj-scope h5,
+    .jicj-scope h6,
+    .jicj-scope th,
+    .jicj-scope td {
+        font-family: "Salesforce Sans", Arial, sans-serif !important;
+    }
+
+    .jicj-scope button,
+    .jicj-scope input,
+    .jicj-scope optgroup,
+    .jicj-scope select,
+    .jicj-scope textarea {
+        font-family: inherit !important;
+    }
+
+	.jicj-scope .btnDisabled {
+        line-height: 1;
+    }
+
+/********** フォント関連スタイル End **********/
+
+/********** ホバー関連スタイル Start **********/
+    .jicj-scope .slds-popover {
+        position: relative;
+        border-radius: 0.25rem;
+        min-height: 2rem;
+        z-index: 6000;
+        background-color: white;
+        display: inline-block;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+        border: 1px solid #dddbda;
+    }
+
+    .jicj-scope .slds-popover__body, .jicj-scope .slds-popover__header, .jicj-scope .slds-popover__footer {
+        position: relative;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .jicj-scope .slds-popover__header {
+        border-bottom: 1px solid #dddbda;
+    }
+
+    .jicj-scope .slds-popover__footer {
+        border-top: 1px solid #dddbda;
+    }
+
+    .jicj-scope .slds-popover__close {
+        position: relative;
+        margin: 0.25rem;
+        z-index: 6001;
+    }
+
+    .jicj-scope .slds-popover_xsmall, .jicj-scope .slds-popover--xsmall {
+        min-width: 10rem;
+    }
+
+    .jicj-scope .slds-popover_small, .jicj-scope .slds-popover--small {
+        min-width: 15rem;
+    }
+
+    .jicj-scope .slds-popover_medium, .jicj-scope .slds-popover--medium {
+        min-width: 20rem;
+    }
+
+    .jicj-scope .slds-popover_large, .jicj-scope .slds-popover--large {
+        min-width: 25rem;
+        max-width: 512px;
+    }
+
+    .jicj-scope .slds-popover[class*="theme_"], .jicj-scope .slds-popover[class*="theme--"] {
+        border: 0;
+    }
+
+    .jicj-scope .slds-popover *:last-child {
+        margin-bottom: 0;
+    }
+
+    .jicj-scope .slds-popover_panel .slds-popover__header,
+    .jicj-scope .slds-popover--panel .slds-popover__header {
+        background: #f3f2f2;
+        padding: 1.5rem 1.5rem 0.75rem;
+        border-top-left-radius: calc(0.25rem - 1px);
+        border-top-right-radius: calc(0.25rem - 1px);
+        border-bottom: 0;
+    }
+
+    .jicj-scope .slds-popover_panel .slds-popover__body,
+    .jicj-scope .slds-popover--panel .slds-popover__body {
+        padding: 0;
+    }
+
+    .jicj-scope .slds-popover_panel .slds-popover__body-list,
+    .jicj-scope .slds-popover--panel .slds-popover__body-list {
+        padding: 1rem 1.5rem;
+        border-top: 1px solid #dddbda;
+    }
+
+    .jicj-scope .slds-popover_panel.slds-nubbin_left-top:before, .jicj-scope .slds-popover_panel.slds-nubbin_left-top:after, .jicj-scope .slds-popover_panel.slds-nubbin--left-top:before, .jicj-scope .slds-popover_panel.slds-nubbin--left-top:after, .jicj-scope .slds-popover_panel.slds-nubbin_right-top:before, .jicj-scope .slds-popover_panel.slds-nubbin_right-top:after, .jicj-scope .slds-popover_panel.slds-nubbin--right-top:before, .jicj-scope .slds-popover_panel.slds-nubbin--right-top:after, .jicj-scope .slds-popover_panel.slds-nubbin_top-left:before, .jicj-scope .slds-popover_panel.slds-nubbin_top-left:after, .jicj-scope .slds-popover_panel.slds-nubbin--top-left:before, .jicj-scope .slds-popover_panel.slds-nubbin--top-left:after, .jicj-scope .slds-popover_panel.slds-nubbin_top-right:before, .jicj-scope .slds-popover_panel.slds-nubbin_top-right:after, .jicj-scope .slds-popover_panel.slds-nubbin--top-right:before, .jicj-scope .slds-popover_panel.slds-nubbin--top-right:after,
+    .jicj-scope .slds-popover--panel.slds-nubbin_left-top:before,
+    .jicj-scope .slds-popover--panel.slds-nubbin_left-top:after,
+    .jicj-scope .slds-popover--panel.slds-nubbin--left-top:before,
+    .jicj-scope .slds-popover--panel.slds-nubbin--left-top:after,
+    .jicj-scope .slds-popover--panel.slds-nubbin_right-top:before,
+    .jicj-scope .slds-popover--panel.slds-nubbin_right-top:after,
+    .jicj-scope .slds-popover--panel.slds-nubbin--right-top:before,
+    .jicj-scope .slds-popover--panel.slds-nubbin--right-top:after,
+    .jicj-scope .slds-popover--panel.slds-nubbin_top-left:before,
+    .jicj-scope .slds-popover--panel.slds-nubbin_top-left:after,
+    .jicj-scope .slds-popover--panel.slds-nubbin--top-left:before,
+    .jicj-scope .slds-popover--panel.slds-nubbin--top-left:after,
+    .jicj-scope .slds-popover--panel.slds-nubbin_top-right:before,
+    .jicj-scope .slds-popover--panel.slds-nubbin_top-right:after,
+    .jicj-scope .slds-popover--panel.slds-nubbin--top-right:before,
+    .jicj-scope .slds-popover--panel.slds-nubbin--top-right:after {
+        background: #f3f2f2;
+    }
+
+    .jicj-scope .slds-popover_panel.slds-nubbin_left-top:before, .jicj-scope .slds-popover_panel.slds-nubbin_left-top:after, .jicj-scope .slds-popover_panel.slds-nubbin--left-top:before, .jicj-scope .slds-popover_panel.slds-nubbin--left-top:after, .jicj-scope .slds-popover_panel.slds-nubbin_right-top:before, .jicj-scope .slds-popover_panel.slds-nubbin_right-top:after, .jicj-scope .slds-popover_panel.slds-nubbin--right-top:before, .jicj-scope .slds-popover_panel.slds-nubbin--right-top:after,
+    .jicj-scope .slds-popover--panel.slds-nubbin_left-top:before,
+    .jicj-scope .slds-popover--panel.slds-nubbin_left-top:after,
+    .jicj-scope .slds-popover--panel.slds-nubbin--left-top:before,
+    .jicj-scope .slds-popover--panel.slds-nubbin--left-top:after,
+    .jicj-scope .slds-popover--panel.slds-nubbin_right-top:before,
+    .jicj-scope .slds-popover--panel.slds-nubbin_right-top:after,
+    .jicj-scope .slds-popover--panel.slds-nubbin--right-top:before,
+    .jicj-scope .slds-popover--panel.slds-nubbin--right-top:after {
+        top: 2.25rem;
+    }
+
+    .jicj-scope .slds-nubbin_top:before,
+    .jicj-scope .slds-nubbin--top:before {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        left: 50%;
+        top: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_top:after,
+    .jicj-scope .slds-nubbin--top:after {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        left: 50%;
+        top: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_top:after,
+    .jicj-scope .slds-nubbin--top:after {
+        box-shadow: -1px -1px 0 0 rgba(0, 0, 0, 0.16);
+        z-index: -1;
+    }
+
+    .jicj-scope .slds-nubbin_top-left:before,
+    .jicj-scope .slds-nubbin--top-left:before {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        left: 50%;
+        top: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_top-left:after,
+    .jicj-scope .slds-nubbin--top-left:after {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        left: 50%;
+        top: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_top-left:after,
+    .jicj-scope .slds-nubbin--top-left:after {
+        box-shadow: -1px -1px 0 0 rgba(0, 0, 0, 0.16);
+        z-index: -1;
+    }
+
+    .jicj-scope .slds-nubbin_top-left:before, .jicj-scope .slds-nubbin_top-left:after,
+    .jicj-scope .slds-nubbin--top-left:before,
+    .jicj-scope .slds-nubbin--top-left:after {
+        left: 1.5rem;
+        top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_top-right:before,
+    .jicj-scope .slds-nubbin--top-right:before {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        left: 50%;
+        top: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_top-right:after,
+    .jicj-scope .slds-nubbin--top-right:after {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        left: 50%;
+        top: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_top-right:after,
+    .jicj-scope .slds-nubbin--top-right:after {
+        box-shadow: -1px -1px 0 0 rgba(0, 0, 0, 0.16);
+        z-index: -1;
+    }
+
+    .jicj-scope .slds-nubbin_top-right:before, .jicj-scope .slds-nubbin_top-right:after,
+    .jicj-scope .slds-nubbin--top-right:before,
+    .jicj-scope .slds-nubbin--top-right:after {
+        left: auto;
+        right: 1.5rem;
+        top: -0.5rem;
+        margin-right: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_bottom:before,
+    .jicj-scope .slds-nubbin--bottom:before {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        left: 50%;
+        bottom: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_bottom:after,
+    .jicj-scope .slds-nubbin--bottom:after {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        left: 50%;
+        bottom: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_bottom:after,
+    .jicj-scope .slds-nubbin--bottom:after {
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+        z-index: -1;
+    }
+
+    .jicj-scope .slds-nubbin_bottom-left:before,
+    .jicj-scope .slds-nubbin--bottom-left:before {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        left: 50%;
+        bottom: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_bottom-left:after,
+    .jicj-scope .slds-nubbin--bottom-left:after {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        left: 50%;
+        bottom: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_bottom-left:after,
+    .jicj-scope .slds-nubbin--bottom-left:after {
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+        z-index: -1;
+    }
+
+    .jicj-scope .slds-nubbin_bottom-left:before, .jicj-scope .slds-nubbin_bottom-left:after,
+    .jicj-scope .slds-nubbin--bottom-left:before,
+    .jicj-scope .slds-nubbin--bottom-left:after {
+        left: 1.5rem;
+        top: 100%;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_bottom-right:before,
+    .jicj-scope .slds-nubbin--bottom-right:before {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        left: 50%;
+        bottom: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_bottom-right:after,
+    .jicj-scope .slds-nubbin--bottom-right:after {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        left: 50%;
+        bottom: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_bottom-right:after,
+    .jicj-scope .slds-nubbin--bottom-right:after {
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+        z-index: -1;
+    }
+
+    .jicj-scope .slds-nubbin_bottom-right:before, .jicj-scope .slds-nubbin_bottom-right:after,
+    .jicj-scope .slds-nubbin--bottom-right:before,
+    .jicj-scope .slds-nubbin--bottom-right:after {
+        left: auto;
+        right: 1.5rem;
+        top: 100%;
+        margin-top: -0.5rem;
+        margin-right: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_left:before,
+    .jicj-scope .slds-nubbin--left:before {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        top: 50%;
+        left: -0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_left:after,
+    .jicj-scope .slds-nubbin--left:after {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        top: 50%;
+        left: -0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_left:after,
+    .jicj-scope .slds-nubbin--left:after {
+        box-shadow: -1px 1px 2px 0 rgba(0, 0, 0, 0.16);
+        z-index: -1;
+    }
+
+    .jicj-scope .slds-nubbin_left-top:before,
+    .jicj-scope .slds-nubbin--left-top:before {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        top: 50%;
+        left: -0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_left-top:after,
+    .jicj-scope .slds-nubbin--left-top:after {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        top: 50%;
+        left: -0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_left-top:after,
+    .jicj-scope .slds-nubbin--left-top:after {
+        box-shadow: -1px 1px 2px 0 rgba(0, 0, 0, 0.16);
+        z-index: -1;
+    }
+
+    .jicj-scope .slds-nubbin_left-top:before, .jicj-scope .slds-nubbin_left-top:after,
+    .jicj-scope .slds-nubbin--left-top:before,
+    .jicj-scope .slds-nubbin--left-top:after {
+        top: 1.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_left-bottom:before,
+    .jicj-scope .slds-nubbin--left-bottom:before {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        top: 50%;
+        left: -0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_left-bottom:after,
+    .jicj-scope .slds-nubbin--left-bottom:after {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        top: 50%;
+        left: -0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_left-bottom:before,
+    .jicj-scope .slds-nubbin--left-bottom:before {
+        margin-bottom: -1px;
+    }
+
+    .jicj-scope .slds-nubbin_left-bottom:after,
+    .jicj-scope .slds-nubbin--left-bottom:after {
+        box-shadow: -1px 2px 3px 0 rgba(0, 0, 0, 0.16);
+        z-index: -1;
+    }
+
+    .jicj-scope .slds-nubbin_left-bottom:before, .jicj-scope .slds-nubbin_left-bottom:after,
+    .jicj-scope .slds-nubbin--left-bottom:before,
+    .jicj-scope .slds-nubbin--left-bottom:after {
+        top: auto;
+        bottom: 1rem;
+    }
+
+    .jicj-scope .slds-nubbin_right:before,
+    .jicj-scope .slds-nubbin--right:before {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        top: 50%;
+        right: -0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_right:after,
+    .jicj-scope .slds-nubbin--right:after {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        top: 50%;
+        right: -0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_right:after,
+    .jicj-scope .slds-nubbin--right:after {
+        box-shadow: 1px -1px 2px 0 rgba(0, 0, 0, 0.16);
+        z-index: -1;
+    }
+
+    .jicj-scope .slds-nubbin_right-top:before,
+    .jicj-scope .slds-nubbin--right-top:before {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        top: 50%;
+        right: -0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_right-top:after,
+    .jicj-scope .slds-nubbin--right-top:after {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        top: 50%;
+        right: -0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_right-top:after,
+    .jicj-scope .slds-nubbin--right-top:after {
+        box-shadow: 1px -1px 2px 0 rgba(0, 0, 0, 0.16);
+        z-index: -1;
+    }
+
+    .jicj-scope .slds-nubbin_right-top:before, .jicj-scope .slds-nubbin_right-top:after,
+    .jicj-scope .slds-nubbin--right-top:before,
+    .jicj-scope .slds-nubbin--right-top:after {
+        top: 1.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_right-bottom:before,
+    .jicj-scope .slds-nubbin--right-bottom:before {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        top: 50%;
+        right: -0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_right-bottom:after,
+    .jicj-scope .slds-nubbin--right-bottom:after {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        transform: rotate(45deg);
+        content: '';
+        background-color: inherit;
+        top: 50%;
+        right: -0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .jicj-scope .slds-nubbin_right-bottom:before,
+    .jicj-scope .slds-nubbin--right-bottom:before {
+        margin-bottom: -1px;
+    }
+
+    .jicj-scope .slds-nubbin_right-bottom:after,
+    .jicj-scope .slds-nubbin--right-bottom:after {
+        box-shadow: 2px -1px 3px 0 rgba(0, 0, 0, 0.16);
+        z-index: -1;
+    }
+
+    .jicj-scope .slds-nubbin_right-bottom:before, .jicj-scope .slds-nubbin_right-bottom:after,
+    .jicj-scope .slds-nubbin--right-bottom:before,
+    .jicj-scope .slds-nubbin--right-bottom:after {
+        top: auto;
+        bottom: 1rem;
+    }
+
+    .jicj-scope .slds-popover_walkthrough,
+    .jicj-scope .slds-popover--walkthrough {
+        border-color: #061c3f;
+        color: white;
+        background: #061c3f;
+    }
+
+        .jicj-scope .slds-popover_walkthrough .slds-text-title,
+        .jicj-scope .slds-popover_walkthrough .slds-text-title_caps,
+        .jicj-scope .slds-popover_walkthrough .slds-text-title--caps,
+        .jicj-scope .slds-popover--walkthrough .slds-text-title,
+        .jicj-scope .slds-popover--walkthrough .slds-text-title_caps,
+        .jicj-scope .slds-popover--walkthrough .slds-text-title--caps {
+            color: #b0adab;
+        }
+
+        .jicj-scope .slds-popover_walkthrough .slds-icon,
+        .jicj-scope .slds-popover--walkthrough .slds-icon {
+            fill: currentColor;
+        }
+
+        .jicj-scope .slds-popover_walkthrough a,
+        .jicj-scope .slds-popover--walkthrough a {
+            color: currentColor;
+        }
+
+            .jicj-scope .slds-popover_walkthrough a:hover, .jicj-scope .slds-popover_walkthrough a:focus,
+            .jicj-scope .slds-popover--walkthrough a:hover,
+            .jicj-scope .slds-popover--walkthrough a:focus {
+                color: rgba(255, 255, 255, 0.75);
+                text-decoration: none;
+                outline: 0;
+            }
+
+            .jicj-scope .slds-popover_walkthrough a:active,
+            .jicj-scope .slds-popover--walkthrough a:active {
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            .jicj-scope .slds-popover_walkthrough a[disabled],
+            .jicj-scope .slds-popover--walkthrough a[disabled] {
+                color: rgba(255, 255, 255, 0.15);
+            }
+
+        .jicj-scope .slds-popover_walkthrough a,
+        .jicj-scope .slds-popover--walkthrough a {
+            text-decoration: underline;
+        }
+
+        .jicj-scope .slds-popover_walkthrough .slds-popover__header,
+        .jicj-scope .slds-popover--walkthrough .slds-popover__header {
+            background-color: #164a85;
+            background-image: url("/assets/images/popovers/popover-header.png");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+            border-color: inherit;
+            padding: 0.75rem 1rem;
+            text-shadow: 0 0 4px #032e61;
+        }
+
+        .jicj-scope .slds-popover_walkthrough .slds-popover__body,
+        .jicj-scope .slds-popover_walkthrough .slds-popover__footer,
+        .jicj-scope .slds-popover--walkthrough .slds-popover__body,
+        .jicj-scope .slds-popover--walkthrough .slds-popover__footer {
+            padding: 1rem;
+        }
+
+        .jicj-scope .slds-popover_walkthrough .slds-popover__footer,
+        .jicj-scope .slds-popover--walkthrough .slds-popover__footer {
+            border: 0;
+        }
+
+        .jicj-scope .slds-popover_walkthrough .slds-popover__close,
+        .jicj-scope .slds-popover--walkthrough .slds-popover__close {
+            margin-top: 0.5rem;
+            margin-right: 0.5rem;
+        }
+
+        .jicj-scope .slds-popover_walkthrough .slds-text-title,
+        .jicj-scope .slds-popover--walkthrough .slds-text-title {
+            color: #d9dbdd;
+        }
+
+        .jicj-scope .slds-popover_walkthrough.slds-nubbin_top:before, .jicj-scope .slds-popover_walkthrough.slds-nubbin--top:before, .jicj-scope .slds-popover_walkthrough.slds-nubbin_top-left:before, .jicj-scope .slds-popover_walkthrough.slds-nubbin--top-left:before, .jicj-scope .slds-popover_walkthrough.slds-nubbin_top-right:before, .jicj-scope .slds-popover_walkthrough.slds-nubbin--top-right:before, .jicj-scope .slds-popover_walkthrough.slds-nubbin_left-top:before, .jicj-scope .slds-popover_walkthrough.slds-nubbin--left-top:before, .jicj-scope .slds-popover_walkthrough.slds-nubbin_right-top:before, .jicj-scope .slds-popover_walkthrough.slds-nubbin--right-top:before,
+        .jicj-scope .slds-popover--walkthrough.slds-nubbin_top:before,
+        .jicj-scope .slds-popover--walkthrough.slds-nubbin--top:before,
+        .jicj-scope .slds-popover--walkthrough.slds-nubbin_top-left:before,
+        .jicj-scope .slds-popover--walkthrough.slds-nubbin--top-left:before,
+        .jicj-scope .slds-popover--walkthrough.slds-nubbin_top-right:before,
+        .jicj-scope .slds-popover--walkthrough.slds-nubbin--top-right:before,
+        .jicj-scope .slds-popover--walkthrough.slds-nubbin_left-top:before,
+        .jicj-scope .slds-popover--walkthrough.slds-nubbin--left-top:before,
+        .jicj-scope .slds-popover--walkthrough.slds-nubbin_right-top:before,
+        .jicj-scope .slds-popover--walkthrough.slds-nubbin--right-top:before {
+            background-color: #061c3f;
+        }
+
+    .jicj-scope .slds-popover_walkthrough-alt,
+    .jicj-scope .slds-popover_feature {
+        border-color: #164a85;
+        background-color: #164a85;
+        background-image: url("/assets/images/popovers/popover-action.png");
+        background-repeat: no-repeat;
+        background-size: 100% 2.25rem;
+        background-position: bottom;
+        padding-bottom: 1.5rem;
+        color: white;
+    }
+
+        .jicj-scope .slds-popover_walkthrough-alt .slds-text-heading_small,
+        .jicj-scope .slds-popover_feature .slds-text-heading_small {
+            margin-bottom: 0.5rem;
+        }
+
+        .jicj-scope .slds-popover_walkthrough-alt.slds-nubbin_bottom:before, .jicj-scope .slds-popover_walkthrough-alt.slds-nubbin--bottom:before, .jicj-scope .slds-popover_walkthrough-alt.slds-nubbin_bottom-left:before, .jicj-scope .slds-popover_walkthrough-alt.slds-nubbin--bottom-left:before, .jicj-scope .slds-popover_walkthrough-alt.slds-nubbin_bottom-right:before, .jicj-scope .slds-popover_walkthrough-alt.slds-nubbin--bottom-right:before,
+        .jicj-scope .slds-popover_feature.slds-nubbin_bottom:before,
+        .jicj-scope .slds-popover_feature.slds-nubbin--bottom:before,
+        .jicj-scope .slds-popover_feature.slds-nubbin_bottom-left:before,
+        .jicj-scope .slds-popover_feature.slds-nubbin--bottom-left:before,
+        .jicj-scope .slds-popover_feature.slds-nubbin_bottom-right:before,
+        .jicj-scope .slds-popover_feature.slds-nubbin--bottom-right:before {
+            background-color: #215ca0;
+        }
+/********** ホバー関連スタイル End **********/
+
+/********** モーダル関連スタイル Start **********/
+
+    .jicj-scope button,
+    .jicj-scope input[type="button"],
+    .jicj-scope input[type="reset"],
+    .jicj-scope input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer;
+    }
+
+        .jicj-scope button[disabled],
+        .jicj-scope input[disabled] {
+            cursor: default;
+        }
+
+        .jicj-scope button::-moz-focus-inner,
+        .jicj-scope input::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+
+    .jicj-scope .slds-button {
+        position: relative;
+        display: inline-block;
+        padding: 0;
+        background: 0 0;
+        background-clip: border-box;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        font-size: .75rem;
+        line-height: 1.875rem;
+        text-decoration: none;
+        color: #0070d2;
+        -webkit-appearance: none;
+        white-space: normal;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        transition: color 50ms linear,background-color 50ms linear;
+    }
+
+    .jicj-scope .slds-modal {
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.1s linear, opacity 0.1s linear;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9001;
+    }
+
+    .jicj-scope .slds-modal__container {
+        position: relative;
+        transform: translate(0, 0);
+        transition: transform 0.1s linear, opacity 0.1s linear;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 0 2rem;
+        height: 100%;
+        border-radius: 0.25rem;
+    }
+
+    @media (min-width: 48em) {
+        .jicj-scope .slds-modal__container {
+            margin: 0 auto;
+            width: 50%;
+            max-width: 90rem;
+            min-width: 20rem;
+        }
+    }
+
+    .jicj-scope .slds-modal__header, .jicj-scope .slds-modal__content {
+        background: #f8f8f8;
+    }
+
+    .jicj-scope .slds-modal__header, .jicj-scope .slds-modal__footer {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+    }
+
+    .jicj-scope .slds-modal__header {
+        position: relative;
+        border-top-right-radius: 0.25rem;
+        border-top-left-radius: 0.25rem;
+        border-bottom: 1px solid #dbdbdb;
+        padding: .3rem .75rem;
+        text-align: center;
+    }
+
+        .jicj-scope .slds-modal__header + .slds-modal__menu {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+    .jicj-scope .slds-modal__header_empty, .jicj-scope .slds-modal__header--empty {
+        padding: 0;
+        border-bottom: 0;
+    }
+
+        .jicj-scope .slds-modal__header_empty + .slds-modal__content,
+        .jicj-scope .slds-modal__header--empty + .slds-modal__content {
+            border-top-right-radius: 0.25rem;
+            border-top-left-radius: 0.25rem;
+        }
+
+    .jicj-scope .slds-modal__content {
+        overflow: hidden;
+        overflow-y: auto;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+        .jicj-scope .slds-modal__content .bPageBlock {
+            margin: 0;
+            border: none !important;
+        }
+
+        .jicj-scope .slds-modal__content .pbSubsection {
+            margin: 0;
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+
+        .jicj-scope .slds-modal__content:last-child {
+            border-bottom-right-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+        }
+
+    .jicj-scope .slds-modal__menu {
+        position: relative;
+        border-radius: 0.25rem;
+        padding: 1rem;
+        background-color: #f3f2f2;
+    }
+
+    @media (max-width: 48em) {
+        .jicj-scope .slds-modal__menu .slds-button {
+            width: 100%;
+            margin: 0.125rem 0;
+        }
+    }
+
+    .jicj-scope .slds-modal__footer {
+        border-top: 2px solid #ffffff;
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+        padding: .3rem .75rem;
+        background-color: #f8f8f8;
+        text-align: center;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+    }
+
+    .jicj-scope .slds-modal__footer_directional .slds-button:first-child,
+    .jicj-scope .slds-modal__footer--directional .slds-button:first-child {
+        float: left;
+    }
+
+    .jicj-scope .slds-modal__footer .slds-button + .slds-button {
+        margin-left: 0.5rem;
+    }
+
+    .jicj-scope .slds-modal__close {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: -2.5rem;
+        right: -0.5rem;
+    }
+
+    @media (min-width: 48em) {
+        .jicj-scope .slds-modal_medium .slds-modal__container {
+            width: 90%;
+            max-width: 75rem;
+            min-width: 40rem;
+        }
+    }
+
+    @media (min-width: 48em) {
+        .jicj-scope .slds-modal_large .slds-modal__container,
+        .jicj-scope .slds-modal--large .slds-modal__container {
+            width: 90%;
+            max-width: none;
+            min-width: 40rem;
+        }
+    }
+
+    .jicj-scope .slds-modal-backdrop {
+        transition-duration: 0.4s;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(43, 40, 38, 0.6);
+        z-index: 9000;
+    }
+
+    .jicj-scope .slds-backdrop_open, .jicj-scope .slds-backdrop--open {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.4s linear;
+    }
+
+    .jicj-scope .slds-modal_form .slds-modal__header,
+    .jicj-scope .slds-modal_form .slds-modal__content:last-child,
+    .jicj-scope .slds-modal--form .slds-modal__header,
+    .jicj-scope .slds-modal--form .slds-modal__content:last-child {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .jicj-scope .slds-modal_form .slds-modal__container,
+    .jicj-scope .slds-modal--form .slds-modal__container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .jicj-scope .slds-modal_form .slds-modal__header .slds-text-heading_medium,
+    .jicj-scope .slds-modal_form .slds-modal__header .slds-text-heading--medium,
+    .jicj-scope .slds-modal--form .slds-modal__header .slds-text-heading_medium,
+    .jicj-scope .slds-modal--form .slds-modal__header .slds-text-heading--medium {
+        line-height: 1.5;
+    }
+
+    .jicj-scope .slds-modal_form .slds-modal__header .slds-button,
+    .jicj-scope .slds-modal--form .slds-modal__header .slds-button {
+        display: inline-block;
+        width: auto;
+    }
+
+        .jicj-scope .slds-modal_form .slds-modal__header .slds-button:first-child,
+        .jicj-scope .slds-modal--form .slds-modal__header .slds-button:first-child {
+            float: left;
+            margin-right: 0.5rem;
+        }
+
+            .jicj-scope .slds-modal_form .slds-modal__header .slds-button:first-child + .slds-button,
+            .jicj-scope .slds-modal--form .slds-modal__header .slds-button:first-child + .slds-button {
+                float: right;
+                margin-top: 0;
+                margin-left: 0.5rem;
+            }
+
+    .jicj-scope .slds-backdrop {
+        transition-duration: 0.4s;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(43, 40, 38, 0.6);
+        z-index: 9000;
+    }
+
+    .jicj-scope .slds-backdrop_open, .jicj-scope .slds-backdrop--open {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.4s linear;
+    }
+
+    .jicj-scope .slds-fade-in-open {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.1s linear;
+    }
+
+        .jicj-scope .slds-fade-in-open .slds-modal__container-reset {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0, 0);
+        }
+
+    .jicj-scope .slds-slide-up-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 0);
+        transition: opacity 0.1s linear, transform 0.2s linear;
+    }
+
+        .jicj-scope .slds-slide-up-open .slds-modal__container-reset {
+            opacity: 0;
+            visibility: hidden;
+            transform: translate(0, 1rem);
+            transition: opacity 0.2s linear, transform 0.2s linear;
+        }
+
+    .jicj-scope .slds-slide-up-saving {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -1rem);
+    }
+
+    .jicj-scope .slds-slide-down-cancel {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 1rem);
+    }
+
+    .jicj-scope .slds-button__icon {
+        width: 0.875rem;
+        height: 0.875rem;
+        fill: currentColor;
+    }
+
+    .jicj-scope .slds-button__icon_large, .jicj-scope .slds-button__icon--large {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .jicj-scope .slds-button__icon_small, .jicj-scope .slds-button__icon--small {
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+
+    .jicj-scope .slds-button__icon_x-small, .jicj-scope .slds-button__icon--x-small {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    .jicj-scope .slds-button_icon,
+    .jicj-scope .slds-button--icon,
+    .jicj-scope .slds-button_icon-inverse,
+    .jicj-scope .slds-button--icon-inverse {
+        line-height: 1;
+        vertical-align: middle;
+        color: #706e6b;
+    }
+
+    .jicj-scope .slds-button_icon-inverse,
+    .jicj-scope .slds-button--icon-inverse,
+    .jicj-scope .slds-button_icon-border-inverse,
+    .jicj-scope .slds-button--icon-border-inverse {
+        color: white;
+    }
+
+        .jicj-scope .slds-button_icon-inverse:hover, .jicj-scope .slds-button_icon-inverse:focus,
+        .jicj-scope .slds-button--icon-inverse:hover,
+        .jicj-scope .slds-button--icon-inverse:focus,
+        .jicj-scope .slds-button_icon-border-inverse:hover,
+        .jicj-scope .slds-button_icon-border-inverse:focus,
+        .jicj-scope .slds-button--icon-border-inverse:hover,
+        .jicj-scope .slds-button--icon-border-inverse:focus {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .jicj-scope .slds-button_icon-inverse:focus,
+        .jicj-scope .slds-button--icon-inverse:focus,
+        .jicj-scope .slds-button_icon-border-inverse:focus,
+        .jicj-scope .slds-button--icon-border-inverse:focus {
+            outline: none;
+            box-shadow: 0 0 3px #ecebea;
+        }
+
+        .jicj-scope .slds-button_icon-inverse:active,
+        .jicj-scope .slds-button--icon-inverse:active,
+        .jicj-scope .slds-button_icon-border-inverse:active,
+        .jicj-scope .slds-button--icon-border-inverse:active {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .jicj-scope .slds-button_icon-inverse[disabled],
+        .jicj-scope .slds-button--icon-inverse[disabled],
+        .jicj-scope .slds-button_icon-border-inverse[disabled],
+        .jicj-scope .slds-button--icon-border-inverse[disabled] {
+            color: rgba(255, 255, 255, 0.15);
+        }
+
+    .jicj-scope .slds-assistive-text {
+        position: absolute !important;
+        margin: -1px !important;
+        border: 0 !important;
+        padding: 0 !important;
+        width: 1px !important;
+        height: 1px !important;
+        overflow: hidden !important;
+        clip: rect(0 0 0 0) !important;
+        text-transform: none !important;
+        white-space: nowrap !important;
+    }
+
+    .jicj-scope .slds-assistive-text_focus:focus,
+    .jicj-scope .slds-assistive-text--focus:focus {
+        margin: inherit !important;
+        border: inherit !important;
+        padding: inherit !important;
+        width: auto !important;
+        height: auto !important;
+        overflow: visible !important;
+        clip: auto !important;
+    }
+
+    .jicj-scope .slds-text-heading_large,
+    .jicj-scope .slds-text-heading--large {
+        font-weight: 300;
+        font-size: 1.75rem;
+        line-height: 1.25;
+    }
+
+    .jicj-scope .slds-text-heading_medium,
+    .jicj-scope .slds-text-heading--medium {
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+
+    .jicj-scope .slds-text-heading_small,
+    .jicj-scope .slds-text-heading--small {
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+
+    .jicj-scope .slds-text-heading_label,
+    .jicj-scope .slds-text-heading--label {
+        font-weight: bold;
+        font-size: 0.75rem;
+        line-height: 1.25;
+        color: #54698d;
+        text-transform: uppercase;
+        letter-spacing: 0.0625rem;
+    }
+
+    .jicj-scope .slds-text-heading_label-normal,
+    .jicj-scope .slds-text-heading--label-normal {
+        font-weight: bold;
+        font-size: 0.75rem;
+        line-height: 1.25;
+        color: #54698d;
+    }
+
+    .jicj-scope .slds-hyphenate {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+/********** モーダル関連スタイル End **********/
+
+/********** 日付ピッカー モーダルの裏に回る対策 Start **********/
+    .datePicker {
+        z-index: 9999;
+    }
+/********** 日付ピッカー モーダルの裏に回る対策 End **********/
+
+/********** OM0126対応 Start **********/
+    .jicj-scope .jicj-fixed-tubstyle .pbSubheader {
+        background-color: #222 !important;
+    }
+/********** OM0126対応 End **********/

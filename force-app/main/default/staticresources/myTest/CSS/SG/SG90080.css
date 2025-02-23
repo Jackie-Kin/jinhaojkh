@@ -1,0 +1,275 @@
+﻿@charset "UTF-8"; 
+
+.syaryoJoho_tblStyle{
+	
+	padding:0px;
+	border-collapse:collapse;
+
+}
+
+.sp_left {
+    padding-left:20px;
+}
+
+.UnderBar{
+	border-bottom:2px solid rgb(49,133,156);
+}
+
+.nyukoRireki_tblStyle{
+	
+	padding:0px;
+	border-collapse:collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	width:97%;
+	
+}
+
+.mojiStyle{
+	
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	
+}
+
+.header_title_mojiStyle{
+	
+	color:white;
+	font-size:12pt;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	
+}
+
+.title_mojiStyle{
+	
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:10.5pt;
+
+}
+
+.hoyuSyaryo_check_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:12pt;
+	color:#0F718B;
+	
+}
+
+.hoyuSyaryo_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:12pt;
+	color:#666666;
+	
+}
+
+.syaryoJoho_mojiStyle{
+
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:10.5pt;
+	
+}
+
+.syaryoJoho_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:10.5pt;
+	color:#666666;
+	
+}
+
+.syaryoJoho_textStyle_select{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:10.5pt;
+	color:rgb(49,133,156);
+	
+}
+
+.nyukoRireki_header_mojiStyle{
+	
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+
+}
+
+.nyukoRireki_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:11pt;
+	color:#666666;
+
+}
+
+.nyukoRireki_date_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:11pt;
+	color:#666666;
+	text-align:left;
+	padding-left:15px;
+
+}
+
+.nyukoRireki_integer_textStyle{
+	
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:11pt;
+	text-align:right;
+	color:#666666;
+	padding-right:10px;
+}
+
+.image_pin{
+
+	width:15px;
+	margin-top:1px;
+	margin-right:5px;
+		
+}
+
+.listTable{
+
+	padding:0px;
+	border-collapse:collapse;
+	border: 1px solid #CCCCCC;
+}
+
+.listTable td{
+
+	border-collapse:collapse;
+	border: 1px solid #CCCCCC;
+}
+
+.checkBox{
+	padding:0px;
+	margin:0px;
+	height:25px;
+	width:26px;
+	min-width:26px;
+	max-width:26px;
+	border-radius:4px;
+	border-color:rgb(156,156,156);
+	background-color:rgb(255,255,204);
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4) inset;
+}
+.hoyuuSyaryo{
+	min-width:90px;
+	font-size:12pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#666666;
+	text-align:left;
+}
+.hoyuuSyaryo_select{
+	min-width:90px;
+	font-size:12pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:rgb(49,133,156);
+	text-align:left;
+}
+
+.hoyuDaisu_Font {
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-size:20pt;
+	color:#666666;
+}
+
+.tableData{
+	border:1px solid rgb(199,199,199);
+	text-align:center;
+    white-space:nowrap;
+	
+}
+
+.tableData_right{
+	border:1px solid rgb(199,199,199);
+	text-align:right;
+    white-space:nowrap;
+    /*padding-right:10px;*/
+    position:relative;
+    right:7px;
+	
+}
+
+.tabledataFont{
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#666666;
+
+}
+
+.width1 {width:120px;}
+.width2 {width:200px;}
+.width3 {width:250px;}
+.width4 {width:200px;}
+
+.width5 {width: 80px;}
+.width6 {width: 330px;}
+
+
+
+        /*グレーアウトのスタイル定義*/
+
+label{
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type=checkbox]{
+	filter: alpha(opacity="1");
+	opacity: 0.01;
+	MozOpacity: 0.01;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.checkboxView{
+	display: block;
+	width: 30px;
+	height: 31px;
+	margin-right: 5px;
+    margin-left:10px;
+	background: url(../../IMG/ico_check.png) left top no-repeat;
+	float: left;
+}
+.checkboxView.selected{
+	background-position: left bottom;
+}
+label .title{
+	display: block;
+	margin-left: 30px;
+	line-height: 32px;
+    text-align:left;
+}
+
+ul{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 2px;
+    margin-top:0px;
+    /*overflow:auto;*/
+	float: left;
+    /*min-width:1024px;*/
+}
+ul li,
+ol li{
+	margin-bottom: 7px;
+	list-style: none;
+	font-size: 28px;
+    float:left;
+    /*width:150px;*/
+    text-overflow: ellipsis;
+}
+
+.selected {
+    color:rgb(49,133,156);
+}
+
+section{
+    width: 100%;
+    height: 525px;
+}

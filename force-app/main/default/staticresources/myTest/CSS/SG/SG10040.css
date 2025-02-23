@@ -1,0 +1,1075 @@
+﻿
+body {
+   margin:0px; padding:0px; background-color:black;
+   min-width:1024px;
+   min-height:760px;
+   max-height:99.75%;
+   height:99.73%;
+
+}
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+/* 2017/11/13 del start Neo連携対応 css対応 */
+/*.divMain {*/
+/*    padding: 0px;*/ 
+/*    margin: 0px;*/ 
+/*    border-style: none;*/
+/*    text-align: center;*/
+/*    font-size:16pt;*/
+/*    color:white;*/
+/*    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));*/
+/*    background: linear-gradient(to bottom,darkblue,#010010);*/
+/*}*/
+/* 2017/11/13 del end Neo連携対応 css対応 */
+
+.table_main {
+    padding:0px;
+    border-collapse:collapse;
+    width:100%;
+    /*height:114.4%;*/
+}
+
+.table_sub {
+   
+    border-collapse:collapse;
+    width:100%;
+    height:100%;
+   
+}
+
+
+.td_Mikomi {
+    min-width:150px;
+    max-width:150px;
+    width:150px;
+    /*height:28.6%;*/
+    height:174px;
+   
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+}
+
+/* 2017/11/13 add start Neo連携対応 css対応 */
+
+.mikomiTable,
+.noukiCSGyomu,
+.noukiCSAnnai,
+.serviceTable,
+.hokenTable,
+.otherTable {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mikomiTable tr:nth-child(1) { height: 0px; }
+.mikomiTable tr:nth-child(1) td { padding-top: 3px; }
+.mikomiTable tr:nth-child(4) { height: 0px; }
+.mikomiTable tr:nth-child(4) td { padding-bottom: 3px; }
+
+.noukiCSGyomu tr:nth-child(1) { height: 0px; }
+.noukiCSGyomu tr:nth-child(1) td { padding-top: 3px; }
+.noukiCSGyomu tr:nth-child(3) { height: 0px; }
+.noukiCSGyomu tr:nth-child(3) td { padding-bottom: 3px; }
+
+.noukiCSAnnai tr:nth-child(1) { height: 0px; }
+.noukiCSAnnai tr:nth-child(1) td { padding-top: 3px; }
+.noukiCSAnnai tr:nth-child(3) { height: 0px; }
+.noukiCSAnnai tr:nth-child(3) td { padding-bottom: 3px; }
+
+.serviceTable tr:nth-child(1) { height: 0px; }
+.serviceTable tr:nth-child(1) td { padding-top: 3px; }
+.serviceTable tr:nth-child(4) { height: 0px; }
+.serviceTable tr:nth-child(4) td { padding-bottom: 3px; }
+
+.hokenTable tr:nth-child(1) { height: 0px; }
+.hokenTable tr:nth-child(1) td { padding-top: 3px; }
+.hokenTable tr:nth-child(4) { height: 0px; }
+.hokenTable tr:nth-child(4) td { padding-bottom: 3px; }
+
+.otherTable tr:nth-child(1) { height: 0px; }
+.otherTable tr:nth-child(1) td { padding-top: 3px; }
+.otherTable tr:nth-child(3) { height: 0px; }
+.otherTable tr:nth-child(3) td { padding-bottom: 3px; }
+
+/* 2017/11/13 add end Neo連携対応 css対応 */
+
+.td_NoukiCS {
+    
+ 
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+    
+}
+
+.td_Gyoumu {
+
+    /*height:14.3%;*/
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+    height:88px;
+}
+
+.td_Annai {
+
+    /*height:14.3%;*/
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+    height:88px;
+}
+
+
+.td_NoukiCS_Sub {
+
+    border-right:1px solid #CCCCCC;
+}
+
+/* 2017/11/13 del start Neo連携対応 css対応 */
+/*.td_Gyoumu {*/
+
+/*    border-bottom:1px solid #CCCCCC;*/
+    
+/*}*/
+
+/*.td_Annai {*/
+
+/*     border-top:1px solid #CCCCCC;*/
+    
+/*}*/
+
+/* 2017/11/13 del end Neo連携対応 css対応 */
+
+.td_Service {
+    
+    /*height:28.6%;*/
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+    height:174px;
+}
+
+.td_Hoken {
+
+    /*height:14.3%;*/
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+    height:88px;
+}
+
+.td_Other {
+
+    /*height:14.3%;*/
+    background-color:transparent;
+    border:1px solid #CCCCCC;
+    height:88px;
+}
+
+.td_space {
+    max-width:2px;
+    min-width:2px;
+    width:5px;
+    background-color:transparent;
+    border-top:0px none;
+    border-bottom:0px none;
+}
+
+.td_Item {
+    background-color:black;
+    border:1px solid #CCCCCC;
+    /* 2017/11/13 mod start Neo連携対応 css対応 */
+    width:100%;
+    /* 2017/11/13 mod end Neo連携対応 css対応 */
+}
+
+/* 2017/11/13 add start Neo連携対応 css対応 */
+.td_Item div {
+    overflow: hidden;
+}
+/* 2017/11/13 add end Neo連携対応 css対応 */
+
+.font-number {
+
+    font-size:25pt;
+    text-decoration: underline;
+    vertical-align:middle;
+}
+
+.font-number-day {
+
+    font-size:25pt;
+    vertical-align:sub;
+}
+
+.font-number-sumi {
+
+    vertical-align:bottom;
+    /* 2017/04/24 add start 活動状況見える化対応　*/
+    line-height:90%;
+    text-align:left;
+    font-size:12pt;
+    /* 2017/04/24 add end 活動状況見える化対応　*/
+}
+
+.pnl_main {
+ 
+    text-align:left;
+
+}
+
+.pnl_Gyoumu {
+ 
+    white-space: nowrap;
+    /*overflow:hidden;*/
+}
+
+.pnl_Annai {
+ 
+    white-space: nowrap;
+    /*overflow:hidden;*/
+}
+
+.listTable{
+		padding:0px;
+		border-collapse:collapse;
+		margin:0px;
+	}
+
+
+li	{ list-style-type:none; }
+
+.lft{ float:left; }
+.clr{ clear:both; }
+
+.txlft{ text-align:left; }
+.txrgt{ text-align:right; }
+
+/*article .box{ display:inline-block; }*/
+
+/* Grobal */
+
+#wrapper{
+	height:100%;
+    background: linear-gradient(to bottom,#010010 0%,darkblue 15%,#010010 100%);
+}
+
+#wrapper,section,footer{
+	width:100%;
+}
+
+/* Header　*/
+
+#hdr_ttl{
+	width:100px;
+	height:20px;
+	position:absolute;
+	top:5px;
+	left:46%;
+
+	text-align:center;
+	font-size:12pt;
+	/*font-weight:bold;*/
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:rgb(64,64,64);
+}
+
+#hdr_name{
+	width:200px;
+	height:20px;
+	position:absolute;
+
+	top:7px;
+	left:76.67%;
+	
+	font-size:12pt;
+	position:absolute;
+	font-weight:bold;
+	text-align:left;
+}
+
+#hdr_upd{
+	width:80px;;
+	height:28px;
+	position:absolute;
+	top:1px;
+	left:90.82%;
+	
+	font-size:9pt;
+	line-height:10pt;	
+	text-align:left;
+}
+
+
+
+/* navi　*/
+
+section{
+	position:inherit;
+	
+}
+
+nav{
+	width:100%;
+	height:10px;
+	padding:10px 0px 5px;
+	
+	position:inherit;
+	
+	font-size:11pt;
+}
+
+.mainTbl{
+	border-collapse:collapse;
+	
+	width:98%;
+
+}
+
+.mainTbl th{
+	border:1px #376092 solid;
+	text-align:center;
+}
+
+.mainTbl td{
+	border:1px #376092 solid;
+	text-align:center;
+}
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+/* 2017/11/13 add start Neo連携対応 css対応 */
+
+.kanbanTitle {
+    width: 100%;
+}
+
+.tenpoInfo {
+    font-size: 11pt;
+    width: 40%;
+}
+
+.dayTitle {
+    width: 30%;
+}
+
+.dayTitle table {
+    margin: 0px auto;
+}
+
+.dayTitleTriangle {
+    width: 50px;
+    background-color: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#c0c0c0));
+    font-size: Medium;
+}
+
+.dayTitleTriangle img {
+    display: block;
+}
+
+.dayTitleLabel {
+    /*width: 100px;*/ 
+    background-color: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#c0c0c0)); 
+    font-size: Medium;
+}
+
+/* 2017/11/13 add end Neo連携対応 css対応 */
+
+.mainTbl th{
+	height:67px;
+	font-size:10pt;
+	font-weight:normal;
+}
+
+.mainTbl td{
+	
+	background-color:#000;
+	
+	font-size:11.5pt;
+	font-family:HGP創英角ｺﾞｼｯｸUB;
+	line-height:13pt;
+}
+
+.tb_staff{
+	width:4.47%;
+    height:15%;
+}
+
+.tb_kensu{
+	width:4.54%;
+}
+
+article{
+	min-width:125px;
+	width:160px;
+	min-height:70px;
+    max-height:70px;
+	/*height:85%;*/
+	
+	margin:1px 2px 0px 2px;
+	padding:0px;
+	
+	border-radius:10px;
+/*	border-radius:14px;	img_ver*/
+	
+	text-align:left;
+	
+	border:2px solid transparent;
+/*	border-color:#B40808;	*/
+	/*border-color:#102f6c;*/
+	 white-space:normal;
+   display: inline-block;
+/*	background: linear-gradient(to right bottom, #F21010 10%, #160000 50%); */
+    
+	/*background: linear-gradient(to right bottom, #900000 10%, #160000 50%);*/
+	/*background:linear-gradient(to right bottom, #05215d 10%, #160000 50%);;*/
+    /*box-shadow: 5px 5px 0px 0px rgb(79,109,171) inset;*/
+    /*box-shadow: 0px 0px 18px 3px #4f6dab inset;*/
+    /* 2017/11/13 add start Neo連携対応 css対応 */
+    position: relative;
+    /* 2017/11/13 add end Neo連携対応 css対応 */
+}
+
+.daysumi_article{
+
+}
+
+.sumi_css1 {
+
+    background-image:url('../../IMG/back_chip01.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    color:#c00000;
+}
+.sumi_css2 {
+
+    background-image:url('../../IMG/back_chip01.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    color:#c00000;
+}
+
+.sumi_css3 {
+
+    background-image:url('../../IMG/back_chip01_dark.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    color:#730000;
+}
+.sumi_css4 {
+
+    background-image:url('../../IMG/back_chip01_dark.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    color:#730000;
+}
+
+/* 2018/09/07 mod start 号-360 コネクティッドアイコン対応 */
+/*.sumi_flag {
+    position:absolute;
+    bottom:6%;
+    right:10%;
+    height: 18px;
+}*/
+
+.sumi_flag {
+    position:absolute;
+    bottom:6%;
+    right:2%;
+    height: 18px;
+}
+
+
+/*2017/11/09 add start U-Car SPM対応 コールセンターで活動中の場合、アイコンを表示 */
+/*.callcenter_flag {
+    position:absolute;
+    bottom:1%;
+    right:23%;
+    width:15%; 
+    height:33%;
+}*/
+/*2017/11/09 add end U-Car SPM対応 コールセンターで活動中の場合、アイコンを表示 */
+.callcenter_flag {
+    position:absolute;
+    bottom:2%;
+    right:12%;
+    width:15%; 
+    height:33%;
+}
+/* 2018/09/07 mod end 号-360 コネクティッドアイコン対応 */
+/*/2018/9/27 add   start 号-347 ネットリクエストアイコン対応*/
+.netrequest_flag {
+    position:absolute;
+    bottom:3%;
+    right:40%;
+    width:14%; 
+    height:32%;
+}
+/*/2018/9/27 add   end 号-347 ネットリクエストアイコン対応*/
+
+article div{
+
+}
+
+article .box{
+	display:table;
+	margin:2px 4px 3px;
+}
+
+.tip_name,.tip_kensu{
+    overflow:visible !important;
+	/*display:table-cell;*/
+    /*display:ruby-text-container;*/
+	/*font-size:12pt;*/
+    white-space:nowrap;
+    font-size:11pt;
+	font-weight:normal;
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+    display:inline-block;
+}
+
+
+.tip_name{
+	/*width:9.77%;*/
+    width:11.8%;
+	height:1.56%;
+	text-align:left;
+    padding-top:5px;
+    /*color:#d9d9d9;*/
+
+}
+
+.tip_kensu{
+	/*width:4.88%;*/
+    width:9.5%;
+	text-align:right;
+}
+
+.tip_kensu_div{
+    text-align: center;
+    width:60px;
+    height:15px;
+	vertical-align:middle;
+    position:absolute;
+    top:5px;
+    right:1px;
+    border-radius:3px;
+}
+
+.tip_kensu_div_min{
+    font-size:14px;
+    width:65px;
+}
+
+hr.orange{
+	background:linear-gradient(to right bottom,rgb(250,192,144) 48%,rgb(247,150,70) 50%,rgb(250,192,144) 52%);
+}
+
+hr.blue{
+	background:linear-gradient(to right bottom,rgb(147,205,221) 48%,rgb(75,172,198) 50%,rgb(147,205,221) 52%);
+}
+
+hr.green{
+	background:linear-gradient(to right bottom,rgb(195,214,155) 48%,rgb(155,187,85) 50%,rgb(195,214,155) 52%);
+}
+
+hr.perple{
+	background:linear-gradient(to right bottom,rgb(179,162,199) 48%,rgb(128,100,162) 50%,rgb(179,162,199) 52%);
+}
+
+
+
+article p{
+	padding-left:5px;
+
+	line-height:13pt;
+	/*font-size:11pt;*/
+	font-weight:normal;
+    margin:3px;
+    /*color:#c00000;*/
+    font-size:12pt;
+    padding-top:8px;
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+    display:table;
+}
+
+.textright{
+	min-width:149px;
+	width:14.55%;
+	margin:0;
+	padding:0 3px 0;
+	
+	font-size:10pt;
+	text-align:right;
+}
+
+.select_border {
+
+    border:2px solid white !important;
+    background-image:url('../../IMG/back_chip01_select.png') !important;
+}
+
+
+.mainTbl td .tri{
+	height:0px;
+	width:0px;
+	
+	position:relative;
+	top:25px;
+	left:97.12%;
+	
+	/*border:20px solid rgb(79,129,189);
+	border-color:transparent;
+	border-left-color:rgb(79,129,189); */
+	
+	border-left: 20px solid rgb(79,129,189);
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	
+	}
+
+
+footer .box{
+	width:100%;
+	height:5.21%;
+	margin:3px;
+	color:rgb(89,89,89);
+}
+
+#top,#link,#menu,#src{
+	display:table-cell;
+}
+
+#top{
+	width:103px;
+}
+
+#top li{
+	display:table-cell;
+	
+	float:left;
+}
+
+#btn{
+	height:10px;
+	width:70px;
+
+	padding:28px 0 0;
+	border-radius:3px;
+	border:1px rgb(89,89,89) solid;
+	
+	background:url('../../IMG/memu_back.png') no-repeat;
+	background-size:74px;
+	background-position:-2px -4px;
+	
+	text-align:center;
+	font-size:9pt;
+}
+
+#allow{
+	width:30px;
+	margin:12px 9px;
+	background:url('../../IMG/arrow_back2.png') no-repeat;
+
+}
+
+#link ul{
+	width:260px;
+	margin-right:5px;
+}
+
+#link li{
+	width:59px;
+	height:40px;
+	float:left;
+	border:1px rgb(89,89,89) solid;
+	transform-origin:0 100%;
+	transform:skewX(-15deg);
+	font-size:30pt;
+}
+
+#link li:hover,#link li.active{
+	box-shadow:0px 0px 5px 2px rgba(8, 192, 32, 0.8)
+                ,0px 0px 5px 2px rgba(8, 192, 32, 0.8) inset;
+}
+
+#link li p{
+	width:59px;	height:40px;
+	text-align:center;
+	transform-origin:0 100%;
+	transform:skewX(15deg);
+	font-size:10pt;
+}
+
+.onc{
+	width:100%;
+	margin:14px 0 0 10px;
+	text-align:center;
+}
+
+.twc{
+	width:100%;
+	margin:7px 0 0 8px;
+	text-align:center;
+}
+
+
+#src ul{
+	width:280px;
+}
+
+#src li{
+	float:left;	
+	height:15px;
+	width:70px;
+	display:table-cell;
+	
+	margin-right:8px;
+	padding:25px 0 0;
+	
+	text-align:center;
+	font-size:10pt;
+	
+	border-radius:3px;
+	border:1px rgb(89,89,89) solid;
+
+}
+#src li:hover,#src li.on{
+	background-color:#C00000;
+	color:rgb(166,166,166);
+}
+
+#s_new{
+	background:url('../../IMG/ico_car.png') no-repeat;
+	background-size:24px;
+	background-position:24px 2px;
+
+}
+
+#s_svc{
+	background:url('../../IMG/ico_spana.png') no-repeat;
+	background-size:20px;
+	background-position:24px 2px;
+}
+
+#s_hkn{
+	background:url('../../IMG/ico_heart.png') no-repeat;
+	background-size:20px;
+	background-position:24px 2px;
+}
+
+
+#menu ul{
+	width:278px;
+
+	position:absolute;
+	top:0;
+	left:742px;
+	
+	color:rgb(166,166,166);
+}
+
+#menu li{
+	float:right;
+	margin-right:-4px;
+	background:url('../../IMG/btn_arch.png') no-repeat;
+	background-size:70px 48px;
+	
+	text-align:center;
+	font-size:8pt;
+	display:block;
+}
+
+#menu li p{
+		
+	width:70px;
+	height:14px;
+	padding:34px 0 0;
+
+
+}
+
+#m_src{
+	background:url('../../IMG/ico_grass.png') no-repeat;
+	background-size:24px;
+	background-position:24px 5px;
+}
+
+#m_alt{
+	background:url('../../IMG/memolist.png') no-repeat;
+	background-size:24px;
+	background-position:24px 5px;
+}
+
+#m_conf{
+	background:url('../../IMG/ico_gear.png') no-repeat;
+	background-size:24px;
+	background-position:24px 5px;
+}
+
+#m_map{
+	background:url('../../IMG/ico_sitemap.png') no-repeat;
+	background-size:44px;
+	background-position:10px 5px;
+}
+
+
+.footer{
+	font-family:HGP創英角ｺﾞｼｯｸUB;	
+    background: linear-gradient(to bottom,#323230 0%,#181818 59%,#000000 60%,#000000);
+    border-top:1px rgb(89,89,89) solid;
+    border-bottom:1px rgb(89,89,89) solid;
+}
+
+.tdKoumoku1 
+{ 
+    
+    
+    color:white;
+}
+
+.fakeContainer { 
+	margin: 0 0 0;
+	border: 1px;
+	width: 100%; 
+	height: 95%; 
+	overflow: hidden; 
+   
+}
+
+/* 表ヘッダー部*/
+.tdKoumoku1 
+{ 
+    height:30px;
+    width:100%;
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size:16pt;
+    color:white;
+}
+
+/* 表ヘッダー部*/
+.tdKoumoku1_main
+{ 
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: left;
+    font-size:16pt;
+    color:white;
+      background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+    /* 2017/11/13 add start Neo連携対応 css対応 */
+    height: 100%; 
+    width: 100%; 
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    position: relative;
+    /* 2017/11/13 add end Neo連携対応 css対応 */
+}
+
+/* 2017/11/13 del start Neo連携対応 css対応 */
+/*.tenpoName {*/
+/*    font-size: 11pt;*/
+/*}*/
+/* 2017/11/13 del end Neo連携対応 css対応 */
+
+.header_Prev {
+
+    width:3%;
+    border-right-style:none !important;
+    border-right-width:0px !important;
+}
+
+.header_Next {
+    width:3%;
+    border-left-style:none !important;
+    border-left-width:0px !important;
+}
+
+.header_center {
+
+    border-right-style:none !important;
+    border-right-width:0px !important;
+    border-left-style:none !important;
+    border-left-width:0px !important;
+}
+
+/* 2017/11/13 add start Neo連携対応 css対応 */
+
+#back_div {
+    background-color: black;
+    position: absolute;
+    display: none;
+    z-index: 500;
+    width: 90%;
+    height: 84%;
+    overflow: hidden;
+    left: 168px;
+    top: 59px;
+    filter: alpha(opacity=40);
+    -moz-opacity: 0.4;
+    opacity: 0.4;
+}
+
+#wrap {
+    margin: 5px 0 0 7px;
+    width: 99%; 
+    height: 94%; 
+    overflow: hidden;
+}
+
+/* 2017/11/13 add end Neo連携対応 css対応 */
+
+/* 2017/11/15 add start Neo連携対応 css対応 */
+.hiddenButton {
+    display: none;
+}
+
+.textFontColorGray {
+    color: #828282;
+}
+
+.textFontColorLightGray {
+    color: #d9d9d9;
+}
+
+.textFontColorDarkGray {
+    color: #999999;
+}
+
+.textFontColorOrange {
+    color: #e66d09;
+}
+
+.textFontColorBrown {
+    color: #864105;
+}
+
+.backGroundColorNone {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.backGroundColorGray {
+    color: #FFFFFF;
+    background-color: #828282;
+}
+
+.backGroundColorLightGray {
+    color: #FFFFFF;
+    background-color: #d9d9d9;
+}
+
+.backGroundColorRed {
+    color: #FFFFFF;
+    background-color: #B00808;
+}
+
+.backGroundColorOrange {
+    color: #FFFFFF;
+    background-color: #e66d09;
+}
+
+.backGroundColorBrown {
+    color: #FFFFFF;
+    background-color: #864105;
+}
+
+.systemShubetsu {
+    font-size: 10.5pt;
+}
+
+.nyukoInfo {
+    font-size: 10pt;
+}
+.nyukoInfo_min {
+    font-size: 9pt;
+}
+/* 2017/11/15 add end Neo連携対応 css対応 */
+
+/* 2017/11/16 add start Neo連携対応 css対応 */
+#mCSB_3,
+#mCSB_4,
+#mCSB_7,
+#mCSB_8 {
+    max-height: 110px;
+}
+
+#mCSB_3_dragger_horizontal,
+#mCSB_4_dragger_horizontal,
+#mCSB_7_dragger_horizontal,
+#mCSB_8_dragger_horizontal {
+    top: -5px;
+}
+
+#mCSB_5,
+#mCSB_6 {
+    max-height: 220px;
+}
+
+#mCSB_5_dragger_horizontal,
+#mCSB_6_dragger_horizontal {
+    top: -7px;
+}
+/* 2017/11/16 add end Neo連携対応 css対応 */
+
+.rows1Area{
+    height:90px;
+    width:100000px;     /* チップの行数超えて表示させないように大目に幅を取る */
+    overflow:hidden;
+}
+.rows2Area {
+    height:172px;
+    width:100000px;     /* チップの行数超えて表示させないように大目に幅を取る */
+    overflow:hidden;
+}
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.underline{
+    text-decoration:underline;
+}
+
+/* 2018/09/07 mod start 号-360 コネクティッドアイコン対応 */
+.Connectedicon_flag {
+    position:absolute;
+    bottom:6%;
+    right:28%;
+    width:12%; 
+    height:27%;
+}
+/* 2018/09/07 mod end 号-360 コネクティッドアイコン対応 */

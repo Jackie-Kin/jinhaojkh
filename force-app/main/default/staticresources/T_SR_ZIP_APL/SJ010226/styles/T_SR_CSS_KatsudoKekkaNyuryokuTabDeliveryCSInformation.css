@@ -1,0 +1,215 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　納期CS納期案内
+ * ファイル名 : T_SR_CSS_KatsudoKekkaNyuryokuTabDeliveryCSInformation.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/20  HISOL清水    新規作成
+ */
+.S10101-top {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.S10101-bottom {
+  width: 100%;
+  height:311px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.S10101-btnDiv {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.S10101-delivery-info{
+  width: 100%;
+  height: 100%;
+  margin-top: 3px;
+}
+
+.S10101-delivery-info-header{
+  width: 100%;
+  height: 22px;
+  background-color:#193a66;
+  color: #ffffff;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 14px;
+  letter-spacing:1.68px;
+  border-radius:3px 3px 0 0;
+}
+
+.S10101-delivery-info-header-title{
+  height: 22px;
+  line-height: 22px;
+  margin: 0 20px 0 20px;
+}
+
+.S10101-delivery-info-header-legend{
+  height: 22px;
+  line-height: 22px;
+}
+
+.S10101-delivery-info-body{
+  width: 100%;
+  height: 283px;
+  padding: 3px 20px;
+  background-color:#ffffff;
+  border-radius:0 0 3px 3px;
+  font-size:13px;
+  font-weight:400;
+}
+
+.S10101-delivery-info-body-header{
+  width: 100%;
+  height: 40px;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #375884;
+  color: #ffffff;
+}
+
+.S10101-delivery-info-body-header > div{
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.S10101-delivery-info-body-detail{
+  width: 100%;
+  height: 240px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.S10101-delivery-info-body-detail-row{
+  width: 100%;
+  height: 40px;
+  display: -webkit-flex;
+  display: flex;
+  background-color: rgba(92, 151, 230, 0.08);
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.S10101-delivery-info-body-detail-row > div{
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.inactive{
+  background-color: #A6A6A6;
+}
+.colorRed {
+  color: #8D0000;
+}
+.colorBlue {
+  color: blue;
+}
+.colorGray {
+  color: #666666;
+}
+
+.S10101-delivery-info-body-check{
+  min-width: 70px;
+}
+
+.S10101-delivery-info-body-timing{
+  min-width: 170px;
+}
+
+.S10101-delivery-info-body-jissi{
+  min-width: 90px;
+}
+.S10101-delivery-info-body-status{
+  min-width: 110px;
+}
+.S10101-delivery-info-body-yoteibi{
+  min-width: 110px;
+}
+.S10101-delivery-info-body-jissekibi{
+  min-width: 110px;
+}
+.S10101-delivery-info-body-hensin{
+  min-width: 50px;
+}
+.S10101-delivery-info-body-houhou{
+  min-width: 110px;
+}
+.S10101-delivery-info-body-tokki{
+  /*min-width: 420px;*/
+  width:90%;
+}
+.S10101-delivery-info-body-count {
+  display:none;
+}
+
+.meruBtn,
+.denwaBtn,
+.mencyakuBtn,
+.nasiBtn {
+  border-radius: 3px;
+  background-color: #193a66;
+  box-shadow: 0px 1px 1px 0px rgba(17,65,128,0.3);
+  width: 185px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 40px;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(40,76,126,0.75);
+  margin-right: 15px;
+  float: right;
+  cursor:pointer;
+}
+
+.meruBtn:hover,
+.denwaBtn:hover,
+.mencyakuBtn:hover,
+.nasiBtn:hover {
+  background-color: #2f578e;
+}
+
+.meruBtn.disabled,
+.denwaBtn.disabled,
+.mencyakuBtn.disabled,
+.nasiBtn.disabled {
+  background-color: #999999;
+  cursor:default;
+}
+.meruBtn:hover.disabled,
+.denwaBtn:hover.disabled,
+.mencyakuBtn:hover.disabled,
+.nasiBtn:hover.disabled{
+  background-color: #999999;
+}
+
+
+.S10101-check-annai {
+  display: none;
+}
+
+.S10101-check-annai ~ label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 18px;
+  margin-top: 9px;
+  background-image: url('../images/check_off.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.S10101-check-annai:checked ~ label {
+  background-image: url('../images/check_on.svg');
+}

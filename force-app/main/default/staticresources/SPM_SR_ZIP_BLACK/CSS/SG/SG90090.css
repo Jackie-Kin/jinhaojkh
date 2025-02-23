@@ -1,0 +1,481 @@
+﻿@charset "utf-8";
+
+*	{ margin:0; padding:0; }
+.box{ display:table; }
+
+section table{
+	border-collapse:collapse;
+}
+
+section th{
+	font-family:'ＭＳ Ｐゴシック';
+	font-size:11pt;
+	font-weight:normal;
+	text-align:left;
+}
+
+section td{
+	font-family:HGP創英角ｺﾞｼｯｸUB;
+	font-size:11pt;
+	color:rgb(89,89,89)
+}
+
+.image_pin{
+	width:17px;
+	position:absolute;
+	
+}
+
+article{
+    position:relative;
+}
+
+h2{
+	padding-left:22px;
+	margin-bottom:10px;
+	
+	font-family:ＭＳ Ｐゴシック 見出し;
+	font-size:11pt;
+	font-weight:normal;
+
+	background:url('img/title_pin01.png') no-repeat 0 0;
+	background-size:16px;
+}
+
+article[id$="carInfo"]{
+
+}
+
+article[id$="carInfo"] table{
+	margin:10px 0 10px 30px;
+}
+
+article[id$="carInfo"] table th,article[id$="carInfo"] table td{
+	padding-bottom:5px;
+}
+
+article[id$="carInfo"] th{
+	text-align:right;
+}
+
+article[id$="carInfo"] td{
+	padding-left:10px;
+}
+
+article[id$="carInfo"] table .th1{ width:70px;}
+article[id$="carInfo"] table .td1{ width:120px;}
+article[id$="carInfo"] table .th2{ width:80px; }
+article[id$="carInfo"] table .td2{ width:145px; }
+article[id$="carInfo"] table .th3{ width:70px; }
+article[id$="carInfo"] table .td3{ width:125px; }
+article[id$="carInfo"] table .th4{ width:55px; }
+article[id$="carInfo"] table .td4{ width:70px;}
+article[id$="carInfo"] table .th5{ width:55px; }
+article[id$="carInfo"] table .td5{ width:20px;	text-align:right }
+
+article[id$="okyakuInfo"]{
+	
+}
+
+article[id$="okyakuInfo"] table{
+	margin:10px 10px 8px 5px;	
+}
+
+article[id$="okyakuInfo"] table th,article[id$="carPrice"] table td{
+	padding-bottom:5px;
+}
+
+article[id$="okyakuInfo"] th{
+	text-align:right;
+}
+
+article[id$="okyakuInfo"] td{
+	padding-left:10px;
+}
+
+article[id$="okyakuInfo"] table .th1{ width:130px; }
+article[id$="okyakuInfo"] table .td1{ width:300px; }
+article[id$="okyakuInfo"] table .th2{ width:190px; }
+article[id$="okyakuInfo"] table .td2{ width:250px; }
+article[id$="okyakuInfo"] table .th3{ width:190px; }
+article[id$="okyakuInfo"] table .td3{ width:250px; }
+
+article[id$="keiyakuType"]{
+	
+}
+
+article[id$="keiyakuType"] table{
+	margin:10px 10px 8px 5px;	
+}
+
+article[id$="keiyakuType"] table th,article[id$="carPrice"] table td{
+	padding-bottom:5px;
+}
+
+article[id$="keiyakuType"] th{
+	text-align:right;
+}
+
+article[id$="keiyakuType"] td{
+	padding-left:10px;
+}
+
+article[id$="keiyakuType"] table .th1{ padding-left:60px; }
+article[id$="keiyakuType"] table .td1{ padding-left:60px; }
+
+article[id$="carPrice"]{
+	
+}
+
+article[id$="carPrice"] table{
+	margin:10px 10px 8px 5px;	
+}
+
+article[id$="carPrice"] table th,article[id$="carPrice"] table td{
+	padding-bottom:5px;
+}
+
+article[id$="carPrice"] th{
+	text-align:right;
+}
+
+article[id$="carPrice"] td{
+	padding-left:10px;
+}
+
+article[id$="carPrice"] table .th1{ width:210px; }
+article[id$="carPrice"] table .td1{ width:180px; }
+article[id$="carPrice"] table .th2{ width:190px; }
+article[id$="carPrice"] table .td2{ width:70px; }
+
+article[id$="box2"]{
+	 margin-bottom:10px;
+}
+
+article[id$="box3"]{
+	 margin-bottom:10px;
+}
+
+article[id$="howPay"]{
+	display:table-cell;
+}
+
+article[id$="howPay table"]{
+	margin:10px 10px 10px 30px;	
+}
+
+article[id$="howPay"] table th,article[id$="howPay"] table td{
+	margin:10px 10px 10px 32px;	
+}
+
+article[id$="howPay"] table .th1{ width:50px; }
+article[id$="howPay"] table .th2{ width:50px; }
+article[id$="howPay"] table .th3{ width:80px; }
+article[id$="howPay"] table .th4{ width:220px; }
+
+article[id$="agree"]{
+	display:table-cell;
+}
+
+article[id$="agree"] table{
+	margin:10px 10px 10px 20px;	
+}
+
+article[id$="agree"] table th,article[id$="howPay"] table td{
+	margin:10px 10px 10px 20px;	
+}
+
+article[id$="agree"] table .th1{ width:50px; }
+article[id$="agree"] table .th2{ width:50px; }
+article[id$="agree"] table .th3{ width:80px; }
+article[id$="agree"] table .th4{ width:140px; }
+
+article[id$="cashPrice"]{
+	display:table-cell;
+}
+
+article[id$="cashPrice"] table{
+	width:410px;
+	margin:10px 35px 10px 15px;
+}
+
+article[id$="cashPrice"] table th,article[id$="cashPrice"] table td{
+	border:1px #CCCCCC solid;
+	padding-top:5px;
+	padding-bottom:4px;
+}
+
+article[id$="cashPrice"] table th{
+	text-align:center;
+}
+
+article[id$="cashPrice"] table td{
+	text-align:right;
+	padding-left:10px;
+}
+
+article[id$="cashPrice"] table .thg1{
+	width:25px;
+    border-right:none;
+}
+
+article[id$="cashPrice"] table .th1{ width:410px; }
+article[id$="cashPrice"] table .td1{	width:110px; }
+article[id$="cashPrice"] table .th5{ border-left-style:none; }
+article[id$="cashPrice"] table .td5{	 }
+article[id$="cashPrice"] table .th6{ width:100px; }
+article[id$="cashPrice"] table .td6{ text-align:center; }
+
+article[id$="makerOption"]{
+	display:table-cell;
+}
+
+article[id$="makerOption"] table{
+	width:450px;
+	margin:0px 20px 0px 15px;
+}
+
+article[id$="makerOption"] table th,article[id$="makerOption"] table td{
+	border:1px #CCCCCC solid;
+	padding-top:5px;
+	padding-bottom:4px;
+}
+
+article[id$="makerOption"] table th{
+	text-align:center;
+}
+
+article[id$="makerOption"] table td{
+	text-align:right;
+	/*padding-right:5px;*/
+}
+
+article[id$="makerOption"] table .thg1{
+	width:25px;
+    border-right:none;
+}
+
+article[id$="makerOption"] table .th1{ width:200px;max-width:200px;min-width:200px; }
+article[id$="makerOption"] table .th2{ width:50px; }
+article[id$="makerOption"] table .th3{ width:50px; }
+article[id$="makerOption"] table .th4{ width:150px; }
+article[id$="makerOption"] table .td1{ width:200px;max-width:200px;min-width:200px;text-align:left;overflow:hidden;white-space:nowrap;}
+article[id$="makerOption"] table .td2{ width:50px;text-align:center;}
+article[id$="makerOption"] table .td3{ width:50px;}
+article[id$="makerOption"] table .td4{ width:150px; margin-right:5px;}
+
+
+article[id$="reqPay"]{
+	display:table-cell;
+}
+
+article[id$="reqPay"] h2{
+
+}
+
+
+article[id$="reqPay"] table{
+	width:330px;
+	margin:10px 115px 10px 15px;	
+}
+
+article[id$="reqPay"] table th,article[id$="reqPay"] table td{
+	border:1px #CCCCCC solid;
+	padding-top:5px;
+	padding-bottom:4px;
+}
+
+article[id$="reqPay"] table th{
+	text-align:center;
+}
+
+article[id$="reqPay"] table td{
+	text-align:right;
+	padding-right:2px;
+}
+
+article[id$="reqPay"] table .thg1{
+	width:35px;
+}
+article[id$="reqPay"] table .th1{
+	width:155px;
+}
+article[id$="reqPay"] table .td1{
+	width:128px;
+}
+article[id$="reqPay"] table .thg3{
+	border:1px #CCCCCC solid;
+}
+
+
+article[id$="recycleFee"]{
+	display:table-cell;
+}
+
+article[id$="recycleFee"] table{
+	width:450px;
+	margin:10px 10px 10px 15px;
+}
+
+article[id$="recycleFee"] table th,article[id$="recycleFee"] table td{
+	border:1px #CCCCCC solid;
+	padding-top:5px;
+	padding-bottom:4px;
+}
+
+article[id$="recycleFee"] table th{
+	text-align:center;
+}
+
+article[id$="recycleFee"] table td{
+	text-align:right;
+	padding-right:5px;
+}
+
+article[id$="recycleFee"] table .thg1{
+	width:25px;
+    border-right:none;
+}
+
+article[id$="recycleFee"] table .th1{ width:300px; }
+article[id$="recycleFee"] table .td1{	width:150px; }
+article[id$="recycleFee"] table .th5{ border-left-style:none; }
+article[id$="recycleFee"] table .td5{	 }
+article[id$="recycleFee"] table .th6{ border:1px #CCCCCC solid; }
+
+article[id$="tax"]{
+	display:table-cell;
+}
+
+article[id$="tax"] table{
+	width:410px;
+	margin:10px 35px 10px 15px;
+}
+
+article[id$="tax"] table th,article[id$="tax"] table td{
+	border:1px #CCCCCC solid;
+	padding-top:5px;
+	padding-bottom:4px;
+}
+
+article[id$="tax"] table th{
+	text-align:left;
+}
+
+article[id$="tax"] table td{
+	text-align:right;
+	padding-left:10px;
+}
+
+article[id$="tax"] table .thg1{
+	width:25px;
+    border-right:none;
+}
+
+article[id$="tax"] table .th1{ width:220px; }
+article[id$="tax"] table .td1{ width:220px; }
+article[id$="tax"] table .th5{ }
+article[id$="tax"] table .td5{	 }
+
+article[id$="tradeIn"]{
+	display:table-cell;
+}
+
+article[id$="tradeIn"] table{
+	width:450px;
+	margin:10px 0 10px 15px;
+}
+
+article[id$="tradeIn"] table th,article[id$="tradeIn"] table td{
+	border:1px #CCCCCC solid;
+	padding-top:5px;
+	padding-bottom:4px;
+}
+
+article[id$="tradeIn"] table th{
+	text-align:left;
+}
+
+article[id$="tradeIn"] table td{
+	text-align:right;
+	padding-right:5px;
+}
+
+article[id$="tradeIn"] table .thg1{
+	width:25px;
+    border-right:none;
+}
+
+article[id$="tradeIn"] table .th1{ width:150px; }
+article[id$="tradeIn"] table .td1{ width:300px; }
+article[id$="tradeIn"] table .th5{  }
+article[id$="tradeIn"] table .td5{	 }
+
+article[id$="orderMemo"]{
+	display:table-cell;
+}
+
+article[id$="orderMemo"] table{
+	width:410px;
+	margin:10px 35px 10px 15px;
+}
+
+article[id$="orderMemo"] table th,article[id$="orderMemo"] table td{
+	/*border:1px #CCCCCC solid;*/
+	padding-top:5px;
+	padding-bottom:4px;
+}
+
+article[id$="orderMemo"] table th{
+	text-align:left;
+}
+
+article[id$="orderMemo"] table td{
+	text-align:left;
+	padding-left:25px;
+}
+
+article[id$="orderMemo"] table .th1{  }
+article[id$="orderMemo"] table .td1{ width:400px; }
+
+article[id$="totalPaid"]{
+	display:table-cell;
+}
+
+article[id$="totalPaid"] table{
+	width:400px;
+	margin:10px 0 10px 15px;
+}
+
+article[id$="totalPaid"] table th,article[id$="totalPaid"] table td{
+	/*border:1px #CCCCCC solid;*/
+	padding-top:5px;
+	padding-bottom:4px;
+}
+
+article[id$="totalPaid"] table th{
+    padding-left:25px;
+	text-align:left;
+}
+
+article[id$="totalPaid"] table td{
+	text-align:right;
+	padding-right:5px;
+    font-size:13pt;
+}
+
+article[id$="totalPaid"] table .thg1{
+	width:25px;
+    border-right:none;
+}
+
+article[id$="totalPaid"] table .th1{ width:250px; }
+article[id$="totalPaid"] table .td1{ width:150px; }
+
+hr{
+    margin-top: 10px;
+}
+section{
+    text-align:left;
+    padding-left:38px;
+}

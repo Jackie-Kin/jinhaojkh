@@ -1,0 +1,21 @@
+<apex:page >
+  <apex:form >
+      <!-- Begin Default Content REMOVE THIS -->
+      <h1>Query Tool</h1>
+      <!-- End Default Content REMOVE THIS -->
+      <div>
+          <apex:outputLabel value="Enter the query below"></apex:outputLabel>
+          <br/>  
+          <apex:inputText />
+          <br/>
+          <apex:commandButton value="Query"/>
+      </div>
+      
+      <div id="queryResult">
+          <apex:outputlabel value="Query Results"></apex:outputlabel>
+         <!-- <apex:dataTable value="">
+              
+          </apex:dataTable> -->
+      </div>
+  </apex:form>
+</apex:page>

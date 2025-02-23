@@ -1,0 +1,199 @@
+﻿@charset "UTF-8"; 
+
+.tbBodyCellFont{
+	font-size:10.5pt;
+	font-family:"ＭＳ Ｐゴシック";
+	text-align:left;
+	/*height:20px;*/
+	text-align:right;
+}
+
+.tbBodyDataFont{
+	font-size:10.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#666666;
+	text-align:left;
+	/*height:20px;*/
+}
+
+.tbBodyDataFont_select{
+	font-size:10.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:rgb(49,133,156);
+	text-align:left;
+	/*height:20px;*/
+}
+
+.td_space {
+    padding-left:20px;
+}
+
+.UnderBar{
+	border-bottom:2px solid rgb(49,133,156);
+}
+
+.tbBodyDataFontKainushi{
+	font-size:14pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#666666;
+	text-align:left;
+	height:25px;
+}
+
+.tbBodyDataFontSaitekiDate{
+	font-size:10.5pt;
+	font-family:"PMingLiU";
+	color:#666666;
+	text-align:left;
+	height:20px;
+
+}
+
+.title_mojiStyle{
+	
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:10.5pt;
+
+}
+
+.image_pin{
+
+	width:15px;
+	margin-top:1px;
+	margin-right:5px;
+		
+}
+
+/* 2017/10/23 add start コネクティッド連携 */
+.image_health_check{
+
+    width:100px;
+    position:relative;
+    left:15px;
+    top:7px;
+}
+
+.lbl_health_check{
+    font-size:9.5pt;
+    position:relative;
+    right:78px;
+    bottom:2px;
+    font-weight:bold;
+}
+/* 2017/10/23 add end コネクティッド連携 */
+
+.checkBox{
+	padding:0px;
+	margin:0px;
+	height:25px;
+	width:26px;
+	max-width:26px;
+	min-width:26px;
+	border-radius:4px;
+	border-color:rgb(156,156,156);
+	background-color:rgb(255,255,204);
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4) inset;
+}
+
+.hoyuuSyaryo{
+	min-width:90px;
+	font-size:12pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#666666;
+	text-align:left;
+}
+.hoyuuSyaryo_select{
+	min-width:90px;
+	font-size:12pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:rgb(49,133,156);
+	text-align:left;
+}
+
+.selected {
+    color:rgb(49,133,156);
+}
+
+        /*グレーアウトのスタイル定義*/
+
+label{
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type=checkbox]{
+	filter: alpha(opacity="1");
+	opacity: 0.01;
+	MozOpacity: 0.01;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.checkboxView{
+	display: block;
+	width: 30px;
+	height: 31px;
+	margin-right: 5px;
+    margin-left:10px;
+	background: url(../../IMG/ico_check.png) left top no-repeat;
+	float: left;
+}
+.checkboxView.selected{
+	background-position: left bottom;
+}
+label .title{
+	display: block;
+	margin-left: 30px;
+	line-height: 32px;
+    text-align:left;
+}
+
+ul{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 2px;
+    margin-top:0px;
+    /*overflow:auto;*/
+	float: left;
+    /*min-width:1024px;*/
+}
+ul li,
+ol li{
+	margin-bottom: 7px;
+	list-style: none;
+	font-size: 28px;
+    float:left;
+    /*width:150px;*/
+    text-overflow: ellipsis;
+}
+/*--clearfix--*/
+/*li:before,
+li:after {
+    content:"";
+    display:table;
+}
+li:after {
+    clear:both;
+}*/
+
+.visible {
+        display:block;
+}
+
+.hidden {
+        display:none;
+}
+
+/* 2016/08/08 add start C#2 不可区分の追加 */
+.leftSpace {
+    width:20px;
+}
+
+/* 2016/08/08 add end   C#2 不可区分の追加 */
+
+
+section{
+    padding-left:20px;
+}

@@ -1,0 +1,472 @@
+﻿/*
+ * システム   : 次期営業支援システム全国版
+ * 機能名     : 活動結果入力　納期CS業務（S1）
+ * ファイル名 : T_SR_CSS_KatsudoKekkaNyuryokuTabDeliveryCSBusiness.css
+ *
+ *  VERSION    DATE        BY          CHANGE/COMMENT
+ * ----------------------------------------------------------------
+ *  1.00       2019/08/15  HISOL張     新規作成
+ */
+.S10101-top {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.S10101-bottom {
+  width: 100%;
+  height:298px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.S10101-btnDiv {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+.spm-action-info {
+  display: flex;
+}
+
+.spm-content {
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.3);
+  height: 100px;
+}
+
+#spm-action-info-inner {
+  /*width: 60.3%;*/
+}
+.spm-content.history {
+/*  width: 594px;*/
+  width: 60.3%;
+}
+
+.spm-content-header {
+  background-color: #193a66;
+  height: 22px;
+  border-radius:3px 3px 0 0;
+}
+
+.spm-content-header.wide {
+  width: 100%;
+  /*width: 984px;*/
+}
+
+.spm-content-body {
+  height: 78px;
+}
+
+.spm-content-list {
+  margin-top:3px;
+  margin-left: 10px;
+  height: 76px;
+  /*width: 340px;*/
+  width: 94%;
+}
+
+/* リストのヘッダー */
+.list-header {
+  width: 100%;
+  height: 23px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: #375884;
+  display: flex;
+}
+
+.list-header > div {
+  float: left;
+  padding-left: 9px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.zenkaiFollow {
+  /*width: 108px;*/
+  width: 25%;
+}
+
+.jikaiFollow {
+  /*width: 100px;*/
+  width: 25%;
+}
+
+.henkouRiyuu {
+  /* width: 89px; */
+  width: 35%;
+}
+
+.list-deta .henkouRiyuu {
+  text-align: left;
+}
+
+.memo {
+  /* width: 128px; */
+  width: 15%;
+}
+
+.seqNoHid,
+.memoHid,
+.nokiKFRiyuIdHid,
+.nokiHenkoIdHid {
+  display:none;
+}
+
+.kaisuu {
+  /*width: 128px;*/
+  width: 10%
+}
+
+.henkouMae {
+  /*width: 107px;*/
+  width: 20%
+}
+
+.henkouGo {
+  /*width: 105px;*/
+  width: 20%
+}
+
+.underline {
+  color: blue !important;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+/* リストのデータ部 */
+.list-deta {
+  height: 52px;
+  overflow: auto;
+}
+
+.list-deta-detail {
+  background-color: rgba(92, 151, 230, 0.08);
+  height: 25px;
+  border-top:1px solid #ffffff;
+  border-bottom:1px solid #ffffff;
+  display: flex;
+}
+
+.list-deta-detail > div {
+  float: left;
+  padding-left: 10px;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.spm-content-header-char {
+  font-family: Meiryo;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  line-height: 22px;
+  text-align: left;
+  text-shadow: 0px 2px 3px rgba(102, 102, 102, 0.3);
+
+  margin-left:20px;
+}
+
+.memo-textarea {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 80);
+  box-sizing: border-box;
+  /*width: 472px;*/
+  width: 96%;
+  height: 66px;
+  min-height:36px!important;
+  margin-top:3px;
+  margin-left:10px;
+  overflow-y: auto;
+  font-size: 13.3333px;
+  font-family: Meiryo;
+}
+
+.plan2 {
+  height:300px;
+  margin-top: 3px;
+}
+
+.tbl {
+  width:97%;
+  background-color:white;
+  border-style:none; 
+  margin-left: 10px;
+  border-collapse:collapse;
+  font-size:13px;
+  font-weight:400;
+}
+
+.tbl td {
+  padding-top:4px;
+  padding-bottom:4px;
+}
+
+.tbl th {
+  padding-top:2px;
+  padding-bottom:2px;
+}
+
+.tbl_head tr td {
+  text-align:center;
+  background-color:#375884;
+  color: #ffffff;
+  border-color:#375884;
+  margin-top: 3px;
+  font-family: Meiryo;
+}
+
+.tbl_head1 {
+/* 改善要望No.62対応 2019/07/12 MOD start */
+  /*width:10%;*/
+  width:20%;
+  vertical-align: middle;
+/* 改善要望No.62対応 2019/07/12 MOD end */
+}
+
+/* 改善要望No.62対応 2019/07/12 ADD start */
+.tbl_head1_1 {
+  width:10%;
+}
+
+.tbl_head1_2 {
+  width:10%;
+}
+/* 改善要望No.62対応 2019/07/12 ADD end */
+
+.tbl_head2 {
+/* 改善要望No.62対応 2019/07/12 MOD start */
+  /*width:15%;*/
+  width:26%;
+/* 改善要望No.62対応 2019/07/12 MOD end */
+}
+
+.tbl_head2_1 {
+/* 改善要望No.62対応 2019/07/12 MOD start */
+  /*width:9%;*/
+  width:10%;
+/* 改善要望No.62対応 2019/07/12 MOD end */
+}
+
+.tbl_head2_2 {
+/* 改善要望No.62対応 2019/07/12 MOD start */
+  /*width:6%;*/
+  width:16%;
+/* 改善要望No.62対応 2019/07/12 MOD end */
+}
+
+.tbl_head3 {
+  width:10%;
+}
+
+.tbl_head4 {
+/* 改善要望No.62対応 2019/07/12 MOD start */
+  /*width:32%;*/
+  width:26%;
+/* 改善要望No.62対応 2019/07/12 MOD end */
+}
+
+.tbl_head5 {
+/* 改善要望No.62対応 2019/07/12 MOD start */
+  /*width:33%;*/
+  width:26%;
+/* 改善要望No.62対応 2019/07/12 MOD end */
+}
+
+.tbl_head4_1 {
+/* 改善要望No.62対応 2019/07/12 MOD start */
+  /*width:9%;*/
+  width:10%;
+/* 改善要望No.62対応 2019/07/12 MOD end */
+}
+
+.tbl_head4_2 {
+/* 改善要望No.62対応 2019/07/12 MOD start */
+  /*width:14%;*/
+  width:16%;
+/* 改善要望No.62対応 2019/07/12 MOD end */
+}
+
+.tbl_head5_2 span,
+.tbl_head4_2 span{
+  font-size: 11px;
+  float: left;
+  margin-top: 1px;
+}
+
+.tbl_head4_3 {
+  width:9%;
+}
+
+.tbl_head5_1 {
+/* 改善要望No.62対応 2019/07/12 MOD start */
+  /*width:9%;*/
+  width:10%;
+/* 改善要望No.62対応 2019/07/12 MOD end */
+}
+
+.tbl_head5_2 {
+/* 改善要望No.62対応 2019/07/12 MOD start */
+  /*width:15%;*/
+  width:16%;
+/* 改善要望No.62対応 2019/07/12 MOD end */
+}
+
+.tbl_head5_3 {
+  width:9%;
+}
+
+/* 改善要望No.62対応 2019/07/12 ADD start */
+.tbl_dateBtn {
+  cursor: pointer;
+}
+/* 改善要望No.62対応 2019/07/12 ADD end */
+
+.tbl_dateBtn1{
+  background-color: wheat;
+/* 改善要望No.62対応 2019/07/12 DEL start */
+  /*color: blue;
+  cursor: pointer;*/
+/* 改善要望No.62対応 2019/07/12 DEL end */
+}
+
+.tbl_dateBtn2{
+  background-color:rgba(202, 142, 142, 1);
+/* 改善要望No.62対応 2019/07/12 DEL start */
+  /*color: blue;
+  cursor: pointer;*/
+/* 改善要望No.62対応 2019/07/12 DEL end */
+}
+
+.tbl_dateBtn3 {
+  color: blue;
+  cursor: pointer;
+}
+
+.inactive{
+  background-color: #A6A6A6 !important;
+}
+
+.colorRed {
+  color: #8D0000;
+}
+
+/* 改善要望No.62対応 2019/07/12 ADD start */
+.colorBlue {
+  color: blue;
+}
+/* 改善要望No.62対応 2019/07/12 ADD end */
+
+.tbl_body_div {
+  height: 210px;
+  overflow-y: auto;
+  width: 98.3%;
+  overflow-x: hidden;
+}
+
+.tbl_body_div table tr td {
+  font-family: Meiryo;
+}
+
+.tbl_body {
+  text-align:center;
+  width: 100%;
+}
+.tbl_body tr{
+  background-color: rgba(92, 151, 230, 0.08);
+  border-top:2px solid #ffffff;
+  border-bottom:2px solid #ffffff;
+}
+
+.plan3 {
+  width: 39%;
+  margin-left:9px;
+}
+
+.plan {
+  margin-top: 3px;
+}
+
+.spm-memo {
+  margin-top: 3px;
+  height:94px;
+}
+
+.jutenFollowBtn,
+.memoTourokuBtn,
+.kanryouBtn {
+  border-radius: 3px;
+  background-color: #193a66;
+  box-shadow: 0px 1px 1px 0px rgba(17,65,128,0.3);
+  width: 185px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 40px;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(40,76,126,0.75);
+  margin-right: 15px;
+  float: right;
+  cursor:pointer;
+}
+
+.jutenFollowBtn:hover,
+.memoTourokuBtn:hover,
+.kanryouBtn:hover {
+  background-color: #2f578e;
+}
+
+.S10101-btnDiv .disabled {
+  background-color: #A6A6A6;
+  cursor:default;
+}
+
+.S10101-btnDiv .gray {
+  background-color: #A6A6A6;
+}
+
+.S10101-calendar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  display:none;
+}
+
+.S10101-calendar iframe {
+  width: 1000px;
+  height: 735px;
+  position: relative;
+  left: 160px;
+/* 改善要望No.62対応 2019/07/12 ADD start */
+  z-index: 100;
+/* 改善要望No.62対応 2019/07/12 ADD end */
+}
+
+.calendar-back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000;
+  -webkit-tap-highlight-color: #000;
+}

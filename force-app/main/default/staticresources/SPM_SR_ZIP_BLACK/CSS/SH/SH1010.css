@@ -1,0 +1,138 @@
+﻿html,body,form{
+    font-family: Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+body{
+	background: url(../../IMG/bg-main.jpg) no-repeat;
+	margin:0px; padding:0px; background-color:black;
+	min-width:1024px;
+	min-height:760px;
+	max-height:99.75%;
+	height:99.73%;
+    overflow: hidden;
+}
+
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+ul{
+    list-style: none;
+}
+
+.spm_header{
+    font-family: 'ＭＳ Ｐゴシック'; 
+}
+
+.clearfix{
+    margin:0;
+    padding:0;
+}
+
+.clearfix:after {
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+header {
+    position:absolute;
+    top:15px;
+    left: 50px;
+	display:block;
+    margin: 0;
+    padding: 0;
+    z-index:11;
+}
+header ul li {
+	font-size:29px;
+	color:#333;
+	float:left;
+	margin-right:100px;
+    font-family: 'ＭＳ Ｐゴシック'; 
+}
+header ul li.header-select {
+	color:#ffffff;
+}
+
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.textHeader {
+    height: 100px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+.tdKoumoku1_main
+{ 
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: left;
+    font-size:16pt;
+    color:white;    
+}
+
+.legend_Font {
+    color:#FFFFFF;
+    font-family:HGP創英角ｺﾞｼｯｸUB;
+    
+}
+
+.fieldset_standard {
+    border-style: solid;
+    border-color: inherit;
+    border-width: 3px;
+    display:block;
+    width:18%;
+    font-family:Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    float:left;
+    text-align:center;
+    position:absolute;    
+}
+
+.fieldset_Maintenance {
+    left:2%; 
+    top: 1px; 
+}
+.fieldset_Service {
+    left:26%; 
+    top: 1px; 
+}
+.fieldset_Noukiannai {
+    right:2%;
+    top: 1px; 
+}
+
+.field_Button {
+    display:inline;
+    width:90%;
+    height:70%;
+	margin-top:4px;
+	margin-bottom:4px;
+    font-size: 16px; 
+}
+.Button_Font {
+    font-size: 16px; 
+}

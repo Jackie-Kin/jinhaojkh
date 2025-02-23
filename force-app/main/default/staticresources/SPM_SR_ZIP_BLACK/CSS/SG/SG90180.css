@@ -1,0 +1,151 @@
+body {
+     margin:0px; padding:0px; background-color:white;
+
+}
+
+
+.title{
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    box-shadow: 4px 4px 0px 0px rgb(210,210,210);
+}
+
+.checkTable{
+	
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#555555;
+}
+
+.trimTable{
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+
+}
+
+.cellFont{
+	text-align:right;
+	font-size:12pt;
+	font-family:"ＭＳ Ｐゴシック";
+	text-align:right;
+}
+
+.dataFont_head{
+	text-align:left;
+	padding-left:8px;
+    padding-right:12px;
+	font-size:12.5pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:#666666;
+
+}
+
+.dataFont{
+	text-align:left;
+	padding-left:12px;
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	color:#666666;
+
+}
+
+.dataFont_Select{
+	font-size:12pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:bold;
+	color:#376092;
+
+}
+
+.tabledataFont{
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	color:#666666;
+
+}
+
+.tabledataFont_red{
+	font-size:11pt;
+	font-family:"HGP創英角ｺﾞｼｯｸUB";
+	font-weight:200;
+	/* color:rgb(219,67,59); */
+	color:#900000;
+
+}
+
+.titleFont{
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:11pt;
+	text-align:left;
+}
+
+.taniFont{
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:8pt;
+	text-align:left;
+}
+
+.contentTable{
+	padding:0px;
+	border-collapse:collapse;
+	font-size:15pt;
+	text-align:center;
+	border:1px solid rgb(112,112,112);
+	
+}
+
+.tableData{
+	border:1px solid rgb(112,112,112);
+	text-align:center;
+	
+}
+
+.tableData_Header {
+  border: 1px solid rgb(112,112,112);
+  text-align: center;
+}
+
+.tableData_Row {
+  border: 1px solid rgb(112,112,112);
+  text-align: left;
+  padding-left:5px;
+  vertical-align:middle;
+}
+
+.dataRowHeight{
+	height:30px;
+}
+
+.dataRowHeight_Header{
+	height:38px;
+}
+
+.dataRowHeight2{
+	height:44px;
+}
+
+.totalRowHeight{
+	height:65px;
+	border-top:3px solid rgb(112,112,112);
+}
+
+.border_none {
+    border-right:none;
+    border-left:none;
+}
+
+.border_right_none {
+    border-right: none;
+}
+
+.border_left_none{
+    border-left: none;
+}
+

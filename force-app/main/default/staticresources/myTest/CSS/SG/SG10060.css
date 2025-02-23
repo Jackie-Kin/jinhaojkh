@@ -1,0 +1,394 @@
+﻿
+body {
+   margin:0px; padding:0px; background-color:black;
+   min-width:1024px;
+   min-height:760px;
+   max-height:99.75%;
+   height:99.73%;
+
+}
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+.sHeader{
+    background-color:transparent;
+}
+
+.GridView1_style{
+    background-color:darkblue;
+    position:relative;
+    border-width:0px;
+    border-style:solid;
+    width:99.5%;
+    height:1px;
+    border-collapse:collapse;
+    padding:0px;
+    margin:0px;
+}
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+        
+.fakeContainer { 
+	margin: 0 0 0;
+	border: 1px;
+	width: 100%; 
+	height: 94.5%; 
+	overflow: hidden; 
+   
+}
+
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.sortText {
+
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 50%;
+    top:10px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+
+
+.td_Dummy {
+    background-color:transparent !important;
+    border-top:0px none !important;
+    border-bottom:0px none !important;
+}
+
+.HeaderStyle {
+   
+    font-family:ＭＳ Ｐゴシック;
+    font-size:12pt;
+    color:#ffffff;
+    background-color:#00007c;
+}
+
+
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    /*background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));*/
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.th_Staff {
+
+    background-color:darkblue;
+    border: 1px solid #7f7f7f;
+    width:5.633%;
+    max-width:5.633%;
+    min-width:5.633%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    height:90px;
+    font-weight:normal;
+}
+
+.th_2col {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#7f7f7f;
+    width:8%;
+    max-width:8%;
+    min-width:8%;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+.th_3col {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#7f7f7f;
+    width:12%;
+    max-width:12%;
+    min-width:12%;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+}
+.th_6col {
+
+    background-color:darkblue;
+    border-width:1px;
+    border-color:#7f7f7f;
+    width:24%;
+    max-width:24%;
+    min-width:24%;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-bottom-style:dashed;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_yotei {
+
+    background-color:darkblue !important;
+    border: 1px solid #7f7f7f;
+    width:4.1%;
+    max-width:4.1%;
+    min-width:4.1%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+    border-color:#7f7f7f !important;
+    border-left:solid 1px #7f7f7f;
+    border-right:dashed 1px #7f7f7f;
+}
+
+.th_jisseki {
+
+    background-color:darkblue !important;
+    border: 1px solid #7f7f7f;
+    width:4.1%;
+    max-width:4.1%;
+    min-width:4.1%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+    border-color:#7f7f7f !important;
+    border-right:dashed 1px #7f7f7f;
+    border-left:dashed 1px #7f7f7f;
+}
+
+.th_okure {
+
+    background-color:darkblue !important;
+    border: 1px solid #7f7f7f;
+    width:4.1%;
+    max-width:4.1%;
+    min-width:4.1%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+    text-decoration:underline;
+    border-color:#7f7f7f !important;
+    border-left:dashed 1px #7f7f7f;
+}
+
+.th_Raiten {
+
+    background-color:darkblue;
+    border: 1px solid #7f7f7f;
+    width:19.318%;
+    max-width:19.318%;
+    min-width:19.318%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.th_Gyomu {
+
+    background-color:darkblue;
+    border: 1px solid #7f7f7f;
+    width:19.318%;
+    max-width:19.318%;
+    min-width:19.318%;
+    color:white;
+    font-family:ＭＳ Ｐゴシック;
+    font-size:medium;
+    font-weight:normal;
+}
+
+.font_red {
+    color:red;
+}
+
+.dataSubTable_0{
+
+	min-height:30px;
+	height:50%;
+	max-height:50%;
+	
+}
+
+.footer{
+	font-family:HGP創英角ｺﾞｼｯｸUB;	
+    background: linear-gradient(to bottom,#323230 0%,#181818 59%,#000000 60%,#000000);
+    border-top:1px rgb(89,89,89) solid;
+    border-bottom:1px rgb(89,89,89) solid;
+}
+
+.listTable{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+
+}
+
+.listTable_sub{
+	padding:0px;
+	border-collapse:collapse;
+	margin:0px;
+	border-style:none;
+	width:100%;
+	height:65px;
+	text-align:center;
+
+}
+
+
+.listData{
+
+	/*background:#000000;*/
+    background-color:transparent !important;
+	border-color:#7f7f7f;
+	border-style:solid;
+	border-width:0px;
+	padding:0px;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	font-size:16pt;
+
+}
+
+.listData_text_style{
+
+	/*padding-left:10px;*/
+	
+}
+
+.underline{
+    text-decoration:underline;
+}
+
+.sHeaderInner table {
+    background-color:transparent;
+}
+
+.table_space{
+    width:10px;
+    min-width:10px;
+    max-width:10px;
+    background-color:transparent !important;
+    border-width:0px;
+    border-left:solid 1px #7f7f7f;
+    border-color:#7f7f7f !important;
+}
+
+.data_yotei{
+    text-decoration:none;
+    background-color:black;
+    border: 1px solid #7f7f7f;
+    color:#ffffff;
+    border-right:dashed 1px #7f7f7f;
+}
+
+.data_yotei .listData_text_style{
+    border-bottom:1px solid #ffffff;
+    display:inline-block;
+    padding-top:21px;
+}
+
+.data_jisseki{
+    text-decoration:none;
+    background-color:black;
+    border: 1px solid #7f7f7f;
+    color:#7f7f7f;
+    border-left:dashed 1px #7f7f7f;
+    border-right:dashed 1px #7f7f7f;
+}
+
+.data_jisseki .listData_text_style{
+    border-bottom:1px solid #7f7f7f;
+    display:inline-block;
+    padding-top:21px;
+}
+
+.data_okure{
+    text-decoration:none;
+    background-color:black;
+    border: 1px solid #7f7f7f;
+    color:#c00000;
+    border-left:dashed 1px #7f7f7f;
+}
+
+.data_okure .listData_text_style{
+    border-bottom:1px solid #c00000;
+    display:inline-block;
+    padding-top:21px;
+}
+
+.data_okure .font_white .listData_text_style{
+    border-bottom:1px solid #ffffff;
+    display:inline-block;
+    padding-top:21px;
+}
+
+.data_Staff {
+    text-decoration:underline;
+    background-color:transparent;
+    border: 1px solid #7f7f7f;
+    font-size:12pt;
+}
+.no_underline {
+    /*padding-bottom:10px;*/
+    display:inline-block;
+    text-decoration:none !important;
+}
+
+.no_underline_data {
+    padding-top:22px;
+    display:inline-block;
+    text-decoration:none !important;
+}
+
+.font_white {
+    color:white;
+    text-decoration:underline;
+}

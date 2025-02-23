@@ -1,0 +1,147 @@
+﻿/*
+Login（ログイン）独自のスタイルの設定
+*/
+
+/* テキストボックスのパスワードボタンを消す */
+input::-ms-reveal { display:none; }
+
+html {-ms-touch-action:none}
+
+
+* {
+        user-select:none;
+    -ms-user-select: none;
+}
+
+* {
+        user-select:none;
+    -ms-user-select: none;
+}
+html, body, form{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0; 
+}
+
+
+.backBody {
+
+    background: linear-gradient(to bottom,#0437c7 0%,#000307 59%,#000307 65%,#010d46);
+    width:100%;
+    height:100%;
+}
+
+.textComent {
+    color:white;
+    font-family:'HGP創英角ｺﾞｼｯｸUB';
+    font-size:20pt;
+    width:100%;
+}
+
+
+.labelCode {
+
+    width:250px;
+    height:50px;
+    color:white;
+    font-family:'HGP創英角ｺﾞｼｯｸUB';
+    font-size:20pt;
+}
+
+.textCode {
+
+    width:250px;
+    height:50px;
+    border-radius: 10px;        /* CSS3草案 */  
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;   /* Firefox用 */
+    border:1px solid blue;
+    background-color:transparent;
+    color:#b9cde5;
+    font-size:25pt;
+}
+
+.btnLogin {
+
+    background: linear-gradient(to bottom,#3b7cca 0%,#3670b5 50%,#2d5f9b);
+
+    width:250px;
+    height:50px;
+    color:white;
+    border-radius: 3px;        /* CSS3草案 */  
+    -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 3px;   /* Firefox用 */
+    border:1px solid #4a7ebb;
+    font-family:'HGP創英角ｺﾞｼｯｸUB';
+    font-size:20pt;
+}
+
+.lblCol {
+    width:250px;
+    text-align:right;
+}
+
+.txtCol {
+    width:250px;
+    text-align:left;
+}
+
+.chkCol {
+    width:290px;
+    text-align:left;
+    color:white;
+    font-family:'HGP創英角ｺﾞｼｯｸUB';
+    padding-left:10px;
+}
+
+.chkCookie{
+    width: 20px;
+    height: 20px;
+    background-color:transparent;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox]:checked + .lblChkCookie:before {
+    opacity: 1;
+}
+.lblChkCookie {
+    box-sizing: border-box;
+    position: relative; 
+    display: inline-block; 
+    margin: 0 20px 0 0; 
+    padding: 0 0 0 30px; 
+    vertical-align: middle; 
+    cursor: pointer;
+}
+.lblChkCookie:after { 
+    position: absolute; 
+    top: 50%; 
+    left: 0; 
+    display: block; 
+    margin-top: -12px; 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    border:1px solid blue;
+    background-color:transparent;
+    content: ''; 
+}
+.lblChkCookie:before { 
+    position: absolute; 
+    top: 50%; 
+    left: 7px; 
+    display: block; 
+    margin-top: -9px; 
+    width: 5px; 
+    height: 10px; 
+    border-right: 3px solid white; 
+    border-bottom: 3px solid white; 
+    transform: rotate(45deg); 
+    content: ''; 
+    opacity: 0; 
+}

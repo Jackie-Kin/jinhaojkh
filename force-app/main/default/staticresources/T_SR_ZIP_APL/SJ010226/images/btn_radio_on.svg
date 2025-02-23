@@ -1,0 +1,18 @@
+<svg id="btn_radio_on.svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #345684;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #3e659a;
+      }
+    </style>
+  </defs>
+  <circle id="楕円形_4" data-name="楕円形 4" class="cls-1" cx="12.5" cy="12.5" r="11.5"/>
+  <circle id="楕円形_6" data-name="楕円形 6" class="cls-2" cx="12.5" cy="12.5" r="3.5"/>
+</svg>

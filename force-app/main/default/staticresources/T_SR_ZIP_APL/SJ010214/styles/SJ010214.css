@@ -1,0 +1,479 @@
+﻿
+@charset "UTF-8"; 
+
+body {
+   margin:0px; padding:0px; background-color:black;
+   min-width:1024px;
+   min-height:760px;
+   max-height:99.75%;
+   height:99.73%;
+
+}
+html {
+	max-height:99.75%;
+	   height:99.73%;
+	min-width:1024px;
+	min-height:760px;
+}
+
+.textHeader {
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,black,darkblue);
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+}
+
+.fakeContainer { 
+	margin: 0 0 0;
+	border: 1px;
+	width: 100%; 
+	height: 95%; 
+	overflow: hidden; 
+   
+}
+
+
+.tenpoName {
+    font-size: 11pt;
+    width: 50%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.sortText {
+
+    font-size: 11pt;
+    position:absolute;
+    left:50%;
+    width: 32%;
+    top:10px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.kensuText {
+     font-size: 13pt !important;
+}
+
+.kenText {
+    font-size: 11pt;
+    vertical-align: top;
+}
+
+	.listTable{
+		padding:0px;
+		border-collapse:collapse;
+		margin:0px;
+	}
+
+	.listTable_sub{
+		padding:0px;
+		border-collapse:collapse;
+		margin:0px;
+		border-style:none;
+		width:100%;
+		height:100%;
+	}
+
+    .listTable_sub2{
+		height:96px;
+	}
+
+   	.listTable_sub_red{
+		background:#EE0000;
+        border:1px solid #376092;
+	}
+
+    .listTable_sub_red_select{
+        background: linear-gradient(to bottom,rgba(35,60,83,1),#EE0000,rgba(35,60,83,1));
+    }
+
+	.td_Staff{
+		width:5.37%;
+		max-width:5.37%;
+		border: 1px solid #376092;
+        text-decoration:underline;
+	}
+
+	.data_Staff{
+        width:5.37%;
+		max-width:5.37%;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:14px;
+        border: 1px solid #376092;
+        word-wrap:break-word;
+        word-break:break-all;
+	}
+
+	.data_CyumonNo{
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:12pt;
+        border: 1px solid #376092;
+	}
+
+    .data_CyumonNo1{
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+	}
+
+	.data_Zaiko{
+        width:7.81%;
+		max-width:7.81%;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:10.5pt;
+        border: 1px solid #376092;
+	}
+
+    .data_Zaiko1{
+        width:7.81%;
+		max-width:7.81%;
+		font-family:'ＭＳ Ｐゴシック';
+		font-size:10pt;
+	}
+
+	.data_Jyutuubi{
+        width:5.94%;
+		max-width:5.94%;
+		font-size:15px;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		border: 1px solid #376092;
+        color:gray;
+	}
+
+	.data_Furiatebi1{
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:17px;
+	}
+
+	.dataSubTable_0{
+		height:33.33%;
+		min-height:60px;
+		max-height:33.33%;
+		border-bottom-style:dashed;
+		border-bottom-width:1px;
+		border-bottom-color:#376092;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:11pt;
+        text-align:center;
+        word-wrap:break-word;
+        word-break:break-all;
+	}
+
+	.dataSubTable_0_1{
+		height:33.33%;
+		min-height:30px;
+		max-height:33.33%;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+        text-align:center;
+	}
+
+	.dataSubTable_1{
+		height:50.00%;
+        min-height:32.5px;
+        max-height:50.00%;
+		border-bottom-style:dashed;
+		border-bottom-width:1px;
+		border-bottom-color:#376092;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+        text-align:center;
+		font-size:17px;
+	}
+
+	.dataSubTable_1_1{
+		height:50.00%;
+        min-height:32.5px;
+        max-height:50.00%;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+        text-align:center;
+		font-size:12px;
+	}
+
+	.dataSubTable_2{
+        height:100%;
+        min-height:100%;
+        max-height:100%;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:12pt;
+        text-align:center;
+	}
+	.dataSubTable_2a{
+		height:33.33%;
+        min-height:22px;
+        max-height:33.33%;
+		border-bottom-style:dashed;
+		border-bottom-width:1px;
+		border-bottom-color:#376092;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:12pt;
+        text-align:right;
+	}
+
+	.dataSubTable_2_1{
+		height:22px;
+        min-height:22px;
+        max-height:22px;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:12px;
+        text-align:right;
+	}
+
+	.dataSubTable_3{
+		height:20%;
+        min-height:33.33%;
+        max-height:33.33%;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:14pt;
+        text-align:left;
+	}
+
+	.dataSubTable_3_1{
+        min-height:22px;
+        text-align:center;
+	}
+
+	.dataSubTable_3_2{
+        text-align:center;
+	}
+
+    .data_flg2{
+	    font-size:16px;
+	    font-family:'HGP創英角ｺﾞｼｯｸUB';
+	    color:white;
+        background-image:url(../../common/images/flag_orange.png);
+        background-repeat:no-repeat;
+        background-position:5px 3px;
+        background-size: 18% 35%;
+        border:1px solid #376092;
+    }
+
+    .data_flg2_select{
+	    font-size:16px;
+	    font-family:'HGP創英角ｺﾞｼｯｸUB';
+	    color:white;
+        background-image:url(../../common/images/flag_orange.png);
+        background-repeat:no-repeat;
+        background-position:5px 3px;
+        background-size: 18% 35%;
+        border:1px solid #376092;
+    }
+
+    .data_flg{
+        background-image:url(../../common/images/flag_orange.png);
+        background-repeat:no-repeat;
+        background-position:5px 3px;
+        background-size: 70% 90%;
+        border-style:none;
+    }
+
+    .data_flg_select{
+        background-image:url(../../common/images/flag_orange.png);
+        background-repeat:no-repeat;
+        background-position:5px 3px;
+        background-size: 70% 90%;
+    }
+
+    .data_flg_none{
+        background-image:url(../../common/images/none.png);
+        background-repeat:no-repeat;
+        background-position:5px 3px;
+        background-size: 70% 90%;
+        border-style:none;
+    }
+
+   	.listTani2{
+		text-align:right;
+		vertical-align:top;
+		font-family:'ＭＳ Ｐゴシック';
+		font-size: 8pt;
+		border-style:none;
+		padding-right:2px;
+		padding-top:2px;
+	}
+
+	.listTani_kaisu{
+		text-align:right;
+		vertical-align:top;
+		width:15%;
+		font-family:'ＭＳ Ｐゴシック';
+		font-size: 8pt;
+		border-style:none;
+		padding-right:2px;
+		padding-top:4px;
+	}
+
+	.data_cell1{
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		font-size:12pt;
+        color:white;
+        text-align:center;
+        border:1px solid #376092;
+	}
+
+	.data_cell1_red{
+		font-size:16px;
+		font-family:'HGP創英角ｺﾞｼｯｸUB';
+		color:white;
+        background-color:#430707;
+        border:1px solid #376092 !important;
+	}
+
+    .data_keikaku_red{
+        background-color:#430707;
+    }
+
+    .data_cell1_red_select{
+	    font-size:16px;
+	    font-family:'HGP創英角ｺﾞｼｯｸUB';
+	    color:white;
+        background: linear-gradient(to bottom,rgba(35,60,83,0.1),#430707,rgba(35,60,83,0.1));
+    }
+
+   	.data_cell3{
+		font-size:12pt;
+        text-align:right;
+	}
+
+.span_furiatebi {
+    font-size: 10px;
+}
+
+	.td_Okyaku{
+		width:11.23%;
+		max-width:11.23%;
+		border: 1px solid #376092;
+        text-decoration:underline;
+	}
+
+	.td_SyasyuZaiko{
+		width:7.81%;
+		max-width:7.81%;
+		border: 1px solid #376092;
+        text-decoration:underline;
+	}
+
+	.td_Jyutuubi{
+        width:5.94%;
+		max-width:5.94%;
+		border: 1px solid #376092;
+        text-decoration:underline;
+	}
+
+   	.td_Furiatebi{
+		width:5.94%;
+		max-width:5.94%;
+		border: 1px solid #376092;
+	}
+    
+	.td_Status{
+        width:5.00%;
+        height:100%;
+        border: 1px solid #376092;
+        text-decoration:underline;
+	}
+	
+	.data_Status {
+        width:5.00%;
+        height:100%;
+        border: 1px solid #376092;
+    }
+
+    .data_Status2 {
+        width:5.00%;
+        border: 1px solid #376092;
+    }
+    
+	.td_Status_Okyaku{
+        width:5.82%;
+        height:100%;
+        border: 1px solid #376092;
+        text-decoration:underline;
+	}
+	.td_Status_Kaisyuu{
+        width:5.82%;
+        height:100%;
+        border: 1px solid #376092;
+        text-decoration:underline;
+	}
+	.td_Status_Nosya{        
+        width:9.22%;
+        height:100%;
+        border: 1px solid #376092;
+        text-decoration:underline;
+	}
+    .data_Status_Okyaku {
+        width:5.82%;
+        height:100%;
+        border: 1px solid #376092;
+    }
+
+    .data_Status_Kaisyuu {
+        width:5.82%;
+        height:100%;
+        border: 1px solid #376092;
+    }
+
+    .data_Status_Nosya {
+        width:9.22%;
+        height:100%;
+        border: 1px solid #376092;
+    }
+
+    .data_Status3 {
+        width:7.77%;
+        border: 1px solid #376092;
+    }
+
+    .span_Syorui3, .span_haisou, .span_touroku{
+        font-size:16px
+	}
+
+	.td_Nousya{
+		width:5.77%;
+		border-style:solid;
+		border-color:#376092;
+	}
+
+    .td_Koutei {
+         border: 1px solid #376092;
+    }
+
+	.listData{
+
+		background:#000000;
+	    border:#376092 solid 1px;
+		padding:0px;
+		font-size:18px;
+		text-align:center;
+	}
+
+.divMain {
+    padding: 0px; 
+    margin: 0px; 
+    border-style: none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdedd));
+    background: linear-gradient(to bottom,darkblue,#010010);
+}
+
+.listData_Select{
+
+	background: linear-gradient(to bottom,rgba(35,60,83,1),rgba(20,37,58,1),rgba(35,60,83,1));
+	border-color:#376092;
+	border:#376092 solid 1px;
+	
+	
+}
+
+
+.underline {
+    text-decoration:underline;
+}

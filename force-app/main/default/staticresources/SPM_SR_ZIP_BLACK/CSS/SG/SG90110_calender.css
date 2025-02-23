@@ -1,0 +1,75 @@
+﻿@charset "UTF-8"; 
+
+.sunday .ui-state-default {
+	background-image: none;
+	background-color: rgb(252,252,252);
+	color: rgb(185,221,236);
+
+}
+.saturday .ui-state-default {
+	background-image: none;
+	background-color: rgb(252,252,252);
+	color: rgb(185,221,236);
+}
+.holiday .ui-state-default {
+	background-image: none;
+	background-color: rgb(252,252,252);
+	color: rgb(185,221,236);
+}
+.weekday .ui-state-default {
+	background-image: none;
+	background-color: rgb(221,221,221);
+}
+
+/* 今日の日付の文字色を他の日と同じ色に設定する */
+.ui-datepicker-today .ui-state-default {
+    background-image:none;
+    color:rgb(25,147,193);
+    border:1px solid rgb(210,210,210);
+}
+
+.ui-date-picker-calender {
+	border-collapse:collapse;
+	padding:0px;
+	margin:0px;
+}
+
+.ui-widget-content {
+	border: 1px solid #CCCCCC;
+	background: #FFF;
+	border-collapse:collapse;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 0px solid skyblue;
+	background: white;
+	font-weight: normal;
+	color: black;
+	box-shadow: 0px 0px 10px 5px rgb(158,186,220);
+	border-radius:3px;
+	font-family:"ＭＳ Ｐゴシック";
+	font-weight:bold;
+
+}
+
+.ui-widget-header {
+  border: 1px solid white;
+  background: rgb(0,1,108);
+  }
+
+.button{
+	position:absolute;
+	top:237px;
+	left:210px;
+	background-color:white;
+	width:65px;
+	border:1px solid rgb(210,210,210);
+	border-radius:4px;
+	color:skyblue;
+	height:30px;
+	font-weight:bold;
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:12pt;
+	cursor:pointer;
+}

@@ -1,0 +1,70 @@
+﻿/*グレーアウトのスタイル定義*/
+
+.white_gray{
+
+ background:#000;
+
+ width:100%;
+
+ height:100%;
+
+ position:fixed;
+
+ top:0;
+
+ left:0;
+
+ display:none;
+
+ z-index:500;
+
+}
+.white_opacity{
+ opacity:0.5;
+
+}
+
+.white_opacityNone{
+ opacity:0.0;
+
+}
+
+
+/*ポップアップ部分のスタイル定義*/
+
+.white_square{
+
+ display:block;
+
+ z-index:500;
+
+ overflow:hidden;
+
+}
+
+.white_popup{
+
+ display:block;
+
+ overflow:hidden;
+
+ border:none;
+
+}
+
+.white_square .header-right {
+    float: right;
+
+    width: 23px;
+
+    height: 100%;
+}
+
+.white_square .popup-close {
+    width: 23px;
+    height: 23px;
+    /* 2019/08/27 mod start 融合版格納先変更 */
+    /* background-image: url("../../../Areas/S0/Images/icon_close.svg"); */
+    background-image: url("../images/icon_close_S0.svg");
+    /* 2019/08/27 mod end 融合版格納先変更 */
+}

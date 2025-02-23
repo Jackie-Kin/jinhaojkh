@@ -1,0 +1,33 @@
+﻿/********************/
+/* 全体 　          */
+/********************/
+
+/********************/
+/* ボタン           */
+/********************/
+.common-btn {
+    background-color: #193a66;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px 0px rgba(17, 65, 128, 0.3);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0px 1px 1px rgba(40, 76, 126, 0.75);
+}
+.S2-common-btn-hover:hover {
+    background-color: #2f578e !important;
+    color: #FFF !important;
+}
+.S2-common-btn-hover:hover > p {
+    color: #FFF !important;
+}
+.popup-icon {
+    font-size: 0px;
+}
+.popup-img {
+    width: 22px;
+    height: 22px;
+}

@@ -1,0 +1,99 @@
+﻿body {
+
+     margin:0px; padding:0px; background-color:white;
+
+}
+
+.title{
+	border-radius: 5px;        /* CSS3草案   */
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    font-family:"HGP創英角ｺﾞｼｯｸUB";
+    font-size:11pt;
+    text-align:center;
+    color:white;
+    box-shadow: 4px 4px 0px 0px rgb(210,210,210);
+    background:black;
+}
+
+.table_style{
+	
+	padding:0px;
+	border-collapse:collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	width:99.5%;
+	background-color:white;
+	
+}
+
+.tableHeader_td_style{
+
+    width:161px!important;
+
+	padding:0px;
+	border-collapse:collapse;
+	border: 1px solid #2a486b;
+	background-color:#000170;
+	
+}
+
+.table_td_style{
+
+	padding:0px;
+	border-collapse:collapse;
+	border: 1px solid #2a486b;
+	
+}
+
+.table_data_style{
+
+    width:161px!important;
+
+	padding:0px;
+	border-collapse:collapse;
+	border: 1px solid #2a486b;
+	
+}
+
+.header_title_mojiStyle{
+	
+	color:white;
+	font-size:10.5pt;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	
+}
+
+.header_title_mojiStyle2{
+	
+	color:white;
+	font-size:10.5pt;
+	font-family:'HGP創英角ｺﾞｼｯｸUB';
+	/*margin-left:400px;*/
+	margin-right:10px;
+    border-left:none;
+
+}
+
+
+.table_header_mojiStyle{
+	
+	font-family:"ＭＳ Ｐゴシック";
+	font-size:9pt;
+	color:#FFFFFF;
+
+}
+
+.table_textStyle {
+    font-family: "HGP創英角ｺﾞｼｯｸUB";
+    font-size: 10.5pt;
+    color: #404040;
+}
+
+.listData_Select{
+
+	background-color:#a6a6a6;
+	
+}
+

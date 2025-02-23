@@ -1,0 +1,186 @@
+<apex:page docType="html-5.0" controller="SearchBookController"
+    showHeader="false" standardStylesheets="false" sidebar="false"
+    cache="false" expires="0" readonly="true" action="{!pageLoad}">
+
+    <head>
+<apex:includeScript value="{!URLFOR($Resource.myTest, 'Script_win/jquery.min.js')}" />
+<apex:includeScript value="{!URLFOR($Resource.myTest, 'Script_win/jquery-ui.min.js')}" />
+<apex:slds />
+
+<title>図書管理システム</title>
+    </head>
+    <apex:form id="listForm" styleclass="slds-scope">
+        <h1 class="pageType noSecondHeader" style="color: #000;font-size: 2em;font-weight: normal;"> 図書管理システム</h1>
+        <div style="margin-left: 10px;">
+            <span>図書名：</span>
+            <apex:inputText id="searchText" value="{!searchText}"
+                style="width: 150px;" />
+            <span>&nbsp;&nbsp;&nbsp;</span>
+            <apex:commandButton action="{!doSearch}" value="実行" id="cmdExecute"
+                rerender="areaInfo" onclick="lockForm()" oncomplete="cmdExecuteComplete()" status="searchStatus">
+            </apex:commandButton>
+            <span>※図書名を入力（空文字の場合、全対象検索）</span>
+        </div>
+        <div style="margin-left: 10px; color: red;font-weight: bold;font-size:16pt;">
+            <span><apex:actionStatus startText="検索中..." stopText=" "
+                    id="searchStatus" /></span>
+        </div>
+
+        <apex:pageBlock id="areaInfo">
+            <div style="margin-right: 10px; display:none">
+                <apex:input value="{!debugContent}" />
+            </div>
+            <div id="areaPageInfo">
+                <div class="top-line">
+                    <div class="panelHeader">
+                        <h2>
+                            <a onclick="toggoleDiv('areaPageTable')">図書対象リスト（{!totalPageCnt}）</a>
+                        </h2>
+                    </div>
+                </div>
+                <div id="areaPageTable">
+                    <apex:datatable border="1" cellpadding="5" var="apexPage"
+                        id="pageListTable" value="{!apexPageInfos}">
+                        <apex:column id="edit">
+                            <a style="margin-left: 10px;" onclick='OpenPageWindow(this,1);'
+                                href="#">参照</a>
+                            <span>|</span>
+                            <a style="margin-left: 10px;" onclick='OpenPageWindow(this,1);'
+                                href="#">編集</a>
+                            <span>|</span>
+                            <a style="margin-left: 10px;" onclick='OpenPageWindow(this,1);'
+                                href="#">削除</a>                                
+                        </apex:column>
+                        <apex:column id="pagelabel">
+                            <apex:facet name="header">
+                                図書名
+                        </apex:facet>
+                            <apex:outputfield value="{!apexPage.masterlabel}" />
+                        </apex:column>
+                        <apex:column id="pageModifiedTime">
+                            <apex:facet name="header">
+                                作成者
+                        　　</apex:facet>
+                        　　<apex:outputfield value="{!apexPage.LastModifiedDate}" />
+                        </apex:column>
+                        <apex:column id="pageModifiedTime3">
+                            <apex:facet name="header">
+                                出版社
+                        　　</apex:facet>
+                        　　<apex:outputfield value="{!apexPage.LastModifiedDate}" />
+                        </apex:column> 
+                         <apex:column id="pageModifiedTime4">
+                            <apex:facet name="header">
+                                出版時間
+                        　　</apex:facet>
+                        　　<apex:outputfield value="{!apexPage.LastModifiedDate}" />
+                        </apex:column>  
+                        <apex:column id="pageModifiedTime5">
+                            <apex:facet name="header">
+                                値段
+                        　　</apex:facet>
+                        　　<apex:outputfield value="{!apexPage.LastModifiedDate}" />
+                        </apex:column>                                                                      
+                        <apex:column id="pageModifiedTime2">
+                            <apex:facet name="header">
+                                借り期間
+                        　　</apex:facet>
+                        　　<!--<apex:outputfield value="{!apexPage.LastModifiedDate}" />-->
+                        </apex:column>                        
+                        <apex:column id="bookid">
+                            <apex:facet name="header">
+                                図書ID
+                        </apex:facet>
+                            <apex:outputfield value="{!apexPage.id}" />
+                        </apex:column>
+                    </apex:datatable>
+                </div>
+            </div>
+        </apex:pageBlock>
+
+    </apex:form>
+    <script>
+    function OpenPageWindow(obj,actFlag){
+        if (actFlag==1){
+           var id1=$(obj).parent().parent().find("td").eq(4).find("span").text();
+           window.open("https://c.ap4.visual.force.com/"+id1);
+        }
+        if (actFlag==2){
+           var id2=$(obj).parent().parent().find("td").eq(1).find("span").text();
+           window.open("https://c.ap4.visual.force.com/"+id2);
+        }     
+    }
+    
+   
+     $(function() {
+        $("[id*=bookid]").hide();
+    });
+    
+    function cmdExecuteComplete(){
+        $("[id*=bookid]").hide();
+
+        
+        $("[id*=listForm]").prop( "disabled", false );    
+    };
+    
+    function lockForm(){
+         $("[id*=listForm]").prop( "disabled", true );
+    }
+    
+    function toggoleDiv(obj){
+        $("#" + obj).toggle();
+    }
+</script>
+    <style>
+th {
+    background: #f2f3f3;
+    border-width: 0 0 1px 1px;
+    border-color: #e0e3e5;
+    color: #000;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 5px 2px 4px 5px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    -webkit-border-horizontal-spacing: 2px;
+    -webkit-border-vertical-spacing: 2px;
+}
+
+div {
+    padding: 2px;
+    margin: 2px;
+    border: 2px;
+}
+
+.panelHeader {
+    position: relative;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #222;
+    font-size: 1.1em;
+}
+
+.top-line {
+    margin-top: 10px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #ccc;
+    padding-bottom: 8px;
+    background-color: #dedede;
+}
+
+th {
+    border-width: 0 1px 0 0;
+    border-color: #d4dadc;
+    border-style: solid;
+    background: #fff url(/img/alohaSkin/grid_headerbg.gif) 0 bottom repeat-x;
+    color: #000;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 5px 2px 4px 5px;
+}
+</style>
+
+</apex:page>

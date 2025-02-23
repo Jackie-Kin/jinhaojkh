@@ -1,0 +1,316 @@
+﻿@charset "utf-8";
+/*=======================================================
+reset */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html {
+  overflow: hidden;
+  -ms-touch-action: manipulation;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 25px;
+  background-color:  #dcdcdc;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.clearfix:after {
+
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+.square:before {
+  position: relative;
+  padding-top: 100%;
+  content: '';
+  display: block;
+}
+
+.square > *:first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.centering {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+textarea:focus,
+input[type="text"]:focus {
+  background-color: #75b6ff;
+}
+
+/*=======================================================
+LoadingIcon */
+
+.loading {
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  z-index: 5000;
+  opacity: 0.7;
+  background-color: black;
+  -webkit-tap-highlight-color: #000000;
+}
+
+.loading > .loading-icon-container {
+  width: 2.82%;
+}
+
+.loading > .loading-icon-container > .loading-icon {
+  /* 2019/08/21 mod start 融合版格納先変更 */
+  /* background-image: url("../Images/LoadingIcon.png"); */
+  background-image: url("../images/LoadingIcon.png");
+  /* 2019/08/21 mod end 融合版格納先変更 */
+  background-size: contain;
+  animation:LoadingAnimation 2s linear infinite;
+}
+
+@keyframes LoadingAnimation {
+	0%{	transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+
+/*=======================================================
+overlay */
+#overlay {
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  z-index: 500;
+  -webkit-tap-highlight-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.memoHyouji {
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  z-index: 1001;
+}
+
+#hyouji-pop {
+    border: none;
+    border-radius: 3px;
+    background: #ffffff;
+    box-shadow: 0px 1px 1px 0px rgba(52,86,132,0.75);
+    color: #000;
+    position: absolute;
+    width: auto;
+    white-space: pre-wrap;
+    font-size: 13px;
+    line-height: 1.538;
+    word-break: break-all;
+}
+
+#comment-pop, #memo-pop {
+    margin:10px;
+}
+
+.memoLine{
+    border-top: 1px dashed #000;
+}
+
+
+
+/*=======================================================
+selectbox */
+select::-ms-expand {
+  display: none;
+}
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  /* 2019/08/21 mod start 融合版格納先変更 */
+  /* background: url(../Images/list_box_arrow.png) right 10px top 50% no-repeat; */
+  background: url(../images/list_box_arrow.png) right 10px top 50% no-repeat;
+  /* 2019/08/21 mod end 融合版格納先変更 */
+  border: 1px solid rgba(0, 0, 0, 80);
+  border-radius: 3px;
+  color: #030303;
+  font-family: Meiryo;
+  font-size: 17px;
+  font-weight: 400;
+  height: 30px;
+  padding-left: 10px;
+}
+
+/*=======================================================
+radio */
+.radio-input {
+  display: none;
+}
+.radio-parts{
+  display: inline-block;
+  font-family: Meiryo;
+  font-size: 17px;
+  font-weight: 400;
+  margin-right: 100px;
+  letter-spacing: 0.68px;
+  padding-left: 30px;
+  position: relative;
+}
+.radio-parts::before,
+.radio-parts::after {
+  -webkit-transition: all .2s;
+  content: '';
+  top: 37%;
+  border-radius: 100%;
+  position: absolute;
+  transition: all .2s;
+}
+.radio-parts::before{
+  background: #fff;
+  border: 2px solid #999999;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  margin-top: -8px;
+}
+.radio-parts:hover::before {
+    background: #fff;
+}
+.radio-parts::after {
+  opacity: 0;
+  left: 8px;
+  width: 7px;
+  height: 7px;
+  margin-top: 0;
+  background: #345684;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.radio-input[type="radio"]:checked + .radio-parts::before {
+  background: #fff;
+  border: 2px solid #345684;
+}
+.radio-input[type="radio"]:checked + .radio-parts::after {
+  -webkit-transform: scale(1);
+  opacity: 1;
+  transform: scale(1);
+}
+.radio-input[type="radio"]:checked + .radio-parts {
+  color: #345684;
+}
+
+/*=======================================================
+checkbox */
+.checkbox-input {
+  display: none;
+}
+.checkbox-parts {
+  -webkit-transition: all .2s;
+  display: inline-block;
+  margin-left: 10px;
+  padding: 3px 3px 3px 35px;
+  position: relative;
+  transition: all .2s;
+}
+.checkbox-parts::before,
+.checkbox-parts::after {
+  -webkit-transition: all .2s;
+  content: '';
+  position: absolute;
+  transition: all .2s;
+}
+.checkbox-parts:before {
+  background: #fff;
+  border: 2px solid #345684;
+  border-radius: 5px;
+  height: 26px;
+  left: 0;
+  margin-top: -14px;
+  top: 50%;
+  width: 26px;
+}
+.checkbox-parts::after {
+  -webkit-transform: rotate(-45deg) scale(.5);
+  border-bottom: 2px solid #345684;
+  border-left: 2px solid #345684;
+  height: 9px;
+  left: 7px;
+  margin-top: -8px;
+  opacity: 0;
+  top: 50%;
+  transform: rotate(-45deg) scale(.5);
+  width: 11px;
+}
+.checkbox-parts:hover::before {
+  background: #fff;
+}
+.checkbox-input[type="checkbox"]:checked + .checkbox-parts::before {
+  background: #fff;
+  border: 2px solid #345684;
+}
+.checkbox-input[type="checkbox"]:checked + .checkbox-parts::after {
+  -webkit-transform: rotate(-45deg) scale(1);
+  opacity: 1;
+  transform: rotate(-45deg) scale(1);
+}
+
+/*=======================================================*/
